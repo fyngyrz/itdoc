@@ -1,0 +1,432 @@
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML LANG="en">
+<HEAD>
+<TITLE>Layers Dialog</TITLE>
+<script src="mousetrap.js" type="text/javascript"></script>
+<script type="text/javascript">
+Mousetrap.bind(",", onLeft_keyDown,  "keydown");
+Mousetrap.bind(".", onRight_keyDown, "keydown");
+Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("t", onToc_keyDown,   "keydown");
+Mousetrap.bind("o", onOi_keyDown,   "keydown");
+Mousetrap.bind("g", onGi_keyDown,   "keydown");
+function onLeft_keyDown()  { window.location.href = "blending.html"; }
+function onRight_keyDown() { window.location.href = "layerblendmodes.html"; }
+function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onToc_keyDown()   { window.location.href = "tocpage.html"; }
+function onOi_keyDown()   { window.location.href = "operators.html"; }
+function onGi_keyDown()   { window.location.href = "glosspage.html"; }
+</script><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+
+
+<STYLE TYPE="text/css">
+.backtrail {
+margin-top: 30px;
+margin-left: 0px;
+margin-bottom: 30px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: transparent;
+background: url(/styles/transpurple.png);
+color: #f0f0f0;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+font-size: medium;
+width: 100%;
+clear: both;
+text-align: left;
+overflow: auto;
+}
+.backtrail--full {
+border-right: 1px solid black;
+border-left: 1px solid black;
+}
+</STYLE>
+
+<style type="text/css">
+.cbut {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #000000;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+
+<style type="text/css">
+span#leftmouse
+{
+border: 1px solid #000000;
+border-radius: 5px;
+width: 60px;
+background: #ffffff;
+padding-left: 2px;
+padding-right: 2px;
+color: #000000; 
+}
+
+span#leftmouseb
+{    border: 1px solid #000000;
+border-top-left-radius: 5px;
+width: 15px;
+height: 33%;
+float: left;
+background: #ffffff;
+padding-left: 0px;
+padding-right: 0px;
+color: #000000; 
+}
+
+span.myMouse {
+    display:inline-block;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding:0px 0px 0;
+    background: #fff;
+    border-radius: 6px;
+    width: 14px;
+    height: 20px;
+    font-size:10px;
+    line-height: 125%;
+    font-family:monospace;
+    text-align:center;
+}
+
+span.myMouse:before {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: left;
+    border-top-left-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.myMouse:after {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: right;
+    border-top-right-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.leftbutton:before {background:#bbbbbb;}
+span.rightbutton:after {background:#bbbbbb;}
+</style>
+
+<style type="text/css">
+.cchk {
+      display: inline-block;
+  white-space: nowrap;
+border-radius: 5px;
+height: 1em;
+width: 1em;
+       border: .1em solid #000000;
+ border-color: #000000;
+   background: #FFFFFF; 
+text-align: center;
+        color: #000000;
+}
+
+.cbak {
+       display: inline-block;
+   white-space: nowrap;
+    background: #eeeeee; 
+  padding-left: .5em;
+ padding-right: .5em;
+    margin-top: 1px;
+ margin-bottom: 1px;
+         color: #000000;
+}
+</style>
+<style type="text/css">
+.ckey {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+min-width: 1em;
+text-align:center;
+ border-color: #AAAAAA;
+   background: #000000; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #ffffff;
+}</style>
+<style type="text/css">
+.wckey {
+      display: inline-block;
+  white-space: nowrap;
+min-width: 1em;
+text-align:center;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #AAAAAA;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+<style type="text/css">
+.urlImg {
+width:hY#n_K+fRsiwidth6/tt@8f*d0!!rfpx;
+height:hY#n_K+fRsiheight6/tt@8f*d0!!rfpx;
+display:block;
+background-repeat: no-repeat;
+background-image: url('/itdoc/pics/hY#n_K+fRsimage26/tt@8f*d0!!rf');
+}
+.urlImg:hover {
+background-image: url('/itdoc/pics/hY#n_K+fRsimage16/tt@8f*d0!!rf');
+}
+</style>
+
+
+<style type="text/css">
+a:link {
+    color: #0000FF;
+}
+a:visited {
+    color: #880088;
+}
+</style>
+
+</HEAD>
+<BODY  style="color: #000000; background-color: #FFFFFF;">
+
+        <div style="overflow: auto; color: #000000; margin: 
+            20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
+<br>
+
+          <div style="width: 100%; float: left; margin-right: -170px;">
+<div style="border:0; margin-right: 170px;">
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="blending.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <span style="font-style: italic;">Layers</span> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="layerblendmodes.html">Next</a>&nbsp;</td></tr></table></div>
+               <a name="ixref335"></a><h1>18 &#32;-&#32;Layers Dialog</h1>
+<a name="ixref336"></a><h2>18.1 &#32;-&#32;Interface</h2>
+
+<div style="clear: both; text-align: center;"><a name="fgfg175"></a><center><img src="pics/thelayersdialog.png" alt="" title=""></center><br><span style="color: #880088;">The Layers Dialog</span></div>
+
+<p style="margin-left: 0;">When the <a href="layersdialog.html">Layers&nbsp;dialog</a> has the focus, you can press any key that has an underlined letter on a button, and it will function as if you had pressed the button.</p>
+
+<p style="margin-left: 0;">When the <a href="layersdialog.html">Layers&nbsp;dialog</a> has the focus, pressing <span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, or <span class="ckey">&darr;</span>, optionally with <span class="ckey">shift</span> and/or <span class="ckey">opt/alt</span>, will move the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> in relation to the other <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s in the image.</p>
+
+<p style="margin-left: 0;"><span class="ckey">Home</span> also has various layer positioning functions in combination with with <span class="ckey">shift</span> and/or <span class="ckey">opt/alt</span> you can use.</p>
+
+<p style="margin-left: 0;"><span class="ckey">n</span> will change the currently selected layer to the next layer mode in the mode list. When the last mode is reached, the next layer mode will be the first layer mode.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="ckey">N</span> (<span class="ckey">shift</span>+<span class="ckey">n</span>)</span> will change the currently selected layer to the previous layer mode in the mode list. When the first layer mode is reached, the next layer mode will be the last layer mode.</p>
+
+<div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg176"></a><center><img src="pics/lenadancerelx.png" alt="" title=""></center><br><span style="color: #880088;">A Layered Image</span></div><p style="margin-left: 0;">The <a href="layersdialog.html">Layers&nbsp;dialog</a> offers the following controls:</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Higher</span></span> move a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> up in the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> stack</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Lower</span></span> move a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> lower in the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> stack</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Attach</span></span> attach a flat, <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> image to this layered image as a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a></p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Detach</span></span> detach a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> and make it into a non-layered image</p>
+
+<p style="margin-left: 0;">The <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Blend Modes&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> drop-down menu controls how <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s combine with one another. More information on blend modes may be found <a href="layerblendmodes.html">here</a>.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">By name</span></span></span> controls sorting of the drop-down menu of <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> blend modes</p>
+
+<a name="visible"></a>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Visible</span></span></span> if <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> active. If not checked, <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> is ignored</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Localstack</span></span></span> allows building a sub-image from several <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Lockstep</span></span></span> the next <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> moves when this <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> moves</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Globalmask</span></span></span> if on, the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> masks outside its boundaries</p>
+
+<p style="margin-left: 0;"><span style="font-weight: bold;">Opacity</span>: How much of a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> is applied.</p>
+
+<p style="margin-left: 0;"><span style="font-weight: bold;">Factor</span>: Various adjustments to <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> modes.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Create</span></span> create a new warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a></p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Zero</span></span> zero out all warping information in a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a></p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Magnify</span></span> set up a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> to scale the content beneath</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Rotate</span></span> set up a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> to rotate the content beneath</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Shadow</span></span> create a shadow around the alpha mask of a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Glow</span></span> create a glow around the lapha mask of a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Emboss</span></span> create an embossed effect around the apha mask.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Punch</span></span> create a punched effect around the alpha mask.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Rename Layer</span></span> rename a single <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a></p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Rename Master</span></span> rename the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a></p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Save Image</span></span> save the layered image</p>
+
+<a name="separations"></a>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">RGB&rarr;CMY</span></span> create color separation of normal <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> to decomposed layers of <a href="lmcyan.html">Cyan</a>, <a href="lmmagenta.html">Magenta</a>, and <a href="lmyellow.html">Yellow</a>. The layer to be converted must be set to <a href="lmnormal.html">Normal</a> layer mode first.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">RGB&rarr;CMYK</span></span> create color separation of normal <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> to decomposed layers of <a href="lmcyan.html">Cyan</a>, <a href="lmmagenta.html">Magenta</a>, <a href="lmyellow.html">Yellow</a> and <a href="lmblack.html">Black</a>. The layer to be converted must be set to <a href="lmnormal.html">Normal</a> layer mode first.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">RGB&rarr;HSV</span></span> create color separation of normal <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> to decomposed layers of <a href="lmh.html">H</a>, <a href="lms.html">S</a>, and <a href="lmv">V</a>. The layer to be converted must be set to <a href="lmnormal.html">Normal</a> layer mode first.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">RGB&rarr;Chans</span></span> create color separation of normal <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> to decomposed layers of <a href="lmred.html">red</a>, <a href="lmgreen.html">green</a>, and <a href="lmblue">blue</a>. The layer to be converted must be set to <a href="lmnormal.html">Normal</a> layer mode first.</p>
+
+<p style="margin-left: 0;"><span style="font-style: italic;">Layer Information</span>: Information about the current <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a></p>
+
+<p style="margin-left: 0;">In addition to the indicated keyboard shortcuts, you can press <span class="ckey">esc</span> to close the layers dialog when it is the active window (has the mouse focus.)</p>
+
+<a name="ixref337"></a><a name="tocref18.2"></a><h2>18.2 &#32;-&#32;What Are Layers?</h2>
+
+<p style="margin-left: 0;">To begin with, you can think of <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s as perfectly transparent sheets of film, laid one on top of another in a stack. Of course, if all these <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s are transparent, the whole stack is transparent. That's true here, also.</p>
+
+<p style="margin-left: 0;">So, imagine a stack made of two sheets of transparent film.</p>
+
+<p style="margin-left: 0;">If you place image information &mdash; think of it as paint &mdash; on the bottom sheet of film, you can see it through the top sheet (because the top sheet is still unpainted).</p>
+
+<p style="margin-left: 0;">But if you now paint something small on the top sheet, you can see everything on the bottom sheet, except what the painting on the top sheet covers.</p>
+
+<p style="margin-left: 0;">If you move the top sheet, the small painting on it appears to "move" over the bottom sheet.</p>
+
+<p style="margin-left: 0;">If you don't like the results on the top sheet, you can throw it away without losing the painting on the bottom sheet &mdash; and likewise, if the bottom sheet is not pleasing, you can throw it out without losing the work on the top sheet.</p>
+
+<p style="margin-left: 0;">This is the basis for <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s in <span style="font-weight: bold;">iToolBox</span>. There are differences from the real-world stack of film sheets, but they are all in your favor.</p>
+
+<p style="margin-left: 0;">Some of those advantages are:</p>
+
+<ul>
+<li>
+You can stack an unlimited number of sheets in your layered images and the stack remains completely transparent.</li>
+<li>
+You can work on every sheet, or <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>, independently of the others</li>
+<li>
+Layers may be offset from one another, allowing you to "slide" <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s around without limit.</li>
+<li>
+Layers can be different sizes from one another, yet you can still handle them without the stack becoming difficult to manage.</li>
+<li>
+"Overlay" (Normal) is not the only way that <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s can be combined &mdash; there are  multiple combination modes that give beautiful and interesting results you can't get with "real" film <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s no matter what you do.</li>
+<li>
+Layers in most blend modes can re-position <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s above with "lockstep."</li>
+<li>
+You can rearrange the order of the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s in the stack.</li>
+<li>
+You can save your layered images in the layered state, and come back to work with them later.</li>
+<li>
+You can save a resulting combination (flattened clone) image or any individual <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> in any normal image format at any time without disturbing the layered image.</li>
+</ul>
+
+
+<p style="margin-left: 0;">Overall, image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s are a powerful, flexible and easy to use means to build up complex images from simple components.</p>
+
+<p style="margin-left: 0;">More formally, <span style="font-weight: bold;">iToolBox</span> layered images have the following useful characteristics:</p>
+
+<ul>
+<li>
+Layered images combine to form a "<a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> <a href="views.html">view</a>", which is not a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>.</li>
+<li>
+Images may have any number of <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, limited only by memory.</li>
+<li>
+The bottom image is the "base <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>", and any image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> may be re-arranged at will.</li>
+<li>
+Various <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> blending modes are available such as normal, multiply, add, warp, etc.</li>
+<li>
+Image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s may be moved to any degree, relative to the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> display image.</li>
+<li>
+Image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s may apply only "local" effects, affecting only immediate neighbors</li>
+<li>
+Image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s may contain geometric adjustments and distortions of preceding <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s</li>
+<li>
+Layered images may be saved in a lossless compressed file format that retains all information about the image.</li>
+<li>
+Images of any size may be attached as <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s; they may be the same size, larger, or smaller than the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> image. You can also non-destructively scale them using a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>.</li>
+<li>
+You can zoom in (or out) on any <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> independently of the rest of the image.</li>
+<li>
+You can open more than one <a href="views.html">view</a> on any layer or the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> &mdash; even at different magnifications.</li>
+</ul>
+
+
+<p style="margin-left: 0;">When you have a layered image, or you want to convert a flat (<a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>) image to a layered image, just press <span class="ckey">l</span>ayer. You can also open the layers dialog on an already layered image by pressing <span class="ckey">l</span>ayer to open the <a href="layersdialog.html">Layers&nbsp;dialog</a> when one of its <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s or the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> is the currently active image.</p>
+
+<p style="margin-left: 0;">Once the <a href="layersdialog.html">Layers&nbsp;dialog</a> is open, you can manipulate the various <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, attach more image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, detach them, move them around (use the cursor keys when the Layers dialog is active... the currently selected <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> will move.) You can use <span class="ckey">shift</span>, <span class="ckey">control</span> and <span class="ckey">opt/alt</span> to modify the <span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, <span class="ckey">&darr;</span> and <span class="ckey">home</span> key movements.</p>
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDDDFF;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><span style="font-weight: bold;">Note:</span> When the image, instead of the <a href="layersdialog.html">Layers&nbsp;dialog</a>, is active, then <span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, <span class="ckey">&darr;</span> and <span class="ckey">home</span> affect the pan and zoom of the image <a href="views.html">view</a> instead of the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> position on the resulting <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image.</div>
+
+
+<p style="margin-left: 0;">When beginning work with an image that you want to work with in a layered environment, you need to make an initial choice about the size of the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image. You can do this with the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/New Image &#8984;N&nbsp;</span></span></span> function, or you can do it by simply promoting an <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> image into a layered one with <span class="ckey">l</span>.</p>
+
+<p style="margin-left: 0;">This doesn't affect what size <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s you can use, but it does control the size of the final <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image. You can also increase the size of the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> at any time later using extend, invoked with <span class="ckey">x</span>. And of course you can crop out any portion of the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image or any <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> for later use. Cropping from a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> will produce a transparent crop with a base color of white. Merging from a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> will do the same.</p>
+
+<p style="margin-left: 0;">Layered images are created by promoting an <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>, or flat, image to a layered image. The promotion creates a <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> <a href="views.html">view</a> of the same size as the image that was promoted, and a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> that contains the original image, set to normal mode. The result after the initial promotion, as viewed in the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image, is the same as the original <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> image.</p>
+
+<p style="margin-left: 0;">You can either make a new image, or you can promote an image that already exists (one you loaded or have been working on already). When you do so, you are going to have the image contents (if any) as one of the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, but it can be any <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>, and you can also delete or simply detach it from the layered image later, should you decide that is what you want to do.</p>
+
+<p style="margin-left: 0;">So to promote a normal <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> image to a layered image, just press <span class="ckey">l</span> while the image <a href="views.html">view</a> is active.</p>
+
+<p style="margin-left: 0;">When you do this, the image is converted as we described above and the <a href="layersdialog.html">Layers&nbsp;dialog</a> opens. The <a href="layersdialog.html">Layers&nbsp;dialog</a> is the control center for layered images. It is here that you can rearrange image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, change <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> combination modes, move <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s around, and more.</p>
+                          <div style="
+       clear: both;
+       width: 75%;
+border-style: solid;
+  background: #ffffff;
+  text-align: center;
+     padding: .5em;
+      margin: auto;
+  margin-top: 1em;
+">
+<span style="font-style: italic;">Keyboard Navigation</span>
+<hr width="75%">
+<span class="ckey">,</span> Previous Page
+<span class="ckey">.</span> Next Page
+<span class="ckey">t</span> TOC
+<span class="ckey">i</span> Index
+<span class="ckey">o</span> Operators
+<span class="ckey">g</span> Glossary
+</div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="blending.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <span style="font-style: italic;">Layers</span> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="layerblendmodes.html">Next</a>&nbsp;</td></tr></table></div>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.27</center>
+           </div>
+</div>
+<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
+
+        </div>
+
+    </BODY>
+</HTML>
+

@@ -1,0 +1,1056 @@
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML LANG="en">
+<HEAD>
+<TITLE>Gallery Example for Developers</TITLE>
+<script src="mousetrap.js" type="text/javascript"></script>
+<script type="text/javascript">
+Mousetrap.bind(",", onLeft_keyDown,  "keydown");
+Mousetrap.bind(".", onRight_keyDown, "keydown");
+Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("t", onToc_keyDown,   "keydown");
+Mousetrap.bind("o", onOi_keyDown,   "keydown");
+Mousetrap.bind("g", onGi_keyDown,   "keydown");
+function onLeft_keyDown()  { window.location.href = "glossage.html"; }
+function onRight_keyDown() { window.location.href = "intro.html"; }
+function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onToc_keyDown()   { window.location.href = "tocpage.html"; }
+function onOi_keyDown()   { window.location.href = "operators.html"; }
+function onGi_keyDown()   { window.location.href = "glosspage.html"; }
+</script><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+
+
+<STYLE TYPE="text/css">
+.backtrail {
+margin-top: 30px;
+margin-left: 0px;
+margin-bottom: 30px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: transparent;
+background: url(/styles/transpurple.png);
+color: #f0f0f0;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+font-size: medium;
+width: 100%;
+clear: both;
+text-align: left;
+overflow: auto;
+}
+.backtrail--full {
+border-right: 1px solid black;
+border-left: 1px solid black;
+}
+</STYLE>
+
+<style type="text/css">
+.cbut {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #000000;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+
+<style type="text/css">
+span#leftmouse
+{
+border: 1px solid #000000;
+border-radius: 5px;
+width: 60px;
+background: #ffffff;
+padding-left: 2px;
+padding-right: 2px;
+color: #000000; 
+}
+
+span#leftmouseb
+{    border: 1px solid #000000;
+border-top-left-radius: 5px;
+width: 15px;
+height: 33%;
+float: left;
+background: #ffffff;
+padding-left: 0px;
+padding-right: 0px;
+color: #000000; 
+}
+
+span.myMouse {
+    display:inline-block;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding:0px 0px 0;
+    background: #fff;
+    border-radius: 6px;
+    width: 14px;
+    height: 20px;
+    font-size:10px;
+    line-height: 125%;
+    font-family:monospace;
+    text-align:center;
+}
+
+span.myMouse:before {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: left;
+    border-top-left-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.myMouse:after {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: right;
+    border-top-right-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.leftbutton:before {background:#bbbbbb;}
+span.rightbutton:after {background:#bbbbbb;}
+</style>
+
+<style type="text/css">
+.cchk {
+      display: inline-block;
+  white-space: nowrap;
+border-radius: 5px;
+height: 1em;
+width: 1em;
+       border: .1em solid #000000;
+ border-color: #000000;
+   background: #FFFFFF; 
+text-align: center;
+        color: #000000;
+}
+
+.cbak {
+       display: inline-block;
+   white-space: nowrap;
+    background: #eeeeee; 
+  padding-left: .5em;
+ padding-right: .5em;
+    margin-top: 1px;
+ margin-bottom: 1px;
+         color: #000000;
+}
+</style>
+<style type="text/css">
+.ckey {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+min-width: 1em;
+text-align:center;
+ border-color: #AAAAAA;
+   background: #000000; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #ffffff;
+}</style>
+<style type="text/css">
+.wckey {
+      display: inline-block;
+  white-space: nowrap;
+min-width: 1em;
+text-align:center;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #AAAAAA;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+<style type="text/css">
+.urlImg {
+width:hY#n_K+fRsiwidth6/tt@8f*d0!!rfpx;
+height:hY#n_K+fRsiheight6/tt@8f*d0!!rfpx;
+display:block;
+background-repeat: no-repeat;
+background-image: url('/itdoc/pics/hY#n_K+fRsimage26/tt@8f*d0!!rf');
+}
+.urlImg:hover {
+background-image: url('/itdoc/pics/hY#n_K+fRsimage16/tt@8f*d0!!rf');
+}
+</style>
+
+
+<style type="text/css">
+a:link {
+    color: #0000FF;
+}
+a:visited {
+    color: #880088;
+}
+</style>
+
+ 
+<script type="text/javascript">
+var xdim;
+var dismode;
+var working;
+var mousehover;
+
+    xdim = -1;
+    dismode = 0;
+    working = 0;
+    mousehover = 0;
+    tcounter = -1;
+
+function doManual()
+{
+    if (dismode == 1)
+    {
+        show_image('mypic'); // flip to no notes
+    }
+    else
+    {
+        show_image_notes('mypic'); // flip to notes
+    }
+}
+
+function mousingover()
+{
+    if (dismode == 1) return;
+    show_image_notes('mypic');
+}
+
+function mousingaway()
+{
+    if (dismode == 0) return;
+    show_image('mypic');
+}
+
+function ticker()
+{
+    // When the display is rescaled, the width of this div changes
+    // This is used to re-fire the calculation of where the notes go:
+    var myAnchor = document.getElementById('picdiv');
+    var xd = myAnchor.offsetWidth;
+    if (working == 0 && xd != xdim)
+    {
+        working = 1;
+        if (dismode == 1) show_image_notes('mypic');
+        else              show_image('mypic');
+        xdim = xd;
+        working = 0;
+    }
+    var pic = document.getElementById('picCanvas'); // get (eventually) ready element
+    pic.onmouseenter = function() { mousingover(); }
+    pic.onmouseout = function() { mousingaway(); }
+}
+
+function atloadtime()
+{
+    xdim = -1;
+    dismode = 0;
+    working = 0;
+    mousehover = 0;
+    show_image('mypic');
+}
+
+window.onload = function() { atloadtime(); }
+
+// this is synchronous - result returns only when called script provides it
+// ------------------------------------------------------------------------
+function syncCallAjax(filename)
+{
+var remote = '__Unset__';
+var request = new XMLHttpRequest();
+var remote_url;
+ 
+   request.open('GET', filename, false);  // false makes the request synchronous
+   request.send(null);
+   if (request.status === 200)
+   {
+       remote = request.responseText;
+   }
+   return(remote);
+} // end syncCallAjax() function
+
+function draw_text(ax,ay,ex,ey,pic,mode,txt,context,fh,opa)
+{
+var yrad = ey - ay;
+var ph = pic.height;
+var ceny = ph / 2;
+var pw = pic.width;
+var xpos,ypos,cy;
+var tlines = txt.split('\n')
+var len = tlines.length;
+var i;
+
+    // determine max length
+    var maxlen = -1;
+    var tlen;
+    for (i=0; i<len; i++)
+    {
+        txt = tlines[i];
+        tlen = context.measureText(txt).width;
+        if (tlen > maxlen)
+        {
+             maxlen = tlen;
+        }
+    }
+    var bu = fh; // this is even so it will pad both sides identically
+    var hbu = bu / 2;
+    var yfat = (len * fh)+bu; // font point size
+    maxlen += bu; // the width of the box
+
+    if (mode == 'Ellipse')
+    {
+        xpos = ax;
+        if (ay > ceny) // if center on bottom half of image
+        {
+            ypos = ay - (yfat + yrad); // text at top of figure
+        }
+        else // center on top half of image
+        {
+            ypos = ay + yrad + fh; // text at bottom of figure
+        }
+    } // end IF ellipse
+    else if (mode == 'Polygon' || mode == 'Rectangle' || mode == 'Freehand')
+    {
+        xpos = ax + ((ex - ax) / 2);
+        cy = ay + ((ey - ay) / 2);
+        if (cy > ceny) // if center on bottom half of image
+        {
+            ypos = ay - yfat; // text on top of figure
+        }
+        else // center on top half of image
+        {
+            ypos = ey + fh; // text on bottom of figure
+        }
+    } // end IF polygon
+
+    xpos -= (maxlen / 2);
+    context.fillStyle="#FFffFF";
+    context.globalAlpha = opa;
+    context.fillRect(xpos,ypos-hbu,maxlen,yfat);
+    xpos += hbu; // the text indent
+    ypos += 10; // offset from top of box
+    context.fillStyle="#000000";
+    context.globalAlpha = 1.0;
+
+    for (i=0; i<len; i++)
+    {
+        txt = tlines[i];
+        context.fillText(txt,Math.round(xpos),Math.round(ypos));
+        ypos += fh;
+    } // end FOR each line
+} // end draw_text() function
+
+function draw_rectangle(ax,ay,ex,ey,context)
+{
+    context.beginPath();
+    context.rect(ax,ay,ex-ax,ey-ay);
+    context.stroke();
+    context.closePath();
+} // end draw_rectangle() function
+
+function draw_polygon(pointlist,context)
+{
+var prevx = pointlist[0].x;
+var prevy = pointlist[0].y;
+var len = pointlist.length;
+
+    context.beginPath();
+    for (i=0; i<len; i+=1)
+    {
+        x = pointlist[i].x;
+        y = pointlist[i].y;
+        context.moveTo(prevx,prevy);
+        context.lineTo(x,y);
+        prevx = x;
+        prevy = y;
+    } // end FOR each XY point
+    context.stroke();
+    context.closePath();
+} // end draw_polygon() function
+
+function draw_ellipse(centerX,centerY,ex,ey,pic,context)
+{
+var xrad = ex - centerX;
+var yrad = ey - centerY;
+var pw = pic.width;
+var ph = pic.height;
+var larger = pw;
+var pi = 3.14159;
+var x,y,i,incr,xprev,yprev;
+var twopi = pi *2;
+
+    if (ph > pw) { larger = ph; }
+    incr = pi / (3 * larger);
+
+    xprev = centerX + (xrad * Math.cos(0)) + 0.5;
+    yprev = centerY + (yrad * Math.sin(0)) + 0.5;
+
+    context.beginPath();
+    for (i=0; i<twopi; i+=incr)
+    {
+        x = centerX + (xrad * Math.cos(i)) + 0.5;
+        y = centerY + (yrad * Math.sin(i)) + 0.5;
+        context.moveTo(xprev,yprev);
+        context.lineTo(x,y);
+        xprev = x;
+        yprev = y;
+    } // end FOR around ellipse path
+
+    context.stroke();
+    context.closePath();
+} // end draw_ellipse() function
+
+function show_image(ele)
+{
+// First, we fetch and parse the data from the data file. You'd
+// want to get this from a database:
+// ------------------------------------------------------------
+dismode = 0;
+var path = 'gallery/';
+var theData = syncCallAjax(path+'ben_airport.data');
+var ray = theData.split('\n');
+var src = ray[0];
+var desc = ray[1];
+var width = ray[2];
+var height = ray[3];
+var alt = ray[4];
+
+    // Here, we use the fetched data to set up the gallery page:
+    // ---------------------------------------------------------
+    var imgName = path+src+'.jpg';
+    var myAnchor = document.getElementById(ele);
+    var theImage = ele+'text';
+    var img = document.createElement("img");
+
+    img.src = imgName;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+    img.id = 'mypic';
+    myAnchor.parentNode.replaceChild(img, myAnchor);
+    var pic = document.getElementById(ele); // get ready element
+    document.getElementById(theImage).innerHTML = desc;
+
+    // The following is all prep to clear the canvas:
+    var cnvs = document.getElementById("picCanvas");
+    cnvs.width = pic.width;
+    cnvs.height = pic.height;
+    cnvs.style.position = "absolute";
+    cnvs.style.left = pic.offsetLeft + "px";
+    cnvs.style.top = pic.offsetTop + "px";
+    var context = cnvs.getContext("2d");
+    context.clearRect(0, 0, cnvs.width, cnvs.height);
+} // end show_image() function
+
+function show_image_notes(ele)
+{
+// First, we fetch and parse the data from the data file. You'd
+// want to get this from a database:
+// ------------------------------------------------------------
+dismode = 1;
+var path = 'gallery/';
+var theData = syncCallAjax(path+'ben_airport.data');
+var ray = theData.split('\n');
+var src = ray[0];
+var desc = ray[1];
+var width = ray[2];
+var height = ray[3];
+var alt = ray[4];
+
+// Here, we use the fetched data to set up the gallery page:
+// ---------------------------------------------------------
+var imgName = path+src+'.jpg';
+var myAnchor = document.getElementById(ele);
+var theImage = ele+'text';
+var img = document.createElement("img");
+    img.src = imgName;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+    img.id = 'mypic';
+    myAnchor.parentNode.replaceChild(img, myAnchor);
+    var pic = document.getElementById(ele); // get ready element
+    document.getElementById(theImage).innerHTML = desc;
+
+    // now we go get the JSON notation data:
+    var theJson = syncCallAjax(path+'ben_airport.json');
+    theObjects = JSON.parse(theJson);
+
+    // The following is all prep for drawing:
+    var cnvs = document.getElementById("picCanvas");
+    cnvs.width = pic.width;
+    cnvs.height = pic.height;
+    cnvs.style.position = "absolute";
+    cnvs.style.left = pic.offsetLeft + "px";
+    cnvs.style.top = pic.offsetTop + "px";
+    var context = cnvs.getContext("2d");
+    context.clearRect(0, 0, cnvs.width, cnvs.height);
+    var fh = 12;
+    context.font = fh.toString() + "px Arial";
+    context.strokeStyle="#FF0000";
+    context.fillStyle = "#FFffFF";
+    context.textAlign = "left";
+
+    // and here we work through the areas of the notations:
+    var arrayLength = theObjects.Notations.length; // this is how many notations there are
+    for (var i=0; i<arrayLength; i++)
+    {
+        var am = theObjects.Notations[i].areaMode;
+        var ax = theObjects.Notations[i].anchorX;
+        var ay = theObjects.Notations[i].anchorY;
+        var ex = theObjects.Notations[i].extentX;
+        var ey = theObjects.Notations[i].extentY;
+        var txt = theObjects.Notations[i].text; 
+
+        if (am == 'Ellipse')
+        {
+            draw_ellipse(ax,ay,ex,ey,pic,context);
+        } // end IF ellipse
+        else if (am == 'Polygon' || am == 'Freehand')
+        {
+            draw_polygon(theObjects.Notations[i].pointList,context);
+        } // end IF polygon or freehand
+        else if (am == 'Rectangle')
+        {
+            draw_rectangle(ax,ay,ex,ey,context)
+        } // end IF rectangle
+    } // end FOR area displays
+
+    // now we do the text display on top of the area indications:
+    for (var i=0; i<arrayLength; i++)
+    {
+        var am = theObjects.Notations[i].areaMode;
+        var ax = theObjects.Notations[i].anchorX;
+        var ay = theObjects.Notations[i].anchorY;
+        var ex = theObjects.Notations[i].extentX;
+        var ey = theObjects.Notations[i].extentY;
+        var txt = theObjects.Notations[i].text; 
+        var opa= theObjects.Notations[i].opacity;
+        draw_text(ax,ay,ex,ey,pic,am,txt,context,fh,opa);
+      } // end FOR text displays
+
+} // end show_image_notes() function
+</script>
+</HEAD>
+<BODY  style="color: #000000; background-color: #FFFFFF;">
+
+        <div style="overflow: auto; color: #000000; margin: 
+            20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
+<br>
+
+          <div style="width: 100%; float: left; margin-right: -170px;">
+<div style="border:0; margin-right: 170px;">
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="glossage.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="intro.html">Next</a>&nbsp;</td></tr></table></div>
+               <p style="margin-left: 0;">This page provides a demonstration of how one might use the <a target="_blank" href="glosspage.html#6a736f6e"><span style="color: #884422;">JSON</span></a> output of the <a href="opnotations.html">Notations operator</a>. It presents sample <a target="_blank" href="glosspage.html#6a617661736372697074"><span style="color: #884422;">Javascript</span></a> code that reads an image, a text file, a data file, and the <a target="_blank" href="glosspage.html#6a736f6e"><span style="color: #884422;">JSON</span></a> generated by <span style="font-weight: bold;">iToolBox</span> to annotate the image. You are certainly free to copy and modify this code; it's here for exactly that purpose.</p>
+
+
+<p style="margin-left: 0;">For the demo, there are three files. These are in the gallery folder:</p>
+
+
+<ul>
+<li>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>ben_airport.jpg</tt></span></span> - the image</li>
+<li>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>ben_airport.json</tt></span></span> - result of <span style="white-space:nowrap;"><span class="cbut">Write JSON</span></span> in the <a href="opnotations.html">Notations operator</a></li>
+<li>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>ben_airport.data</tt></span></span> - image name, description, width, height and alt-text
+</li>
+</ul>
+
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDDDFF;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><span style="font-weight: bold;">Note:</span> In practice, you'd almost certainly be pulling the information in the <span style="color:#006600;"><span style="font-weight: bold;"><tt>.data</tt></span></span> file from a database; In this example, I have eliminated the database integration specifically to keep the demo both easier to grasp and the code free of database dependencies.</div>
+
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDFFDD;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><span style="font-weight: bold;">Tip:</span> This <a target="_blank" href="glosspage.html#6a617661736372697074"><span style="color: #884422;">Javascript</span></a> code depends on the <a target="_blank" href="glosspage.html#68746d6c"><span style="color: #884422;">HTML</span></a> <span style="font-weight: bold;">5</span> <span style="color:#006600;"><span style="font-weight: bold;"><tt>canvas</tt></span></span> element. Modern browsers should have no trouble. Also, the <a target="_blank" href="glosspage.html#68746d6c"><span style="color: #884422;">HTML</span></a> <span style="font-weight: bold;">4</span> validation at the bottom of the page will fail because this element is included in the demo. <img alt="smile" title="smile" src="pics/stock_smiley_2.png"></div>
+
+
+<p style="margin-left: 0;">On the page itself, there's a simple function call made that is called with a name used to id the elements on the page we want to replace, <span style="color:#006600;"><span style="font-weight: bold;"><tt>mypic</tt></span></span>, and from there, the javascript picks up the appropriate data and builds what we need for the gallery display.</p>
+
+
+<p style="margin-left: 0;">Mouse over the image to see the notes:</p>
+
+
+<hr>
+<div style="text-align: center;"><div id="picdiv">
+<img id="mypic">
+<canvas id="picCanvas" width="0" height="0"></canvas>
+<p style="margin-left: 0;"><span id="mypictext"></span></p>
+
+<button id="forTouchDevices" onclick="doManual()">Touchscreen? Click here for notes.</button>
+</div></div>
+<hr>
+
+<script type="text/javascript">
+show_image('mypic');
+setInterval(function(){ ticker(); }, 500);
+</script>
+
+<p style="margin-left: 0;">Here's the <span style="color:#006600;"><span style="font-weight: bold;"><tt>HTML</tt></span></span> code in the body of the page:</p>
+
+<pre style="overflow: auto; padding-top: .5em; padding-bottom: .5em; padding-left: 2em; color: #00ff00; background: #000000;">&lt;div style=&quot;text-align: center;&quot;&gt;&lt;div id=&quot;picdiv&quot;&gt;
+&lt;img id=&quot;mypic&quot;&gt;
+&lt;canvas id=&quot;picCanvas&quot; width=&quot;0&quot; height=&quot;0&quot;&gt;&lt;/canvas&gt;
+&lt;p style=&quot;margin-left: 0;&quot;&gt;&lt;span id=&quot;mypictext&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;button id=&quot;forTouchDevices&quot; onclick=&quot;doManual()&quot;&gt;Touchscreen? Click here for notes.&lt;/button&gt;
+&lt;/div&gt;&lt;/div&gt;</pre>
+
+<p style="margin-left: 0;">Here's the <a target="_blank" href="glosspage.html#6a617661736372697074"><span style="color: #884422;">Javascript</span></a>, also in the body of the page, following the <span style="color:#006600;"><span style="font-weight: bold;"><tt>HTML</tt></span></span> code that actually places the image into the above <span style="color:#006600;"><span style="font-weight: bold;"><tt>HTML</tt></span></span> for the first time:</p>
+
+
+<pre style="overflow: auto; padding-top: .5em; padding-bottom: .5em; padding-left: 2em; color: #00ff00; background: #000000;">&lt;script type=&quot;text/javascript&quot;&gt;
+show_image('mypic');
+setInterval(function(){ ticker(); }, 500);
+&lt;/script&gt;</pre>
+
+<p style="margin-left: 0;">Here's the content of the data file, <span style="color:#006600;"><span style="font-weight: bold;"><tt>ben_airport.data</tt></span></span>, which provides the information we need to load and display the image in a proper <span style="color:#006600;"><span style="font-weight: bold;"><tt>HTML</tt></span></span> compliant manner. This information would probably be supplied by a database:</p>
+
+
+<pre style="overflow: auto; padding-top: .5em; padding-bottom: .5em; padding-left: 2em; color: #00ff00; background: #000000;">ben_airport
+This is Ben at the airport
+270
+648
+Ben at airport
+</pre>
+
+<p style="margin-left: 0;">Here's the <a target="_blank" href="glosspage.html#6a617661736372697074"><span style="color: #884422;">Javascript</span></a> that implements the demo gallery. It is placed inside the <span style="color:#006600;"><span style="font-weight: bold;"><tt>&lt;HEAD&gt;</tt></span></span> and <span style="color:#006600;"><span style="font-weight: bold;"><tt>&lt;/HEAD&gt;</tt></span></span> tags:</p>
+
+
+<pre style="overflow: auto; padding-top: .5em; padding-bottom: .5em; padding-left: 2em; color: #00ff00; background: #000000;">
+&lt;script type=&quot;text/javascript&quot;&gt;
+var xdim;
+var dismode;
+var working;
+var mousehover;
+
+    xdim = -1;
+    dismode = 0;
+    working = 0;
+    mousehover = 0;
+    tcounter = -1;
+
+function doManual()
+{
+    if (dismode == 1)
+    {
+        show_image('mypic'); // flip to no notes
+    }
+    else
+    {
+        show_image_notes('mypic'); // flip to notes
+    }
+}
+
+function mousingover()
+{
+    if (dismode == 1) return;
+    show_image_notes('mypic');
+}
+
+function mousingaway()
+{
+    if (dismode == 0) return;
+    show_image('mypic');
+}
+
+function ticker()
+{
+    // When the display is rescaled, the width of this div changes
+    // This is used to re-fire the calculation of where the notes go:
+    var myAnchor = document.getElementById('picdiv');
+    var xd = myAnchor.offsetWidth;
+    if (working == 0 && xd != xdim)
+    {
+        working = 1;
+        if (dismode == 1) show_image_notes('mypic');
+        else              show_image('mypic');
+        xdim = xd;
+        working = 0;
+    }
+    var pic = document.getElementById('picCanvas'); // get (eventually) ready element
+    pic.onmouseenter = function() { mousingover(); }
+    pic.onmouseout = function() { mousingaway(); }
+}
+
+function atloadtime()
+{
+    xdim = -1;
+    dismode = 0;
+    working = 0;
+    mousehover = 0;
+    show_image('mypic');
+}
+
+window.onload = function() { atloadtime(); }
+
+// this is synchronous - result returns only when called script provides it
+// ------------------------------------------------------------------------
+function syncCallAjax(filename)
+{
+var remote = '__Unset__';
+var request = new XMLHttpRequest();
+var remote_url;
+ 
+   request.open('GET', filename, false);  // false makes the request synchronous
+   request.send(null);
+   if (request.status === 200)
+   {
+       remote = request.responseText;
+   }
+   return(remote);
+} // end syncCallAjax() function
+
+function draw_text(ax,ay,ex,ey,pic,mode,txt,context,fh,opa)
+{
+var yrad = ey - ay;
+var ph = pic.height;
+var ceny = ph / 2;
+var pw = pic.width;
+var xpos,ypos,cy;
+var tlines = txt.split('\n')
+var len = tlines.length;
+var i;
+
+    // determine max length
+    var maxlen = -1;
+    var tlen;
+    for (i=0; i&lt;len; i++)
+    {
+        txt = tlines[i];
+        tlen = context.measureText(txt).width;
+        if (tlen &gt; maxlen)
+        {
+             maxlen = tlen;
+        }
+    }
+    var bu = fh; // this is even so it will pad both sides identically
+    var hbu = bu / 2;
+    var yfat = (len * fh)+bu; // font point size
+    maxlen += bu; // the width of the box
+
+    if (mode == 'Ellipse')
+    {
+        xpos = ax;
+        if (ay &gt; ceny) // if center on bottom half of image
+        {
+            ypos = ay - (yfat + yrad); // text at top of figure
+        }
+        else // center on top half of image
+        {
+            ypos = ay + yrad + fh; // text at bottom of figure
+        }
+    } // end IF ellipse
+    else if (mode == 'Polygon' || mode == 'Rectangle' || mode == 'Freehand')
+    {
+        xpos = ax + ((ex - ax) / 2);
+        cy = ay + ((ey - ay) / 2);
+        if (cy &gt; ceny) // if center on bottom half of image
+        {
+            ypos = ay - yfat; // text on top of figure
+        }
+        else // center on top half of image
+        {
+            ypos = ey + fh; // text on bottom of figure
+        }
+    } // end IF polygon
+
+    xpos -= (maxlen / 2);
+    context.fillStyle=&quot;#FFffFF&quot;;
+    context.globalAlpha = opa;
+    context.fillRect(xpos,ypos-hbu,maxlen,yfat);
+    xpos += hbu; // the text indent
+    ypos += 10; // offset from top of box
+    context.fillStyle=&quot;#000000&quot;;
+    context.globalAlpha = 1.0;
+
+    for (i=0; i&lt;len; i++)
+    {
+        txt = tlines[i];
+        context.fillText(txt,Math.round(xpos),Math.round(ypos));
+        ypos += fh;
+    } // end FOR each line
+} // end draw_text() function
+
+function draw_rectangle(ax,ay,ex,ey,context)
+{
+    context.beginPath();
+    context.rect(ax,ay,ex-ax,ey-ay);
+    context.stroke();
+    context.closePath();
+} // end draw_rectangle() function
+
+function draw_polygon(pointlist,context)
+{
+var prevx = pointlist[0].x;
+var prevy = pointlist[0].y;
+var len = pointlist.length;
+
+    context.beginPath();
+    for (i=0; i&lt;len; i+=1)
+    {
+        x = pointlist[i].x;
+        y = pointlist[i].y;
+        context.moveTo(prevx,prevy);
+        context.lineTo(x,y);
+        prevx = x;
+        prevy = y;
+    } // end FOR each XY point
+    context.stroke();
+    context.closePath();
+} // end draw_polygon() function
+
+function draw_ellipse(centerX,centerY,ex,ey,pic,context)
+{
+var xrad = ex - centerX;
+var yrad = ey - centerY;
+var pw = pic.width;
+var ph = pic.height;
+var larger = pw;
+var pi = 3.14159;
+var x,y,i,incr,xprev,yprev;
+var twopi = pi *2;
+
+    if (ph &gt; pw) { larger = ph; }
+    incr = pi / (3 * larger);
+
+    xprev = centerX + (xrad * Math.cos(0)) + 0.5;
+    yprev = centerY + (yrad * Math.sin(0)) + 0.5;
+
+    context.beginPath();
+    for (i=0; i&lt;twopi; i+=incr)
+    {
+        x = centerX + (xrad * Math.cos(i)) + 0.5;
+        y = centerY + (yrad * Math.sin(i)) + 0.5;
+        context.moveTo(xprev,yprev);
+        context.lineTo(x,y);
+        xprev = x;
+        yprev = y;
+    } // end FOR around ellipse path
+
+    context.stroke();
+    context.closePath();
+} // end draw_ellipse() function
+
+function show_image(ele)
+{
+// First, we fetch and parse the data from the data file. You'd
+// want to get this from a database:
+// ------------------------------------------------------------
+dismode = 0;
+var path = 'gallery/';
+var theData = syncCallAjax(path+'ben_airport.data');
+var ray = theData.split('\n');
+var src = ray[0];
+var desc = ray[1];
+var width = ray[2];
+var height = ray[3];
+var alt = ray[4];
+
+    // Here, we use the fetched data to set up the gallery page:
+    // ---------------------------------------------------------
+    var imgName = path+src+'.jpg';
+    var myAnchor = document.getElementById(ele);
+    var theImage = ele+'text';
+    var img = document.createElement(&quot;img&quot;);
+
+    img.src = imgName;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+    img.id = 'mypic';
+    myAnchor.parentNode.replaceChild(img, myAnchor);
+    var pic = document.getElementById(ele); // get ready element
+    document.getElementById(theImage).innerHTML = desc;
+
+    // The following is all prep to clear the canvas:
+    var cnvs = document.getElementById(&quot;picCanvas&quot;);
+    cnvs.width = pic.width;
+    cnvs.height = pic.height;
+    cnvs.style.position = &quot;absolute&quot;;
+    cnvs.style.left = pic.offsetLeft + &quot;px&quot;;
+    cnvs.style.top = pic.offsetTop + &quot;px&quot;;
+    var context = cnvs.getContext(&quot;2d&quot;);
+    context.clearRect(0, 0, cnvs.width, cnvs.height);
+} // end show_image() function
+
+function show_image_notes(ele)
+{
+// First, we fetch and parse the data from the data file. You'd
+// want to get this from a database:
+// ------------------------------------------------------------
+dismode = 1;
+var path = 'gallery/';
+var theData = syncCallAjax(path+'ben_airport.data');
+var ray = theData.split('\n');
+var src = ray[0];
+var desc = ray[1];
+var width = ray[2];
+var height = ray[3];
+var alt = ray[4];
+
+// Here, we use the fetched data to set up the gallery page:
+// ---------------------------------------------------------
+var imgName = path+src+'.jpg';
+var myAnchor = document.getElementById(ele);
+var theImage = ele+'text';
+var img = document.createElement(&quot;img&quot;);
+    img.src = imgName;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+    img.id = 'mypic';
+    myAnchor.parentNode.replaceChild(img, myAnchor);
+    var pic = document.getElementById(ele); // get ready element
+    document.getElementById(theImage).innerHTML = desc;
+
+    // now we go get the JSON notation data:
+    var theJson = syncCallAjax(path+'ben_airport.json');
+    theObjects = JSON.parse(theJson);
+
+    // The following is all prep for drawing:
+    var cnvs = document.getElementById(&quot;picCanvas&quot;);
+    cnvs.width = pic.width;
+    cnvs.height = pic.height;
+    cnvs.style.position = &quot;absolute&quot;;
+    cnvs.style.left = pic.offsetLeft + &quot;px&quot;;
+    cnvs.style.top = pic.offsetTop + &quot;px&quot;;
+    var context = cnvs.getContext(&quot;2d&quot;);
+    context.clearRect(0, 0, cnvs.width, cnvs.height);
+    var fh = 12;
+    context.font = fh.toString() + &quot;px Arial&quot;;
+    context.strokeStyle=&quot;#FF0000&quot;;
+    context.fillStyle = &quot;#FFffFF&quot;;
+    context.textAlign = &quot;left&quot;;
+
+    // and here we work through the areas of the notations:
+    var arrayLength = theObjects.Notations.length; // this is how many notations there are
+    for (var i=0; i&lt;arrayLength; i++)
+    {
+        var am = theObjects.Notations[i].areaMode;
+        var ax = theObjects.Notations[i].anchorX;
+        var ay = theObjects.Notations[i].anchorY;
+        var ex = theObjects.Notations[i].extentX;
+        var ey = theObjects.Notations[i].extentY;
+        var txt = theObjects.Notations[i].text; 
+
+        if (am == 'Ellipse')
+        {
+            draw_ellipse(ax,ay,ex,ey,pic,context);
+        } // end IF ellipse
+        else if (am == 'Polygon' || am == 'Freehand')
+        {
+            draw_polygon(theObjects.Notations[i].pointList,context);
+        } // end IF polygon or freehand
+        else if (am == 'Rectangle')
+        {
+            draw_rectangle(ax,ay,ex,ey,context)
+        } // end IF rectangle
+    } // end FOR area displays
+
+    // now we do the text display on top of the area indications:
+    for (var i=0; i&lt;arrayLength; i++)
+    {
+        var am = theObjects.Notations[i].areaMode;
+        var ax = theObjects.Notations[i].anchorX;
+        var ay = theObjects.Notations[i].anchorY;
+        var ex = theObjects.Notations[i].extentX;
+        var ey = theObjects.Notations[i].extentY;
+        var txt = theObjects.Notations[i].text; 
+        var opa= theObjects.Notations[i].opacity;
+        draw_text(ax,ay,ex,ey,pic,am,txt,context,fh,opa);
+      } // end FOR text displays
+
+} // end show_image_notes() function
+&lt;/script&gt;
+</pre>
+
+<p style="margin-left: 0;">Lastly, (and just for reference, <span style="font-weight: bold;">iToolBox</span> builds this information, so you need not worry about it) here's the content of the <a target="_blank" href="glosspage.html#6a736f6e"><span style="color: #884422;">JSON</span></a> file, <span style="color:#006600;"><span style="font-weight: bold;"><tt>ben_airport.json</tt></span></span>:</p>
+
+
+<pre style="overflow: auto; padding-top: .5em; padding-bottom: .5em; padding-left: 2em; color: #00ff00; background: #000000;"><span id="putjsonhere"></span><script type="text/javascript">fetch('gallery/ben_airport.json')
+.then(response => response.text())
+.then(text => document.getElementById('putjsonhere').innerHTML = text)
+</script></pre>
+
+                          <div style="
+       clear: both;
+       width: 75%;
+border-style: solid;
+  background: #ffffff;
+  text-align: center;
+     padding: .5em;
+      margin: auto;
+  margin-top: 1em;
+">
+<span style="font-style: italic;">Keyboard Navigation</span>
+<hr width="75%">
+<span class="ckey">,</span> Previous Page
+<span class="ckey">.</span> Next Page
+<span class="ckey">t</span> TOC
+<span class="ckey">i</span> Index
+<span class="ckey">o</span> Operators
+<span class="ckey">g</span> Glossary
+</div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="glossage.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="intro.html">Next</a>&nbsp;</td></tr></table></div>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> uses <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
+               <center><span style="font-weight: bold;">iToolBox</span> 1.13</center>
+           </div>
+</div>
+<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
+
+        </div>
+
+    </BODY>
+</HTML>
+

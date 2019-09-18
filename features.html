@@ -1,0 +1,466 @@
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML LANG="en">
+<HEAD>
+<TITLE>iToolBox 2.27 Features</TITLE>
+<script src="mousetrap.js" type="text/javascript"></script>
+<script type="text/javascript">
+Mousetrap.bind(",", onLeft_keyDown,  "keydown");
+Mousetrap.bind(".", onRight_keyDown, "keydown");
+Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("t", onToc_keyDown,   "keydown");
+Mousetrap.bind("o", onOi_keyDown,   "keydown");
+Mousetrap.bind("g", onGi_keyDown,   "keydown");
+function onLeft_keyDown()  { window.location.href = "intro.html"; }
+function onRight_keyDown() { window.location.href = "conventions.html"; }
+function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onToc_keyDown()   { window.location.href = "tocpage.html"; }
+function onOi_keyDown()   { window.location.href = "operators.html"; }
+function onGi_keyDown()   { window.location.href = "glosspage.html"; }
+</script><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+
+
+<STYLE TYPE="text/css">
+.backtrail {
+margin-top: 30px;
+margin-left: 0px;
+margin-bottom: 30px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: transparent;
+background: url(/styles/transpurple.png);
+color: #f0f0f0;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+font-size: medium;
+width: 100%;
+clear: both;
+text-align: left;
+overflow: auto;
+}
+.backtrail--full {
+border-right: 1px solid black;
+border-left: 1px solid black;
+}
+</STYLE>
+
+<style type="text/css">
+.cbut {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #000000;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+
+<style type="text/css">
+span#leftmouse
+{
+border: 1px solid #000000;
+border-radius: 5px;
+width: 60px;
+background: #ffffff;
+padding-left: 2px;
+padding-right: 2px;
+color: #000000; 
+}
+
+span#leftmouseb
+{    border: 1px solid #000000;
+border-top-left-radius: 5px;
+width: 15px;
+height: 33%;
+float: left;
+background: #ffffff;
+padding-left: 0px;
+padding-right: 0px;
+color: #000000; 
+}
+
+span.myMouse {
+    display:inline-block;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding:0px 0px 0;
+    background: #fff;
+    border-radius: 6px;
+    width: 14px;
+    height: 20px;
+    font-size:10px;
+    line-height: 125%;
+    font-family:monospace;
+    text-align:center;
+}
+
+span.myMouse:before {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: left;
+    border-top-left-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.myMouse:after {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: right;
+    border-top-right-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.leftbutton:before {background:#bbbbbb;}
+span.rightbutton:after {background:#bbbbbb;}
+</style>
+
+<style type="text/css">
+.cchk {
+      display: inline-block;
+  white-space: nowrap;
+border-radius: 5px;
+height: 1em;
+width: 1em;
+       border: .1em solid #000000;
+ border-color: #000000;
+   background: #FFFFFF; 
+text-align: center;
+        color: #000000;
+}
+
+.cbak {
+       display: inline-block;
+   white-space: nowrap;
+    background: #eeeeee; 
+  padding-left: .5em;
+ padding-right: .5em;
+    margin-top: 1px;
+ margin-bottom: 1px;
+         color: #000000;
+}
+</style>
+<style type="text/css">
+.ckey {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+min-width: 1em;
+text-align:center;
+ border-color: #AAAAAA;
+   background: #000000; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #ffffff;
+}</style>
+<style type="text/css">
+.wckey {
+      display: inline-block;
+  white-space: nowrap;
+min-width: 1em;
+text-align:center;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #AAAAAA;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+<style type="text/css">
+.urlImg {
+width:hY#n_K+fRsiwidth6/tt@8f*d0!!rfpx;
+height:hY#n_K+fRsiheight6/tt@8f*d0!!rfpx;
+display:block;
+background-repeat: no-repeat;
+background-image: url('/itdoc/pics/hY#n_K+fRsimage26/tt@8f*d0!!rf');
+}
+.urlImg:hover {
+background-image: url('/itdoc/pics/hY#n_K+fRsimage16/tt@8f*d0!!rf');
+}
+</style>
+
+
+<style type="text/css">
+a:link {
+    color: #0000FF;
+}
+a:visited {
+    color: #880088;
+}
+</style>
+
+</HEAD>
+<BODY  style="color: #000000; background-color: #FFFFFF;">
+
+        <div style="overflow: auto; color: #000000; margin: 
+            20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
+<br>
+
+          <div style="width: 100%; float: left; margin-right: -170px;">
+<div style="border:0; margin-right: 170px;">
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="intro.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="conventions.html">Next</a>&nbsp;</td></tr></table></div>
+               <a name="ixref6"></a><a name="tocref2"></a><h1>2 &#32;-&#32;Itoolbox 2.27 Features</h1>
+
+<ul>
+<li>
+Easy to use &mdash; most operations can be learned in minutes</li>
+<li>
+
+<a href="operators.html">75 image operators</a>
+<ul>
+<li>
+Operators that modify the image can be <a href="opscript.html">scripted</a> to create combined operations</li>
+<li>
+User-custom hotkey access to any combination of the 75 operators</li>
+<li>
+Powerful and creativity-enhancing <a href="opbrushstroke.html">brush stroking capabilties</a>
+</li>
+</ul>
+</li>
+<li>
+
+Many <a href="command.html">immediate commands</a> such as clone, scale, extend, enlarge, print, zoom, juxtapose, etc.</li>
+<li>
+<a href="appendixa.html">Reads 50 image file types</a>, many of which have numerous variants
+<ul>
+<li>
+<span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span>, <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span>, etc.</li>
+<li>
+<a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> camera files from <a href="appendixa.html">many cameras</a></li>
+<li>
+Powerful new fully open file formats with useful new capabilities
+<ul>
+<li>
+<span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></span></li>
+<li>
+<span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></span>
+</li>
+</ul>
+</li>
+<li>
+Area notation(s) support for image galleries
+<ul>
+<li>
+Rectangular regions</li>
+<li>
+Polygonal regions</li>
+<li>
+Elliptical regions</li>
+<li>
+Freehand regions</li>
+<li>
+Independently variable opacity text backdrops</li>
+<li>
+<a target="_blank" href="glosspage.html#6a736f6e"><span style="color: #884422;">JSON</span></a> export for gallery software</li>
+<li>
+<a target="_blank" href="glosspage.html#6a617661736372697074"><span style="color: #884422;">Javascript</span></a> gallery demo code <a target="_blank" href="gallery.html">included</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Layered image capability
+<ul>
+<li>
+Comprehensive set of 54 <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> <a href="layerblendmodes.html">blend modes</a></li>
+<li>
+Image stacking support
+<ul>
+<li>
+Translation</li>
+<li>
+Rotation
+<ul>
+<li>
+User settable-center point</li>
+<li>
+High precision</li>
+</ul>
+</li>
+<li>
+Average stacking</li>
+<li>
+Median stacking
+</li>
+</ul>
+</li>
+<li>
+Warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">Layer</span></a>s &mdash; 13 geometric <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> effects</li>
+<li>
+<a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">Layer</span></a> effects &mdash; glow, emboss, shadow, etc.</li>
+<li>
+<a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">Master</span></a> / <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> system provides flat result at all times</li>
+<li>
+Localstack and lockstep provide for grouping <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s</li>
+</ul>
+</li>
+<li>
+Flexible image views
+<ul>
+<li>
+Works well with multiple monitors</li>
+<li>
+Multiple views per image</li>
+<li>
+Independent zoom levels and pan settings per view</li>
+<li>
+Aspect locking and unlocking</li>
+<li>
+Scale/create new image to view size</li>
+<li>
+Rulers
+<ul>
+<li>
+Pixels</li>
+<li>
+Inches</li>
+<li>
+Centimeters
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Consistent user interface: learn one thing, learn many</li>
+<li>
+Effect previews for image operations
+<ul>
+<li>
+One-button before/after comparisons</li>
+<li>
+Thumbnail</li>
+<li>
+1x region</li>
+<li>
+2x region</li>
+</ul>
+</li>
+<li>
+Powerful area selection and related tool mechanisms
+<ul>
+<li>
+Modal and non-Modal area selection modes</li>
+<li>
+In non-modal mode, allows for area addition and subtraction</li>
+<li>
+Hot re-anchoring for ellipses, rectangles and p-shapes</li>
+<li>
+Hot polygon and spline point move, delete, add</li>
+<li>
+Freehand, polygon, spline, p-shape, rectangle, ellipse, entire image, text, wand, numeric rectangle, complement, open figure, filled figure, magnify</li>
+<li>
+Resolution-independent, cross-image &quot;apply again&quot;</li>
+<li>
+Antialiasing</li>
+<li>
+Blending</li>
+<li>
+Brush-stroking</li>
+<li>
+Many types of guides: rule of thirds, golden spiral, aspect, etc.</li>
+<li>
+Customizable area toolbox icons</li>
+</ul>
+</li>
+<li>
+Meta information capabilties
+<ul>
+<li>
+Copyright</li>
+<li>
+Author</li>
+<li>
+Annotation</li>
+<li>
+<a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a></li>
+<li>
+Notation(s) &mdash; <span style="font-style: italic;">great for image galleries</span></li>
+<li>
+Create and modify times</li>
+<li>
+Color space utilization</li>
+<li>
+Histograms</li>
+</ul>
+</li>
+<li>
+Extensive keyboard and mouse command support</li>
+<li>
+<a target="_blank" href="glosspage.html#726762"><span style="color: #884422;">RGB</span></a>, <a target="_blank" href="glosspage.html#687376"><span style="color: #884422;">HSV</span></a>, <a target="_blank" href="glosspage.html#797262"><span style="color: #884422;">YRB</span></a>, <a target="_blank" href="glosspage.html#636d79"><span style="color: #884422;">CMY</span></a> and <a target="_blank" href="glosspage.html#636d796b"><span style="color: #884422;">CMYK</span></a> color separations</li>
+<li>
+Image printing</li>
+<li>
+Generates color-reduced <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> A:B comparison animations of like-sized images</li>
+<li>
+Powerful color reduction to 256 or fewer colors on single images
+<ul>
+<li>Can save color reduced images as <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a></li>
+<li>
+Can save the resulting palettes as <a target="_blank" href="glosspage.html#6a736f6e"><span style="color: #884422;">JSON</span></a></li>
+</ul>
+</li>
+<li>
+Copy and paste via OS clipboard</li>
+<li>
+Drag-and-drop loading of images</li>
+<li>
+Undo and redo
+</li>
+</ul>
+
+                          <div style="
+       clear: both;
+       width: 75%;
+border-style: solid;
+  background: #ffffff;
+  text-align: center;
+     padding: .5em;
+      margin: auto;
+  margin-top: 1em;
+">
+<span style="font-style: italic;">Keyboard Navigation</span>
+<hr width="75%">
+<span class="ckey">,</span> Previous Page
+<span class="ckey">.</span> Next Page
+<span class="ckey">t</span> TOC
+<span class="ckey">i</span> Index
+<span class="ckey">o</span> Operators
+<span class="ckey">g</span> Glossary
+</div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="intro.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="conventions.html">Next</a>&nbsp;</td></tr></table></div>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.27</center>
+           </div>
+</div>
+<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
+
+        </div>
+
+    </BODY>
+</HTML>
+

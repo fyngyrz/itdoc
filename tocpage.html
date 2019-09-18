@@ -1,0 +1,663 @@
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML LANG="en">
+<HEAD>
+<TITLE>iToolBox 2.27 User's Manual</TITLE>
+<script src="mousetrap.js" type="text/javascript"></script>
+<script type="text/javascript">
+Mousetrap.bind(",", onLeft_keyDown,  "keydown");
+Mousetrap.bind(".", onRight_keyDown, "keydown");
+Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("t", onToc_keyDown,   "keydown");
+Mousetrap.bind("o", onOi_keyDown,   "keydown");
+Mousetrap.bind("g", onGi_keyDown,   "keydown");
+function onLeft_keyDown()  { window.location.href = "indexpage.html"; }
+function onRight_keyDown() { window.location.href = "intro.html"; }
+function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onToc_keyDown()   { window.location.href = "tocpage.html"; }
+function onOi_keyDown()   { window.location.href = "operators.html"; }
+function onGi_keyDown()   { window.location.href = "glosspage.html"; }
+</script><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+
+
+<STYLE TYPE="text/css">
+.backtrail {
+margin-top: 30px;
+margin-left: 0px;
+margin-bottom: 30px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: transparent;
+background: url(/styles/transpurple.png);
+color: #f0f0f0;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+font-size: medium;
+width: 100%;
+clear: both;
+text-align: left;
+overflow: auto;
+}
+.backtrail--full {
+border-right: 1px solid black;
+border-left: 1px solid black;
+}
+</STYLE>
+
+<style type="text/css">
+.cbut {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #000000;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+
+<style type="text/css">
+span#leftmouse
+{
+border: 1px solid #000000;
+border-radius: 5px;
+width: 60px;
+background: #ffffff;
+padding-left: 2px;
+padding-right: 2px;
+color: #000000; 
+}
+
+span#leftmouseb
+{    border: 1px solid #000000;
+border-top-left-radius: 5px;
+width: 15px;
+height: 33%;
+float: left;
+background: #ffffff;
+padding-left: 0px;
+padding-right: 0px;
+color: #000000; 
+}
+
+span.myMouse {
+    display:inline-block;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding:0px 0px 0;
+    background: #fff;
+    border-radius: 6px;
+    width: 14px;
+    height: 20px;
+    font-size:10px;
+    line-height: 125%;
+    font-family:monospace;
+    text-align:center;
+}
+
+span.myMouse:before {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: left;
+    border-top-left-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.myMouse:after {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: right;
+    border-top-right-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.leftbutton:before {background:#bbbbbb;}
+span.rightbutton:after {background:#bbbbbb;}
+</style>
+
+<style type="text/css">
+.cchk {
+      display: inline-block;
+  white-space: nowrap;
+border-radius: 5px;
+height: 1em;
+width: 1em;
+       border: .1em solid #000000;
+ border-color: #000000;
+   background: #FFFFFF; 
+text-align: center;
+        color: #000000;
+}
+
+.cbak {
+       display: inline-block;
+   white-space: nowrap;
+    background: #eeeeee; 
+  padding-left: .5em;
+ padding-right: .5em;
+    margin-top: 1px;
+ margin-bottom: 1px;
+         color: #000000;
+}
+</style>
+<style type="text/css">
+.ckey {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+min-width: 1em;
+text-align:center;
+ border-color: #AAAAAA;
+   background: #000000; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #ffffff;
+}</style>
+<style type="text/css">
+.wckey {
+      display: inline-block;
+  white-space: nowrap;
+min-width: 1em;
+text-align:center;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #AAAAAA;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+<style type="text/css">
+.urlImg {
+width:hY#n_K+fRsiwidth6/tt@8f*d0!!rfpx;
+height:hY#n_K+fRsiheight6/tt@8f*d0!!rfpx;
+display:block;
+background-repeat: no-repeat;
+background-image: url('/itdoc/pics/hY#n_K+fRsimage26/tt@8f*d0!!rf');
+}
+.urlImg:hover {
+background-image: url('/itdoc/pics/hY#n_K+fRsimage16/tt@8f*d0!!rf');
+}
+</style>
+
+
+<style type="text/css">
+a:link {
+    color: #0000FF;
+}
+a:visited {
+    color: #880088;
+}
+</style>
+
+</HEAD>
+<BODY  style="color: #000000; background-color: #FFFFFF;">
+
+        <div style="overflow: auto; color: #000000; margin: 
+            20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
+<br>
+
+          <div style="width: 100%; float: left; margin-right: -170px;">
+<div style="border:0; margin-right: 170px;">
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="indexpage.html">Prev</a></td><td align="center"><span style="font-style: italic;">Table of Contents</span> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="intro.html">Next</a>&nbsp;</td></tr></table></div>
+               <center><h1>iToolBox 2.27 User's Manual</h1></center>
+<center><h1>Table of Contents</h1></center><tt>&nbsp;&nbsp;</tt><a href="intro.html#tocref1">1&#32;-&#32;Introduction</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="intro.html#tocref1.1">1.1&#32;-&#32;What Is This?</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="intro.html#tocref1.2">1.2&#32;-&#32;Where Can I Get It?</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="intro.html#tocref1.3">1.3&#32;-&#32;How Does This Application Benefit Its Users?</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="intro.html#tocref1.4">1.4&#32;-&#32;System Requirements</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="features.html#tocref2">2&#32;-&#32;Itoolbox 2.27 Features</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="conventions.html#tocref3">3&#32;-&#32;Conventions Used in this Document</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="imagetypes.html#tocref4">4&#32;-&#32;Image Roles</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5">5&#32;-&#32;Getting Started</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.1">5.1&#32;-&#32;First Steps</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.2">5.2&#32;-&#32;Some Tips</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.2.1">5.2.1&#32;-&#32;The Basics Are Very Easy</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.2.2">5.2.2&#32;-&#32;Context Matters</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.2.3">5.2.3&#32;-&#32;Resizing Image Views</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.2.4">5.2.4&#32;-&#32;Key Commands Are Mnemonically Associated</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.2.5">5.2.5&#32;-&#32;Hot Repositioning Is... Hot!</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.2.6">5.2.6&#32;-&#32;The Polygon Tool Offers Hot Point Editing</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.2.7">5.2.7&#32;-&#32;Custom or Standard File and Color Dialogs</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gettingstarted.html#tocref5.2.8">5.2.8&#32;-&#32;There Are Three Primary Image Types</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6">6&#32;-&#32;The Keyboard</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1">6.1&#32;-&#32;Keystrokes in the Action Image Window</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.1">6.1.1&#32;-&#32;Help Window</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.2">6.1.2&#32;-&#32;Cancel Area Selection in Progress</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.3">6.1.3&#32;-&#32;Panning the Image Window</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.4">6.1.4&#32;-&#32;Area Tool Selection</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.5">6.1.5&#32;-&#32;View Window Sizes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.6">6.1.6&#32;-&#32;Select All and Operate</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.7">6.1.7&#32;-&#32;Re-select and Operate</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.8">6.1.8&#32;-&#32;Antialiasing Toggle for Current Area Tool</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.9">6.1.9&#32;-&#32;Area Blending</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.10">6.1.10&#32;-&#32;Assigning an Image as the Brush</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.11">6.1.11&#32;-&#32;Clone Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.12">6.1.12&#32;-&#32;Clone Image at View Size</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.13">6.1.13&#32;-&#32;Copy Image to Clipboard</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.14">6.1.14&#32;-&#32;Delete (clear) the Current Mask (for Non-modal Selections)</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.15">6.1.15&#32;-&#32;Enlarge / Reduce Image to Duplicate</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.16">6.1.16&#32;-&#32;Restoring an Image to Its Original Clipped-from Location</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.17">6.1.17&#32;-&#32;Placing a Viewable Grid Around Each Pixel</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.18">6.1.18&#32;-&#32;Changing the Grid Color</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.19">6.1.19&#32;-&#32;Operator Hotkeys</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.20">6.1.20&#32;-&#32;Opening the Image Information Window</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.21">6.1.21&#32;-&#32;Juxtaposing Images for Image-to-image Comparisons</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.22">6.1.22&#32;-&#32;Opening the Keyboard Command Palette</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.23">6.1.23&#32;-&#32;Work with/as a Layered Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.24">6.1.24&#32;-&#32;Controlling the Rulers</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.25">6.1.25&#32;-&#32;Toggle Mask With Target Alpha</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.26">6.1.26&#32;-&#32;Next and Previous Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.27">6.1.27&#32;-&#32;Set Origin Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.28">6.1.28&#32;-&#32;Operate (for Non-modal Selections)</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.29">6.1.29&#32;-&#32;Print the Action Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.30">6.1.30&#32;-&#32;Quarter Turn the Action Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.31">6.1.31&#32;-&#32;Redo (reverse an Undo)</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.32">6.1.32&#32;-&#32;Rename an Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.33">6.1.33&#32;-&#32;Save an Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.34">6.1.34&#32;-&#32;Text Generation</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.35">6.1.35&#32;-&#32;Undo Changes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.36">6.1.36&#32;-&#32;Open Another View on an Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.37">6.1.37&#32;-&#32;Paste the Clipboard Into a New Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.38">6.1.38&#32;-&#32;Change Color of Non-modal Selections</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.39">6.1.39&#32;-&#32;Extend Image Dimensions</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.40">6.1.40&#32;-&#32;Lock / Unlock Y-axis</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.40.1">6.1.40.1&#32;-&#32;Addressing Common Aspect Ratio Problems</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.1.41">6.1.41&#32;-&#32;Zooming in and Out</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.2">6.2&#32;-&#32;Keystrokes in the Operator Dialog</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.3">6.3&#32;-&#32;Keystrokes in the Layer Dialog</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="keyboard.html#tocref6.4">6.4&#32;-&#32;Keystrokes in the Measure Dialog</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="themenus.html#tocref7">7&#32;-&#32;Application Menus</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.1">7.1&#32;-&#32;iToolBox Menu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.1.1">7.1.1&#32;-&#32;About Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.1.2">7.1.2&#32;-&#32;Preferences... Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2">7.2&#32;-&#32;File Menu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.1">7.2.1&#32;-&#32;New Image Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.2">7.2.2&#32;-&#32;Load Image Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.3">7.2.3&#32;-&#32;Load Recent Image Submenu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.3.1">7.2.3.1&#32;-&#32;Clear Recent Files Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.4">7.2.4&#32;-&#32;Load Recent Path Submenu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.5">7.2.5&#32;-&#32;Load P-shape</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.5.0.1">7.2.5.0.1&#32;-&#32;Clear Recent Paths Submenu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.6">7.2.6&#32;-&#32;Save Image Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.7">7.2.7&#32;-&#32;Save Image (atomic) Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.8">7.2.8&#32;-&#32;Export A:B GIF Animation</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.9">7.2.9&#32;-&#32;Save P-shape</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.10">7.2.10&#32;-&#32;Print</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.2.11">7.2.11&#32;-&#32;Memory Report</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.3">7.3&#32;-&#32;Edit Menu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.3.1">7.3.1&#32;-&#32;Copy (to Clipboard) Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.3.2">7.3.2&#32;-&#32;Paste (from Clipboard) Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.3.3">7.3.3&#32;-&#32;Undo Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.3.4">7.3.4&#32;-&#32;Redo Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.3.5">7.3.5&#32;-&#32;Set Undo Levels</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.3.6">7.3.6&#32;-&#32;Clear All Undos and Redos Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.4">7.4&#32;-&#32;Selections Menu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.4.1">7.4.1&#32;-&#32;Delete Selections Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.4.2">7.4.2&#32;-&#32;Antialias Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.4.3">7.4.3&#32;-&#32;Blend Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.4.4">7.4.4&#32;-&#32;Next Selection Color Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.5">7.5&#32;-&#32;Commands Menu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.5.1">7.5.1&#32;-&#32;Clone Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.5.2">7.5.2&#32;-&#32;Clone Scaled to View Size Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.5.3">7.5.3&#32;-&#32;Enlarge / Reduce Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.5.4">7.5.4&#32;-&#32;Extend Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.5.5">7.5.5&#32;-&#32;Quarter Turn Cw Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.5.6">7.5.6&#32;-&#32;Restore Crop to Origin Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.5.7">7.5.7&#32;-&#32;Key Command Palette Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6">7.6&#32;-&#32;Views Menu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.1">7.6.1&#32;-&#32;View Size Submenu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.2">7.6.2&#32;-&#32;Zoom Reset Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.3">7.6.3&#32;-&#32;Zoom in Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.4">7.6.4&#32;-&#32;Zoom Out Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.5">7.6.5&#32;-&#32;Grid Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.6">7.6.6&#32;-&#32;Grid Color Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.7">7.6.7&#32;-&#32;Juxtapose Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.8">7.6.8&#32;-&#32;Cascade Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.9">7.6.9&#32;-&#32;Tile Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.10">7.6.10&#32;-&#32;Open Another View Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.11">7.6.11&#32;-&#32;Y-axis Lock Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.12">7.6.12&#32;-&#32;Alter Aspect on Y Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.13">7.6.13&#32;-&#32;Alter Aspect on X Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.14">7.6.14&#32;-&#32;Alter Aspect on Y by 2 Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.6.15">7.6.15&#32;-&#32;Alter Aspect on X by 2 Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7">7.7&#32;-&#32;Images Menu</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.1">7.7.1&#32;-&#32;Close All Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.2">7.7.2&#32;-&#32;Next Image Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.3">7.7.3&#32;-&#32;Previous Image Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.4">7.7.4&#32;-&#32;Assign as Brush Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.5">7.7.5&#32;-&#32;Assign as Origin Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.6">7.7.6&#32;-&#32;Inspect Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.7">7.7.7&#32;-&#32;Measure Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.8">7.7.8&#32;-&#32;Rename Menu Item</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.9">7.7.9&#32;-&#32;Layers: Promote or Open</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="themenus.html#tocref7.7.10">7.7.10&#32;-&#32;Individual Image Menu Items</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="stepbystepdialogs.html#tocref8">8&#32;-&#32;Application Views and Dialogs</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="views.html#tocref9">9&#32;-&#32;Image Views</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="areatools.html#tocref10">10&#32;-&#32;Area Tools Dialog</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.1">10.1&#32;-&#32;Modality</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.1.1">10.1.1&#32;-&#32;Modal Selections</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.1.2">10.1.2&#32;-&#32;Non-Modal Selections</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2">10.2&#32;-&#32;Area Selects</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.1">10.2.0.1&#32;-&#32;Entire Image</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.2">10.2.0.2&#32;-&#32;Rectangle</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.3">10.2.0.3&#32;-&#32;Numeric Rectangle</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.4">10.2.0.4&#32;-&#32;Ellipse</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.5">10.2.0.5&#32;-&#32;Polygon</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.6">10.2.0.6&#32;-&#32;Spline</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.7">10.2.0.7&#32;-&#32;P-shape</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.8">10.2.0.8&#32;-&#32;Pencil</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.9">10.2.0.9&#32;-&#32;Text</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.10">10.2.0.10&#32;-&#32;Magic Wand</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.11">10.2.0.11&#32;-&#32;Redo</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.2.0.12">10.2.0.12&#32;-&#32;Magnify</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.3">10.3&#32;-&#32;Selection Modifiers</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.3.0.1">10.3.0.1&#32;-&#32;Complement</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.3.0.2">10.3.0.2&#32;-&#32;Filled Figure</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.3.0.3">10.3.0.3&#32;-&#32;Open Figure</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.4">10.4&#32;-&#32;Non-selects</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.4.1">10.4.1&#32;-&#32;Text Tool</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.4.2">10.4.2&#32;-&#32;Eyedropper</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.4.3">10.4.3&#32;-&#32;Preview Eyepoint</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.4.4">10.4.4&#32;-&#32;Magnify</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.4.5">10.4.5&#32;-&#32;Status Area</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="areatools.html#tocref10.5">10.5&#32;-&#32;Customize the Tool Icons</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="operators.html#tocref11">11&#32;-&#32;Operators Dialog</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="operators.html#tocref11.1">11.1&#32;-&#32;List of Compose Operators</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="operators.html#tocref11.2">11.2&#32;-&#32;List of Warp Operators</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="operators.html#tocref11.3">11.3&#32;-&#32;List of All Operators</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opalphamodify.html#tocref11.4">11.4&#32;-&#32;Operator Details</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opalphamodify.html#tocref11.4.1">11.4.1&#32;-&#32;Alpha Modify</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opannotation.html#tocref11.4.2">11.4.2&#32;-&#32;Annotation</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opauthor.html#tocref11.4.3">11.4.3&#32;-&#32;Author</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opbend.html#tocref11.4.4">11.4.4&#32;-&#32;Bend - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opbrushstroke.html#tocref11.4.5">11.4.5&#32;-&#32;Brushstroke</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opbrushstroke.html#tocref11.4.5.1">11.4.5.1&#32;-&#32;Blend</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opbrushstroke.html#tocref11.4.5.2">11.4.5.2&#32;-&#32;Scaling</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opbrushstroke.html#tocref11.4.5.3">11.4.5.3&#32;-&#32;Interval</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opbrushstroke.html#tocref11.4.5.4">11.4.5.4&#32;-&#32;Displacement</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opbrushstroke.html#tocref11.4.5.5">11.4.5.5&#32;-&#32;Rotation</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opbrushstroke.html#tocref11.4.5.6">11.4.5.6&#32;-&#32;Shadow</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opbrushstroke.html#tocref11.4.5.7">11.4.5.7&#32;-&#32;Image Barrels</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opburn.html#tocref11.4.6">11.4.6&#32;-&#32;Burn</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcamera.html#tocref11.4.7">11.4.7&#32;-&#32;Camera</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcaricature.html#tocref11.4.8">11.4.8&#32;-&#32;Caricature - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opceiling.html#tocref11.4.9">11.4.9&#32;-&#32;Ceiling</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcenter.html#tocref11.4.10">11.4.10&#32;-&#32;Center</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opchromanoise.html#tocref11.4.11">11.4.11&#32;-&#32;Chroma Noise Reduction</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcolorfill.html#tocref11.4.12">11.4.12&#32;-&#32;Color Fill</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcolorize.html#tocref11.4.13">11.4.13&#32;-&#32;Colorize</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcolormap.html#tocref11.4.14">11.4.14&#32;-&#32;Color Map</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcreduce.html#tocref11.4.15">11.4.15&#32;-&#32;Color Reduction</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcreduce.html#tocref11.4.15.1">11.4.15.1&#32;-&#32;Examples</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcontrastbrightness.html#tocref11.4.16">11.4.16&#32;-&#32;Contrast and Brightness</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="oploccontrast.html#tocref11.4.17">11.4.17&#32;-&#32;Local Contrast</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="ophisteq.html#tocref11.4.18">11.4.18&#32;-&#32;Histogram Equalization</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcopyright.html#tocref11.4.19">11.4.19&#32;-&#32;Copyright</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcrop.html#tocref11.4.20">11.4.20&#32;-&#32;Crop</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opcurves.html#tocref11.4.21">11.4.21&#32;-&#32;Curves</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opdarken.html#tocref11.4.22">11.4.22&#32;-&#32;Darken</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opdarknessgain.html#tocref11.4.23">11.4.23&#32;-&#32;Darkness Gain</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opdodge.html#tocref11.4.24">11.4.24&#32;-&#32;Dodge</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opdome.html#tocref11.4.25">11.4.25&#32;-&#32;Dome - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opdpi.html#tocref11.4.26">11.4.26&#32;-&#32;DPI</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opedgedetection.html#tocref11.4.27">11.4.27&#32;-&#32;Edge Detection</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opemboss.html#tocref11.4.28">11.4.28&#32;-&#32;Emboss</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opexposure.html#tocref11.4.29">11.4.29&#32;-&#32;Exposure</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opflip.html#tocref11.4.30">11.4.30&#32;-&#32;Flip</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opfloor.html#tocref11.4.31">11.4.31&#32;-&#32;Floor</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opforcedynamic.html#tocref11.4.32">11.4.32&#32;-&#32;Force Dynamic</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opframe.html#tocref11.4.33">11.4.33&#32;-&#32;Frame</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opgamma.html#tocref11.4.34">11.4.34&#32;-&#32;Gamma</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opgaussianblur.html#tocref11.4.35">11.4.35&#32;-&#32;Gaussian Blur</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opgps.html#tocref11.4.36">11.4.36&#32;-&#32;GPS</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="ophorizontalremove.html#tocref11.4.37">11.4.37&#32;-&#32;Horizontal Remove</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="ophue.html#tocref11.4.38">11.4.38&#32;-&#32;Hue</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opkaleidoscope.html#tocref11.4.39">11.4.39&#32;-&#32;Kaleidoscope - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opkeyop.html#tocref11.4.40">11.4.40&#32;-&#32;Key to Colorspace</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opkeystone.html#tocref11.4.41">11.4.41&#32;-&#32;Keystone - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="oplevels.html#tocref11.4.42">11.4.42&#32;-&#32;Levels</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opmaximum.html#tocref11.4.43">11.4.43&#32;-&#32;Maximum</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opmerge.html#tocref11.4.44">11.4.44&#32;-&#32;Merge</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opminimum.html#tocref11.4.45">11.4.45&#32;-&#32;Minimum</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opmirror.html#tocref11.4.46">11.4.46&#32;-&#32;Mirror - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opmonochrome.html#tocref11.4.47">11.4.47&#32;-&#32;Monochrome</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opmonofix.html#tocref11.4.48">11.4.48&#32;-&#32;Monofix</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opnegative.html#tocref11.4.49">11.4.49&#32;-&#32;Negative</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opnotations.html#tocref11.4.50">11.4.50&#32;-&#32;Notations</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opnotations.html#tocref11.4.50.1">11.4.50.1&#32;-&#32;Visibility</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opnotations.html#tocref11.4.50.2">11.4.50.2&#32;-&#32;Notation Storage</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opnotations.html#tocref11.4.50.3">11.4.50.3&#32;-&#32;JSON Output</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="gallery.html#tocref11.4.50.4">11.4.50.4&#32;-&#32;Gallery Example for Developers</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opnotchf.html#tocref11.4.51">11.4.51&#32;-&#32;Notch Filter</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opperspective.html#tocref11.4.52">11.4.52&#32;-&#32;Perspective - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="oppixelize.html#tocref11.4.53">11.4.53&#32;-&#32;Pixelize</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opplace.html#tocref11.4.54">11.4.54&#32;-&#32;Place</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opradwave.html#tocref11.4.55">11.4.55&#32;-&#32;Radial Wave - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="oprandom.html#tocref11.4.56">11.4.56&#32;-&#32;Random</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="oprangefill.html#tocref11.4.57">11.4.57&#32;-&#32;Range Fill</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opremoveisolatedstreaks.html#tocref11.4.58">11.4.58&#32;-&#32;Remove Isolated Streaks</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="oprip.html#tocref11.4.59">11.4.59&#32;-&#32;Remove Isolated Pixels</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="oproll.html#tocref11.4.60">11.4.60&#32;-&#32;Roll - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="oprotate90.html#tocref11.4.61">11.4.61&#32;-&#32;Rotate 90&deg;</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="oprotation.html#tocref11.4.62">11.4.62&#32;-&#32;Rotation - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opsample.html#tocref11.4.63">11.4.63&#32;-&#32;Sample</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opsaturation.html#tocref11.4.64">11.4.64&#32;-&#32;Saturation</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opscript.html#tocref11.4.65">11.4.65&#32;-&#32;Script</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opscript.html#tocref11.4.65.1">11.4.65.1&#32;-&#32;Available Script Commands</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opsharpen.html#tocref11.4.66">11.4.66&#32;-&#32;Sharpen</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opskew.html#tocref11.4.67">11.4.67&#32;-&#32;Skew - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opsoftware.html#tocref11.4.68">11.4.68&#32;-&#32;Software</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opstretch.html#tocref11.4.69">11.4.69&#32;-&#32;Stretch - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opswirl.html#tocref11.4.70">11.4.70&#32;-&#32;Swirl - WARP</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="optime.html#tocref11.4.71">11.4.71&#32;-&#32;Time</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opverticalremove.html#tocref11.4.72">11.4.72&#32;-&#32;Vertical Remove</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opvignette.html#tocref11.4.73">11.4.73&#32;-&#32;Vignette</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opwhitebalance.html#tocref11.4.74">11.4.74&#32;-&#32;White Balance</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opwindowandlevel.html#tocref11.4.75">11.4.75&#32;-&#32;Window &amp; Level</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="opyrbconvert.html#tocref11.4.76">11.4.76&#32;-&#32;YRB Conversion</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="command.html#tocref12">12&#32;-&#32;Command Palette Dialog</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="preferences.html#tocref13">13&#32;-&#32;Preferences Dialog</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.1">13.1&#32;-&#32;Antialiasing</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.2">13.2&#32;-&#32;Grid</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.3">13.3&#32;-&#32;Meta Defaults</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.4">13.4&#32;-&#32;Help</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.5">13.5&#32;-&#32;Set Icons</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.6">13.6&#32;-&#32;Wand Tolerance</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.7">13.7&#32;-&#32;Confirmation</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.8">13.8&#32;-&#32;Miscellaneous</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.9">13.9&#32;-&#32;Set Help Url</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="preferences.html#tocref13.10">13.10&#32;-&#32;Alpha Treatment</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="measure.html#tocref14">14&#32;-&#32;Measure Dialog</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="measure.html#tocref14.1">14.1&#32;-&#32;Moving the Rulers</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="measure.html#tocref14.1.1">14.1.1&#32;-&#32;To the Edges</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="measure.html#tocref14.1.2">14.1.2&#32;-&#32;A Few Pixels at a Time</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="newimage.html#tocref15">15&#32;-&#32;New Image Dialog</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="textgeneration.html#tocref16">16&#32;-&#32;Text Generation Dialog</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="blending.html#tocref17">17&#32;-&#32;Blending Dialog</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="blending.html#tocref17.1">17.1&#32;-&#32;Conical Blending</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="blending.html#tocref17.2">17.2&#32;-&#32;Flat Blending</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="blending.html#tocref17.3">17.3&#32;-&#32;Maximum Axis Blending</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="blending.html#tocref17.4">17.4&#32;-&#32;Sine Blending</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="layersdialog.html#tocref18">18&#32;-&#32;Layers Dialog</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="layersdialog.html#tocref18.1">18.1&#32;-&#32;Interface</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="layersdialog.html#tocref18.2">18.2&#32;-&#32;What Are Layers?</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="layerblendmodes.html#tocref18.3">18.3&#32;-&#32;Layer Blending Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmnormal.html#tocref18.3.1">18.3.1&#32;-&#32;Traditional Blend Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmnormal.html#tocref18.3.1.1">18.3.1.1&#32;-&#32;Normal</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmbehind.html#tocref18.3.1.2">18.3.1.2&#32;-&#32;Behind</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmadd.html#tocref18.3.1.3">18.3.1.3&#32;-&#32;Add</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmaddgrey.html#tocref18.3.1.4">18.3.1.4&#32;-&#32;Add Grey</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmabssub.html#tocref18.3.1.5">18.3.1.5&#32;-&#32;Absolute Subtract</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmsubtract.html#tocref18.3.1.6">18.3.1.6&#32;-&#32;Subtract</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmmultiply.html#tocref18.3.1.7">18.3.1.7&#32;-&#32;Multiply</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmdivide.html#tocref18.3.1.8">18.3.1.8&#32;-&#32;Divide</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmdodge.html#tocref18.3.2">18.3.2&#32;-&#32;Light Blend Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmdodge.html#tocref18.3.2.1">18.3.2.1&#32;-&#32;Dodge</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmburn.html#tocref18.3.2.2">18.3.2.2&#32;-&#32;Burn</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmvivid.html#tocref18.3.2.3">18.3.2.3&#32;-&#32;Vivid</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmscreen.html#tocref18.3.2.4">18.3.2.4&#32;-&#32;Screen</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmoverlay.html#tocref18.3.2.5">18.3.2.5&#32;-&#32;Overlay</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmbrighten.html#tocref18.3.3">18.3.3&#32;-&#32;Priority Blend Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmbrighten.html#tocref18.3.3.1">18.3.3.1&#32;-&#32;Brighten</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmmaximum.html#tocref18.3.3.2">18.3.3.2&#32;-&#32;Maximum</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmdominate.html#tocref18.3.3.3">18.3.3.3&#32;-&#32;Dominate</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmdarken.html#tocref18.3.3.4">18.3.3.4&#32;-&#32;Darken</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmminimum.html#tocref18.3.3.5">18.3.3.5&#32;-&#32;Minimum</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmsubmit.html#tocref18.3.3.6">18.3.3.6&#32;-&#32;Submit</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmbrightness.html#tocref18.3.4">18.3.4&#32;-&#32;Adjustment Blend Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmbrightness.html#tocref18.3.4.1">18.3.4.1&#32;-&#32;Brightness</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmcontrast.html#tocref18.3.4.2">18.3.4.2&#32;-&#32;Contrast</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmdrive.html#tocref18.3.4.3">18.3.4.3&#32;-&#32;Drive</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmtint.html#tocref18.3.4.4">18.3.4.4&#32;-&#32;Tint</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmsaturate.html#tocref18.3.4.5">18.3.4.5&#32;-&#32;Saturate</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmenvalue.html#tocref18.3.4.6">18.3.4.6&#32;-&#32;Envalue</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmaverage.html#tocref18.3.5">18.3.5&#32;-&#32;Blend As Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmaverage.html#tocref18.3.5.1">18.3.5.1&#32;-&#32;Average</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmluma.html#tocref18.3.5.2">18.3.5.2&#32;-&#32;Luma</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmmask.html#tocref18.3.6">18.3.6&#32;-&#32;Masking Blend Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmmask.html#tocref18.3.6.1">18.3.6.1&#32;-&#32;Mask</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lminvertedmask.html#tocref18.3.6.2">18.3.6.2&#32;-&#32;Inverted Mask</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmgreymask.html#tocref18.3.6.3">18.3.6.3&#32;-&#32;Grey Mask</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmplushckey.html#tocref18.3.6.4">18.3.6.4&#32;-&#32;+HCKey</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmminushckey.html#tocref18.3.6.5">18.3.6.5&#32;-&#32;-HCKey</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmred.html#tocref18.3.7">18.3.7&#32;-&#32;Color Separation Blend Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmred.html#tocref18.3.7.1">18.3.7.1&#32;-&#32;Red</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmgreen.html#tocref18.3.7.2">18.3.7.2&#32;-&#32;Green</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmblue.html#tocref18.3.7.3">18.3.7.3&#32;-&#32;Blue</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmhue.html#tocref18.3.7.4">18.3.7.4&#32;-&#32;Hue</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmsaturation.html#tocref18.3.7.5">18.3.7.5&#32;-&#32;Saturation</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmvalue.html#tocref18.3.7.6">18.3.7.6&#32;-&#32;Value</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmh.html#tocref18.3.7.7">18.3.7.7&#32;-&#32;H</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lms.html#tocref18.3.7.8">18.3.7.8&#32;-&#32;S</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmv.html#tocref18.3.7.9">18.3.7.9&#32;-&#32;V</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmcyan.html#tocref18.3.7.10">18.3.7.10&#32;-&#32;Cyan</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmmagenta.html#tocref18.3.7.11">18.3.7.11&#32;-&#32;Magenta</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmyellow.html#tocref18.3.7.12">18.3.7.12&#32;-&#32;Yellow</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmblack.html#tocref18.3.7.13">18.3.7.13&#32;-&#32;Black</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmaveragestack.html#tocref18.3.8">18.3.8&#32;-&#32;Stacking Blend Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmaveragestack.html#tocref18.3.8.1">18.3.8.1&#32;-&#32;Average (Add+Avg) Stack</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmmedian.html#tocref18.3.8.2">18.3.8.2&#32;-&#32;Median Stack</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmwarp.html#tocref18.3.9">18.3.9&#32;-&#32;Geometric Blend Mode</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmwarp.html#tocref18.3.9.1">18.3.9.1&#32;-&#32;Warp</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmand.html#tocref18.3.10">18.3.10&#32;-&#32;Logical Blend Modes</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmand.html#tocref18.3.10.1">18.3.10.1&#32;-&#32;AND</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmnand.html#tocref18.3.10.2">18.3.10.2&#32;-&#32;NAND</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmor.html#tocref18.3.10.3">18.3.10.3&#32;-&#32;OR</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmnor.html#tocref18.3.10.4">18.3.10.4&#32;-&#32;NOR</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmxor.html#tocref18.3.10.5">18.3.10.5&#32;-&#32;XOR</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="lmxnor.html#tocref18.3.10.6">18.3.10.6&#32;-&#32;XNOR</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19">19&#32;-&#32;File Dialog</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.1">19.0.1&#32;-&#32;Parent</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.2">19.0.2&#32;-&#32;Refresh</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.3">19.0.3&#32;-&#32;Assigns</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.4">19.0.4&#32;-&#32;Volumes List</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.5">19.0.5&#32;-&#32;Folders List</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.6">19.0.6&#32;-&#32;Files List</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.7">19.0.7&#32;-&#32;Filename</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.8">19.0.8&#32;-&#32;Path</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.9">19.0.9&#32;-&#32;Filter</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.10">19.0.10&#32;-&#32;Always Confirm Overwrites</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.11">19.0.11&#32;-&#32;Enforce Filter File Extensions</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.12">19.0.12&#32;-&#32;Sort Assigns</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.13">19.0.13&#32;-&#32;Reverse Assigns</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.14">19.0.14&#32;-&#32;Reverse Folders</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.15">19.0.15&#32;-&#32;Reverse Files</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="filedialog.html#tocref19.0.16">19.0.16&#32;-&#32;File List Sorting</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="palettedialog.html#tocref20">20&#32;-&#32;Palette Dialog</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="infodialog.html#tocref21">21&#32;-&#32;Image Information Dialog</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="seticonsdialog.html#tocref22">22&#32;-&#32;Custom Tool Icon Settings Dialog</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="helpdialog.html#tocref23">23&#32;-&#32;Help Dialog</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="draganddrop.html#tocref24">24&#32;-&#32;Drag and Drop</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="startupsequence.html#tocref25">25&#32;-&#32;The Startup Sequence Script</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixa.html#tocref26">26&#32;-&#32;Image File Compatibility</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="appendixa.html#tocref26.1">26.1&#32;-&#32;Image Formats <span style="font-weight: bold;">iToolBox</span> Loads</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="appendixa.html#tocref26.2">26.2&#32;-&#32;File Formats <span style="font-weight: bold;">iToolBox</span> Saves</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixb.html#tocref27">27&#32;-&#32;Atomic File Format</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixc.html#tocref28">28&#32;-&#32;Layered File Format</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixd.html#tocref29">29&#32;-&#32;Palette File Format</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixe.html#tocref30">30&#32;-&#32;JSON Notation File Format</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixe2.html#tocref31">31&#32;-&#32;JSON Curve File Format</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixe3.html#tocref32">32&#32;-&#32;JSON Frame File Format</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixe4.html#tocref33">33&#32;-&#32;JSON P-Shape Format</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixf.html#tocref34">34&#32;-&#32;Opening .elx and .ato files from Finder</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="appendixg.html#tocref35">35&#32;-&#32;Supported Cameras and File Formats</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="EXIF.html#tocref36">36&#32;-&#32;About EXIF</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="SSTV.html#tocref37">37&#32;-&#32;Using iToolBox with SSTV</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="SSTV.html#tocref37.1">37.1&#32;-&#32;Processing Received Images</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="SSTV.html#tocref37.2">37.2&#32;-&#32;Preparing Images for Transmission</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="privacy.html#tocref38">38&#32;-&#32;About Your Privacy</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="privacy.html#tocref38.1">38.1&#32;-&#32;How I Handle Application Usage Data</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="privacy.html#tocref38.2">38.2&#32;-&#32;Clearing Edited Filenames</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="privacy.html#tocref38.3">38.3&#32;-&#32;Contacting Me About Privacy Issues</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="changes.html#tocref39">39&#32;-&#32;Changes List</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="incaseof.html#tocref40">40&#32;-&#32;In Case of Problems</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="credits.html#tocref41">41&#32;-&#32;Credits and Acknowledgments</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="credits.html#tocref41.1">41.1&#32;-&#32;Core Platform</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="credits.html#tocref41.2">41.2&#32;-&#32;Application Code</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="credits.html#tocref41.3">41.3&#32;-&#32;Libraries</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="credits.html#tocref41.4">41.4&#32;-&#32;Art</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="credits.html#tocref41.5">41.5&#32;-&#32;General Kudos and Thumbs-Ups</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="aboutmanual.html#tocref42">42&#32;-&#32;About the Manual</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="aboutmanual.html#tocref42.1">42.1&#32;-&#32;Suggestions for Index, Glossary Entries, Manual Content</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="aboutmanual.html#tocref42.2">42.2&#32;-&#32;Feature Suggestions</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="aboutmanual.html#tocref42.3">42.3&#32;-&#32;Reporting Bugs or Other Problems</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="aboutmanual.html#tocref42.4">42.4&#32;-&#32;Benefits of Online Documentation</a><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="aboutmanual.html#tocref42.4.1">42.4.1&#32;-&#32;And the One Downside...</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="glosspage.html#tocref43">43&#32;-&#32;Glossary</a><br>
+<tt>&nbsp;&nbsp;</tt><a href="indexpage.html#tocref44">44&#32;-&#32;Index</a><br>
+
+
+                          <div style="
+       clear: both;
+       width: 75%;
+border-style: solid;
+  background: #ffffff;
+  text-align: center;
+     padding: .5em;
+      margin: auto;
+  margin-top: 1em;
+">
+<span style="font-style: italic;">Keyboard Navigation</span>
+<hr width="75%">
+<span class="ckey">,</span> Previous Page
+<span class="ckey">.</span> Next Page
+<span class="ckey">t</span> TOC
+<span class="ckey">i</span> Index
+<span class="ckey">o</span> Operators
+<span class="ckey">g</span> Glossary
+</div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="indexpage.html">Prev</a></td><td align="center"><span style="font-style: italic;">Table of Contents</span> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="intro.html">Next</a>&nbsp;</td></tr></table></div>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.27</center>
+           </div>
+</div>
+<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
+
+        </div>
+
+    </BODY>
+</HTML>
+

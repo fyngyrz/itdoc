@@ -1,0 +1,415 @@
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML LANG="en">
+<HEAD>
+<TITLE>File Dialog</TITLE>
+<script src="mousetrap.js" type="text/javascript"></script>
+<script type="text/javascript">
+Mousetrap.bind(",", onLeft_keyDown,  "keydown");
+Mousetrap.bind(".", onRight_keyDown, "keydown");
+Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("t", onToc_keyDown,   "keydown");
+Mousetrap.bind("o", onOi_keyDown,   "keydown");
+Mousetrap.bind("g", onGi_keyDown,   "keydown");
+function onLeft_keyDown()  { window.location.href = "lmxnor.html"; }
+function onRight_keyDown() { window.location.href = "palettedialog.html"; }
+function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onToc_keyDown()   { window.location.href = "tocpage.html"; }
+function onOi_keyDown()   { window.location.href = "operators.html"; }
+function onGi_keyDown()   { window.location.href = "glosspage.html"; }
+</script><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+
+
+<STYLE TYPE="text/css">
+.backtrail {
+margin-top: 30px;
+margin-left: 0px;
+margin-bottom: 30px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: transparent;
+background: url(/styles/transpurple.png);
+color: #f0f0f0;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+font-size: medium;
+width: 100%;
+clear: both;
+text-align: left;
+overflow: auto;
+}
+.backtrail--full {
+border-right: 1px solid black;
+border-left: 1px solid black;
+}
+</STYLE>
+
+<style type="text/css">
+.cbut {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #000000;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+
+<style type="text/css">
+span#leftmouse
+{
+border: 1px solid #000000;
+border-radius: 5px;
+width: 60px;
+background: #ffffff;
+padding-left: 2px;
+padding-right: 2px;
+color: #000000; 
+}
+
+span#leftmouseb
+{    border: 1px solid #000000;
+border-top-left-radius: 5px;
+width: 15px;
+height: 33%;
+float: left;
+background: #ffffff;
+padding-left: 0px;
+padding-right: 0px;
+color: #000000; 
+}
+
+span.myMouse {
+    display:inline-block;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding:0px 0px 0;
+    background: #fff;
+    border-radius: 6px;
+    width: 14px;
+    height: 20px;
+    font-size:10px;
+    line-height: 125%;
+    font-family:monospace;
+    text-align:center;
+}
+
+span.myMouse:before {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: left;
+    border-top-left-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.myMouse:after {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: right;
+    border-top-right-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.leftbutton:before {background:#bbbbbb;}
+span.rightbutton:after {background:#bbbbbb;}
+</style>
+
+<style type="text/css">
+.cchk {
+      display: inline-block;
+  white-space: nowrap;
+border-radius: 5px;
+height: 1em;
+width: 1em;
+       border: .1em solid #000000;
+ border-color: #000000;
+   background: #FFFFFF; 
+text-align: center;
+        color: #000000;
+}
+
+.cbak {
+       display: inline-block;
+   white-space: nowrap;
+    background: #eeeeee; 
+  padding-left: .5em;
+ padding-right: .5em;
+    margin-top: 1px;
+ margin-bottom: 1px;
+         color: #000000;
+}
+</style>
+<style type="text/css">
+.ckey {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+min-width: 1em;
+text-align:center;
+ border-color: #AAAAAA;
+   background: #000000; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #ffffff;
+}</style>
+<style type="text/css">
+.wckey {
+      display: inline-block;
+  white-space: nowrap;
+min-width: 1em;
+text-align:center;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #AAAAAA;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+<style type="text/css">
+.urlImg {
+width:hY#n_K+fRsiwidth6/tt@8f*d0!!rfpx;
+height:hY#n_K+fRsiheight6/tt@8f*d0!!rfpx;
+display:block;
+background-repeat: no-repeat;
+background-image: url('/itdoc/pics/hY#n_K+fRsimage26/tt@8f*d0!!rf');
+}
+.urlImg:hover {
+background-image: url('/itdoc/pics/hY#n_K+fRsimage16/tt@8f*d0!!rf');
+}
+</style>
+
+
+<style type="text/css">
+a:link {
+    color: #0000FF;
+}
+a:visited {
+    color: #880088;
+}
+</style>
+
+</HEAD>
+<BODY  style="color: #000000; background-color: #FFFFFF;">
+
+        <div style="overflow: auto; color: #000000; margin: 
+            20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
+<br>
+
+          <div style="width: 100%; float: left; margin-right: -170px;">
+<div style="border:0; margin-right: 170px;">
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="lmxnor.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="palettedialog.html">Next</a>&nbsp;</td></tr></table></div>
+               <a name="ixref455"></a><h1>19 &#32;-&#32;File Dialog</h1>
+
+<div style="clear: both; text-align: center;"><a name="fgfg231"></a><center><img src="pics/filemanager.png" alt="" title=""></center><br><span style="color: #880088;">The <span style="font-weight: bold;">iToolBox</span> File Manager Dialog</span></div>
+
+<p style="margin-left: 0;"><span style="font-weight: bold;">iToolBox</span> offers a custom file dialog that is better at handling files in some ways than the native file dialog.</p>
+
+<p style="margin-left: 0;">The advantages of the custom file dialog include:</p>
+
+<ul>
+<li>
+The custom dialog is <span style="font-style: italic;">much</span> faster than the native <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) file dialog</li>
+<li>
+Hiding (not just &quot;dimming&quot;) files you don't need to see with the <span style="font-weight: bold;">Filter</span> control</li>
+<li>
+Listing folders and <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s separately from files so they don't clog up the file list</li>
+<li>
+The ability to enter paths and filenames from the keyboard</li>
+<li>
+The ability to define single-click custom locations <a href="filedialog.html#assigns">assigns</a> in the filesystem</li>
+<li>
+The ability to easily navigate the entire filesystem, including the LAN</li>
+</ul>
+
+
+<a name="ixref456"></a><a name="tocref19.0.1"></a><h3>19.0.1 &#32;-&#32;Parent</h3>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">&lt;--&nbsp;Parent</span></span> takes you one step back up the folder tree in the filesystem. You can go all the way to the root of the filesystem this way.</p>
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDDDFF;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><span style="font-weight: bold;">Note:</span> If the current path ends with a <span style="color:#006600;"><span style="font-weight: bold;"><tt>/</tt></span></span>, then the first press of <span style="white-space:nowrap;"><span class="cbut">&lt;--&nbsp;Parent</span></span> simply removes the <span style="color:#006600;"><span style="font-weight: bold;"><tt>/</tt></span></span></div>
+
+
+<a name="ixref457"></a><a name="tocref19.0.2"></a><h3>19.0.2 &#32;-&#32;Refresh</h3>
+
+<p style="margin-left: 0;">If you know (or surmise) that the filesystem has changed &mdash; new files, fewer files, new or removed folders and/or <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s &mdash; then you can press <span style="white-space:nowrap;"><span class="cbut">Refresh</span></span> and the dialog will refresh with the current state of the filesystem.</p>
+
+<a name="assigns"></a>
+<a name="ixref458"></a><a name="tocref19.0.3"></a><h3>19.0.3 &#32;-&#32;Assigns</h3>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Assigns</span></span> allows you to create virtual filesystem roots that will appear in the <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s list. This provides a means to set working folders you can get to instantly:</p>
+
+<div style="clear: both; text-align: center;"><a name="fgfg232"></a><center><img src="pics/assignsdialog.png" alt="" title=""></center><br><span style="color: #880088;">The assigns dialog</span></div>
+
+<p style="margin-left: 0;">An <a href="filedialog.html#assigns">assign</a> consists of two pieces of information. First, a "short name" that will appear in the <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s list in the <a href="filedialog.html">File&nbsp;dialog</a>, and second, a path that is associated with that short name. So, for instance, you can create a path to your <span style="color:#006600;"><span style="font-weight: bold;"><tt>Pictures</tt></span></span> folder at <span style="color:#006600;"><span style="font-weight: bold;"><tt>/Users/John&nbsp;Doe/Pictures</tt></span></span> with a short name of <span style="color:#006600;"><span style="font-weight: bold;"><tt>pics:</tt></span></span></p>
+
+<p style="margin-left: 0;">When you click on <span style="color:#006600;"><span style="font-weight: bold;"><tt>pics:</tt></span></span> in your <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a> list, the <a href="filedialog.html">File&nbsp;dialog</a> immediately loads up the folders and files at <span style="color:#006600;"><span style="font-weight: bold;"><tt>/Users/John&nbsp;Doe/Pictures</tt></span></span> &mdash; that's all there is to it. It's a significant timesaver.</p>
+
+<p style="margin-left: 0;">You can either add a new <a href="filedialog.html#assigns">assign</a>, or remove / update existing <a href="filedialog.html#assigns">assigns</a>. If you cancel the dialog, all of your changes are discarded. If you click okay in the <a href="filedialog.html#assigns">assigns</a> dialog, but then cancel the <a href="filedialog.html">File&nbsp;dialog</a>, your changes are <span style="font-style: italic;">not</span> discarded.</p>
+
+<p style="margin-left: 0;">When the <a href="filedialog.html#assigns">assigns</a> dialog opens, the path is set to the filesystem location the <a href="filedialog.html">File&nbsp;dialog</a> was looking at. So all you have to do to make that an <a href="filedialog.html#assigns">assign</a> is enter a short name for that path and click <span style="white-space:nowrap;"><span class="cbut">Add</span></span></p>
+
+<p style="margin-left: 0;"><a href="filedialog.html#assigns">Assigns</a> have priority over <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s in the <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a> list; <a href="filedialog.html#assigns">assigns</a> appear first.</p>
+
+<p style="margin-left: 0;">The <a href="filedialog.html#assigns">assigns</a> feature incorporates the following intuitive behaviors:</p>
+
+<ul>
+<li>
+Clicking on an existing <a href="filedialog.html#assigns">assign</a> loads the short name and path into the text boxes</li>
+<li>
+If there is no short name provided, you can't add, update or remove</li>
+<li>
+If there is no path provided, you can't add, update or remove</li>
+<li>
+If the short name does not match any existing one, you can't remove</li>
+<li>
+If the path is the same as the existing one for an existing shortname, you can't update</li>
+<li>
+If the shortname is the same as an existing one, you can't add</li>
+<li>
+<a href="filedialog.html#assigns">Assign</a> short names always have a trailing <span style="color:#006600;"><span style="font-weight: bold;"><tt>:</tt></span></span> character. If you don't provide it, it will be added
+</li>
+</ul>
+
+
+<a name="ixref459"></a><a name="tocref19.0.4"></a><h3>19.0.4 &#32;-&#32;Volumes List</h3>
+
+<p style="margin-left: 0;">The volumes list contains a list of <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s (and <a href="filedialog.html#assigns">assigns</a>, if you have created any.) The <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s list is refreshed each time the dialog opens, or when you click <span style="white-space:nowrap;"><span class="cbut">Refresh</span></span>, so you can avoid filesystem hiding newly created files and newly mounted <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s from you.</p>
+
+<a name="ixref460"></a><a name="tocref19.0.5"></a><h3>19.0.5 &#32;-&#32;Folders List</h3>
+
+<p style="margin-left: 0;">The folders list contains a list of <span style="font-style: italic;">only</span> folders. This makes navigation much faster and easier than a mixed files + folders approach as used in the native file dialog. The folders list is refreshed each time the <a href="filedialog.html">File&nbsp;dialog</a> opens, or when you click <span style="white-space:nowrap;"><span class="cbut">Refresh</span></span>, so you can avoid filesystem hiding newly created files from you.</p>
+
+<a name="ixref461"></a><a name="tocref19.0.6"></a><h3>19.0.6 &#32;-&#32;Files List</h3>
+
+<p style="margin-left: 0;">The files list contains a list of <span style="font-style: italic;">only</span> files.</p>
+
+<p style="margin-left: 0;">This is the first of two features that makes navigation much faster and easier than a mixed files + folders approach as used in the <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) native file dialog. The files list is refreshed each time the dialog opens, or when you click <span style="white-space:nowrap;"><span class="cbut">Refresh</span></span>, so you can avoid filesystem hiding newly created files and newly mounted <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s from you.</p>
+
+<p style="margin-left: 0;">The second feature that makes finding your files much easier is the ability to hide files using the <span style="color:#006600;"><span style="font-weight: bold;"><tt>Filter</tt></span></span> control; typing *<span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> into the <span style="color:#006600;"><span style="font-weight: bold;"><tt>Filter</tt></span></span> box will cause the <a href="filedialog.html">File&nbsp;dialog</a> to display only files that end with <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span>, which can reduce clutter and confusion as opposed to simply &quot;dimming&quot; files that don't match the filter as the native <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) dialog does.</p>
+
+<a name="ixref462"></a><a name="tocref19.0.7"></a><h3>19.0.7 &#32;-&#32;Filename</h3>
+
+<p style="margin-left: 0;">This is where you can type in a new filename when you are saving an image, or if you already know the filename, you can just type it in here instead of picking it from the list.</p>
+
+<a name="ixref463"></a><a name="tocref19.0.8"></a><h3>19.0.8 &#32;-&#32;Path</h3>
+
+<p style="margin-left: 0;">This is where you can type in a path if you already know it. It will change automatically as you navigate the filesystem folder tree using the <span style="color:#006600;"><span style="font-weight: bold;"><tt>Folders</tt></span></span> list.</p>
+
+<a name="ixref464"></a><a name="tocref19.0.9"></a><h3>19.0.9 &#32;-&#32;Filter</h3>
+
+<p style="margin-left: 0;">You can use an asterisk ( <span style="color:#006600;"><span style="font-weight: bold;"><tt>*</tt></span></span> ) as a wildcard here. So typing <span style="color:#006600;"><span style="font-weight: bold;"><tt>*test*</tt></span></span> will display all files that have the string "test" in them. To list all files of one type, use, for example, *<span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span></p>
+
+<a name="ixref465"></a><a name="tocref19.0.10"></a><h3>19.0.10 &#32;-&#32;Always Confirm Overwrites</h3>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Always confirm overwrites</span></span></span> tells the <a href="filedialog.html">File&nbsp;dialog</a> that if you elect to save a file over an already existing file, you will be warned about it.</p>
+
+<a name="ixref466"></a><a name="tocref19.0.11"></a><h3>19.0.11 &#32;-&#32;Enforce Filter File Extensions</h3>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Enforce Filter file extensions</span></span></span> tells the <a href="filedialog.html">File&nbsp;dialog</a> that when you are writing out a file, that it <span style="font-style: italic;">must</span> end with the extension in the <span style="color:#006600;"><span style="font-weight: bold;"><tt>Filter</tt></span></span> box. For instance, if you have *<span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> in the <span style="color:#006600;"><span style="font-weight: bold;"><tt>Filter</tt></span></span> box, and you try to save a file called <span style="color:#006600;"><span style="font-weight: bold;"><tt>foo</tt></span></span>, it will actually <span style="font-style: italic;">be</span> saved as <span style="color:#006600;"><span style="font-weight: bold;"><tt>foo.png</tt></span></span></p>
+
+<a name="ixref467"></a><a name="tocref19.0.12"></a><h3>19.0.12 &#32;-&#32;Sort Assigns</h3>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Sort Assigns</span></span></span> tells the file dialog to sort the <a href="filedialog.html#assigns">assigns</a> portion of the list of <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s alphabetically.</p>
+
+<a name="ixref468"></a><a name="tocref19.0.13"></a><h3>19.0.13 &#32;-&#32;Reverse Assigns</h3>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Reverse Assigns</span></span></span> reverses the alphabetical order of the <a href="filedialog.html#assigns">assign</a>s in the <a target="_blank" href="glosspage.html#766f6c756d65"><span style="color: #884422;">volume</span></a>s list.</p>
+
+<a name="ixref469"></a><a name="tocref19.0.14"></a><h3>19.0.14 &#32;-&#32;Reverse Folders</h3>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Reverse Folders</span></span></span> reverses the alphabetical order of the folder list.</p>
+
+<a name="ixref470"></a><a name="tocref19.0.15"></a><h3>19.0.15 &#32;-&#32;Reverse Files</h3>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Reverse Files</span></span></span> reverses the order of the file list, regardless of how it is sorted.</p>
+
+<a name="ixref471"></a><a name="tocref19.0.16"></a><h3>19.0.16 &#32;-&#32;File List Sorting</h3>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="background: #c0c0c0; color: #000000;"><img style="position: relative; bottom: -2px;" src="pics/bulletsel.png" alt="bulletsel.png" title="bulletsel.png" width=15 height=15> By Name&nbsp;</span></span> imposes an alphabetic sort, case-sensitive.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="background: #c0c0c0; color: #000000;"><img style="position: relative; bottom: -2px;" src="pics/bulletsel.png" alt="bulletsel.png" title="bulletsel.png" width=15 height=15> By Name (ignore caps)&nbsp;</span></span> imposes an alphabetic sort, <span style="font-style: italic;">not</span> case-sensitive.</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="background: #c0c0c0; color: #000000;"><img style="position: relative; bottom: -2px;" src="pics/bulletsel.png" alt="bulletsel.png" title="bulletsel.png" width=15 height=15> by Date&nbsp;</span></span> imposes a sort by the file date.</p>
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDFFDD;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><span style="font-weight: bold;">Tip:</span> If you prefer, you can use the native file dialog instead by selecting <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Use Native File Dialog</span></span></span> in the <a href="preferences.html">Preferences&nbsp;dialog</a>:<br>
+<div style="clear: both; text-align: center;"><a name="fgfg233"></a><center><img src="pics/standardfiledialog.png" alt="" title=""></center><br><span style="color: #880088;">Standard <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) file dialog</span></div></div>
+
+                          <div style="
+       clear: both;
+       width: 75%;
+border-style: solid;
+  background: #ffffff;
+  text-align: center;
+     padding: .5em;
+      margin: auto;
+  margin-top: 1em;
+">
+<span style="font-style: italic;">Keyboard Navigation</span>
+<hr width="75%">
+<span class="ckey">,</span> Previous Page
+<span class="ckey">.</span> Next Page
+<span class="ckey">t</span> TOC
+<span class="ckey">i</span> Index
+<span class="ckey">o</span> Operators
+<span class="ckey">g</span> Glossary
+</div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="lmxnor.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="palettedialog.html">Next</a>&nbsp;</td></tr></table></div>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.27</center>
+           </div>
+</div>
+<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
+
+        </div>
+
+    </BODY>
+</HTML>
+

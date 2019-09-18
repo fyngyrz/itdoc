@@ -1,0 +1,409 @@
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML LANG="en">
+<HEAD>
+<TITLE>Layered File Format</TITLE>
+<script src="mousetrap.js" type="text/javascript"></script>
+<script type="text/javascript">
+Mousetrap.bind(",", onLeft_keyDown,  "keydown");
+Mousetrap.bind(".", onRight_keyDown, "keydown");
+Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("t", onToc_keyDown,   "keydown");
+Mousetrap.bind("o", onOi_keyDown,   "keydown");
+Mousetrap.bind("g", onGi_keyDown,   "keydown");
+function onLeft_keyDown()  { window.location.href = "appendixb.html"; }
+function onRight_keyDown() { window.location.href = "appendixd.html"; }
+function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onToc_keyDown()   { window.location.href = "tocpage.html"; }
+function onOi_keyDown()   { window.location.href = "operators.html"; }
+function onGi_keyDown()   { window.location.href = "glosspage.html"; }
+</script><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+
+
+<STYLE TYPE="text/css">
+.backtrail {
+margin-top: 30px;
+margin-left: 0px;
+margin-bottom: 30px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: transparent;
+background: url(/styles/transpurple.png);
+color: #f0f0f0;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+font-size: medium;
+width: 100%;
+clear: both;
+text-align: left;
+overflow: auto;
+}
+.backtrail--full {
+border-right: 1px solid black;
+border-left: 1px solid black;
+}
+</STYLE>
+
+<style type="text/css">
+.cbut {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #000000;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+
+<style type="text/css">
+span#leftmouse
+{
+border: 1px solid #000000;
+border-radius: 5px;
+width: 60px;
+background: #ffffff;
+padding-left: 2px;
+padding-right: 2px;
+color: #000000; 
+}
+
+span#leftmouseb
+{    border: 1px solid #000000;
+border-top-left-radius: 5px;
+width: 15px;
+height: 33%;
+float: left;
+background: #ffffff;
+padding-left: 0px;
+padding-right: 0px;
+color: #000000; 
+}
+
+span.myMouse {
+    display:inline-block;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding:0px 0px 0;
+    background: #fff;
+    border-radius: 6px;
+    width: 14px;
+    height: 20px;
+    font-size:10px;
+    line-height: 125%;
+    font-family:monospace;
+    text-align:center;
+}
+
+span.myMouse:before {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: left;
+    border-top-left-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.myMouse:after {
+    display: block;
+    margin:0px auto 0;
+    padding:-1;
+    width: 5px;
+    height: 8px;
+    float: right;
+    border-top-right-radius: 5px;
+  border: 1px solid #000;
+  content: " ";
+}
+
+span.leftbutton:before {background:#bbbbbb;}
+span.rightbutton:after {background:#bbbbbb;}
+</style>
+
+<style type="text/css">
+.cchk {
+      display: inline-block;
+  white-space: nowrap;
+border-radius: 5px;
+height: 1em;
+width: 1em;
+       border: .1em solid #000000;
+ border-color: #000000;
+   background: #FFFFFF; 
+text-align: center;
+        color: #000000;
+}
+
+.cbak {
+       display: inline-block;
+   white-space: nowrap;
+    background: #eeeeee; 
+  padding-left: .5em;
+ padding-right: .5em;
+    margin-top: 1px;
+ margin-bottom: 1px;
+         color: #000000;
+}
+</style>
+<style type="text/css">
+.ckey {
+      display: inline-block;
+  white-space: nowrap;
+       border: .1em solid #000000;
+border-radius: 5px;
+min-width: 1em;
+text-align:center;
+ border-color: #AAAAAA;
+   background: #000000; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #ffffff;
+}</style>
+<style type="text/css">
+.wckey {
+      display: inline-block;
+  white-space: nowrap;
+min-width: 1em;
+text-align:center;
+       border: .1em solid #000000;
+border-radius: 5px;
+ border-color: #AAAAAA;
+   background: #FFFFFF; 
+ padding-left: 3px;
+padding-right: 3px;
+        color: #000000;
+}</style>
+<style type="text/css">
+.urlImg {
+width:hY#n_K+fRsiwidth6/tt@8f*d0!!rfpx;
+height:hY#n_K+fRsiheight6/tt@8f*d0!!rfpx;
+display:block;
+background-repeat: no-repeat;
+background-image: url('/itdoc/pics/hY#n_K+fRsimage26/tt@8f*d0!!rf');
+}
+.urlImg:hover {
+background-image: url('/itdoc/pics/hY#n_K+fRsimage16/tt@8f*d0!!rf');
+}
+</style>
+
+
+<style type="text/css">
+a:link {
+    color: #0000FF;
+}
+a:visited {
+    color: #880088;
+}
+</style>
+
+</HEAD>
+<BODY  style="color: #000000; background-color: #FFFFFF;">
+
+        <div style="overflow: auto; color: #000000; margin: 
+            20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
+<br>
+
+          <div style="width: 100%; float: left; margin-right: -170px;">
+<div style="border:0; margin-right: 170px;">
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="appendixb.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="appendixd.html">Next</a>&nbsp;</td></tr></table></div>
+               <a name="ixref517"></a><h1>28 &#32;-&#32;Layered File Format</h1>
+
+<pre style="overflow: auto; padding-top: .5em; padding-bottom: .5em; padding-left: 2em; color: #00ff00; background: #000000;">
+Rules:
+------
+tags are 8, 8-bit chars
+tags are followed by a chunk size, a 64-bit integer (8 bytes, unsigned)
+chunk of size follows, unless chunk size is zero
+
+File content:
+-------------
+first, file ID group, in this specific order:
+{
+    ELF16BIT (chunksize=0)
+    EVERSION (chunksize) integer, file format version
+    EKEYVALU (chunksize) integer, 0x1F4B8C3D
+}
+Next, after file ID group
+{
+    First, master information group, in any order:
+    {
+        MST_NAME (chunksize) name of master
+        MST_ANNO (chunksize) annotation of master
+        MST_CPYR (chunksize) copyright of master
+        MST_AUTH (chunksize) author of image
+        MST_SOFT (chunksize) software involved with image
+        MST_CTIM (chunksize) image creation time: "YYYYMMDD:HHMMSS GMT"
+        MST_MTIM (chunksize) image modification time: "YYYYMMDD:HHMMSS GMT"
+        MST_LATI (chunksize) double as text, decimal latitude in degrees
+        MST_LONG (chunksize) double as text, decimal longitude in degrees
+        MST_ALTI (chunksize) double as text, decimal altitude in meters
+        MST_SHUT (chunksize) double as text, decimal shutter speed
+        MST_APER (chunksize) double as text, decimal aperture
+        MST_FOCA (chunksize) double as text, decimal focal length
+        MST_ISOS (chunksize) double as text, decimal ISO sensitivity
+        MASTERXD (chunksize) integer, width of master
+        MASTERYD (chunksize) integer, height of master
+        MST_XDPI (chunksize) integer, master X DPI
+        MST_YDPI (chunksize) integer, master Y DPI
+    }
+    Next, allocation signal:
+    {
+        MAST_KEY (chunksize=0) signal to allocate the master image memory
+    }
+    Next, note information, if any:
+    {
+        MST_INOT (chunksize) text of note
+        MST_INPU (chunksize) character, either 'T' or 'F' - note public flag
+        MST_INAM (chunksize) integer, area mode
+        MST_INTX (chunksize) integer, text X position
+        MST_INTY (chunksize) integer, text Y position
+        MST_INAX (chunksize) integer, anchor X position
+        MST_INAY (chunksize) integer, anchor Y position
+        MST_INEX (chunksize) integer, extent X position
+        MST_INEY (chunksize) integer, extent Y position
+        MST_INOP (chunksize) double as text, opacity 0-1
+        if there are freehand/polygon points:
+        {
+            MST_INPX (chunksize) integer, point X position
+            MST_INPY (chunksize) integer, point Y position
+        }
+        MST_INBU (0 chunksize) built note command
+    }
+}
+Next, layer information, FOR EACH LAYER, in highest-to-lowest layer order:
+{
+    First, basic layer information group, tags in any order:
+    {
+        LAY_NAME (chunksize) Layer name
+        LAY_ANNO (chunksize) annotation of layer
+        LAY_CPYR (chunksize) copyright of layer
+        LAY_AUTH (chunksize) author of image
+        LAY_SOFT (chunksize) software involved with image
+        LAY_CTIM (chunksize) image creation time: "YYYYMMDD:HHMMSS GMT"
+        LAY_MTIM (chunksize) image modification time: "YYYYMMDD:HHMMSS GMT"
+        LAY_LATI (chunksize) double as text, decimal latitude in degrees
+        LAY_LONG (chunksize) double as text, decimal longitude in degrees
+        LAY_ALTI (chunksize) double as text, decimal altitude in meters
+        LAY_SHUT (chunksize) double as text, decimal shutter speed
+        LAY_APER (chunksize) double as text, decimal aperture
+        LAY_FOCA (chunksize) double as text, decimal focal length
+        LAY_ISOS (chunksize) double as text, decimal ISO sensitivity
+        LAY_XWID (chunksize) integer, of layer width
+        LAY_YWID (chunksize) integer, of layer height
+        LAY_XDPI (chunksize) integer, of layer X DPI
+        LAY_YDPI (chunksize) integer, of layer Y DPI
+        LAY_IMOD (chunksize) integer, of image mode (RGB=0, YRB=1)
+        LAY_XCEN (chunksize) integer, X center of layer (this is a user-assigned value)
+        LAY_YCEN (chunksize) integer, Y center of layer (this is a user-assigned value)
+        LAY_COMP (chunksize) character, either 'T' or 'F' - compression flag
+    }
+    Next, allocation signal:
+    {
+        LAYERKEY (chunksize=0) signal to allocate the layer memory
+    }
+    Next, note information, if any:
+    {
+        LAY_INOT (chunksize) text of note
+        LAY_INPU (chunksize) character, either 'T' or 'F' - note public flag
+        LAY_INAM (chunksize) integer, area mode
+        LAY_INTX (chunksize) integer, text X position
+        LAY_INTY (chunksize) integer, text Y position
+        LAY_INAX (chunksize) integer, anchor X position
+        LAY_INAY (chunksize) integer, anchor Y position
+        LAY_INEX (chunksize) integer, extent X position
+        LAY_INEY (chunksize) integer, extent Y position
+        LAY_INOP (chunksize) double as text, opacity 0-1
+        if there are freehand/polygon points:
+        {
+            LAY_INPX (chunksize) integer, point X position
+            LAY_INPY (chunksize) integer, point Y position
+        }
+        LAY_INBU (0 chunksize) built note command
+    }
+    Next, layer extended information group, tags in any order:
+    {
+        LAY_MODE (chunksize) integer, layer blend mode
+        LAY_XOFF (chunksize) integer, layer x displacement relative to master or other layer
+        LAY_YOFF (chunksize) integer, layer y displacement relative to master or other layer
+        LAY_OPAC (chunksize) double as text, layer opacity in range 0...1
+        LAY_ROTA (chunksize) double as text, layer rotation in degrees, 0...360
+        LAY_FRXX (chunksize) double as text, fractional pixel x offset, 0...1
+        LAY_FRYY (chunksize) double as text, fractional pixel y offset, 0...1
+        LAY_FACT (chunksize) double as text, factor for layer mode, 0...1
+        LAY_VISI (chunksize) character, either 'T' or 'F' - layer visible flag
+        LAY_LOCS (chunksize) character, either 'T' or 'F' - layer local stack flag
+        LAY_GLOM (chunksize) character, either 'T' or 'F' - layer global mask flag
+        LAY_LOKS (chunksize) character, either 'T' or 'F' - layer lockstep flag
+        LAY_RCHN (chunksize) compressed* block of 16-bit unsigned red data
+        LAY_GCHN (chunksize) compressed* block of 16-bit unsigned green data
+        LAY_BCHN (chunksize) compressed* block of 16-bit unsigned blue data
+        LAY_ACHN (chunksize) compressed* block of 16-bit unsigned alpha data
+    }
+    next:
+    {
+        LAYERBLD (chunksize=0) signal to build this just-specified layer
+    }
+}
+
+Developer explanation of warp layers:
+
+For warp layers, the data in the RGBA channels is repurposed:
+
+o Red data is a signed 16-bit X displacement.
+o Green data is an unsigned 16-bit fractional X displacement.
+o Blue data is a signed 16-bit Y displacement.
+o Alpha data is a unsigned 16-bit fractional Y displacement.
+
+The warp layer's job is to move pixel data underneath it XY
+displacement relative to the pixel the layer is over. So as the
+layer's X and Y master offsets are moved, the warp layer lies
+over different pixels, and the displacement moves with it.
+
+</pre>
+                          <div style="
+       clear: both;
+       width: 75%;
+border-style: solid;
+  background: #ffffff;
+  text-align: center;
+     padding: .5em;
+      margin: auto;
+  margin-top: 1em;
+">
+<span style="font-style: italic;">Keyboard Navigation</span>
+<hr width="75%">
+<span class="ckey">,</span> Previous Page
+<span class="ckey">.</span> Next Page
+<span class="ckey">t</span> TOC
+<span class="ckey">i</span> Index
+<span class="ckey">o</span> Operators
+<span class="ckey">g</span> Glossary
+</div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="appendixb.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="appendixd.html">Next</a>&nbsp;</td></tr></table></div>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
+               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.27</center>
+           </div>
+</div>
+<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
+
+        </div>
+
+    </BODY>
+</HTML>
+

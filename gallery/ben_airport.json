@@ -1,0 +1,468 @@
+{
+    "Notations": [
+        {
+            "anchorX": 16,
+            "anchorY": 123,
+            "areaMode": "Polygon",
+            "extentX": 103,
+            "extentY": 190,
+            "opacity": 0.25,
+            "pointList": [
+                {
+                    "i": 0,
+                    "x": 16,
+                    "y": 124
+                },
+                {
+                    "i": 1,
+                    "x": 78,
+                    "y": 124
+                },
+                {
+                    "i": 2,
+                    "x": 82,
+                    "y": 132
+                },
+                {
+                    "i": 3,
+                    "x": 91,
+                    "y": 132
+                },
+                {
+                    "i": 4,
+                    "x": 93,
+                    "y": 128
+                },
+                {
+                    "i": 5,
+                    "x": 100,
+                    "y": 132
+                },
+                {
+                    "i": 6,
+                    "x": 103,
+                    "y": 136
+                },
+                {
+                    "i": 7,
+                    "x": 99,
+                    "y": 148
+                },
+                {
+                    "i": 8,
+                    "x": 98,
+                    "y": 156
+                },
+                {
+                    "i": 9,
+                    "x": 95,
+                    "y": 166
+                },
+                {
+                    "i": 10,
+                    "x": 99,
+                    "y": 180
+                },
+                {
+                    "i": 11,
+                    "x": 97,
+                    "y": 184
+                },
+                {
+                    "i": 12,
+                    "x": 93,
+                    "y": 187
+                },
+                {
+                    "i": 13,
+                    "x": 76,
+                    "y": 190
+                },
+                {
+                    "i": 14,
+                    "x": 60,
+                    "y": 188
+                },
+                {
+                    "i": 15,
+                    "x": 54,
+                    "y": 183
+                },
+                {
+                    "i": 16,
+                    "x": 42,
+                    "y": 176
+                },
+                {
+                    "i": 17,
+                    "x": 33,
+                    "y": 171
+                },
+                {
+                    "i": 18,
+                    "x": 22,
+                    "y": 170
+                },
+                {
+                    "i": 19,
+                    "x": 18,
+                    "y": 167
+                },
+                {
+                    "i": 20,
+                    "x": 17,
+                    "y": 123
+                },
+                {
+                    "i": 21,
+                    "x": 16,
+                    "y": 124
+                }
+            ],
+            "text": "Sears Silvertone",
+            "textX": 59,
+            "textY": 123,
+            "title": "Notation 1"
+        },
+        {
+            "anchorX": 34,
+            "anchorY": 197,
+            "areaMode": "Polygon",
+            "extentX": 96,
+            "extentY": 244,
+            "opacity": 0.5,
+            "pointList": [
+                {
+                    "i": 0,
+                    "x": 94,
+                    "y": 198
+                },
+                {
+                    "i": 1,
+                    "x": 63,
+                    "y": 197
+                },
+                {
+                    "i": 2,
+                    "x": 63,
+                    "y": 207
+                },
+                {
+                    "i": 3,
+                    "x": 55,
+                    "y": 219
+                },
+                {
+                    "i": 4,
+                    "x": 46,
+                    "y": 224
+                },
+                {
+                    "i": 5,
+                    "x": 39,
+                    "y": 234
+                },
+                {
+                    "i": 6,
+                    "x": 34,
+                    "y": 240
+                },
+                {
+                    "i": 7,
+                    "x": 79,
+                    "y": 244
+                },
+                {
+                    "i": 8,
+                    "x": 81,
+                    "y": 238
+                },
+                {
+                    "i": 9,
+                    "x": 82,
+                    "y": 228
+                },
+                {
+                    "i": 10,
+                    "x": 87,
+                    "y": 219
+                },
+                {
+                    "i": 11,
+                    "x": 87,
+                    "y": 210
+                },
+                {
+                    "i": 12,
+                    "x": 96,
+                    "y": 204
+                },
+                {
+                    "i": 13,
+                    "x": 94,
+                    "y": 198
+                },
+                {
+                    "i": 14,
+                    "x": 94,
+                    "y": 198
+                }
+            ],
+            "text": "Acoustic\nguitar amp",
+            "textX": 65,
+            "textY": 197,
+            "title": "Notation 2"
+        },
+        {
+            "anchorX": 94,
+            "anchorY": 159,
+            "areaMode": "Polygon",
+            "extentX": 197,
+            "extentY": 314,
+            "opacity": 0.5,
+            "pointList": [
+                {
+                    "i": 0,
+                    "x": 98,
+                    "y": 269
+                },
+                {
+                    "i": 1,
+                    "x": 96,
+                    "y": 282
+                },
+                {
+                    "i": 2,
+                    "x": 94,
+                    "y": 291
+                },
+                {
+                    "i": 3,
+                    "x": 95,
+                    "y": 309
+                },
+                {
+                    "i": 4,
+                    "x": 104,
+                    "y": 314
+                },
+                {
+                    "i": 5,
+                    "x": 115,
+                    "y": 308
+                },
+                {
+                    "i": 6,
+                    "x": 126,
+                    "y": 291
+                },
+                {
+                    "i": 7,
+                    "x": 131,
+                    "y": 281
+                },
+                {
+                    "i": 8,
+                    "x": 138,
+                    "y": 272
+                },
+                {
+                    "i": 9,
+                    "x": 138,
+                    "y": 264
+                },
+                {
+                    "i": 10,
+                    "x": 135,
+                    "y": 255
+                },
+                {
+                    "i": 11,
+                    "x": 133,
+                    "y": 244
+                },
+                {
+                    "i": 12,
+                    "x": 165,
+                    "y": 202
+                },
+                {
+                    "i": 13,
+                    "x": 178,
+                    "y": 202
+                },
+                {
+                    "i": 14,
+                    "x": 192,
+                    "y": 188
+                },
+                {
+                    "i": 15,
+                    "x": 195,
+                    "y": 182
+                },
+                {
+                    "i": 16,
+                    "x": 194,
+                    "y": 170
+                },
+                {
+                    "i": 17,
+                    "x": 197,
+                    "y": 159
+                },
+                {
+                    "i": 18,
+                    "x": 170,
+                    "y": 181
+                },
+                {
+                    "i": 19,
+                    "x": 165,
+                    "y": 187
+                },
+                {
+                    "i": 20,
+                    "x": 122,
+                    "y": 221
+                },
+                {
+                    "i": 21,
+                    "x": 119,
+                    "y": 210
+                },
+                {
+                    "i": 22,
+                    "x": 116,
+                    "y": 210
+                },
+                {
+                    "i": 23,
+                    "x": 110,
+                    "y": 220
+                },
+                {
+                    "i": 24,
+                    "x": 108,
+                    "y": 226
+                },
+                {
+                    "i": 25,
+                    "x": 120,
+                    "y": 228
+                },
+                {
+                    "i": 26,
+                    "x": 117,
+                    "y": 237
+                },
+                {
+                    "i": 27,
+                    "x": 111,
+                    "y": 243
+                },
+                {
+                    "i": 28,
+                    "x": 105,
+                    "y": 245
+                },
+                {
+                    "i": 29,
+                    "x": 104,
+                    "y": 251
+                },
+                {
+                    "i": 30,
+                    "x": 102,
+                    "y": 258
+                },
+                {
+                    "i": 31,
+                    "x": 96,
+                    "y": 267
+                },
+                {
+                    "i": 32,
+                    "x": 98,
+                    "y": 269
+                }
+            ],
+            "text": "Fender\nStratocaster",
+            "textX": 145,
+            "textY": 159,
+            "title": "Notation 3"
+        },
+        {
+            "anchorX": 70,
+            "anchorY": 418,
+            "areaMode": "Ellipse",
+            "extentX": 90,
+            "extentY": 437,
+            "opacity": 0.5,
+            "text": "Traynor 6x10\"\nbass cabinet",
+            "textX": 70,
+            "textY": 418,
+            "title": "Notation 4"
+        },
+        {
+            "anchorX": 160,
+            "anchorY": 582,
+            "areaMode": "Rectangle",
+            "extentX": 255,
+            "extentY": 634,
+            "opacity": 1,
+            "text": "Bell bottoms!",
+            "textX": 207,
+            "textY": 582,
+            "title": "Notation 5"
+        }
+    ],
+    "imageName": "ben-airport",
+    "imageXW": 270,
+    "imageYW": 648,
+    "tinyDocs": {
+        "c01": "JSON image notation data:",
+        "c02": "-------------------------",
+        "c03": "",
+        "c04": "This data contains image notations and related area",
+        "c05": "selection information that provides a means for an",
+        "c06": "image gallery to display notations with elliptical,",
+        "c07": "rectangular, polygonal or freehand area indications",
+        "c08": "over an image displayed to a gallery visitor.",
+        "c09": "",
+        "c10": "X and Y positions are all in image space. The image",
+        "c11": "resolution is given as imageXW and imageYW, which",
+        "c12": "you use to scale the notation areas to their proper",
+        "c13": "locations and sizes for your display of the image,",
+        "c14": "regardless of scale.",
+        "c15": "",
+        "c16": "For Ellipses, anchor is the  center of the ellipse,",
+        "c17": "and the extents are the X and Y radii respectively.",
+        "c18": "",
+        "c19": "For Rectangles, the anchor is the top left and the",
+        "c20": "extents are the bottom right.",
+        "c21": "",
+        "c22": "For Freehand and Polygon area modes, the pointList",
+        "c23": "contains a series of numbered XY points. If the area",
+        "c24": "is closed, the last point will be the same as the",
+        "c25": "first, so all you have to be concerned with is drawing",
+        "c26": "lines between the points in the list. Anchor and extent",
+        "c27": "are set to the top left and bottom right of the indicated",
+        "c28": "region, and can be used as a simplistic rectangular",
+        "c29": "detect for the mouse hover position over these types",
+        "c30": "of areas.",
+        "c31": "",
+        "c32": "The textx and texty positions provide basic positioning",
+        "c33": "information to help you locate the text information",
+        "c34": "in a reasonable location associated with the area",
+        "c35": "indication.",
+        "c36": "",
+        "c37": "Opacity is a value between 0 and 1, where .5 represents",
+        "c38": "a 50% opaque backdrop and 1.0 represents a fully opaque",
+        "c39": "backdrop. Recommendation is that regions be drawn",
+        "c40": "only if the user hovers the pointer over the image,",
+        "c41": "and that the text associated with the regions be drawn",
+        "c42": "only if the user hovers the pointer over the indicated",
+        "c43": "region."
+    }
+}
