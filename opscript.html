@@ -216,7 +216,20 @@ a:visited {
 
 <p style="margin-left: 0;">Provides for running sequences of operations that modify image pixels on the selected area.</p>
 
-<p style="margin-left: 0;">You can enter a script directly in the box, or you can load one from the filesystem. You can also save scripts you have created or modified. Scripts consist of a sequence of command (operation) lines that are executed from top to bottom, one operation per line.</p>
+<a name="ixref298"></a><a name="tocref11.4.65.1"></a><h4>11.4.65.1 &#32;-&#32;Creating Scripts</h4>
+
+<ul>
+<li>
+You can build a script line-by-line by using the <span style="white-space:nowrap;"><span class="cbut">&rarr;Script</span></span> <a href="operators.html#scriptbutton">button</a> in various operators</li>
+<li>
+You can enter script commands directly in the text box in the Script operator</li>
+<li>
+You can load previously saved scripts from mass storage
+</li>
+</ul>
+
+
+<p style="margin-left: 0;">You can save scripts you have created or modified. Scripts consist of a sequence of command (operation) lines that are executed from top to bottom, one operation per line.</p>
 
 <p style="margin-left: 0;">Each line in the script is checked for correctness. If any of the parameters for the operation are out of range, the operation won't execute. If the operation is not recognized, it will be ignored and the results of any other operations in the script will be undone.</p>
 
@@ -224,13 +237,13 @@ a:visited {
 
 <p style="margin-left: 0;">If you'd like to see the parameters for a particular operation, just enter the operation name followed by a question mark, for instance <span style="color:#006600;"><span style="font-weight: bold;"><tt>edgedetect ?</tt></span></span></p>
 
-<p style="margin-left: 0;">You can disable any line or lines in a script by turning them into a comment by simply placing a '#' character at the beginning of the line(s.) Comment lines are ignored. Keep in mind that the start-of-line sequences <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#!</tt></span></span>"</span> and <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#:</tt></span></span>"</span> are reserved and must not be used in comments.</p>
+<p style="margin-left: 0;">You can disable any line or lines in a script by turning them into a comment by simply placing a <span style="color:#006600;"><span style="font-weight: bold;"><tt>#</tt></span></span> character at the beginning of the line(s.) Comment lines are ignored. Keep in mind that the start-of-line sequences <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#!</tt></span></span>"</span> and <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#:</tt></span></span>"</span> are reserved and must not be used in comments.</p>
 
-<p style="margin-left: 0;">This operator uses syntax highlighting. You can set the colors via the <a href="preferences.html#metadefaults">Meta Defaults&nbsp;dialog</a>.</p>
+<p style="margin-left: 0;">This operator provides syntax highlighting. You can set the colors via the <a href="preferences.html#metadefaults">Meta Defaults&nbsp;dialog</a>.</p>
 
 <div style="clear: both; text-align: center;"><a name="fgfg138"></a><center><img src="pics/scriptop.png" alt="" title=""></center><br><span style="color: #880088;">The script operator<br>Pencil drawing effect</span></div>
 
-<a name="tocref11.4.65.1"></a><h4>11.4.65.1 &#32;-&#32;Available Script Commands</h4>
+<a name="tocref11.4.65.2"></a><h4>11.4.65.2 &#32;-&#32;Available Script Commands</h4>
 
 <p style="margin-left: 0;">Script commands generally consist of a keyword, followed by any required parameters, all separated by spaces. In the list below, the <span style="color:#006600;"><span style="font-weight: bold;"><tt>green</tt></span></span> information is what you type into the script; the red information is just to let you know what the parameters mean. In addition, the ellipsis (<span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color: #ff0000;">...</span></tt></span></span>) indicates a range, and is not entered into the script itself.</p>
 
