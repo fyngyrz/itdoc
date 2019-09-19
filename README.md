@@ -30,7 +30,7 @@ Both the software executable described by this documentation, and the
 documentation itself, are intentionally released into the public domain.
 
 
-For the software, refer to the [UNLICENSE](UNLICENSE).
+For the software, refer to the [UNLICENSE](LICENSE).
 
 For the documentation, to the best of my knowledge, the abandoning
 of copyright is effective due to the clear notice on the bottom
