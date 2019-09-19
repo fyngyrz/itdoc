@@ -156,6 +156,7 @@ text-align: center;
   white-space: nowrap;
        border: .1em solid #000000;
 border-radius: 5px;
+font-weight: bold;
 min-width: 1em;
 text-align:center;
  border-color: #AAAAAA;
@@ -233,15 +234,42 @@ You can load previously saved scripts from mass storage
 
 <p style="margin-left: 0;">Each line in the script is checked for correctness. If any of the parameters for the operation are out of range, the operation won't execute. If the operation is not recognized, it will be ignored and the results of any other operations in the script will be undone.</p>
 
-<p style="margin-left: 0;">Errors will result in both a report of the error lines and a listing of the correct parameters and ranges for those operations at the top of the script. Once the errors are cleared, the error report will disappear upon script execution and the script's result will be accepted.</p>
+<a name="autocomplete"></a>
+<p style="margin-left: 0;">When typing lines directly into the script box, <span style="font-weight: bold;">iToolBox</span> will make suggestions in the prompt area below the script box as to what the possible command might be based on the characters you've typed so far. When you have typed enough characters such that there is only one possible candidate, that candidate will be the only one shown, and typing a <span class="ckey">tab</span> will auto-complete the keyword for you. At this point the prompt area changes to a guide to the parameters for that command. Here's an example of how that can go starting with a blank line...</p>
 
-<p style="margin-left: 0;">If you'd like to see the parameters for a particular operation, just enter the operation name followed by a question mark, for instance <span style="color:#006600;"><span style="font-weight: bold;"><tt>edgedetect ?</tt></span></span></p>
+<center>
+<table border="1" bgcolor="#ffffff">
+<tr>
+<th>You type</th>
+<th>Preview shows</th>
+<th>Line contains</th>
+</tr>
+<tr>
+<td align="center"><span class="ckey">b</span></td>
+<td "><font color="#880088"><tt>&nbsp;bend,brushstroke,burn</tt></font></td>
+<td><span style="color:#006600;"><span style="font-weight: bold;"><tt>&nbsp;b</tt></span></span></td>
+</tr>
+<tr>
+<td align="center"><span class="ckey">u</span></td>
+<td "><font color="#880088"><tt>&nbsp;burn</tt></font></td>
+<td><span style="color:#006600;"><span style="font-weight: bold;"><tt>&nbsp;bu</tt></span></span></td>
+</tr>
+<tr>
+<td align="center"><span class="ckey">tab</span></td>
+<td "><font color="#880088"><tt>&nbsp;burn [Amount=0...100]</tt></font></td>
+<td><span style="color:#006600;"><span style="font-weight: bold;"><tt>&nbsp;burn</tt></span></span></td>
+</tr>
+</table></center>
+
+<p style="margin-left: 0;">...at this point, the prompt area shows you have one value to provide to <span style="color:#006600;"><span style="font-weight: bold;"><tt>burn</tt></span></span>, so you type a space and that value, and you're done.</p>
+
+<p style="margin-left: 0;">Errors will result in both a report of the error lines and a listing of the correct parameters and ranges for those operations at the top of the script. Once the errors are cleared, the error report will disappear upon script execution and the script's result will be accepted.</p>
 
 <p style="margin-left: 0;">You can disable any line or lines in a script by turning them into a comment by simply placing a <span style="color:#006600;"><span style="font-weight: bold;"><tt>#</tt></span></span> character at the beginning of the line(s.) Comment lines are ignored. Keep in mind that the start-of-line sequences <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#!</tt></span></span>"</span> and <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#:</tt></span></span>"</span> are reserved and must not be used in comments.</p>
 
 <p style="margin-left: 0;">This operator provides syntax highlighting. You can set the colors via the <a href="preferences.html#metadefaults">Meta Defaults&nbsp;dialog</a>.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg138"></a><center><img src="pics/scriptop.png" alt="" title=""></center><br><span style="color: #880088;">The script operator<br>Pencil drawing effect</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg138"></a><center><img src="pics/scriptop.png" alt="" title=""></center><br><span style="color: #880088;">The script operator<br>Pencil drawing effect<br>Cursor at beginning of<br><span style="color:#006600;"><span style="font-weight: bold;"><tt>forcedynamic</tt></span></span> line</span></div>
 
 <a name="tocref11.4.65.2"></a><h4>11.4.65.2 &#32;-&#32;Available Script Commands</h4>
 
@@ -442,7 +470,7 @@ border-style: solid;
                <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.27</center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.28</center>
                <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
            </div>
 </div>
