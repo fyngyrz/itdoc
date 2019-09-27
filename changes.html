@@ -212,7 +212,7 @@ a:visited {
           <div style="width: 100%; float: left; margin-right: -170px;">
 <div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="privacy.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="incaseof.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref555"></a><h1>39 &#32;-&#32;Changes List</h1>
+               <a name="ixref558"></a><h1>39 &#32;-&#32;Changes List</h1>
 
 
 
@@ -226,20 +226,68 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> <p style="margin-left: 0;">I sometimes make updates to the documentation as I work on the next build of <span style="font-weight: bold;">iToolBox</span>, so the downloaded application can be one release behind the documentation.</p>
+"><span style="font-weight: bold;">Tip:</span> <p style="margin-left: 0;">I sometimes make updates to the documentation as I work on the next build of <span style="font-weight: bold;">iToolBox</span>, so the downloaded application can be one release behind the documentation. Or vice-versa.</p>
 
 <p style="margin-left: 0;">This condition does not usually last for more than a few days. If the download indicates is it one level behind the changes list, check back in a few days to retrieve the version with the indicated changes.</p>
-
-<p style="margin-left: 0;">It can go the other way, too; sometimes you may find features in <span style="font-weight: bold;">iToolBox</span> that are not documented yet, and again, check back here in a few days and that should be resolved.</p>
 </div>
 
 
 <ul>
 <li style="padding-bottom:.5em;">
+Version 2.34
+<ul>
+<li>
+Added <a href="opmeasure.html">Measure</a>  operator</li>
+<li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Views/Set Zoom Step Size&nbsp;</span></span></span> to <a href="themenus.html#zoomsteps">menu system</a>
+Added object size and count to detailed memory report</li>
+<li>
+Holding <span class="ckey"> &#8984;</span> holds <a href="areatools.html#ellipse">ellipse</a> and <a href="areatools.html#rectangle">rectangle</a> selections square</li>
+<li>
+Some speed improvements
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.33
+<ul>
+<li>
+<span class="ckey">Return</span> now operates on the current selection in <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> (non-modal) mode</li>
+<li>
+<a href="opbrushstroke.html">Brushstroke</a>  operator preview now obeys target alpha
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.32
+<ul>
+<li>
+Added Burning Ship to <a href="opfractals.html">Fractals</a> operator</li>
+<li>
+Resetting rotation on a <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> now requires <span class="ckey">control</span>+<span class="ckey">shift</span>+<span class="ckey">&#8997;</span>
+&mdash; this allows addition and subtraction of <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>s using <span class="ckey">shift</span> and <span class="ckey">&#8997;</span> in non-modal selection mode</li>
+<li>
+Rotations of <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>s now require <span style="white-space:nowrap;"><span class="ckey">control</span>+<span class="ckey">shift</span></span> or <span style="white-space:nowrap;"><span class="ckey">control</span>+<span class="ckey">&#8997;</span></span>, resetting rotation requires <span style="white-space:nowrap;"><span class="ckey">control</span>+<span class="ckey">shift</span>+<span class="ckey">&#8997;</span></span></li>
+<li>
+Improved zoom capability &mdash; more zoom-in levels, better transitional steps</li>
+<li>
+Addressed some issues with selection marqee multiple-selections in non-modal mode
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.31
+<ul>
+<li>
+Added Lambda to <a href="opfractals.html">Fractals</a>  operator
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
 Version 2.30
 <ul>
 <li>
-Added <a href="opperlin.html">Perlin</a> operator
+Added <a href="opperlin.html">Perlin&nbsp;Noise</a>  operator
 </li>
 </ul>
 </li>
@@ -253,32 +301,32 @@ Added <span style="white-space:nowrap;"><span style="color: #000000; background-
 <li>
 <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> selections now have lines in all four quadrants to aid in aspect correct placement</li>
 <li>
-Added <a href="opfractals.html">Fractals</a> operator</li>
+Added <a href="opfractals.html">Fractals</a>  operator</li>
 <li>
 Added pixel <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Blend Modes&nbsp;&#9654;</span></span></span> to the <a href="themenus.html#blendmodes">menu system</a>
 <ul>
 <li>
-Matte</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Matte&nbsp;</span></span></span></li>
 <li>
-Add</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Add&nbsp;</span></span></span></li>
 <li>
-Add grey</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Add Grey&nbsp;</span></span></span></li>
 <li>
-Subtract</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Subtract&nbsp;</span></span></span></li>
 <li>
-Subtract Grey</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Subtract Grey&nbsp;</span></span></span></li>
 <li>
-Multiply</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Multiply&nbsp;</span></span></span></li>
 <li>
-Divide</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Divide&nbsp;</span></span></span></li>
 <li>
-Dissolve</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Dissolve&nbsp;</span></span></span></li>
 <li>
-Soft Dissolve</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Soft Dissolve&nbsp;</span></span></span></li>
 <li>
-Foreground Color</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Foreground Color&nbsp;</span></span></span></li>
 <li>
-Background Color
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Background Color&nbsp;</span></span></span>
 </li>
 </ul>
 </li>
@@ -291,7 +339,7 @@ Background Color
 <li>
 Added Foreground and Background <a href="areatools.html#colorwells">Color Wells</a> to the <a href="areatools.html">areatools</a></li>
 <li>
-Added <span style="white-space:nowrap;"><span class="cbut">&rarr;Foreground</span></span> and <span style="white-space:nowrap;"><span class="cbut">&rarr;Background</span></span> to the <a href="opcolorfill.html">Color Fill</a> operator
+Added <span style="white-space:nowrap;"><span class="cbut">&rarr;Foreground</span></span> and <span style="white-space:nowrap;"><span class="cbut">&rarr;Background</span></span> to the <a href="opcolorfill.html">Color&nbsp;Fill</a>  operator
 </li>
 </ul>
 </li>
@@ -299,9 +347,9 @@ Added <span style="white-space:nowrap;"><span class="cbut">&rarr;Foreground</spa
 Version 2.28
 <ul>
 <li>
-The <a href="opscript.html">script</a> operator adds <a href="opscript.html#autocomplete">command suggestion, completion and  parameter cuing</a></li>
+The <a href="opscript.html">Script</a>  operator adds <a href="opscript.html#autocomplete">command suggestion, completion and  parameter cuing</a></li>
 <li>
-Fixed a bug in script ops that discarded execution of op
+Fixed a bug in script operations that discarded execution of the operation
 </li>
 </ul>
 </li>
@@ -331,7 +379,7 @@ Added ability to tile views with <span class="ckey">&#8997;</span>+<span class="
 <li>
 <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> area selections are now drawn using XOR to make them more visible</li>
 <li>
-Some changes to how the <a href="oprangefill.html">Range Fill</a> operator works on different shaped selections</li>
+Some changes to how the <a href="oprangefill.html">Range&nbsp;Fill</a>  operator works on different shaped selections</li>
 <li>
 Hot key set dialog now only accepts a-z and A-Z</li>
 <li>
@@ -341,9 +389,9 @@ Hot key set dialog now only accepts a-z and A-Z</li>
 <li>
 Added <span style="white-space:nowrap;"><span class="cbut">Set Help URL</span></span> button to <a href="preferences.html">Preferences&nbsp;dialog</a></li>
 <li>
-<a href="opscript.html">Script</a> operator <span style="white-space:nowrap;"><span class="cbut">Save Script</span></span> button only available when there is script content</li>
+<a href="opscript.html">Script</a>  operator <span style="white-space:nowrap;"><span class="cbut">Save Script</span></span> button only available when there is script content</li>
 <li>
-Fixed <span style="color: #ff0000;">crashing</span> bug in <a href="oprotate90.html">Rotate 90&deg;</a> operator
+Fixed <span style="color: #ff0000;">crashing</span> bug in <a href="oprotate90.html">Rotate&nbsp;90&deg;</a>  operator
 </li>
 </ul>
 </li>
@@ -1613,7 +1661,7 @@ border-style: solid;
                <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.30</center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.34</center>
                <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
            </div>
 </div>

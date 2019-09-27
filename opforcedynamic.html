@@ -212,8 +212,8 @@ a:visited {
           <div style="width: 100%; float: left; margin-right: -170px;">
 <div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opfloor.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opframe.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br><a name="ixref268"></a>
-<a name="ixref269"></a><h3>11.4.32 &#32;-&#32;Force Dynamic</h3>
+               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br><a name="ixref270"></a>
+<a name="ixref271"></a><h3>11.4.32 &#32;-&#32;Force Dynamic</h3>
 
  <p style="margin-left: 0;">Scripting command: <span style="color:#006600;"><span style="font-weight: bold;"><tt>forcedynamic <span style="color: #ff0000;">[Sample=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Exclude=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span></tt></span></span></p>
 
@@ -233,7 +233,7 @@ margin-bottom: 1em;
 <p style="margin-left: 0;">This will change the contrast of the selected area in such a way as to push the minimum and maximum measured levels to the minimum and maximum <span style="font-style: italic;">possible</span> levels. You can use the sample tool directly or with the eyedropper to sample the area first, and then adjust a different area with this tool, or you can have the operator do the sampling directly by checking <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Take Sample From Area</span></span></span></p>
 
 <p style="margin-left: 0;">When <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Take Sample From Area</span></span></span> is checked, <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Exclude Soft Edges</span></span></span> tells the sample taken from the area selection to ignore pixel values underneath soft edges of the selection; otherwise, particularly when scripting or using <a href="areatools.html#redo">redo</a>, the sample would include information from pixels that were partly processed by previous operations, which can give you quite different results than what you were expecting.</p>
-<div style="clear: both; text-align: center;"><a name="fgfg94"></a><center><img src="pics/forcedynamicop.png" alt="" title=""></center><br><span style="color: #880088;">The force dynamic operator</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg95"></a><center><img src="pics/forcedynamicop.png" alt="" title=""></center><br><span style="color: #880088;">The force dynamic operator</span></div>
 
 <p style="margin-left: 0;">Force dynamic is a very interesting and useful operator. It is well worth the time it takes to get familiar with it. What it does is, based upon the contrast range in the sampled area (which can be the selected area, or an area you sampled previously), it adjusts the contrast so that the maximum possible dynamic range &mdash; that is, the brightest to the darkest possible values <span style="font-style: italic;">without</span> damaging the color balance of the sampled area &mdash; is used by the selected region.</p>
 
@@ -241,12 +241,12 @@ margin-bottom: 1em;
 
 <p style="margin-left: 0;"><span style="font-weight: bold;">See Also:</span> <a href="opfloor.html">Floor</a>, <a href="opceiling.html">Ceiling</a></p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg95"></a><center><img src="pics/fd-normal.png" alt="" title=""></center><br><span style="color: #880088;">One watt LED bulb, normal image</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg96"></a><center><img src="pics/fd-normal.png" alt="" title=""></center><br><span style="color: #880088;">One watt LED bulb, normal image</span></div>
 <p style="margin-left: 0;">I've taken this image, un-checked <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Take Sample From Area</span></span></span> in the <a href="opforcedynamic.html">Forced dynamic operator</a>, selected the <a href="areatools.html#rectangle">Rectangle tool</a>, clicked the <a href="areatools.html#eyedropper">Eyedropper tool</a>, and pulled the rectangle around the barely visible structure at the center of the bulb. Once the sample is taken, the <a href="operators.html">Operators&nbsp;dialog</a> returns to the <a href="opforcedynamic.html">Forced dynamic operator</a>. Then I selected the <a href="areatools.html#entire">Entire image</a> area tool, and clicked on the image; the result you can see below.</p>
 
 <p style="margin-left: 0;">So what happened here is that the sample tool measured the maximum and minimum levels in the selected area (the rectangle) and then <a href="opforcedynamic.html">Force dynamic operator</a> pushed the entire image so that those levels reached the maximum dynamic range possible, and in so doing, the inner structure of the LED bulb, previously of such low contrast as to be almost invisible, is revealed.</p>
 <hr>
-<div style="clear: both; text-align: center;"><a name="fgfg96"></a><center><img src="pics/fd-forced.png" alt="" title=""></center><br><span style="color: #880088;">One watt LED bulb, <span style="font-style: italic;">forced</span> image</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg97"></a><center><img src="pics/fd-forced.png" alt="" title=""></center><br><span style="color: #880088;">One watt LED bulb, <span style="font-style: italic;">forced</span> image</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -274,7 +274,7 @@ border-style: solid;
                <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.30</center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.34</center>
                <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
            </div>
 </div>
