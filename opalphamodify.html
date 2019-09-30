@@ -212,11 +212,11 @@ a:visited {
           <div style="width: 100%; float: left; margin-right: -170px;">
 <div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="operators.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opannotation.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a><br><a name="ixref216"></a>
-<a name="ixref217"></a><h2>11.4 &#32;-&#32;Operator Details</h2>
-<a name="ixref218"></a><h3>11.4.1 &#32;-&#32;Alpha Modify</h3>
+               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a><br><a name="ixref219"></a>
+<a name="ixref220"></a><h2>11.4 &#32;-&#32;Operator Details</h2>
+<a name="ixref221"></a><h3>11.4.1 &#32;-&#32;Alpha Modify</h3>
 
- <p style="margin-left: 0;">Scripting command: <span style="color:#006600;"><span style="font-weight: bold;"><tt>alphamod <span style="color: #ff0000;">[Amount=</span>0<span style="color: #ff0000;">...</span>255<span style="color: #ff0000;">]</span></tt></span></span></p>
+ <p style="margin-left: 0;">Scripting command: <span style="color:#006600;"><span style="font-weight: bold;"><tt>alphamod <span style="color: #ff0000;">[Amount=</span>0<span style="color: #ff0000;">...</span>255<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Mode=</span>0<span style="color: #ff0000;">...</span>9<span style="color: #ff0000;">]</span></tt></span></span></p>
 
 <div style="
         width: 75%;
@@ -231,9 +231,49 @@ margin-bottom: 1em;
 "><span style="font-weight: bold;">Note:</span> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
 
 
-<p style="margin-left: 0;">You can set the level of the alpha channel (transparency) in the area selection you've made in the image using this operator's <span style="white-space:nowrap;"> <span style="font-weight: bold;">Amount</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span></p>
+<p style="margin-left: 0;">The <a href="opalphamodify.html">Alpha&nbsp;Modify</a> operator can perform a number of different alpha operations, depending on the setting of the <span style="font-weight: bold;">Mode</span> drop-down menu:</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Set Alpha&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">You can set the level of the alpha channel (transparency) in the area selection you've made in the image using this mode's <span style="white-space:nowrap;"> <span style="font-weight: bold;">Amount</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span></p>
 
 <p style="margin-left: 0;">A value of <span style="color:#006600;"><span style="font-weight: bold;"><tt>0 00</tt></span></span> results in complete transparency. A value of <span style="color:#006600;"><span style="font-weight: bold;"><tt>255 FF</tt></span></span> results in complete opacity.</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Invert Alpha&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">What is transparent becomes opaque, and what is opaque becomes transparent.</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Alpha to RGB&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">This will convert the alpha channel into the equivalent greyscale representation in the image.</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">RGB to Alpha (average)&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">Averages the red, green and blue channels and then converts the result to alpha.</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">RGB to Alpha (luma)&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">Derives the luma (brightness component) of the image, and converts that to alpha.</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Red to Alpha&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">Transfers the red channel directly to the alpha channel.</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Green to Alpha&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">Transfers the green channel directly to the alpha channel.</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Blue to Alpha&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">Transfers the blue channel directly to the alpha channel.</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Harden Alpha&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">This makes alpha above midrange more opaque, and alpha below midrange more transparent. The <span style="white-space:nowrap;"> <span style="font-weight: bold;">Amount</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> slider controls how much effect is applied.</p>
+
+<span style="font-weight: bold;">Mode:</span> <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Soften Alpha&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>
+
+<p style="margin-left: 0;">This smoothes and spreads out hard alpha edges. The <span style="white-space:nowrap;"> <span style="font-weight: bold;">Amount</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> slider controls how much effect is applied.</p>
 
 
 
@@ -293,7 +333,7 @@ border-style: solid;
                <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.34</center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.38</center>
                <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
            </div>
 </div>

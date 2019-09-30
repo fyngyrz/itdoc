@@ -213,7 +213,7 @@ a:visited {
 <div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opmaximum.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opmerge.html">Next</a>&nbsp;</td></tr></table></div>
                <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br>
-<a name="ixref286"></a><h3>11.4.45 &#32;-&#32;Measure</h3>
+<a name="ixref289"></a><h3>11.4.45 &#32;-&#32;Measure</h3>
 
 <tt><span style="color: #ff0000;">No Script Command</span></tt>
 
@@ -224,9 +224,24 @@ a:visited {
 <ol>
 <li style="margin-bottom: 1em;">If you know how much distance a pixel represents, you can directly enter that in the <span style="font-weight: bold;">Units Per X Pixel</span> and <span style="font-weight: bold;">Units per Y Pixel</span> controls.</li>
 <li style="margin-bottom: 1em;">
-If you have known vertical, horizontal, or both distances (such as a scale of miles, which typically provides a horizontal reference), you can pull a <a href="areatools.html#rectangle">rectangle</a> out to cover that known space, then click one of <span style="white-space:nowrap;"><span class="cbut">Calc both XY</span></span>, <span style="white-space:nowrap;"><span class="cbut">Calc only X</span></span> or <span style="white-space:nowrap;"><span class="cbut">Calc only Y</span></span> buttons, and <span style="font-weight: bold;">iToolBox</span> will calculate the units per pixel for you.</li>
+If you have known vertical, horizontal, or both distances (such as a scale of miles, which typically provides a horizontal reference), you can pull a <a href="areatools.html#rectangle">rectangle</a> out to cover that known space, then click one of <span style="white-space:nowrap;"><span class="cbut">Calc both XY</span></span>, <span style="white-space:nowrap;"><span class="cbut">Calc only X</span></span> or <span style="white-space:nowrap;"><span class="cbut">Calc only Y</span></span> buttons, and <span style="font-weight: bold;">iToolBox</span> will calculate the units per pixel for you.<br><br>
+
+Depending on which of the three buttons you choose, there will be two or three values you can set. The top one or two values, respectively, set the primary scale(s) as specified.<br><br>
+
+For instance, if a map has a horizontal 200 foot scale on it, you'd carefully select the length of the scale with a <a href="areatools.html#rectangle">rectangle</a>, then click <span style="white-space:nowrap;"><span class="cbut">Calc only X</span></span>, then enter 200 in the <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;">X = Units</span></tt></span></span></span> field. If you want your readout in feet just as the scale indicates, then leave the <span style="color:#006600;"><span style="font-weight: bold;"><tt>Major Units</tt></span></span> field set to 1.<br><br>
+
+However, for example, you might prefer your measurements in miles; in that case, enter 5280 into the <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;">Major Units</span></tt></span></span></span> field and <span style="font-weight: bold;">iToolBox</span> will adjust the readings to miles (because there are 5,280 feet in a mile. <br><br>
+
+Prefer kilometers? There are 3,280 feet in a kilometer, so just enter 3280 into the <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;">Major Units</span></tt></span></span></span> field and now your measurements will be converted from feet to kilometers.
+<br><br>
+
+<div style="clear: both; text-align: center;"><a name="fgfg113"></a><center><img src="pics/measureunits.png" alt="" title=""></center><br><span style="color: #880088;">Here, 200 has been entered into the <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;">X= Units</span></tt></span></span></span> field because the<br>
+measured scale on the map was 200 feet. To convert the measurements<br>
+to miles, 5280 has been entered into the <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;">Major Unit</span></tt></span></span></span> field</span></div></li>
 </ol>
 
+
+Something more esoteric? One Roman league is 7,200 feet. So to get a readout of Roman leagues from the same 200 foot scale, simply enter 200 in the <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;">X = Units</span></tt></span></span></span> field and 7200 in the <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;">Major Units</span></tt></span></span></span> field.
 
 
 
@@ -241,15 +256,15 @@ If you have known vertical, horizontal, or both distances (such as a scale of mi
    margin-top: 1em;
 margin-bottom: 1em;
 "><span style="font-weight: bold;">Tip:</span> <big><span style="font-weight: bold;">Accuracy</span></big>
-<p style="margin-left: 0;">The more detailed the image, or in other words the more pixels per unit distance it has, the more accurate the <a href="opmeasure.html">Measure</a>  operator will be. For instance, if in <span style="color:#006600;"><span style="font-weight: bold;"><tt>image A</tt></span></span>, a scale of 10 miles takes up 20 pixels, and in <span style="color:#006600;"><span style="font-weight: bold;"><tt>image B</tt></span></span>, a scale of ten miles takes up 200 pixels, the <a href="opmeasure.html">Measure</a>  operator will be ten times more accurate when working with <span style="color:#006600;"><span style="font-weight: bold;"><tt>image B</tt></span></span>.</p>
+<p style="margin-left: 0;">The more detailed the image, or in other words the more pixels per unit distance it has, the more accurate the <a href="opmeasure.html">Measure</a>  operator will be.<br><br>
 
-<p style="margin-left: 0;">For instance, on the following scale cropped from a not-particularly-detailed map of the USA, 300 miles is represented in 107 pixels:</p>
+For instance, in <span style="color:#006600;"><span style="font-weight: bold;"><tt>image A</tt></span></span> below, a scale of 300 miles takes up 107 pixels, whereas in <span style="color:#006600;"><span style="font-weight: bold;"><tt>image B</tt></span></span>, a scale of 300 miles takes up 220 pixels. The <a href="opmeasure.html">Measure</a>  operator will be about twice as  accurate when working with <span style="color:#006600;"><span style="font-weight: bold;"><tt>image B</tt></span></span>.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg113"></a><center><img src="pics/scale2.png" alt="" title=""></center><br><span style="color: #880088;">107 pixels for 300 miles</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg114"></a><center><img src="pics/scale2.png" alt="" title=""></center><br><span style="color: #880088;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>Image A</tt></span></span>: 107 pixels for 300 miles</span></div>
 
-<p style="margin-left: 0;">But this next map of the USA, which is presented in higher resolution &mdash; more pixels per mile &mdash; would give you measurements that are a bit more than twice as accurate, as the scale of 300 miles is represented in 220 pixels:</p>
+<p style="margin-left: 0;">&nbsp;</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg114"></a><center><img src="pics/scale1.png" alt="" title=""></center><br><span style="color: #880088;">220 pixels for 300 miles</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg115"></a><center><img src="pics/scale1.png" alt="" title=""></center><br><span style="color: #880088;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>Image B</tt></span></span>: 220 pixels for 300 miles</span></div>
 </div>
 
 
@@ -267,15 +282,17 @@ margin-bottom: 1em;
 margin-bottom: 1em;
 "><span style="font-weight: bold;">Tip:</span> <big><span style="font-weight: bold;">Precision</span></big>
 <p style="margin-left: 0;">The <a href="opmeasure.html">Measure</a>  operator indicates very precise results, but how much you can trust that precision is entirely dependent upon the accuracy issue explained in the previous tip. The precision is provided by the operator in order to accommodate those circumstances when a very precise image is under scrutiny; for low precision images, you're going to get low-precision results &mdash; in such cases, you must consider the result only an approximation.</p>
+<p style="margin-left: 0;">Further, there are <span style="font-style: italic;">two</span> fundamental issues with precision: One is the source of the image itself; is the image geometrically true to the region it presents, or is it distorted? The other is the resolution the image was sampled in; the higher, the better, given that the sampling is not geometrically distorted.</p>
+<p style="margin-left: 0;">Both distortion and low sample density can result in numbers that look precise, but really are not at all.</p>
 </div>
 
 
 
-<div style="clear: both; text-align: center;"><a name="fgfg115"></a><center><img src="pics/measureop.png" alt="" title=""></center><br><span style="color: #880088;">The Measure operator<br>(<span style="font-style: italic;">See below for a discussion of the results here.</span>)</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg116"></a><center><img src="pics/measureop.png" alt="" title=""></center><br><span style="color: #880088;">The Measure operator<br>(<span style="font-style: italic;">See below for a discussion of the results here.</span>)</span></div>
 
 <p style="margin-left: 0;">The <a href="opmeasure.html">Measure</a>  operator dialog image above shows results from using the scale of 20 miles in the following image to set both the <span style="color:#006600;"><span style="font-weight: bold;"><tt>Units Per [axis] Pixel</tt></span></span> values via the <span style="white-space:nowrap;"><span class="cbut">Calc only X</span></span> button after pulling a rectangle along the scale of miles...</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg116"></a><center><img src="pics/distexample.png" alt="" title=""></center><br><span style="color: #880088;">Distance between Glasgow and Wolf Point</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg117"></a><center><img src="pics/distexample.png" alt="" title=""></center><br><span style="color: #880088;">Distance between Glasgow and Wolf Point</span></div>
 
 <p style="margin-left: 0;">...the distance was measured using a <a href="areatools.html#polygon">polygon</a> area selection along the road with <a href="areatools.html#open">open figure</a> turned on (so the <a href="areatools.html#polygon">polygon</a> would not automatically close and consequently incorporate in the measured result the path back to the start of the <a href="areatools.html#polygon">polygon</a>.) The <span style="color:#006600;"><span style="font-weight: bold;"><tt>Path Length</tt></span></span> is shown as 47.8 miles, which is very close to correct, even given the low precision of the map itself, which only offers a resolution of 4 pixels per mile. However, it is a very <span style="font-style: italic;">accurate</span> four pixels per mile; the map here came from <a target="_blank" href="https://www.google.com/maps/">Google Maps</a>, which presents its map images very nicely in highly accurate pixels-per-unit-area, even when the map images are relatively small.</p>
 
@@ -321,7 +338,7 @@ border-style: solid;
                <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.34</center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.38</center>
                <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
            </div>
 </div>

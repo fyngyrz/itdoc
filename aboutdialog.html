@@ -1,7 +1,7 @@
 
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML LANG="en">
 <HEAD>
-<TITLE>Image Views</TITLE>
+<TITLE>About Dialog</TITLE>
 <script src="mousetrap.js" type="text/javascript"></script>
 <script type="text/javascript">
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
@@ -10,8 +10,8 @@ Mousetrap.bind("i", onIndex_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
-function onLeft_keyDown()  { window.location.href = "stepbystepdialogs.html"; }
-function onRight_keyDown() { window.location.href = "areatools.html"; }
+function onLeft_keyDown()  { window.location.href = "infodialog.html"; }
+function onRight_keyDown() { window.location.href = "seticonsdialog.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
@@ -211,30 +211,12 @@ a:visited {
 
           <div style="width: 100%; float: left; margin-right: -170px;">
 <div style="border:0; margin-right: 170px;">
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="stepbystepdialogs.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="areatools.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref180"></a><h1>9 &#32;-&#32;Image Views</h1>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="infodialog.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="seticonsdialog.html">Next</a>&nbsp;</td></tr></table></div>
+               <a name="ixref502"></a><h1>22 &#32;-&#32;About Dialog</h1>
 
-<p style="margin-left: 0;"><span style="font-weight: bold;">iToolBox</span> allows you to have multiple <a href="views.html">view</a>s open on any image, be it <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>, <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>, or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a>, that you have loaded. You can open any number of additional <a href="views.html">view</a>s with <span class="ckey">v</span>.</p>
+<div style="clear: both; text-align: center;"><a name="fgfg244"></a><center><img src="pics/about.png" alt="" title=""></center><br><span style="color: #880088;">The About Dialog</span></div>
 
-<p style="margin-left: 0;">Each <a href="views.html">view</a> maintains its own pan, size and zoom information, and will update accordingly no matter which <a href="views.html">view</a> you use to make modifications to the image it represents. You pan with <span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, <span class="ckey">&darr;</span> and <span class="ckey">home</span>, and zoom with <span class="ckey">z</span> and <span style="white-space:nowrap;"><span class="ckey">Z</span> (<span class="ckey">shift</span>+<span class="ckey">z</span>)</span>. You can modify both pan and zoom with <span class="ckey">shift</span> and <span class="ckey">opt/alt</span>. </p>
 
-<p style="margin-left: 0;">When the last <a href="views.html">view</a> on an image is closed, the image itself will close; in the case of a layered image, closing the last <a href="views.html">view</a> on a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> will close the entire layered image.</p>
-
-<p style="margin-left: 0;">if <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Confirm Image Close</span></span></span> is checked in the <a href="preferences.html">Preferences&nbsp;dialog</a>, then you'll be prompted if closing the last <a href="views.html">view</a> on an image will abandon unsaved changes.</p>
-
-<p style="margin-left: 0;">Image <a href="views.html">view</a>s offer pixel grids, which switch on and off with <span class="ckey">g</span>, and change color between black and white with <span style="white-space:nowrap;"><span class="ckey">G</span> (<span class="ckey">shift</span>+<span class="ckey">g</span>)</span>.</p>
-
-<p style="margin-left: 0;">Image <a href="views.html">view</a>s also offer rulers. Use <span class="ckey">m</span> to open the <a href="measure.html">Measure&nbsp;dialog</a>.</p>
-
-<div style="clear: both; text-align: center;"><a name="fgfg24"></a><center><img src="pics/lldmultipass.png" alt="" title=""></center><br><span style="color: #880088;">Multiple views on one image at different pan and zoom settings</span></div>
-
-<hr>
-
-<div style="clear: both; text-align: center;"><a name="fgfg25"></a><center><img src="pics/pixelgrid.png" alt="" title=""></center><br><span style="color: #880088;">Zoom with pixel grid ( <span class="ckey">g</span> ) turned on</span></div>
-
-<hr>
-
-<div style="clear: both; text-align: center;"><a name="fgfg26"></a><center><img src="pics/rulerson.png" alt="" title=""></center><br><span style="color: #880088;">View with rulers turned on in <span style="font-style: italic;">inches</span> mode</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -254,7 +236,7 @@ border-style: solid;
 <span class="ckey">o</span> Operators
 <span class="ckey">g</span> Glossary
 </div>
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="stepbystepdialogs.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="areatools.html">Next</a>&nbsp;</td></tr></table></div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="infodialog.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="seticonsdialog.html">Next</a>&nbsp;</td></tr></table></div>
                <p style="text-align: center;">
 <a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
 <br>&nbsp;
