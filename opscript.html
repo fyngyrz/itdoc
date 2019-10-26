@@ -11,7 +11,7 @@ Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "opsaturation.html"; }
-function onRight_keyDown() { window.location.href = "opsharpen.html"; }
+function onRight_keyDown() { window.location.href = "scriptsettings.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
@@ -211,31 +211,33 @@ a:visited {
 
           <div style="width: 100%; float: left; margin-right: -170px;">
 <div style="border:0; margin-right: 170px;">
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opsaturation.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opsharpen.html">Next</a>&nbsp;</td></tr></table></div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opsaturation.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="scriptsettings.html">Next</a>&nbsp;</td></tr></table></div>
                <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br>
 <a name="ixref323"></a><h3>11.4.68 &#32;-&#32;Script</h3>
 
-<p style="margin-left: 0;">Provides for running sequences of operations that modify image pixels on the selected area.</p>
+<p style="margin-left: 0;">The script operator provides for running sequences of operations that modify image pixels on the selected area. Provision of a number of non-image commands provides an additional means to manipulate values, create text strings, loop, use conditionals, and create functions.</p>
 
-<a name="ixref324"></a><a name="tocref11.4.68.1"></a><h4>11.4.68.1 &#32;-&#32;Creating Scripts</h4>
+<a name="ixref324"></a><a name="tocref11.4.68.1"></a><h4>11.4.68.1 &#32;-&#32;Creating Basic Scripts</h4>
+
+<p style="margin-left: 0;">You can edit scripts in the operator dialog, however, if the available space seems too cramped, use the <span style="white-space:nowrap;"><span class="cbut">&rArr; Edit</span></span> button to open a larger editing dialog.</p>
 
 <ul>
 <li>
-You can build a script line-by-line by using the <span style="white-space:nowrap;"><span class="cbut">&rarr;Script</span></span> <a href="operators.html#scriptbutton">button</a> in various operators</li>
+You can build a script of image commands line-by-line by using the <span style="white-space:nowrap;"><span class="cbut">&rarr;Script</span></span> <a href="operators.html#scriptbutton">button</a> in various operators</li>
 <li>
 You can enter script commands directly in the text box in the Script operator</li>
 <li>
-You can load previously saved scripts from mass storage
+You can load previously saved scripts from mass storage using <span style="white-space:nowrap;"><span class="cbut">Load/Save</span></span>
 </li>
 </ul>
 
 
 <p style="margin-left: 0;">You can save scripts you have created or modified. Scripts consist of a sequence of command (operation) lines that are executed from top to bottom, one operation per line.</p>
 
-<p style="margin-left: 0;">Each line in the script is checked for correctness. If any of the parameters for the operation are out of range, the operation won't execute. If the operation is not recognized, it will be ignored and the results of any other operations in the script will be undone.</p>
+<p style="margin-left: 0;">Each image command in the script is checked for correctness. If any of the parameters for the operation are out of range, the operation won't execute. If the image command is not recognized, it will be ignored and the results of any other operations in the script will be undone.</p>
 
 <a name="autocomplete"></a>
-<p style="margin-left: 0;">When typing lines directly into the script box, <span style="font-weight: bold;">iToolBox</span> will make suggestions in the prompt area below the script box as to what the possible command might be based on the characters you've typed so far. When you have typed enough characters such that there is only one possible candidate, that candidate will be the only one shown, and typing a <span class="ckey">tab</span> will auto-complete the keyword for you. At this point the prompt area changes to a guide to the parameters for that command. Here's an example of how that can go starting with a blank line...</p>
+<p style="margin-left: 0;">When typing commands directly into the script box in the first block on a line, <span style="font-weight: bold;">iToolBox</span> will make suggestions in the prompt area below the script box as to what the possible command might be based on the characters you've typed so far. When you have typed enough characters such that there is only one possible candidate, that candidate will be the only one shown, and typing a <span class="ckey">tab</span> will auto-complete the keyword for you. At this point the prompt area changes to a guide to the parameters for that command. Here's an example of how that can go starting with a blank line...</p>
 
 <center>
 <table border="1" bgcolor="#ffffff">
@@ -263,27 +265,443 @@ You can load previously saved scripts from mass storage
 
 <p style="margin-left: 0;">...at this point, the prompt area shows you have one value to provide to <span style="color:#006600;"><span style="font-weight: bold;"><tt>burn</tt></span></span>, so you type a space and that value, and you're done.</p>
 
-<p style="margin-left: 0;">Errors will result in both a report of the error lines and a listing of the correct parameters and ranges for those operations at the top of the script. Once the errors are cleared, the error report will disappear upon script execution and the script's result will be accepted.</p>
+<p style="margin-left: 0;">Errors will result in both a report of the error lines and a listing of the correct parameters and ranges for those operations at the top of the script when the script is executed. Once the errors are cleared, the error report will disappear upon script execution and the script's result will be accepted.</p>
 
-<p style="margin-left: 0;">You can disable any line or lines in a script by turning them into a comment by simply placing a <span style="color:#006600;"><span style="font-weight: bold;"><tt>#</tt></span></span> character at the beginning of the line(s.) Comment lines are ignored. Keep in mind that the start-of-line sequences <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#!</tt></span></span>"</span> and <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#:</tt></span></span>"</span> are reserved and must not be used in comments.</p>
+<p style="margin-left: 0;">You may place one command on a line (this is a good idea with image commands so you can take advantage of the suggestions feature), or you can do more than one by separating them with a "<span style="color:#006600;"><span style="font-weight: bold;"><tt>:</tt></span></span>" (a colon.) Each command is a block; so one command on a line represents one block, and several commands separated by colons represent multiple blocks.</p>
 
-<p style="margin-left: 0;">This operator provides syntax highlighting. You can set the colors via the <a href="preferences.html#metadefaults">Meta Defaults&nbsp;dialog</a>.</p>
+<p style="margin-left: 0;">You can disable any block in a script by turning them into a comment by simply placing a <span style="color:#006600;"><span style="font-weight: bold;"><tt>#</tt></span></span> character at the beginning of the block(s.) Comment blocks are ignored. Keep in mind that the start-of-block sequences <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#!</tt></span></span>"</span> and <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#:</tt></span></span>"</span> are reserved and must not be used in comments.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg146"></a><center><img src="pics/scriptop.png" alt="" title=""></center><br><span style="color: #880088;">The script operator<br>Pencil drawing effect<br>Cursor at beginning of<br><span style="color:#006600;"><span style="font-weight: bold;"><tt>forcedynamic</tt></span></span> line</span></div>
+<p style="margin-left: 0;">This operator provides syntax highlighting. You can set the colors via the <a href="scriptsettings.html">Script Settings dialog</a>, available from the <span style="white-space:nowrap;"><span class="cbut">Settings</span></span> button.</p>
 
-<a name="tocref11.4.68.2"></a><h4>11.4.68.2 &#32;-&#32;Available Script Commands</h4>
+<div style="clear: both; text-align: center;"><a name="fgfg146"></a><center><img src="pics/scriptop.png" alt="" title=""></center><br><span style="color: #880088;">The script operator<br>Noise Reduction<br>Cursor at beginning of<br><span style="color:#006600;"><span style="font-weight: bold;"><tt>notchf</tt></span></span> line</span></div>
 
-<p style="margin-left: 0;">Script commands generally consist of a keyword, followed by any required parameters, all separated by spaces. In the list below, the <span style="color:#006600;"><span style="font-weight: bold;"><tt>green</tt></span></span> information is what you type into the script; the red information is just to let you know what the parameters mean. In addition, the ellipsis (<span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color: #ff0000;">...</span></tt></span></span>) indicates a range, and is not entered into the script itself.</p>
+<a name="tocref11.4.68.2"></a><h4>11.4.68.2 &#32;-&#32;Available Script Image Commands</h4>
 
-<p style="margin-left: 0;">So for instance, to use the <span style="color:#006600;"><span style="font-weight: bold;"><tt>alphamod</tt></span></span> operation to create an alpha level of <span style="color:#006600;"><span style="font-weight: bold;"><tt>128</tt></span></span>, you would enter only this on a line:<br>
-<span style="color:#006600;"><span style="font-weight: bold;"><tt>&nbsp;alphamod 128</tt></span></span></p>
+<p style="margin-left: 0;">Script image commands generally consist of a keyword, followed by any required parameters, all separated by spaces, contained in one block. In the list below, the <span style="color:#006600;"><span style="font-weight: bold;"><tt>green</tt></span></span> information is what you type into the script; the red information is just to let you know what the parameters mean. In addition, the ellipsis (<span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color: #ff0000;">...</span></tt></span></span>) indicates a range, and is not entered into the script itself.</p>
 
-<p style="margin-left: 0;">Some operators do not have supporting scripting commands. They are indicated by red, struck-out text:<br>
-<span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color: #ff0000;"><strike>&nbsp;operator&nbsp;</strike></span></tt></span></span></p>
+<p style="margin-left: 0;">So for instance, to use the <span style="color:#006600;"><span style="font-weight: bold;"><tt>alphamod</tt></span></span> operation to create an alpha level of <span style="color:#006600;"><span style="font-weight: bold;"><tt>128</tt></span></span>, you would enter only this in a block:</p>
+
+<p style="margin-left: 0;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>&nbsp;alphamod 128 0</tt></span></span></p>
 
 <p style="margin-left: 0;">For checkboxes, a value of <span style="color:#006600;"><span style="font-weight: bold;"><tt>0</tt></span></span> means the box is unchecked; a value of <span style="color:#006600;"><span style="font-weight: bold;"><tt>1</tt></span></span> means is is checked.</p>
 
 <p style="margin-left: 0;">For drop-down selectors, the first entry is <span style="color:#006600;"><span style="font-weight: bold;"><tt>0</tt></span></span>, and each entry thereafter is a value increased by one. Or another way to look at it is, count the entries until you reach the one you want, then subtract one.</p>
+
+<a name="tocref11.4.68.3"></a><h4>11.4.68.3 &#32;-&#32;Variables</h4>
+
+<p style="margin-left: 0;">Numeric variables are created by writing a variable name, such as <span style="color:#006600;"><span style="font-weight: bold;"><tt>x</tt></span></span> or <span style="color:#006600;"><span style="font-weight: bold;"><tt>MyVariable</tt></span></span>, followed <span style="font-style: italic;">immediately</span> (without an intervening space) by an equals sign,and then the contents you want to put in the variable.</p>
+
+<p style="margin-left: 0;">Text variables are created by writing a variable name, such as <span style="color:#006600;"><span style="font-weight: bold;"><tt>x</tt></span></span> or <span style="color:#006600;"><span style="font-weight: bold;"><tt>MyVariable</tt></span></span>, followed <span style="font-style: italic;">immediately</span> (without an intervening space) by a tilde (<span style="color:#006600;"><span style="font-weight: bold;"><tt>~</tt></span></span>),and then the contents you want to put in the variable.</p>
+
+<p style="margin-left: 0;">Variable Rules:</p>
+
+<ul>
+<li>Variable names cannot begin with numbers: 2x is an illegal variable name, x2 is legal.</li>
+<li>
+Variable names cannot contain an '=' character</li>
+<li>
+variable names are all lower case, even if you write them otherwise</li>
+</ul>
+
+
+<p style="margin-left: 0;">There are three types of information you can put in a variable. Integer numbers, real (decimal with fractional parts) numbers, and text. Examples:</p>
+
+<center>
+<table border="1" bgcolor="#eeeeee">
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">v=5</span></tt></span></span></td><td valign="top">A variable named "v" that contains the integer number 5.<br>
+Will always produce the number 5 in any numerical context, and the character "5" in any character context.<br>
+Integer use example:<br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>value=128</tt></span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>alphamod value 0</tt></span></span><br>
+<span style="color: #ff0000;"><span style="font-style: italic;">...evaluates to:</span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>alphamod 128 0</tt></span></span>
+</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">yvalue=2.7</span></tt></span></span></td><td valign="top">A variable named "yvalue" that contains 2.7.<br>
+Will produce the number 2.7 in a real number context; will produce 3 in an integer context (that's 2.7 rounded to the nearest integer), and the character string "2.7" in any character context.<br>
+Real number use example:<br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>MyScale=1.1</tt></span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>text Courier 100 100 MyScale testing</tt></span></span><br>
+<span style="color: #ff0000;"><span style="font-style: italic;">...evaluates to:</span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>text Courier 100 100 1.1 testing</tt></span></span>
+</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">mykey~Testing 1, 2, 3</span></tt></span></span></td><td valign="top">A variable named "mykey" that contains the characters <span style="white-space:nowrap;">"Testing 1, 2, 3"</span><br>
+Text variables may only be used where an operator expects a character string, or when being concatinated into other text variables. If a text variable is used in a numeric context of any kind, this will result in an error.<br>
+Character string use example:<br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>myrandomkey=~My cat Twinkie</tt></span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>random 0 0 0 100 myrandomkey</tt></span></span><br>
+<span style="color: #ff0000;"><span style="font-style: italic;">...evaluates to:</span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>random 0 0 0 100 My cat Twinkie</tt></span></span>
+</td></tr>
+</table></center>
+
+<p style="margin-left: 0;">Because image command blocks are specified on a per-token basis by separating each token with a space, when a character value is required and it is not at the end of the set of tokens, the only way you can specify a token <span style="font-style: italic;">containing</span> spaces is to use a variable as an intermediary.</p>
+
+<p style="margin-left: 0;">For instance, the <span style="color:#006600;"><span style="font-weight: bold;"><tt>text</tt></span></span> area selection command requires a font name. A single-word font name like <span style="color:#006600;"><span style="font-weight: bold;"><tt>Courier</tt></span></span> is fine, as it contains no spaces, so you can just write the command literally, whereas multiple word font names will require the use of a variable. Examples:</p>
+
+
+<center>
+<table border="1" bgcolor="#eeeeee">
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>text Courier 100 100 1.1 testing</tt></span></span></tt></span></span></td><td valign="top">A literal, single-word font name</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">font~Marker Felt</span><br>
+<span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>text font 100 100 1.1 testing</tt></span></span></span></tt></span></span></td><td valign="top">A multi-word font name contained in a variable</td></tr>
+</table></center>
+
+<a name="tocref11.4.68.3.1"></a><h5>11.4.68.3.1 &#32;-&#32;Preset Variables</h5>
+
+<p style="margin-left: 0;">A number of preset variables are available for use in scripts. They are set as follows:</p>
+
+
+<center>
+<table border="1" bgcolor="#eeeeee">
+
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Special Variable</b></td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>void</tt></span></span></tt></span></span></td><td valign="top">This variable always exists, and serves as a place to stuff results you won't using. Most typically used in conjunction with the custom function capability.</td></tr>
+
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Math Constants</b></td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_c</tt></span></span></tt></span></span></td><td valign="top">299792458<br>The speed of light in free space.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_e</tt></span></span></tt></span></span></td><td valign="top">2.71828182845905<br>Euler's number.</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_pi</tt></span></span></tt></span></span></td><td valign="top">3.14159265358979<br>Pi.</td></tr>
+
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Image circumstances at script run time</b></td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_width</tt></span></span></tt></span></span></td><td valign="top">Image width in pixels</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_height</tt></span></span></tt></span></span></td><td valign="top">Image height in pixels</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_origin</tt></span></span></tt></span></span></td><td valign="top">One if an origin image is available, zero otherwise.</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_owidth</tt></span></span></tt></span></span></td><td valign="top">Origin image width in pixels (zero if no origin set)</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_oheight</tt></span></span></tt></span></span></td><td valign="top">Origin image height in pixels (zero if no origin set)</td></tr>
+
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Text operator configuration</b></td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_font</tt></span></span></tt></span></span></td><td valign="top">Courier</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_fontpoints</tt></span></span></tt></span></span></td><td valign="top">50<br>Range is 10 to 200.</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_format</tt></span></span></tt></span></span></td><td valign="top">3<br>Range is zero to four:
+<ol start="0">
+<li> Format as [-]9.9e[+/-]999</li>
+<li>
+Format as [-]9.9E[+/-]999</li>
+<li>
+Format as [-]9.9</li>
+<li>
+Use the more concise of 0 or 2 format</li>
+<li>
+use the more concise of 1 or 2 format</li>
+</ol>
+</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_base</tt></span></span></tt></span></span></td><td valign="top">10<br>Range 2-16</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_fieldwidth</tt></span></span></tt></span></span></td><td valign="top">0<br>Range is -80 to 80. a negative fieldwidth forces left-justification.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_precision</tt></span></span></tt></span></span></td><td valign="top">15<br>range -1 to 15</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_fillchar</tt></span></span></tt></span></span></td><td valign="top">[space]<br>You might set this to "0", etc.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_nocommas</tt></span></span></tt></span></span></td><td valign="top">0<br>Range Zero to one. Set this to 1 if you don't want commas in numbers</td></tr>
+</table></center>
+
+<a name="tocref11.4.68.4"></a><h4>11.4.68.4 &#32;-&#32;Expressions</h4>
+
+<p style="margin-left: 0;">Expressions may be used wherever a  variable is being set.</p>
+
+<p style="margin-left: 0;">Expressions may contain variables or literal values. Variables have priority over literal values; for instance, if there is no variable named <span style="color:#006600;"><span style="font-weight: bold;"><tt>x</tt></span></span>, and you write <span style="color:#006600;"><span style="font-weight: bold;"><tt>var=x+foo</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>var</tt></span></span> will contain <span style="color:#006600;"><span style="font-weight: bold;"><tt>xfoo</tt></span></span>. However, if the variable x contains something, for example a <span style="color:#006600;"><span style="font-weight: bold;"><tt>2</tt></span></span>, then <span style="color:#006600;"><span style="font-weight: bold;"><tt>var</tt></span></span> will contain <span style="color:#006600;"><span style="font-weight: bold;"><tt>2foo</tt></span></span>.</p>
+
+<p style="margin-left: 0;">Numeric expressions may contain the arithmetic operators <span style="color:#006600;"><span style="font-weight: bold;"><tt>+</tt></span></span> for addition, <span style="color:#006600;"><span style="font-weight: bold;"><tt>-</tt></span></span> for subtraction and negation, <span style="color:#006600;"><span style="font-weight: bold;"><tt>*</tt></span></span> for multiplication, and <span style="color:#006600;"><span style="font-weight: bold;"><tt>/</tt></span></span> for division.</p>
+
+<p style="margin-left: 0;">They may also contain the comparison operators <span style="color:#006600;"><span style="font-weight: bold;"><tt>==</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>!=</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&lt;</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&gt;</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&lt;=</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&gt;=</tt></span></span></p>
+
+<p style="margin-left: 0;">Text expressions may contain the operator <span style="color:#006600;"><span style="font-weight: bold;"><tt>+</tt></span></span> for concatenation. To express a literal <span style="color:#006600;"><span style="font-weight: bold;"><tt>+</tt></span></span> in a string, use a digraph &mdash; two plus signs in a row: <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>var=two++two</tt></span></span></span> which evaluates to <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>var=two+two</tt></span></span></span>, whereas <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>var=two+two</tt></span></span></span> evaluates to <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>var=twotwo</tt></span></span></span>.</p>
+
+<p style="margin-left: 0;">Text expressions cannot contain single colons, as these indicate the end of one block and the beginning of another. To represent a colon in a text string, use the digraph <span style="color:#006600;"><span style="font-weight: bold;"><tt>::</tt></span></span> instead of a single colon character.</p>
+
+<p style="margin-left: 0;">Numeric expressions may not contain any spaces; this allows expressions to be used as numeric parameters to an image command where the image command's individual parameters are separated by spaces.</p>
+
+<p style="margin-left: 0;">Example numeric expressions:</p>
+
+
+<center>
+<table border="1" bgcolor="#eeeeee">
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>a=5</tt></span></span></span><br><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>y=a+2</tt></span></span></span></tt></span></span></td><td valign="top">The variable <span style="color:#006600;"><span style="font-weight: bold;"><tt>y</tt></span></span> now contains <span style="color:#006600;"><span style="font-weight: bold;"><tt>7</tt></span></span></td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>a=5</tt></span></span></span><br><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>y=a+-2</tt></span></span></span></tt></span></span></td><td valign="top">The variable <span style="color:#006600;"><span style="font-weight: bold;"><tt>y</tt></span></span> now contains <span style="color:#006600;"><span style="font-weight: bold;"><tt>3</tt></span></span></td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>b=7</tt></span></span><br>
+<span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>foo=12</tt></span></span></span><br>
+<span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>alphamod foo+b*2-1 0</tt></span></span></span></span></tt></span></span></td><td valign="top"> The result here is this command: <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>alphamod 37 0</tt></span></span></span><br>
+Here's how that happened: First, <span style="color:#006600;"><span style="font-weight: bold;"><tt>b</tt></span></span> is added to <span style="color:#006600;"><span style="font-weight: bold;"><tt>foo</tt></span></span>, which results in <span style="color:#006600;"><span style="font-weight: bold;"><tt>19</tt></span></span>. Then <span style="color:#006600;"><span style="font-weight: bold;"><tt>19</tt></span></span> is multiplied by <span style="color:#006600;"><span style="font-weight: bold;"><tt>2</tt></span></span>, which results in <span style="color:#006600;"><span style="font-weight: bold;"><tt>38</tt></span></span>. Finally, <span style="color:#006600;"><span style="font-weight: bold;"><tt>38</tt></span></span> has <span style="color:#006600;"><span style="font-weight: bold;"><tt>1</tt></span></span> subtracted from it, which results in <span style="color:#006600;"><span style="font-weight: bold;"><tt>37</tt></span></span></td></tr>
+</table></center>
+
+<p style="margin-left: 0;">Expressions are evaluated in a strict left-to-right order. Multiplication and division do <span style="font-style: italic;">not</span> have priority over addition and subtraction. Operations occur in the order they are written.</p>
+
+<p style="margin-left: 0;">If you need to control operation order, use <span style="color:#006600;"><span style="font-weight: bold;"><tt>(</tt></span></span> and <span style="color:#006600;"><span style="font-weight: bold;"><tt>)</tt></span></span> parentheses. For example:</p>
+
+
+<center>
+<table border="1" bgcolor="#eeeeee">
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=2+2*3</tt></span></span></span></tt></span></span></td><td valign="top">The variable <span style="color:#006600;"><span style="font-weight: bold;"><tt>x</tt></span></span> now contains <span style="color:#006600;"><span style="font-weight: bold;"><tt>12</tt></span></span></td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=2+(2*3)</tt></span></span></span></tt></span></span></td><td valign="top">The variable <span style="color:#006600;"><span style="font-weight: bold;"><tt>x</tt></span></span> now contains <span style="color:#006600;"><span style="font-weight: bold;"><tt>8</tt></span></span></td></tr>
+</table></center>
+
+<a name="ixref325"></a>
+
+<a name="tocref11.4.68.4.1"></a><h5>11.4.68.4.1 &#32;-&#32;Unary Operations</h5>
+
+<p style="margin-left: 0;">An unary operation is one that directly affects the following value. There is only one unary operation:</p>
+
+<center>
+<table border=1>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>-value</tt></span></span></span></tt></span></span></td><td valign="top">Negation</td></tr>
+</table></center>
+
+<a name="tocref11.4.68.5"></a><h4>11.4.68.5 &#32;-&#32;Functions</h4>
+
+<p style="margin-left: 0;">Functions use reserved names; don't use these names as variables.</p>
+
+
+
+<center>
+<table border=1>
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Functions related to variables</b></td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=exists(variablename)</tt></span></span></span></tt></span></span></td><td valign="top">Returns zero if the variable does not exist, one if it does.</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=notexists(variablename)</tt></span></span></span></tt></span></span></td><td valign="top">Returns one if the variable does not exist, zero if it does.</td></tr>
+
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Direct image functions</b></td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=chup(0-255)</tt></span></span></span></tt></span></span></td><td valign="top">Converts 0-255 to 0-65535 clipped and scaled</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=readch(x,y,ch,[,a])</tt></span></span></span></tt></span></span></td><td valign="top">ch is 0123 for RGBA,  (Unknown Built-in or Squiggly:  tag=",1" data="nobreak <span style="color:#006600;"><span style="font-weight: bold;"><tt>x=readch(x,y,ch,[,a])</tt></span></span>")  means read origin</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=writep(x,y,r,g,b[,a])</tt></span></span></span></tt></span></span></td><td valign="top">returns 1 on success, rgba are 0-65535</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=readm(x,y)</tt></span></span></span></tt></span></span></td><td valign="top">Returns 0-65535, or 0 if you read outside the image</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=writem(x,y,m)</tt></span></span></span></tt></span></span></td><td valign="top">m is 0-65535, returns 1 on success</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=cmix(c1,c2)</tt></span></span></span></tt></span></span></td><td valign="top">Channel blending</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=amix(a1,a2)</tt></span></span></span></tt></span></span></td><td valign="top">Alpha blending</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=setm(m)</tt></span></span></span></tt></span></span></td><td valign="top">m may be 0 to 65535. Sets entire mask to this value. Returns one on success.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=linem(x1,y1,x2,y2,m)</tt></span></span></span></tt></span></span></td><td valign="top">Writes a line into the mask. Returns the length of the line.</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=aam(radius,amount)</tt></span></span></span></tt></span></span></td><td valign="top">Antialias the mask, returns one on success.</td></tr>
+
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Math functions (trig functions use radians for angles)</b></td></tr>
+
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=sin(y)</tt></span></span></span></tt></span></span></td><td valign="top">Sine of y</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=sinh(y)</tt></span></span></span></tt></span></span></td><td valign="top">Hyperbolic sine of y</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=asin(y)</tt></span></span></span></tt></span></span></td><td valign="top">Arc sine of y</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=asinh(y)</tt></span></span></span></tt></span></span></td><td valign="top">Hyperbolic arc sine of y</td></tr>
+
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=cos(y)</tt></span></span></span></tt></span></span></td><td valign="top">Cosine of y</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=cosh(y)</tt></span></span></span></tt></span></span></td><td valign="top">Hyperbolic cosine of y</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=acos(y)</tt></span></span></span></tt></span></span></td><td valign="top">Arc cosine of y</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=acosh(y)</tt></span></span></span></tt></span></span></td><td valign="top">Hyperbolic arc cosine of y</td></tr>
+
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=tan(y)</tt></span></span></span></tt></span></span></td><td valign="top">Tangent of y</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=tanh(y)</tt></span></span></span></tt></span></span></td><td valign="top">Hyperbolic tangent of y</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=atan(y)</tt></span></span></span></tt></span></span></td><td valign="top">Arc tangent of y</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=atanh(y)</tt></span></span></span></tt></span></span></td><td valign="top">Hyperbolic arc tangent of y</td></tr>
+
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=round(y)</tt></span></span></span></tt></span></span></td><td valign="top">y is rounded to the nearest integer, where .5 rounds up.</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=negate(y)</tt></span></span></span></tt></span></span></td><td valign="top">Negation: same as -y</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=seed(y)</tt></span></span></span></tt></span></span></td><td valign="top">Seeds the random number generator</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=rdm(y)</tt></span></span></span></tt></span></span></td><td valign="top">Returns a value from 0 to y</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=ln(y)</tt></span></span></span></tt></span></span></td><td valign="top">Natural logarithm</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=log()</tt></span></span></span></tt></span></span></td><td valign="top">Logarithm, base 10</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=inc(y)</tt></span></span></span></tt></span></span></td><td valign="top">x=y+1</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=dec(y)</tt></span></span></span></tt></span></span></td><td valign="top">x=y-1</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=fact(y)</tt></span></span></span></tt></span></span></td><td valign="top">Factorial of y</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=exp(y)</tt></span></span></span></tt></span></span></td><td valign="top">Euler's number to the power of y</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=int(y)</tt></span></span></span></tt></span></span></td><td valign="top">strips all fractional value and returns a whole number</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=floor(y)</tt></span></span></span></tt></span></span></td><td valign="top">strips all fractional value and returns y's whole-number portion</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=ceil(y)</tt></span></span></span></tt></span></span></td><td valign="top">strips all fractional value and returns y's whole-number portion + 1</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=percent(y,p)</tt></span></span></span></tt></span></span></td><td valign="top">Returns y as a percentage of p</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=atan2(x,y)</tt></span></span></span></tt></span></span></td><td valign="top">Returns angle of x,y relative to 0,0</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=pow(x,y)</tt></span></span></span></tt></span></span></td><td valign="top">Returns x to the power of y</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=length(x1,y1,x2,y2)</tt></span></span></span></tt></span></span></td><td valign="top">returns the length of line x1,y1:x2:y2</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=mean(x1[,...,xn])</tt></span></span></span></tt></span></span></td><td valign="top">Returns the mean of one or more values</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=median(x1[,...,xn])</tt></span></span></span></tt></span></span></td><td valign="top">Returns the median of one or more values</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=avg(x1[,...,xn])</tt></span></span></span></tt></span></span></td><td valign="top">Returns the average of one or more values</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=sum(x1[,...,xn])</tt></span></span></span></tt></span></span></td><td valign="top">Returns the sum of one or more values</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=count(x1[,...,xn])</tt></span></span></span></tt></span></span></td><td valign="top">Returns the number of one or more values</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=min(x1[,...,xn])</tt></span></span></span></tt></span></span></td><td valign="top">Returns the minimum of one or more values</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x=max(x1[,...,xn])</tt></span></span></span></tt></span></span></td><td valign="top">Returns the maximum of one or more values</td></tr>
+
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>General conversion functions</b></td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>lbs=ntol(newtons)</tt></span></span></span></tt></span></span></td><td valign="top">Newtons to pounds of force</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>newtons=lton(lbs)</tt></span></span></span></tt></span></span></td><td valign="top">Pounds of force to newtons</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>degrees=rtod(radians)</tt></span></span></span></tt></span></span></td><td valign="top">Converts radians to degrees</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>radians=dtor(degrees)</tt></span></span></span></tt></span></span></td><td valign="top">Converts degrees to radians</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>feet=mtof(meters)</tt></span></span></span></tt></span></span></td><td valign="top">Converts meters to feet</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>meters=ftom(feet)</tt></span></span></span></tt></span></span></td><td valign="top">Converts feet to meters</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>gradians=dtog(degrees)</tt></span></span></span></tt></span></span></td><td valign="top">Converts degrees to gradians</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>degrees=gtod(gradians)</tt></span></span></span></tt></span></span></td><td valign="top">Converts gradians to degrees</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>btu=wtob(watts)</tt></span></span></span></tt></span></span></td><td valign="top">Converts watts to BTUs</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>watts=btow(btus)</tt></span></span></span></tt></span></span></td><td valign="top">Converts BTUs to watts</td></tr>
+
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Temperature conversion functions</b></td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>f=ctof(c)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Centigrade to Fahrenheit</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>f=ktof(k)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Kelvin to Fahrenheit</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>f=rtof(r)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Rankine to Fahrenheit</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>c=ftoc(f)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Fahrenheit  to Centigrade</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>c=ktoc(k)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Kelvin to Centigrade</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>c=rtoc(r)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Rankine to Centigrade</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>k=ctok(c)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Centigrade to Kelvin</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>k=ftok(f)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Fahrenheit to Kelvin</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>k=rtok(r)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Rankine to Kelvin</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>r=ctor(c)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Centigrade to Rankine</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>r=ftor(f)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Fahrenheit to Rankine</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>r=ktor(k)</tt></span></span></span></tt></span></span></td><td valign="top">Converts Kelvin to Rankine</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>dc=dftodc(df)</tt></span></span></span></tt></span></span></td><td valign="top">Converts delta Fahrenheit to delta Centigrade</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>df=dctodf(dc)</tt></span></span></span></tt></span></span></td><td valign="top">Converts delta Centigrade to delta Fahrenheit</td></tr>
+
+<tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Electronics functions</b></td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>e=irtoe(i,r)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: volts from amperes and watts</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>e=pitoe(p,i)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: volts from watts and amperes</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>e=prtoe(p,r)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: volts from watts and ohms</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>i=ertoi(e,r)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: amperes from volts and ohms</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>i=petoi(p,e)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: amperes from watts and volts</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>i=prtoi(p,r)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: amperes from watts and ohms</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>r=eitor(e,i)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: ohms from volts and amperes</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>r=eptor(e,p)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: ohms from volts and watts</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>r=pitor(p,i)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: ohms from watts and amperes</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>p=eitop(e,i)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: watts from volts and amperes</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>p=ertop(e,r)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: watts from volts and ohms</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>p=irtop(i,r)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: watts from amperes and ohms</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>e=dbmtov(dbm)</tt></span></span></span></tt></span></span></td><td valign="top">converts dbm to volts</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>dbm=dbm(e[,r])</tt></span></span></span></tt></span></span></td><td valign="top">volts and ohms to dbm. r is 50 unless specified otherwise</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>dbm=stodbm(s)</tt></span></span></span></tt></span></span></td><td valign="top">Converts sunits<font color="#ff0000"><b><sup>note&nbsp;1</sup></b></font> to dbm</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>s=sunits(e[,r])</tt></span></span></span></tt></span></span></td><td valign="top">Converts volts to sunits<font color="#ff0000"><b><sup>note&nbsp;1</sup></b></font>. r is 50 unless specified otherwise</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>s=dbmtos(dbm)</tt></span></span></span></tt></span></span></td><td valign="top">Converts dbm to sunits<font color="#ff0000"><b><sup>note&nbsp;1</sup></b></font></td></tr>
+
+
+</table></center>
+
+<p style="margin-left: 0;"><b><font color="#ff0000"><span style="font-weight: bold;">note&nbsp;1:</span></font></b> above s9, sunits are represented as 9.x where the x contains dB-over divided by 1,000. For instance,  (Unknown Built-in or Squiggly:  tag="s9+10db" data="note&nbsp;1:")  reads out as [9.010], [s9+40dB] reads out as [9.040], etc. Below S9, the value reads out pure sunits, including valid decimal places.</p>
+
+<a name="tocref11.4.68.6"></a><h4>11.4.68.6 &#32;-&#32;Area Selection Commands</h4>
+
+<p style="margin-left: 0;">There may be times when you want a script to do whatever it does at a particular location or within a known region on any image it is applied to. To facilitate that, the following area selection commands are available to you:</p>
+
+
+<center>
+<table border=1 bgcolor="#dddddd">
+ <tr><td bgcolor="ddffdd"><div style="font-family: monospace; padding-left:0;">entire</div></td></tr>
+
+ <tr><td bgcolor="ddddff"><div style="font-family: monospace; padding-left:0;">text <span style="color: #ff0000;">[Font=</span>fontname<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[X=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Y=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Scale=</span>0.1<span style="color: #ff0000;">...</span>2.0<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[content=</span>text<span style="color: #ff0000;">]</span></div></td></tr>
+
+ <tr><td bgcolor="ddffdd"><div style="font-family: monospace; padding-left:0;">rect <span style="color: #ff0000;">[Left=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Top=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Right=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Bottom=</span>integer<span style="color: #ff0000;">]</span></div></td></tr>
+
+ <tr><td bgcolor="ddddff"><div style="font-family: monospace; padding-left:0;">ellipse <span style="color: #ff0000;">[XCenter=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[YCenter=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[XRadius=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[YRadius=</span>integer<span style="color: #ff0000;">]</span></div></td></tr>
+
+ <tr><td bgcolor="ddffdd"><div style="font-family: monospace; padding-left:0;">rellipse <span style="color: #ff0000;">[Left=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Top=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Right=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Bottom=</span>integer<span style="color: #ff0000;">]</span></div></td></tr>
+
+ <tr><td bgcolor="ddddff"><div style="font-family: monospace; padding-left:0;">wand <span style="color: #ff0000;">[X=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Y=</span>integer<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Tolerance=</span>1<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span></div></td></tr>
+
+</table>
+</center>
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDFFDD;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><span style="font-weight: bold;">Tip:</span> If you use one of the above area selection commands, it will override any area selection that was manually made. The selection you make will only trigger the script, and the actual selection used will be the one the specified <I>in</i> the script.</div>
+
+
+<a name="tocref11.4.68.7"></a><h4>11.4.68.7 &#32;-&#32;Miscellaneous Commands</h4>
+
+
+<center>
+<table border=1 bgcolor="#dddddd">
+ <tr><td bgcolor="ddffdd"><div style="font-family: monospace; padding-left:0;">mix <span style="color: #ff0000;">[Amount=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span></div></td></tr>
+
+ <tr><td bgcolor="ddddff"><div style="font-family: monospace; padding-left:0;">pause <span style="color: #ff0000;">[Seconds=</span>1<span style="color: #ff0000;">...</span>10<span style="color: #ff0000;">]</span></div></td></tr>
+
+</table>
+</center>
+
+<a name="tocref11.4.68.8"></a><h4>11.4.68.8 &#32;-&#32;Custom Functions</h4>
+
+<p style="margin-left: 0;">You can create custom functions. Custom functions are <b>quoted text variables</b> containing one or more command blocks which are separated by <span style="color:#006600;"><span style="font-weight: bold;"><tt>;</tt></span></span> (semicolon) characters (not colons!) You can put anything in a custom function that you can in any other block.</p>
+
+<p style="margin-left: 0;">Here's a custom function that will add one to the variable a, and an example of its use:</p>
+
+<blockquote>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>inca~"a=a+1"</tt></span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>void=func(inca)</tt></span></span>
+</blockquote>
+
+<p style="margin-left: 0;">Here's one that will colorfill in orange:</p>
+
+<blockquote>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>orangefill~"r=255;g=128;b=64;colorfill r g b;#orange!"</tt></span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>void=func(orangefill)</tt></span></span>
+</blockquote>
+
+<p style="margin-left: 0;">Custom functions are evaluated when they are invoked. This makes them dynamic instead of static. Examples:</p>
+
+<blockquote>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>myfunc~"a=b+c":# function definition</tt></span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>b=1:c=2:# initial setup</tt></span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>void=func(myfunk):# variable a will now be 3</tt></span></span><br>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>b=2:void=func(myfunk):# variable a will now be 4</tt></span></span><br>
+</blockquote>
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDFFDD;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><span style="font-weight: bold;">Tip:</span> If you need to represent an actual semicolon in a custom function, use a digraph: <span style="color:#006600;"><span style="font-weight: bold;"><tt>;;</tt></span></span></div>
+
+
+<a name="tocref11.4.68.9"></a><h4>11.4.68.9 &#32;-&#32;Comparative math operators</h4>
+
+
+<center>
+<table border="1" bgcolor="#eeeeee">
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>x==y</tt></span></span></tt></span></span></td><td valign="top">x equal to y is 1, otherwise 0</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>x!=y</tt></span></span></tt></span></span></td><td valign="top">x not equal to y is 1, otherwise 0</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>x&lt;=y</tt></span></span></tt></span></span></td><td valign="top">x less than or equal to y is 1, otherwise 0</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>x&gt;=y</tt></span></span></tt></span></span></td><td valign="top">x greater than or equal to y is 1, otherwise 0</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>x&lt;y</tt></span></span></tt></span></span></td><td valign="top">x less than y is 1, otherwise 0</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>x&gt;y</tt></span></span></tt></span></span></td><td valign="top">x greater than y is 1, otherwise 0</td></tr>
+</table></center>
+
+<a name="tocref11.4.68.10"></a><h4>11.4.68.10 &#32;-&#32;Conditionals</h4>
+
+
+<center>
+<table border="1" bgcolor="#eeeeee">
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>if(expression</tt></span></span></tt></span></span></td><td valign="top">For example, <span style="color:#006600;"><span style="font-weight: bold;"><tt>if(a&lt;b)</tt></span></span></td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>else</tt></span></span></tt></span></span></td><td valign="top">optional after <span style="color:#006600;"><span style="font-weight: bold;"><tt>if</tt></span></span>; content after else executes when the <span style="color:#006600;"><span style="font-weight: bold;"><tt>if</tt></span></span> expression does not evaluate to 1</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>endif</tt></span></span></tt></span></span></td><td valign="top">Terminates <span style="color:#006600;"><span style="font-weight: bold;"><tt>if</tt></span></span> and optional <span style="color:#006600;"><span style="font-weight: bold;"><tt>else</tt></span></span> sections</td></tr>
+</table></center>
+
+
+<a name="tocref11.4.68.11"></a><h4>11.4.68.11 &#32;-&#32;Looping</h4>
+
+<p style="margin-left: 0;">Loops are built using two commands; a starting command, <span style="color:#006600;"><span style="font-weight: bold;"><tt>loop([expression])</tt></span></span>, that can include an optional expression specifying a maximum looping count, and an ending command, <span style="color:#006600;"><span style="font-weight: bold;"><tt>endloop([expression])</tt></span></span>, that can include an optional expression defining a terminating condition. Neither, either or both my be present.; A loop without any expression specified in either the starting or ending commands will run once.</p>
+
+<p style="margin-left: 0;">The <span style="color:#006600;"><span style="font-weight: bold;"><tt>loop(count)</tt></span></span>, if provided, takes priority over any specified ending condition; the loop will terminate  before the ending condition is satisfied if it executes the maximum number of loops initially specified.</p>
+
+<p style="margin-left: 0;">If you may need a loop to run zero times, surround it with an <span style="color:#006600;"><span style="font-weight: bold;"><tt>if()</tt></span></span> expression, like this:</p>
+
+<blockquote>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>if(n!=0):loop(n):a=a+1:#etc.:endloop():endif</tt></span></span>
+</blockquote>
+
+<p style="margin-left: 0;">Be careful not to set up a condition where the look cannot end naturally, such as:</p>
+
+<blockquote>
+<span style="color:#006600;"><span style="font-weight: bold;"><tt>loop():a+a+1:endloop(1)</tt></span></span>
+</blockquote>
+
+<p style="margin-left: 0;">In that case, the loop will not terminate until the number of blocks executed reaches the maximum count set by the pre-defined variable <span style="color:#006600;"><span style="font-weight: bold;"><tt>m_maxops</tt></span></span> &mdash; You can change the value of this variable, and if you do so unwisely, you can set up a condition where a script will, practically speaking at least,  never end.</p>
+
+<a name="tocref11.4.68.12"></a><h4>11.4.68.12 &#32;-&#32;Operator Commands</h4>
+
+<p style="margin-left: 0;">Some operators do not have supporting scripting commands. They are indicated by red, struck-out text in the table below:<br>
+
+<span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color: #ff0000;"><strike>&nbsp;operator&nbsp;</strike></span></tt></span></span></p>
+
 
 <center>
 <table border=1 bgcolor="#dddddd">
@@ -383,17 +801,11 @@ You can load previously saved scripts from mass storage
 
  <tr><td bgcolor="ddffdd"><div style="font-family: monospace; padding-left:0;">monofix</div></td></tr>
 
- <tr><td bgcolor="ddddff"><div style="font-family: monospace; padding-left:0;"><div style="background-color: #FFFFCC">mix <span style="color: #ff0000;">[Amount=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span><br>
-<span style="color: #000000;">Non-operator command: mixes RGBA of current result with original RGBA. For example, at Amount=75, you get 75% result, and 25% original</span></div></div></td></tr>
+ <tr><td bgcolor="ddddff"><div style="font-family: monospace; padding-left:0;">negative</div></td></tr>
 
- <tr><td bgcolor="ddffdd"><div style="font-family: monospace; padding-left:0;">negative</div></td></tr>
+<tr><td bgcolor="ddffdd"><span style="color: #ff0000;"><tt><strike>&nbsp;notations&nbsp;</strike></tt></span></td></tr>
 
-<tr><td bgcolor="ddddff"><span style="color: #ff0000;"><tt><strike>&nbsp;notations&nbsp;</strike></tt></span></td></tr>
-
- <tr><td bgcolor="ddffdd"><div style="font-family: monospace; padding-left:0;">notchf <span style="color: #ff0000;">[Bandwidth=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Frequency=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Depth=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Skirts=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span></div></td></tr>
-
- <tr><td bgcolor="ddddff"><div style="font-family: monospace; padding-left:0;"><div style="background-color: #FFFFCC">pause <span style="color: #ff0000;">[Seconds=</span>1<span style="color: #ff0000;">...</span>10<span style="color: #ff0000;">]</span><br>
-<span style="color: #000000;">Non-operator command: updates results and then pauses for the specified number of seconds</span></div></div></td></tr>
+ <tr><td bgcolor="ddddff"><div style="font-family: monospace; padding-left:0;">notchf <span style="color: #ff0000;">[Bandwidth=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Frequency=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Depth=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Skirts=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span></div></td></tr>
 
  <tr><td bgcolor="ddffdd"><div style="font-family: monospace; padding-left:0;">perlin <span style="color: #ff0000;">[Density=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Seed=</span>1<span style="color: #ff0000;">...</span>9999<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Offset=</span>0<span style="color: #ff0000;">...</span>255<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Turb=</span>0<span style="color: #ff0000;">...</span>7<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Gain=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Contrast=</span>0<span style="color: #ff0000;">...</span>200<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Floor=</span>0<span style="color: #ff0000;">...</span>100<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Smooth=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span></div></td></tr>
  <tr><td bgcolor="ddddff"><div style="font-family: monospace; padding-left:0;">perspective <span style="color: #ff0000;">[Xr=</span>-90<span style="color: #ff0000;">...</span>90<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Yr=</span>-90<span style="color: #ff0000;">...</span>90<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Zr=</span>-90<span style="color: #ff0000;">...</span>90<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Center=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span></div></td></tr>
@@ -468,7 +880,7 @@ border-style: solid;
 <span class="ckey">o</span> Operators
 <span class="ckey">g</span> Glossary
 </div>
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opsaturation.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opsharpen.html">Next</a>&nbsp;</td></tr></table></div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opsaturation.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="scriptsettings.html">Next</a>&nbsp;</td></tr></table></div>
                <p style="text-align: center;">
 <a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
 <br>&nbsp;
@@ -476,7 +888,7 @@ border-style: solid;
                <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.38</center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.39</center>
                <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
            </div>
 </div>

@@ -1,7 +1,7 @@
 
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML LANG="en">
 <HEAD>
-<TITLE>Multiply</TITLE>
+<TITLE>Script Settings Dialog</TITLE>
 <script src="mousetrap.js" type="text/javascript"></script>
 <script type="text/javascript">
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
@@ -10,8 +10,8 @@ Mousetrap.bind("i", onIndex_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
-function onLeft_keyDown()  { window.location.href = "lmsubtract.html"; }
-function onRight_keyDown() { window.location.href = "lmdivide.html"; }
+function onLeft_keyDown()  { window.location.href = "opscript.html"; }
+function onRight_keyDown() { window.location.href = "opsharpen.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
@@ -211,34 +211,15 @@ a:visited {
 
           <div style="width: 100%; float: left; margin-right: -170px;">
 <div style="border:0; margin-right: 170px;">
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="lmsubtract.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="lmdivide.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="layersdialog.html"><span style="font-style: italic;"><span style="font-weight: bold;">Layers Dialog</span></span></a> / <a href="layerblendmodes.html"><span style="font-style: italic;"><span style="font-weight: bold;">Layer Blending Modes</span></span></a> / <a href="lmnormal.html"><span style="font-style: italic;"><span style="font-weight: bold;">Traditional Blend Modes</span></span></a><br> <a name="ixref380"></a>
-<a name="ixref381"></a><h4>18.3.1.7 &#32;-&#32;Multiply</h4>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opscript.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opsharpen.html">Next</a>&nbsp;</td></tr></table></div>
+               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br>
+<a name="ixref326"></a><h3>11.4.69 &#32;-&#32;Script Settings Dialog</h3>
 
-<p style="margin-left: 0;">This mode multiplies the content of the higher <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> against the lower <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s.</p>
+<p style="margin-left: 0;">This dialog provides a means to set, save and load the syntax highlighting colors, specify the line wrap state, and access the presets dialog.</p>
 
-<p style="margin-left: 0;">The channels are treated as a value of 0 where they are zero; .5 where they are 32768, and 1 where they are 65535. The result is unchanged where the upper <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> is white; half intensity where the upper <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> channels are all 32768 (.5), and black where the upper channels are zero.</p>
+<p style="margin-left: 0;">The presets dialog allows you to create script blocks that are executed prior to <i>every</i> script, thereby allowing you to have handy preset variables and functions you can call on, making your scripts much easier to create.</p>
 
-<p style="margin-left: 0;">One way to think about this is that anything but pure white will make the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> composite darker.</p>
-
-<p style="margin-left: 0;">See also: <a href="lmdivide.html">Divide blend mode</a></p>
-
-
-
-<div style="
-        width: 75%;
-        clear: both;
- border-style: solid;
-   background: #DDFFDD;
-   text-align: left;
-      padding: .5em;
-       margin: auto;
-   margin-top: 1em;
-margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> Divide is not the exact opposite of Multiply mode; Divide can double the brightness of a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>, while Multiply can only bring the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> to normal brightness.</div>
-
-
-<div style="clear: both; text-align: center;"><a name="fgfg192"></a><center><img src="pics/blendmultiply.png" alt="" title=""></center><br><span style="color: #880088;">Multiply blend mode</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg147"></a><center><img src="pics/scriptsettings.png" alt="" title=""></center><br><span style="color: #880088;">Script settings dialog</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -258,7 +239,7 @@ border-style: solid;
 <span class="ckey">o</span> Operators
 <span class="ckey">g</span> Glossary
 </div>
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="lmsubtract.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="lmdivide.html">Next</a>&nbsp;</td></tr></table></div>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opscript.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opsharpen.html">Next</a>&nbsp;</td></tr></table></div>
                <p style="text-align: center;">
 <a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
 <br>&nbsp;
