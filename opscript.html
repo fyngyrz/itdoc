@@ -271,7 +271,15 @@ You can load previously saved scripts from mass storage using <span style="white
 
 <p style="margin-left: 0;">You may place one command on a line (this is a good idea with image commands so you can take advantage of the suggestions feature), or you can place more than one command per line by separating them with a "<span style="color:#006600;"><span style="font-weight: bold;"><tt>:</tt></span></span>" (a colon.) Each command is a block; so one command on a line represents one block, and several commands separated by colons represent multiple blocks.</p>
 
-<p style="margin-left: 0;">You can disable any block in a script by turning them into a comment by simply placing a <span style="color:#006600;"><span style="font-weight: bold;"><tt>#</tt></span></span> character at the beginning of the block(s.) Comment blocks are ignored. Keep in mind that the start-of-block sequences <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#!</tt></span></span>"</span> and <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#*</tt></span></span>"</span> are reserved and must not be used in comments.</p>
+<p style="margin-left: 0;">You can disable any block in a script by turning them into a comment by simply placing a <span style="color:#006600;"><span style="font-weight: bold;"><tt>#</tt></span></span> character at the beginning of the block(s.) Comment blocks are ignored. Keep in mind that the start-of-block sequences <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#!</tt></span></span>"</span> and <span style="white-space:nowrap;">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>#*</tt></span></span>"</span> are reserved and must not be used in comments. Examples:</p>
+
+
+<center>
+<table border="1" bgcolor="#eeeeee">
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>#a=1</tt></span></span></td><td valign="top">One line of one block, commented out</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>a=1:#b=2:c=3</tt></span></span></td><td valign="top">One line with three blocks, <span style="color:#006600;"><span style="font-weight: bold;"><tt>b=2</tt></span></span> commented out</td></tr>
+</table></center>
+
 
 <p style="margin-left: 0;">This operator provides syntax highlighting. You can set the colors via the <a href="scriptsettings.html">Script Settings dialog</a>, available from the <span style="white-space:nowrap;"><span class="cbut">Settings</span></span> button.</p>
 
@@ -476,7 +484,7 @@ Variable names cannot contain an '=' character</li>
 <li>
 Variable names cannot contain a '~' character</li>
 <li>
-variable names are all lower case, even if you write them otherwise</li>
+Variable names are all lower case, even if you write them otherwise</li>
 </ul>
 
 
@@ -531,9 +539,10 @@ Character string use example:<br>
 <tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>x~"Marker+ +Felt"</tt></span></span></td><td valign="top">Result: <span style="color:#006600;"><span style="font-weight: bold;"><tt>Marker+ +Felt</tt></span></span></td><td valign="top">String literal. No concatenation occurs.</td></tr>
 </table></center>
 
+<span style="font-style: italic;">pre-defined system variables (script)</span>
 <a name="tocref11.4.68.3.1"></a><h5>11.4.68.3.1 &#32;-&#32;Preset System Variables</h5>
 
-<p style="margin-left: 0;">A number of preset system variables are available for use in scripts. The naming convention is that they begin with <span style="color:#006600;"><span style="font-weight: bold;"><tt>m_</tt></span></span></p>
+<p style="margin-left: 0;">A number of preset, pre-defined system variables are available for use in scripts. The naming convention is that they begin with <span style="color:#006600;"><span style="font-weight: bold;"><tt>m_</tt></span></span></p>
 
 <p style="margin-left: 0;">The preset system variables are set as follows:</p>
 
@@ -548,18 +557,19 @@ Character string use example:<br>
 <tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_c</tt></span></span></tt></span></span></td><td valign="top">299792458<br>The speed of light in free space.</td></tr>
 <tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_e</tt></span></span></tt></span></span></td><td valign="top">2.71828182845905<br>Euler's number.</td></tr>
 <tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_pi</tt></span></span></tt></span></span></td><td valign="top">3.14159265358979<br>Pi.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_pc</tt></span></span></tt></span></span></td><td valign="top">6.62607004E-34<br>Planck's constant.</td></tr>
 
 <tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Image circumstances at script run time</b></td></tr>
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_width</tt></span></span></tt></span></span></td><td valign="top">Image width in pixels</td></tr>
-<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_height</tt></span></span></tt></span></span></td><td valign="top">Image height in pixels</td></tr>
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_origin</tt></span></span></tt></span></span></td><td valign="top">One if an origin image is available, zero otherwise.</td></tr>
-<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_owidth</tt></span></span></tt></span></span></td><td valign="top">Origin image width in pixels (zero if no origin set)</td></tr>
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_oheight</tt></span></span></tt></span></span></td><td valign="top">Origin image height in pixels (zero if no origin set)</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_width</tt></span></span></tt></span></span></td><td valign="top">Image width in pixels</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_height</tt></span></span></tt></span></span></td><td valign="top">Image height in pixels</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_origin</tt></span></span></tt></span></span></td><td valign="top">One if an origin image is available, zero otherwise.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_owidth</tt></span></span></tt></span></span></td><td valign="top">Origin image width in pixels (zero if no origin set)</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_oheight</tt></span></span></tt></span></span></td><td valign="top">Origin image height in pixels (zero if no origin set)</td></tr>
 
 <tr bgcolor="#ffffcc"><td colspan=2 align="center"><b>Text operator configuration</b></td></tr>
-<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_font</tt></span></span></tt></span></span></td><td valign="top">Courier</td></tr>
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_fontpoints</tt></span></span></tt></span></span></td><td valign="top">50<br>Range is 10 to 200.</td></tr>
-<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_format</tt></span></span></tt></span></span></td><td valign="top">3<br>Range is zero to four:
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_font</tt></span></span></tt></span></span></td><td valign="top">Courier</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_fontpoints</tt></span></span></tt></span></span></td><td valign="top">50<br>Range is 10 to 200.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_format</tt></span></span></tt></span></span></td><td valign="top">3<br>Range is zero to four:
 <ol start="0">
 <li> Format as [-]9.9e[+/-]999</li>
 <li>
@@ -572,35 +582,41 @@ Use the more concise of 0 or 2 format</li>
 use the more concise of 1 or 2 format</li>
 </ol>
 </td></tr>
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_base</tt></span></span></tt></span></span></td><td valign="top">10<br>Range 2-16</td></tr>
-<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_fieldwidth</tt></span></span></tt></span></span></td><td valign="top">0<br>Range is -80 to 80. A negative fieldwidth forces left-justification.</td></tr>
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_precision</tt></span></span></tt></span></span></td><td valign="top">15<br>range -1 to 15</td></tr>
-<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_fillchar</tt></span></span></tt></span></span></td><td valign="top">[space]<br>You might set this to "0", etc.</td></tr>
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_nocommas</tt></span></span></tt></span></span></td><td valign="top">0<br>Range Zero to one. Set this to 1 if you don't want commas in numbers</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_base</tt></span></span></tt></span></span></td><td valign="top">10<br>Range 2-16</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_fieldwidth</tt></span></span></tt></span></span></td><td valign="top">0<br>Range is -80 to 80. A negative fieldwidth forces left-justification.</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_precision</tt></span></span></tt></span></span></td><td valign="top">15<br>range -1 to 15</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_fillchar</tt></span></span></tt></span></span></td><td valign="top">[space]<br>You might set this to "0", etc.</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="color:#006600;"><span style="font-weight: bold;"><tt>m_nocommas</tt></span></span></tt></span></span></td><td valign="top">0<br>Range Zero to one. Set this to 1 if you don't want commas in numbers</td></tr>
 </table></center>
 
 <a name="tocref11.4.68.4"></a><h4>11.4.68.4 &#32;-&#32;Text Expressions</h4>
 
 <p style="margin-left: 0;">Text expressions may be used wherever a  variable is being set.</p>
 
-<p style="margin-left: 0;">Expressions may contain variables and/or literal values. Variables have priority over literal values; for instance, if there is no variable named <span style="color:#006600;"><span style="font-weight: bold;"><tt>x</tt></span></span>, and you write <span style="color:#006600;"><span style="font-weight: bold;"><tt>var=x+foo</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>var</tt></span></span> will contain <span style="color:#006600;"><span style="font-weight: bold;"><tt>xfoo</tt></span></span>. However, if the variable x contains something, for example a <span style="color:#006600;"><span style="font-weight: bold;"><tt>2</tt></span></span>, then <span style="color:#006600;"><span style="font-weight: bold;"><tt>var</tt></span></span> will contain <span style="color:#006600;"><span style="font-weight: bold;"><tt>2foo</tt></span></span>.</p>
-
-<p style="margin-left: 0;">Numeric expressions may contain the arithmetic operators <span style="color:#006600;"><span style="font-weight: bold;"><tt>+</tt></span></span> for addition, <span style="color:#006600;"><span style="font-weight: bold;"><tt>-</tt></span></span> for subtraction and negation, <span style="color:#006600;"><span style="font-weight: bold;"><tt>*</tt></span></span> for multiplication, and <span style="color:#006600;"><span style="font-weight: bold;"><tt>/</tt></span></span> for division.</p>
-
-<p style="margin-left: 0;">They may also contain the comparison operators <span style="color:#006600;"><span style="font-weight: bold;"><tt>==</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>!=</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&lt;</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&gt;</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&lt;=</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&gt;=</tt></span></span></p>
+<p style="margin-left: 0;">Text expressions may contain variables and/or literal values. Variables have priority over literal values; for instance, if there is no variable named <span style="color:#006600;"><span style="font-weight: bold;"><tt>x</tt></span></span>, and you write <span style="color:#006600;"><span style="font-weight: bold;"><tt>var=x+foo</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>var</tt></span></span> will contain <span style="color:#006600;"><span style="font-weight: bold;"><tt>xfoo</tt></span></span>. However, if the variable x contains something, for example a <span style="color:#006600;"><span style="font-weight: bold;"><tt>2</tt></span></span>, then <span style="color:#006600;"><span style="font-weight: bold;"><tt>var</tt></span></span> will contain <span style="color:#006600;"><span style="font-weight: bold;"><tt>2foo</tt></span></span>.</p>
 
 <p style="margin-left: 0;">Text expressions may contain the operator <span style="color:#006600;"><span style="font-weight: bold;"><tt>+</tt></span></span> for concatenation. To express a literal <span style="color:#006600;"><span style="font-weight: bold;"><tt>+</tt></span></span> in a string where you still need to use concatenation, use a digraph &mdash; two plus signs in a row: <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>var=two++two</tt></span></span></span> which evaluates to <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>var=two+two</tt></span></span></span>, whereas <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>var=two+two</tt></span></span></span> evaluates to <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>var=twotwo</tt></span></span></span>. Alternatively, if you surround the variable assignment value with quotes, no evaluation will take place: <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>var~"two+two"</tt></span></span></span> evaluates to  <span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>two+two</tt></span></span></span>, but in this case you cannot perform concatenation as the string is treated as a literal.</p>
 
+<p style="margin-left: 0;">In a text expression, you can refer to a numeric variable with its first letter capitalized, and the result will be the <span style="font-style: italic;">expression</span> that created the numeric result, rather than the result itself:</p>
+
+<center><table border="1" bgcolor="#eeeeee">
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>test=2+3<br>tt~test</tt></span></span></td><td valign="top">result: <span style="color:#006600;"><span style="font-weight: bold;"><tt>tt</tt></span></span> is "<span style="color:#006600;"><span style="font-weight: bold;"><tt>5</tt></span></span>"</td><td valign="top">Numeric value of variable <span style="color:#006600;"><span style="font-weight: bold;"><tt>test</tt></span></span> as a string</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>test=2+3<br>tt~Test</tt></span></span></td><td valign="top">result: <span style="color:#006600;"><span style="font-weight: bold;"><tt> tt</tt></span></span> is "<span style="color:#006600;"><span style="font-weight: bold;"><tt>2+3</tt></span></span>"</td><td valign="top">The expression that created variable <span style="color:#006600;"><span style="font-weight: bold;"><tt>test</tt></span></span> as a string</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>test=2+3<br>tt~Test+=+test</tt></span></span></td><td valign="top">result: <span style="color:#006600;"><span style="font-weight: bold;"><tt> tt</tt></span></span> is "<span style="color:#006600;"><span style="font-weight: bold;"><tt>2+3=5</tt></span></span>"</td><td valign="top">Both, concatenated as a string</td></tr>
+</table></center>
+
 <p style="margin-left: 0;">Neither text expressions or string literals may contain single colons, as these indicate the end of one block and the beginning of another. To represent a colon in a text expression or literal, use the digraph <span style="color:#006600;"><span style="font-weight: bold;"><tt>::</tt></span></span> instead of a single colon character.</p>
 
-<p style="margin-left: 0;">Text expressions may contain variables as concatenated elements with no additional content. Here's how that works:</p>
+<p style="margin-left: 0;">Text expressions may contain variables as concatenated elements, as long as there is no additional content between any <span style="color:#006600;"><span style="font-weight: bold;"><tt>+</tt></span></span> concatenation operator(s) and the variable name. Here's how that works:</p>
 
 
 <center>
 <table border="1" bgcolor="#eeeeee">
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo=5<br>x~boo+hoo+test</tt></span></span></td><td valign="top">Result: <span style="color:#006600;"><span style="font-weight: bold;"><tt>boo5test</tt></span></span></td><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo</tt></span></span> evaluated as variable.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo=5<br>x~boo+hoo+test</tt></span></span></td><td valign="top">Result: <span style="color:#006600;"><span style="font-weight: bold;"><tt>boo5test</tt></span></span></td><td valign="top">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo</tt></span></span>" evaluated as variable.</td></tr>
 <tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo=5<br>x~boo+hoo +test</tt></span></span></td><td valign="top">Result: <span style="color:#006600;"><span style="font-weight: bold;"><tt>boohoo test</tt></span></span></td><td valign="top">"<span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo </tt></span></span>" evaluated as string.</td></tr>
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo=5<br>x~"boo+hoo+test"</tt></span></span></td><td valign="top">Result: <span style="color:#006600;"><span style="font-weight: bold;"><tt>boohootest</tt></span></span></td><td valign="top">string literal; no evaluation.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo=5<br>x~boo+ hoo+test</tt></span></span></td><td valign="top">Result: <span style="color:#006600;"><span style="font-weight: bold;"><tt>boo hootest</tt></span></span></td><td valign="top">"<span style="color:#006600;"><span style="font-weight: bold;"><tt> hoo</tt></span></span>" evaluated as string.</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo=5<br>x~boo+ hoo +test</tt></span></span></td><td valign="top">Result: <span style="color:#006600;"><span style="font-weight: bold;"><tt>boo hoo test</tt></span></span></td><td valign="top">"<span style="color:#006600;"><span style="font-weight: bold;"><tt> hoo </tt></span></span>" evaluated as string.</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt>hoo=5<br>x~"boo+hoo+test"</tt></span></span></td><td valign="top">Result: <span style="color:#006600;"><span style="font-weight: bold;"><tt>boo+hoo+test</tt></span></span></td><td valign="top">string literal; no evaluation.</td></tr>
 </table></center>
 
 <p style="margin-left: 0;">Double quotes <i>only</i> have special meaning when they surround an <i>entire</i> text expression. Otherwise, they may be freely used within string expressions and will be evaluated as literal double quote characters:</p>
@@ -622,6 +638,10 @@ use the more concise of 1 or 2 format</li>
 
 
 <a name="tocref11.4.68.5"></a><h4>11.4.68.5 &#32;-&#32;Numeric Expressions</h4>
+
+<p style="margin-left: 0;">Numeric expressions may contain the arithmetic operators <span style="color:#006600;"><span style="font-weight: bold;"><tt>+</tt></span></span> for addition, <span style="color:#006600;"><span style="font-weight: bold;"><tt>-</tt></span></span> for subtraction and negation, <span style="color:#006600;"><span style="font-weight: bold;"><tt>*</tt></span></span> for multiplication, and <span style="color:#006600;"><span style="font-weight: bold;"><tt>/</tt></span></span> for division.</p>
+
+<p style="margin-left: 0;">They may also contain the comparison operators <span style="color:#006600;"><span style="font-weight: bold;"><tt>==</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>!=</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&lt;</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&gt;</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&lt;=</tt></span></span>, <span style="color:#006600;"><span style="font-weight: bold;"><tt>&gt;=</tt></span></span></p>
 
 <p style="margin-left: 0;">Numeric expressions may not contain any spaces when used in the context of a parameter in an operator command; this allows expressions to be used as numeric parameters to an operator command where the operator command's individual parameters are separated by spaces.</p>
 
@@ -768,16 +788,27 @@ Here's how that happened: First, <span style="color:#006600;"><span style="font-
 <tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>p=eitop(e,i)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: watts from volts and amperes</td></tr>
 <tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>p=ertop(e,r)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: watts from volts and ohms</td></tr>
 <tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>p=irtop(i,r)</tt></span></span></span></tt></span></span></td><td valign="top">Ohm's law: watts from amperes and ohms</td></tr>
-<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>e=dbmtov(dbm)</tt></span></span></span></tt></span></span></td><td valign="top">converts dbm to volts</td></tr>
-<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>dbm=dbm(e[,r])</tt></span></span></span></tt></span></span></td><td valign="top">volts and ohms to dbm. r is 50 unless specified otherwise</td></tr>
-<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>dbm=stodbm(s)</tt></span></span></span></tt></span></span></td><td valign="top">Converts sunits<font color="#ff0000"><b><sup>note&nbsp;1</sup></b></font> to dbm</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">Lp=lpar(L1[,L2,...,Ln])</span></tt></span></span></td><td valign="top">Parallel inductance (no coupling)</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">Ls=lser(L1[,L2,...,Ln])</span></tt></span></span></td><td valign="top">Series inductance (no coupling)</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">Rp=rpar(R1[,R2,...,Rn])</span></tt></span></span></td><td valign="top">Parallel resistance</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">Rs=rser(R1[,R2,...,Rn])</span></tt></span></span></td><td valign="top">Series resistance</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">Cp=cpar(C1[,C2,...,Cn])</span></tt></span></span></td><td valign="top">Parallel capacitance</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">Cs=cser(C1[,C2,...,Cn])</span></tt></span></span></td><td valign="top">Series capacitance</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>e=dtov(dbm)</tt></span></span></span></tt></span></span></td><td valign="top">Converts dbm to volts</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>dbm=dbm(e[,r])</tt></span></span></span></tt></span></span></td><td valign="top">Volts and ohms to dbm. r is 50 unless specified otherwise</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>dbm=stod(s)</tt></span></span></span></tt></span></span></td><td valign="top">Converts sunits<font color="#ff0000"><b><sup>note&nbsp;1</sup></b></font> to dbm</td></tr>
 <tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>s=sunits(e[,r])</tt></span></span></span></tt></span></span></td><td valign="top">Converts volts to sunits<font color="#ff0000"><b><sup>note&nbsp;1</sup></b></font>. r is 50 unless specified otherwise</td></tr>
-<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>s=dbmtos(dbm)</tt></span></span></span></tt></span></span></td><td valign="top">Converts dbm to sunits<font color="#ff0000"><b><sup>note&nbsp;1</sup></b></font></td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">s=dbmtos(dbm)</span></tt></span></span></td><td valign="top">Converts dbm to sunits<font color="#ff0000"><b><sup>note&nbsp;1</sup></b></font></td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">f=wtof=(w)</span></tt></span></span></td><td valign="top">Converts wavelength to frequency</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">w=ftow(f)</span></tt></span></span></td><td valign="top">Converts frequency to wavelength</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">w=dtow(d)</span></tt></span></span></td><td valign="top">Converts dbm to watts</td></tr>
+<tr bgcolor="#ddddff"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">d=wtod(w)</span></tt></span></span></td><td valign="top">Converts watts to dbm</td></tr>
+<tr bgcolor="#ddffdd"><td valign="top"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="white-space:nowrap;">s=etos(e)</span></tt></span></span></td><td valign="top">Converts "effective number of bits" to "signal to noise and distortion ratio"</td></tr>
 
 
 </table></center>
 
-<p style="margin-left: 0;"><b><font color="#ff0000"><span style="font-weight: bold;">note&nbsp;1:</span></font></b> above s9, sunits are represented as 9.x where the x contains dB-over divided by 1,000. For instance,  (Unknown Built-in or Squiggly:  tag="s9+10db" data="note&nbsp;1:")  reads out as [9.010], [s9+40dB] reads out as [9.040], etc. Below S9, the value reads out pure sunits, including valid decimal places.</p>
+<p style="margin-left: 0;"><b><font color="#ff0000"><span style="font-weight: bold;">note&nbsp;1:</span></font></b> above S9, sunits are represented as 9.x where the x contains dB-over divided by 1,000. For instance, [s9+10dB] reads out as [9.010], [s9+40dB] reads out as [9.040], etc. Below S9, the value reads out pure sunits, including valid decimal places. Above [S9+999dB], the value is invalid. Also, both your antenna and radio are on fire.</p>
 
 <a name="tocref11.4.68.7"></a><h4>11.4.68.7 &#32;-&#32;Area Selection Commands</h4>
 
@@ -955,7 +986,7 @@ border-style: solid;
                <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
                <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.39</center>
+               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
                <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
            </div>
 </div>
