@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "opgaussianblur.html"; }
 function onRight_keyDown() { window.location.href = "ophorizontalremove.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,13 +211,24 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opgaussianblur.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="ophorizontalremove.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br>
-<a name="ixref280"></a><h3>11.4.37 &#32;-&#32;GPS</h3>
+               <a href="operators.html"><em><strong>Operators Dialog</strong></em></a> / <a href="opalphamodify.html"><em><strong>Operator Details</strong></em></a><br>
+<a name="ixref296"></a><h3>11.10.37 &#32;-&#32;GPS</h3>
 
-<tt><span style="color: #ff0000;">No Script Command</span></tt>
+ <p style="margin-left: 0;"><a href="opscript.html">Scripting command</a>: <span style="color:#006600;"><strong><tt><span style="color: #ff0000;">[latitude=</span>-90<span style="color: #ff0000;">...</span>90<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[longitude=</span>-180<span style="color: #ff0000;">...</span>180<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[altitude=</span>meters<span style="color: #ff0000;">]</span></tt></strong></span></p>
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDDDFF;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><strong>Note:</strong> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
+
 
 <p style="margin-left: 0;">Reads and set <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information in an image.</p>
 
@@ -231,14 +244,14 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information is only read from camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> files, <span style="color:#006600;"><span style="font-weight: bold;"><tt>.ato</tt></span></span> files, and <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> files. It is only written out to <span style="color:#006600;"><span style="font-weight: bold;"><tt>.ato</tt></span></span> and <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> files. This prevents a <a href="EXIF.html">whole slew of problems</a> inherent in <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a>.</div>
+"><strong>Note:</strong> <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information is only read from camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> files, <span style="color:#006600;"><strong><tt>.ato</tt></strong></span> files, and <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> files. It is only written out to <span style="color:#006600;"><strong><tt>.ato</tt></strong></span> and <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> files. This prevents a <a href="EXIF.html">whole slew of problems</a> inherent in <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a>.</div>
 
 
 <p style="margin-left: 0;">To read <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information out of an image, <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">From Image</span></span>.</p>
 
-<p style="margin-left: 0;">To set <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information in an image, first set the <span style="font-weight: bold;">Latitude</span>, <span style="font-weight: bold;">Longitude</span> and <span style="font-weight: bold;">Altitude</span> values in the <a href="operators.html">Operators&nbsp;dialog</a>, then either <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Apply</span></span> or make an area selection on the image. If the <a href="areatools.html">areatools</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> is unchecked, you will also have to <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Operate</span></span> or press <span style="white-space:nowrap;"><span class="ckey">O</span> (<span class="ckey">shift</span>+<span class="ckey">o</span>)</span>.</p>
+<p style="margin-left: 0;">To set <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information in an image, first set the <strong>Latitude</strong>, <strong>Longitude</strong> and <strong>Altitude</strong> values in the <a href="operators.html">Operators&nbsp;dialog</a>, then either <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Apply</span></span> or make an area selection on the image. If the <a href="areatools.html">areatools</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Modal Selections</strong></span></span> is unchecked, you will also have to <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Operate</span></span> or press <span style="white-space:nowrap;"><span class="ckey">O</span> (<span class="ckey">shift</span>+<span class="ckey">o</span>)</span>.</p>
 
-<p style="margin-left: 0;">You can set the dialog (not the image) to your <span style="font-weight: bold;">Home</span> GPS co-ordinates from the <a href="preferences.html">Preferences&nbsp;dialog</a> with <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">From Home</span></span>. To then apply them to an image, make an area selection on the image or <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Apply</span></span></p>
+<p style="margin-left: 0;">You can set the dialog (not the image) to your <strong>Home</strong> GPS co-ordinates from the <a href="preferences.html">Preferences&nbsp;dialog</a> with <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">From Home</span></span>. To then apply them to an image, make an area selection on the image or <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Apply</span></span></p>
 
 
 
@@ -252,7 +265,7 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> The <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> operator offers both <span style="font-weight: bold;">Meters</span> and <span style="font-weight: bold;">Feet</span> for setting altitude as a convenience; however, internally, altitude is represented in meters, and that's what the value in <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbut">Meta Defaults</span></span> represents as well.</div>
+"><strong>Note:</strong> The <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> operator offers both <strong>Meters</strong> and <strong>Feet</strong> for setting altitude as a convenience; however, internally, altitude is represented in meters, and that's what the value in <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbut">Meta Defaults</span></span> represents as well.</div>
 
 
 
@@ -267,7 +280,7 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information is only read from camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> files, <span style="color:#006600;"><span style="font-weight: bold;"><tt>.ato</tt></span></span> files, and <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> files; it is only written to <span style="color:#006600;"><span style="font-weight: bold;"><tt>.ato</tt></span></span> files and <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> files. <span style="font-weight: bold;">iToolBox</span> does not support <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> writing at all. You can learn why <a href="EXIF.html">here</a>.</div>
+"><strong>Tip:</strong> <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information is only read from camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> files, <span style="color:#006600;"><strong><tt>.ato</tt></strong></span> files, and <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> files; it is only written to <span style="color:#006600;"><strong><tt>.ato</tt></strong></span> files and <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> files. <strong>iToolBox</strong> does not support <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> writing at all. You can learn why <a href="EXIF.html">here</a>.</div>
 
 
 
@@ -282,10 +295,10 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Warning: </span> <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information specifies where the image was taken, and in combination with date and time information that typical operating systems retain about image files, can pinpoint people and events in both space <span style="font-style: italic;">and</span> time. Please consider the security implications of emplacing location information in an image file &mdash; once the data gets out, there's no getting it back. Do you <span style="font-style: italic;">really</span> want {<span style="font-style: italic;">random person</span> / <span style="font-style: italic;">random computer scan</span>} to know where the image was taken?</div>
+"><strong>Warning: </strong> <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information specifies where the image was taken, and in combination with date and time information that typical operating systems retain about image files, can pinpoint people and events in both space <em>and</em> time. Please consider the security implications of emplacing location information in an image file &mdash; once the data gets out, there's no getting it back. Do you <em>really</em> want {<em>random person</em> / <em>random computer scan</em>} to know where the image was taken?</div>
 
 
-<div style="clear: both; text-align: center;"><a name="fgfg103"></a><center><img src="pics/gpsop.png" alt="" title=""></center><br><span style="color: #880088;">The GPS operator</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg107"></a><center><img src="pics/gpsop.png" alt="" title=""></center><br><span style="color: #880088;">The GPS operator</span></div>
 
                           <div style="
        clear: both;
@@ -297,7 +310,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -307,24 +320,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opgaussianblur.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="ophorizontalremove.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 48</center>
         </div>
 
     </BODY>

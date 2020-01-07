@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "textgeneration.html"; }
 function onRight_keyDown() { window.location.href = "layersdialog.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,55 +211,57 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="textgeneration.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="layersdialog.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref365"></a><h1>17 &#32;-&#32;Blending Dialog</h1>
+               <a name="ixref388"></a><h1>17 &#32;-&#32;Blending Dialog</h1>
 
-<div style="clear: both; text-align: center;"><a name="fgfg182"></a><center><img src="pics/blending.png" alt="" title=""></center><br><span style="color: #880088;">The Blending Dialog</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg186"></a><center><img src="pics/blending.png" alt="" title=""></center><br><span style="color: #880088;">The Blending Dialog</span></div>
 
 <p style="margin-left: 0;">Blending allows you to provide a general transparency blend for your area selections, most often used for the following compose operators:</p>
 
 <ol>
+<li><a href="opbrushstroke.html">Brushstroke</a> </li>
 <li>
-<a href="opbrushstroke.html">Brushstroke</a></li>
+<a href="opcolorfill.html">Color&nbsp;Fill</a> </li>
 <li>
-<a href="opcolorfill.html">Color Fill</a></li>
+<a href="opcrop.html">Crop</a> </li>
 <li>
-<a href="opmerge.html">Merge</a></li>
+<a href="opframe.html">Frame</a> </li>
 <li>
-<a href="opplace.html">Place</a></li>
+<a href="opmerge.html">Merge</a> </li>
 <li>
-<a href="oprangefill.html">Range Fill</a>
-</li>
+<a href="opperlin.html">Perlin&nbsp;Noise</a> </li>
+<li>
+<a href="opplace.html">Place</a> </li>
+<li>
+<a href="oprangefill.html">Range&nbsp;Fill</a> </li>
 </ol>
 
 
-<p style="margin-left: 0;">Blending is <span style="font-weight: bold;">off</span> when it is set to <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Flat&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>, <span style="white-space:nowrap;"> <span style="font-weight: bold;">Amplitude</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> is all the way to the right, and <span style="white-space:nowrap;"> <span style="font-weight: bold;">Floor</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> is all the way to the left:</p>
+<p style="margin-left: 0;">Blending is <strong>off</strong> when it is set to <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Flat&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>, <span style="white-space:nowrap;"> <strong>Amplitude</strong> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> is all the way to the right, and <span style="white-space:nowrap;"> <strong>Floor</strong> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> is all the way to the left:</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg183"></a><center><img src="pics/blendingoff.png" alt="" title=""></center><br><span style="color: #880088;">Blending Off</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg187"></a><center><img src="pics/blendingoff.png" alt="" title=""></center><br><span style="color: #880088;">Blending Off</span></div>
 
 <a name="tocref17.1"></a><h2>17.1 &#32;-&#32;Conical Blending</h2>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Conical&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> blends to a sharp peak along both axes.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Conical&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> blends to a sharp peak along both axes.</p>
 
 <a name="tocref17.2"></a><h2>17.2 &#32;-&#32;Flat Blending</h2>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Flat&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> blends evenly across the area selection on both axes.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Flat&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> blends evenly across the area selection on both axes.</p>
 
 <a name="tocref17.3"></a><h2>17.3 &#32;-&#32;Maximum Axis Blending</h2>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Maximum Axis&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> blends along a circular curve to the extent of the larger axis, along both axes.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Maximum Axis&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> blends along a circular curve to the extent of the larger axis, along both axes.</p>
 
 <a name="tocref17.4"></a><h2>17.4 &#32;-&#32;Sine Blending</h2>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Sine&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> blends along a sine curve on both axes.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Sine&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> blends along a sine curve on both axes.</p>
 
-<p style="margin-left: 0;">Here are examples of blending off (<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Flat&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>, <span style="white-space:nowrap;"> <span style="font-weight: bold;">Amplitude</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> = 100%), and <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Maximum Axis&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> with <span style="white-space:nowrap;"> <span style="font-weight: bold;">Amplitude</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> = 100%:</p>
+<p style="margin-left: 0;">Here are examples of blending off (<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Flat&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>, <span style="white-space:nowrap;"> <strong>Amplitude</strong> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> = 100%), and <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Maximum Axis&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> with <span style="white-space:nowrap;"> <strong>Amplitude</strong> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> = 100%:</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg184"></a><center><img src="pics/blendingoffellipse.png" alt="" title=""></center><br><span style="color: #880088;">Blending <span style="font-weight: bold;">off</span> with an ellipse</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg188"></a><center><img src="pics/blendingoffellipse.png" alt="" title=""></center><br><span style="color: #880088;">Blending <strong>off</strong> with an ellipse</span></div>
 <hr>
-<div style="clear: both; text-align: center;"><a name="fgfg185"></a><center><img src="pics/blendingonellipse.png" alt="" title=""></center><br><span style="color: #880088;">Blending <span style="font-weight: bold;">on</span> with an ellipse and Maximum Axis blend mode</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg189"></a><center><img src="pics/blendingonellipse.png" alt="" title=""></center><br><span style="color: #880088;">Blending <strong>on</strong> with an ellipse and Maximum Axis blend mode</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -268,7 +272,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -278,24 +282,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="textgeneration.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="layersdialog.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 99</center>
         </div>
 
     </BODY>

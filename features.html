@@ -1,18 +1,20 @@
 
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML LANG="en">
 <HEAD>
-<TITLE>iToolBox 2.40 Features</TITLE>
+<TITLE>iToolBox 2.60 Features</TITLE>
 <script src="mousetrap.js" type="text/javascript"></script>
 <script type="text/javascript">
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "intro.html"; }
 function onRight_keyDown() { window.location.href = "conventions.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,22 +211,20 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="intro.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="conventions.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref6"></a><a name="tocref2"></a><h1>2 &#32;-&#32;Itoolbox 2.40 Features</h1>
+               <a name="ixref7"></a><a name="tocref2"></a><h1>2 &#32;-&#32;Itoolbox 2.60 Features</h1>
 
 <ul>
 <li>
 Easy to use &mdash; most operations can be learned in minutes</li>
 <li>
 
-<a href="operators.html">78 image operators</a>
+<a href="operators.html">80 image operators</a>
 <ul>
 <li>
 Operators that modify the image can be <a href="opscript.html">scripted</a> to create combined operations</li>
 <li>
-User-custom hotkey access to any combination of the 78 operators</li>
+User-custom hotkey access to any combination of the 80 operators</li>
 <li>
 Powerful and creativity-enhancing <a href="opbrushstroke.html">brush stroking capabilties</a>
 </li>
@@ -234,19 +234,19 @@ Powerful and creativity-enhancing <a href="opbrushstroke.html">brush stroking ca
 
 Many <a href="command.html">immediate commands</a> such as clone, scale, extend, enlarge, print, zoom, juxtapose, etc.</li>
 <li>
-<a href="appendixa.html">Reads 50 image file types</a>, many of which have numerous variants
+<a href="appendixa.html">Reads 51 image file types</a>, many of which have numerous variants
 <ul>
 <li>
-<span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span>, <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span>, etc.</li>
+<strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong>, <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong>, etc.</li>
 <li>
 <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> camera files from <a href="appendixa.html">many cameras</a></li>
 <li>
 Powerful new fully open file formats with useful new capabilities
 <ul>
 <li>
-<span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></span></li>
+<strong><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></strong></li>
 <li>
-<span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></span>
+<strong><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></strong>
 </li>
 </ul>
 </li>
@@ -338,6 +338,20 @@ Centimeters
 <li>
 Consistent user interface: learn one thing, learn many</li>
 <li>
+Comprehensive image file management
+<ul>
+<li>
+Load Image</li>
+<li>
+Load Favorite Image (maintains up to 10)</li>
+<li>
+Load Recent Image (maintains up to 16)</li>
+<li>
+Load Recent Path (maintains up to 16)
+</li>
+</ul>
+</li>
+<li>
 Effect previews for image operations
 <ul>
 <li>
@@ -362,7 +376,7 @@ Hot re-anchoring for ellipses, rectangles and p-shapes</li>
 <li>
 Hot polygon and spline point move, delete, add</li>
 <li>
-Freehand, polygon, spline, p-shape, rectangle, ellipse, entire image, text, wand, numeric rectangle, complement, open figure, filled figure, magnify</li>
+Freehand, polygon, spline, p-shape, rectangle, ellipse, entire image, text, wand, numeric rectangle, complement, open figure, filled figure, outline, magnify</li>
 <li>
 Resolution-independent, cross-image &quot;apply again&quot;</li>
 <li>
@@ -391,7 +405,7 @@ Annotation</li>
 <li>
 <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a></li>
 <li>
-Notation(s) &mdash; <span style="font-style: italic;">great for image galleries</span></li>
+Notation(s) &mdash; <em>great for image galleries</em></li>
 <li>
 Create and modify times</li>
 <li>
@@ -435,7 +449,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -445,24 +459,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="intro.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="conventions.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 2</center>
         </div>
 
     </BODY>

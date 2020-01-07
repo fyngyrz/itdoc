@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "opbend.html"; }
 function onRight_keyDown() { window.location.href = "opburn.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,19 +211,17 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opbend.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opburn.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br>
-<a name="ixref225"></a><h3>11.4.5 &#32;-&#32;Brushstroke</h3>
+               <a href="operators.html"><em><strong>Operators Dialog</strong></em></a> / <a href="opalphamodify.html"><em><strong>Operator Details</strong></em></a><br>
+<a name="ixref241"></a><h3>11.10.5 &#32;-&#32;Brushstroke</h3>
 
 <p style="margin-left: 0;">Strokes the current <a href="imagetypes.html#brush">brush</a> (which can be any image) along the selected path (<a href="areatools.html#ellipse">ellipse</a>, <a href="areatools.html#rectangle">rectangle</a>, <a href="areatools.html#xyrect">numeric rectangle</a>, <a href="areatools.html#polygon">polygon</a>, <a href="areatools.html#pencil">pencil</a>), according to the options chosen.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg35"></a><center><img src="pics/brushstrokeop.png" alt="" title=""></center><br><span style="color: #880088;">The brushstroke operator</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg39"></a><center><img src="pics/brushstrokeop.png" alt="" title=""></center><br><span style="color: #880088;">The brushstroke operator</span></div>
 
-<p style="margin-left: 0;">You can create a traditional round or square <a href="imagetypes.html#brush">brush</a> using the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/New Image &#8984;N&nbsp;</span></span></span> <a href="themenus.html#newimage">menu command</a>, or its shortcuts, <span style="white-space:nowrap;"><span class="ckey"> &#8984;</span>-<span class="ckey">n</span></span> or <span style="white-space:nowrap;"><span class="ckey">control</span>-<span class="ckey">n</span></span>.</p>
+<p style="margin-left: 0;">You can create a traditional round or square <a href="imagetypes.html#brush">brush</a> using the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/New Image &#8984;N&nbsp;</strong></span></span> <a href="themenus.html#newimage">menu command</a>, or its shortcuts, <span style="white-space:nowrap;"><span class="ckey"> &#8984;</span>-<span class="ckey">n</span></span> or <span style="white-space:nowrap;"><span class="ckey">control</span>-<span class="ckey">n</span></span>.</p>
 
-<p style="margin-left: 0;">Brushstroke obeys the <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Mask With Target Alpha</span></span></span> setting.</p>
+<p style="margin-left: 0;">Brushstroke obeys the <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Mask With Target Alpha</strong></span></span> setting.</p>
 
 <p style="margin-left: 0;">You assign an image to the role of <a href="imagetypes.html#brush">brush</a> by making it active, then pressing <span style="white-space:nowrap;"><span class="ckey">B</span> (<span class="ckey">shift</span>+<span class="ckey">b</span>)</span>.</p>
 
@@ -237,59 +237,59 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> When operating in non-modal mode, the brushstroke operator follows the most recent path selection; this is because it is not working with an area, but with a path.</div>
+"><strong>Note:</strong> When operating in non-modal mode, the brushstroke operator follows the most recent path selection; this is because it is not working with an area, but with a path.</div>
 
 
-<a name="ixref226"></a><a name="tocref11.4.5.1"></a><h4>11.4.5.1 &#32;-&#32;Blend</h4>
+<a name="ixref242"></a><a name="tocref11.10.5.1"></a><h4>11.10.5.1 &#32;-&#32;Blend</h4>
 
-<div style="clear: both; text-align: center;"><a name="fgfg36"></a><center><img src="pics/bs-blend.png" alt="" title=""></center><br><span style="color: #880088;">The blend control</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg40"></a><center><img src="pics/bs-blend.png" alt="" title=""></center><br><span style="color: #880088;">The blend control</span></div>
 
 <p style="margin-left: 0;">The blend amount can be set from fully transparent, zero (which is pointless) to 1.0, which is fully opaque. This affects the entire brush evenly.</p>
 
-<a name="ixref227"></a><a name="tocref11.4.5.2"></a><h4>11.4.5.2 &#32;-&#32;Scaling</h4>
+<a name="ixref243"></a><a name="tocref11.10.5.2"></a><h4>11.10.5.2 &#32;-&#32;Scaling</h4>
 
-<div style="clear: both; text-align: center;"><a name="fgfg37"></a><center><img src="pics/bs-scaling.png" alt="" title=""></center><br><span style="color: #880088;">The scaling controls</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg41"></a><center><img src="pics/bs-scaling.png" alt="" title=""></center><br><span style="color: #880088;">The scaling controls</span></div>
 
-<p style="margin-left: 0;">There are two scaling settings that may be set from <span style="color:#006600;"><span style="font-weight: bold;"><tt>.1</tt></span></span> to <span style="color:#006600;"><span style="font-weight: bold;"><tt>10.0</tt></span></span>. These settings, placed left and right in the dialog respectively, set the smallest scale effect applied to the brush (only active when <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">R-Scaling</span></span></span> is checked, in which case the scale will be between the small value and the large value, described next) and the largest scale effect applied to the brush (always applied.)</p>
+<p style="margin-left: 0;">There are two scaling settings that may be set from <span style="color:#006600;"><strong><tt>.1</tt></strong></span> to <span style="color:#006600;"><strong><tt>10.0</tt></strong></span>. These settings, placed left and right in the dialog respectively, set the smallest scale effect applied to the brush (only active when <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>R-Scaling</strong></span></span> is checked, in which case the scale will be between the small value and the large value, described next) and the largest scale effect applied to the brush (always applied.)</p>
 
-<p style="margin-left: 0;">To describe this another way, if <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">R-Scaling</span></span></span> is not checked, then the second value applies a constant scale to the brush. If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">R-Scaling</span></span></span> <span style="font-style: italic;">is</span> checked, then the scale will be some random value between the small setting and the large setting.</p>
+<p style="margin-left: 0;">To describe this another way, if <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>R-Scaling</strong></span></span> is not checked, then the second value applies a constant scale to the brush. If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>R-Scaling</strong></span></span> <em>is</em> checked, then the scale will be some random value between the small setting and the large setting.</p>
 
-<a name="ixref228"></a><a name="tocref11.4.5.3"></a><h4>11.4.5.3 &#32;-&#32;Interval</h4>
+<a name="ixref244"></a><a name="tocref11.10.5.3"></a><h4>11.10.5.3 &#32;-&#32;Interval</h4>
 
-<div style="clear: both; text-align: center;"><a name="fgfg38"></a><center><img src="pics/bs-interval.png" alt="" title=""></center><br><span style="color: #880088;">The interval controls</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg42"></a><center><img src="pics/bs-interval.png" alt="" title=""></center><br><span style="color: #880088;">The interval controls</span></div>
 
-<p style="margin-left: 0;">This setting controls the spacing between brush placements along any path. If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">R-Interval</span></span></span> is checked, the spacing amount applied will be random <span style="font-style: italic;">up to</span> this setting. <span style="white-space:nowrap;"><span class="cbut">Estimate</span></span> will set the value according to the largest scale applied to the brush.</p>
+<p style="margin-left: 0;">This setting controls the spacing between brush placements along any path. If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>R-Interval</strong></span></span> is checked, the spacing amount applied will be random <em>up to</em> this setting. <span style="white-space:nowrap;"><span class="cbut">Estimate</span></span> will set the value according to the largest scale applied to the brush.</p>
 
-<a name="ixref229"></a><a name="tocref11.4.5.4"></a><h4>11.4.5.4 &#32;-&#32;Displacement</h4>
+<a name="ixref245"></a><a name="tocref11.10.5.4"></a><h4>11.10.5.4 &#32;-&#32;Displacement</h4>
 
-<div style="clear: both; text-align: center;"><a name="fgfg39"></a><center><img src="pics/bs-displacement.png" alt="" title=""></center><br><span style="color: #880088;">The displacement controls</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg43"></a><center><img src="pics/bs-displacement.png" alt="" title=""></center><br><span style="color: #880088;">The displacement controls</span></div>
 
-<p style="margin-left: 0;">This setting alters the horizontal and vertical placement of the brush along any path if <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">R-Displacement</span></span></span> is checked. <span style="white-space:nowrap;"><span class="cbut">Estimate</span></span> will set the maximum displacement to be only as large as the smallest scale of the brush to be generated.</p>
+<p style="margin-left: 0;">This setting alters the horizontal and vertical placement of the brush along any path if <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>R-Displacement</strong></span></span> is checked. <span style="white-space:nowrap;"><span class="cbut">Estimate</span></span> will set the maximum displacement to be only as large as the smallest scale of the brush to be generated.</p>
 
-<a name="ixref230"></a><a name="tocref11.4.5.5"></a><h4>11.4.5.5 &#32;-&#32;Rotation</h4>
+<a name="ixref246"></a><a name="tocref11.10.5.5"></a><h4>11.10.5.5 &#32;-&#32;Rotation</h4>
 
-<div style="clear: both; text-align: center;"><a name="fgfg40"></a><center><img src="pics/bs-rotation.png" alt="" title=""></center><br><span style="color: #880088;">The rotation controls</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg44"></a><center><img src="pics/bs-rotation.png" alt="" title=""></center><br><span style="color: #880088;">The rotation controls</span></div>
 
-<p style="margin-left: 0;">If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">R-Rotation</span></span></span> is not checked, then this setting applies a constant rotation to the brush.</p>
+<p style="margin-left: 0;">If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>R-Rotation</strong></span></span> is not checked, then this setting applies a constant rotation to the brush.</p>
 
-<p style="margin-left: 0;">if <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">R-Rotation</span></span></span> is checked, then the rotation will range from zero to a maximum of the value chosen.</p>
+<p style="margin-left: 0;">if <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>R-Rotation</strong></span></span> is checked, then the rotation will range from zero to a maximum of the value chosen.</p>
 
-<p style="margin-left: 0;">If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Follow</span></span></span> is checked, then the brush will be rotated to follow the path. The rotation applied presumes that the leading portion of the brush is oriented "up" in the brush image. If it is not, you can apply a constant rotation to adjust for that.</p>
+<p style="margin-left: 0;">If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Follow</strong></span></span> is checked, then the brush will be rotated to follow the path. The rotation applied presumes that the leading portion of the brush is oriented "up" in the brush image. If it is not, you can apply a constant rotation to adjust for that.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg41"></a><center><img src="pics/bs-antbrush.png" alt="" title=""></center><br><span style="color: #880088;">Here's a simple brush, oriented with the "nose" up.</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg45"></a><center><img src="pics/bs-antbrush.png" alt="" title=""></center><br><span style="color: #880088;">Here's a simple brush, oriented with the "nose" up.</span></div>
 
 <p style="margin-left: 0;">&nbsp;</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg42"></a><center><img src="pics/bs-freehand.png" alt="" title=""></center><br><span style="color: #880088;">Here's the result of checking  <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Follow</span></span></span><br>
+<div style="clear: both; text-align: center;"><a name="fgfg46"></a><center><img src="pics/bs-freehand.png" alt="" title=""></center><br><span style="color: #880088;">Here's the result of checking  <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Follow</strong></span></span><br>
 and drawing a spiral with the <a href="areatools.html#pencil">pencil</a>.</span></div>
 
-<a name="ixref231"></a><a name="tocref11.4.5.6"></a><h4>11.4.5.6 &#32;-&#32;Shadow</h4>
+<a name="ixref247"></a><a name="tocref11.10.5.6"></a><h4>11.10.5.6 &#32;-&#32;Shadow</h4>
 
-<div style="clear: both; text-align: center;"><a name="fgfg43"></a><center><img src="pics/bs-shadow.png" alt="" title=""></center><br><span style="color: #880088;">The shadow controls</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg47"></a><center><img src="pics/bs-shadow.png" alt="" title=""></center><br><span style="color: #880088;">The shadow controls</span></div>
 
-<p style="margin-left: 0;">If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Shadow</span></span></span> is checked, then a dark shadow that is defined by the alpha channel of the brush (its transparency) is generated underneath each brush placement. If the brush is fully opaque, shadowing will not be applied.</p>
+<p style="margin-left: 0;">If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Shadow</strong></span></span> is checked, then a dark shadow that is defined by the alpha channel of the brush (its transparency) is generated underneath each brush placement. If the brush is fully opaque, shadowing will not be applied.</p>
 
-<p style="margin-left: 0;">The <span style="font-weight: bold;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>D,X,Y</tt></span></span></span> and <span style="font-weight: bold;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>I</tt></span></span></span> settings set the <span style="font-style: italic;"><span style="font-weight: bold;">D</span>iffusion</span>, <span style="font-style: italic;"><span style="font-weight: bold;">X</span> Offset</span>, <span style="font-style: italic;"><span style="font-weight: bold;">Y</span> Offset</span>, and <span style="font-style: italic;"><span style="font-weight: bold;">I</span>ntensity</span> of the shadowing. <span style="font-weight: bold;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>D, X</tt></span></span></span> and <span style="font-weight: bold;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>Y</tt></span></span></span> all represent pixel distances;  <span style="font-weight: bold;"><span style="color:#006600;"><span style="font-weight: bold;"><tt>I</tt></span></span></span> may be set from zero (no shadow at all) to <span style="color:#006600;"><span style="font-weight: bold;"><tt>1.0</tt></span></span>, which will produce a maximum intensity shadow.</p>
+<p style="margin-left: 0;">The <strong><span style="color:#006600;"><strong><tt>D,X,Y</tt></strong></span></strong> and <strong><span style="color:#006600;"><strong><tt>I</tt></strong></span></strong> settings set the <em><strong>D</strong>iffusion</em>, <em><strong>X</strong> Offset</em>, <em><strong>Y</strong> Offset</em>, and <em><strong>I</strong>ntensity</em> of the shadowing. <strong><span style="color:#006600;"><strong><tt>D, X</tt></strong></span></strong> and <strong><span style="color:#006600;"><strong><tt>Y</tt></strong></span></strong> all represent pixel distances;  <strong><span style="color:#006600;"><strong><tt>I</tt></strong></span></strong> may be set from zero (no shadow at all) to <span style="color:#006600;"><strong><tt>1.0</tt></strong></span>, which will produce a maximum intensity shadow.</p>
 
 
 
@@ -303,46 +303,46 @@ and drawing a spiral with the <a href="areatools.html#pencil">pencil</a>.</span>
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> <div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg44"></a><center><img src="pics/bs-clipped.png" alt="" title=""></center><br><span style="color: #880088;">Clipped shadow</span></div>
-<p style="margin-left: 0;">Shadowing only occurs <span style="font-style: italic;">within the dimensions of the brush image.</span></p>
+"><strong>Note:</strong> <div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg48"></a><center><img src="pics/bs-clipped.png" alt="" title=""></center><br><span style="color: #880088;">Clipped shadow</span></div>
+<p style="margin-left: 0;">Shadowing only occurs <em>within the dimensions of the brush image.</em></p>
 
-<p style="margin-left: 0;">So if your brush doesn't have enough transparent alpha around the edges to contain the generated shadow detail elsewhere in the image as defined by the <span style="font-weight: bold;">X</span> and <span style="font-weight: bold;">Y</span> shadow offsets combined with the <span style="font-weight: bold;">D</span>iffusion setting, the shadow will be "clipped" by the brush edges.</p>
+<p style="margin-left: 0;">So if your brush doesn't have enough transparent alpha around the edges to contain the generated shadow detail elsewhere in the image as defined by the <strong>X</strong> and <strong>Y</strong> shadow offsets combined with the <strong>D</strong>iffusion setting, the shadow will be "clipped" by the brush edges.</p>
 
 <p style="margin-left: 0;">Consequently, when you create a brush you intend to shadow, either create it with extra transparent space around the actual brush image, or use the <span style="white-space:nowrap;"><span class="ckey">x</span>tend</span> keystroke to add whatever space required.</p>
 
-<p style="margin-left: 0;">A good rule of thumb is that in order for a particular subject to have enough room to successfully rotate and generate shadows, it should have transparent clearance equal to, or larger than, 1/2 the total width of the opaque portions of the brush on <span style="font-style: italic;">both</span> axis.</p>
+<p style="margin-left: 0;">A good rule of thumb is that in order for a particular subject to have enough room to successfully rotate and generate shadows, it should have transparent clearance equal to, or larger than, 1/2 the total width of the opaque portions of the brush on <em>both</em> axis.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg45"></a><center><img src="pics/brushshadowdemo.png" alt="" title=""></center><br><span style="color: #880088;">
+<div style="clear: both; text-align: center;"><a name="fgfg49"></a><center><img src="pics/brushshadowdemo.png" alt="" title=""></center><br><span style="color: #880088;">
 Here, the initial red brush was created as 25x25. That brush was then<br>
 extended using <span class="ckey">x</span> by 25 on all four sides, which in turn provided<br>
 enough extra pixel "acreage" for a nice shadow to be generated.</span></div>
 </div>
 
 
-<a name="ixref232"></a>
-<a name="ixref233"></a><a name="tocref11.4.5.7"></a><h4>11.4.5.7 &#32;-&#32;Image Barrels</h4>
+<a name="ixref248"></a>
+<a name="ixref249"></a><a name="tocref11.10.5.7"></a><h4>11.10.5.7 &#32;-&#32;Image Barrels</h4>
 
 <p style="margin-left: 0;">This operator can treat a layered image as a <a target="_blank" href="glosspage.html#62617272656c"><span style="color: #884422;">barrel</span></a> of separate images, one per <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>.</p>
 
-<p style="margin-left: 0;">If you select the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image of a layered image, each of the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s in the image that are set to be <span style="font-weight: bold;">visible</span> (using the <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Visible</span></span></span> setting in the <a href="layersdialog.html">Layers&nbsp;dialog</a>) will be used one after another as the brush. For instance, <a href="pics/oldbills.elx">this layered image file</a> (that's a link to an <span style="font-weight: bold;">iToolBox</span> <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> layered image file, <span style="font-style: italic;">not</span> a web picture) is a collection of 14 images of old US currency.</p>
-<p style="margin-left: 0;">For this image, I selected the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a>, set the Rotation value to <span style="color:#006600;"><span style="font-weight: bold;"><tt>360.0</tt></span></span> degrees, checked <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">R-Rotation</span></span></span>, then simply scribbled on the image with the <a href="areatools.html#pencil">pencil</a> tool. As the path was followed, each image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> in turn was used, rotated randomly, and drawn with a shadow.</p>
+<p style="margin-left: 0;">If you select the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image of a layered image, each of the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s in the image that are set to be <strong>visible</strong> (using the <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Visible</strong></span></span> setting in the <a href="layersdialog.html">Layers&nbsp;dialog</a>) will be used one after another as the brush. For instance, <a href="pics/oldbills.elx">this layered image file</a> (that's a link to an <strong>iToolBox</strong> <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> layered image file, <em>not</em> a web picture) is a collection of 14 images of old US currency.</p>
+<p style="margin-left: 0;">For this image, I selected the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a>, set the Rotation value to <span style="color:#006600;"><strong><tt>360.0</tt></strong></span> degrees, checked <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>R-Rotation</strong></span></span>, then simply scribbled on the image with the <a href="areatools.html#pencil">pencil</a> tool. As the path was followed, each image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> in turn was used, rotated randomly, and drawn with a shadow.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg46"></a><center><img src="pics/bs-barrel.png" alt="" title=""></center><br><span style="color: #880088;">One spiral <a href="areatools.html#pencil">pencil</a> brushstroke with the <a href="pics/oldbills.elx">oldbills.elx</a> master as brush<br>
+<div style="clear: both; text-align: center;"><a name="fgfg50"></a><center><img src="pics/bs-barrel.png" alt="" title=""></center><br><span style="color: #880088;">One spiral <a href="areatools.html#pencil">pencil</a> brushstroke with the <a href="pics/oldbills.elx">oldbills.elx</a> master as brush<br>
 The trick to making a pile (of anything) look good is to start on the outside<br>
 and spiral in. That way, the most recent images end up on top.</span></div>
 
 <p style="margin-left: 0;">&nbsp;</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg47"></a><center><img src="pics/bs-ellipse.png" alt="" title=""></center><br><span style="color: #880088;">Same <a target="_blank" href="glosspage.html#62617272656c"><span style="color: #884422;">barrel</span></a> with a single <a href="areatools.html#ellipse">ellipse</a> selection</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg51"></a><center><img src="pics/bs-ellipse.png" alt="" title=""></center><br><span style="color: #880088;">Same <a target="_blank" href="glosspage.html#62617272656c"><span style="color: #884422;">barrel</span></a> with a single <a href="areatools.html#ellipse">ellipse</a> selection</span></div>
 
 <p style="margin-left: 0;">&nbsp;</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg48"></a><center><img src="pics/bs-entire.png" alt="" title=""></center><br><span style="color: #880088;">Same <a target="_blank" href="glosspage.html#62617272656c"><span style="color: #884422;">barrel</span></a> with a single <a href="areatools.html#entire">entire image</a> selection</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg52"></a><center><img src="pics/bs-entire.png" alt="" title=""></center><br><span style="color: #880088;">Same <a target="_blank" href="glosspage.html#62617272656c"><span style="color: #884422;">barrel</span></a> with a single <a href="areatools.html#entire">entire image</a> selection</span></div>
 
 <p style="margin-left: 0;">&nbsp;</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg49"></a><center><img src="pics/bs-freepath.png" alt="" title=""></center><br><span style="color: #880088;">Same <a target="_blank" href="glosspage.html#62617272656c"><span style="color: #884422;">barrel</span></a> with a <a href="areatools.html#pencil">pencil</a> selection, and <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Follow</span></span></span> checked<br>
-I unchecked <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">R-Rotation</span></span></span> and set the Rotation value to zero</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg53"></a><center><img src="pics/bs-freepath.png" alt="" title=""></center><br><span style="color: #880088;">Same <a target="_blank" href="glosspage.html#62617272656c"><span style="color: #884422;">barrel</span></a> with a <a href="areatools.html#pencil">pencil</a> selection, and <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Follow</strong></span></span> checked<br>
+I unchecked <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>R-Rotation</strong></span></span> and set the Rotation value to zero</span></div>
 
 <p style="margin-left: 0;">You might be interested in playing with this <a target="_blank" href="glosspage.html#62617272656c"><span style="color: #884422;">barrel</span></a> of <a href="pics/redants.elx"> Red Ants</a>.</p>
 
@@ -358,8 +358,8 @@ I unchecked <span style="white-space:nowrap;"><span class="cbak"><span class="cc
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tips:</span> <p style="margin-left: 0;"> <span style="font-weight: bold;">(1):</span> If you select an individual <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> of a layered image as a <a href="imagetypes.html#brush">brush</a>, rather than selecting the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a>, then <span style="font-style: italic;">only</span> that layer will be used as the <a href="imagetypes.html#brush">brush</a>.</p>
-<p style="margin-left: 0;"> <span style="font-weight: bold;">(2):</span> If you want to use the actual image in a <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> as a <a href="imagetypes.html#brush">brush</a>, <span class="ckey">c</span>lone it, and then use the resulting image instead.</p></div>
+"><strong>Tips:</strong> <p style="margin-left: 0;"> <strong>(1):</strong> If you select an individual <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> of a layered image as a <a href="imagetypes.html#brush">brush</a>, rather than selecting the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a>, then <em>only</em> that layer will be used as the <a href="imagetypes.html#brush">brush</a>.</p>
+<p style="margin-left: 0;"> <strong>(2):</strong> If you want to use the actual image in a <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> as a <a href="imagetypes.html#brush">brush</a>, <span class="ckey">c</span>lone it, and then use the resulting image instead.</p></div>
 
 
 <p style="margin-left: 0;">It's a lot more difficult to describe than it is to work with. Try it!</p>
@@ -373,7 +373,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -383,24 +383,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opbend.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opburn.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 16</center>
         </div>
 
     </BODY>

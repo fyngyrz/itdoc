@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "changes.html"; }
 function onRight_keyDown() { window.location.href = "credits.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,19 +211,41 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="changes.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="credits.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref569"></a><h1>41 &#32;-&#32;In Case of Problems</h1>
+               <a name="ixref594"></a><h1>42 &#32;-&#32;In Case of Problems</h1>
 
 <table border=1 bgcolor="#ffffff">
 <tr bgcolor="#ffffcc"><th width="25%">Problem</th><th>Possible Resolution(s)</th></tr>
 
 
 <tr bgcolor="#eeffee">
-<td valign="top"><span style="font-weight: bold;"><a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) message:<br><span style="color: #ff0000;"><span style="font-weight: bold;">iToolBox</span> can't be opened because it is from an unidentified developer</span></span></td>
-<td valign="top">In this case, <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>)'s <a target="_blank" href="https://en.wikipedia.org/wiki/Gatekeeper_(macOS)">Gatekeeper</a> security mechanism is preventing you from opening <span style="font-weight: bold;">iToolBox</span>.
-<p style="margin-left: 0;">To resolve this, the first time you open <span style="font-weight: bold;">iToolBox</span> after a new download, instead of opening <span style="font-weight: bold;">iToolBox</span> with a <span style="font-style: italic;">double-left-click</span> or a <span style="font-style: italic;">left-click</span> on the icon in the dock, open it by <span style="font-style: italic;">right-clicking</span> on the application icon and selecting <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Open&nbsp;</span></span></span> from the <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) context menu.</p>
+<td valign="top"><a name="ixref595"></a><strong>Problems saving and/or loading files</strong></td>
+<td valign="top"><name sandbox>In later versions of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>), <a target="_blank" href="https://apple.com">Apple</a>'s <a target="_blank" href="glosspage.html#73616e64626f78696e67"><span style="color: #884422;">sandboxing</span></a> can interfere with an application's ability to access the filesystem. In recent versions of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>), you may be able to resolve this with the following procedure:
+<br>
+<ol>
+<li>
+Open <span style="color:#006600;"><strong><tt>System Preferences/Security and Privacy</tt></strong></span></li>
+<li>
+Select <span style="color:#006600;"><strong><tt>Privacy</tt></strong></span> from the four heading choices</li>
+<li>
+Click the <span style="color:#006600;"><strong><tt>lock icon</tt></strong></span> on the lower left corner to unlock this pane</li>
+<li>
+Navigate to <span style="color:#006600;"><strong><tt>Full Disk Access</tt></strong></span> on the sidebar</li>
+<li>
+Click the <span style="color:#006600;"><strong><tt>+</tt></strong></span> icon and add <strong>iToolBox</strong> to the list</li>
+<li>
+Restart <strong>iToolBox</strong> if it was already running
+</li>
+</ol>
+
+</td></tr>
+
+
+
+<tr bgcolor="#eeeeff">
+<td valign="top"><a name="ixref596"></a><strong>iToolBox can't be opened because it is from an unidentified developer message</strong></td>
+<td valign="top">In this case, <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>)'s <a target="_blank" href="https://en.wikipedia.org/wiki/Gatekeeper_(macOS)">Gatekeeper</a> security mechanism is preventing you from opening <strong>iToolBox</strong>.
+<p style="margin-left: 0;">To resolve this, the first time you open <strong>iToolBox</strong> after a new download, instead of opening <strong>iToolBox</strong> with a <em>double-left-click</em> or a <em>left-click</em> on the icon in the dock, open it by <em>right-clicking</em> on the application icon and selecting <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Open&nbsp;</strong></span></span> from the <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) context menu.</p>
 
 <p style="margin-left: 0;">You will then be asked if you want to open the application anyway; go ahead and do so. <a target="_blank" href="https://apple.com">Apple</a> is trying to protect you from malware with this intentional impediment to opening unsigned applications.</p>
 
@@ -237,41 +261,41 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-">Why isn't <span style="font-weight: bold;">iToolBox</span> signed?<br><br>
-Because it is free. <a target="_blank" href="https://apple.com">Apple</a> demands <span style="color: #ff0000;"><span style="font-weight: bold;"><tt>$99.00</tt></span></span> USD per year to enable application code signing. Consequently, you get to work your way around <a target="_blank" href="https://en.wikipedia.org/wiki/Gatekeeper_(macOS)">Gatekeeper</a>. There is some risk in this; it is theoretically possible for a bad actor to intercept your download, modify the application on its way to you, and so manage to insert malware into your system.</div>
+">Why isn't <strong>iToolBox</strong> signed?<br><br>
+Because it is free. <a target="_blank" href="https://apple.com">Apple</a> demands <span style="color: #ff0000;"><strong><tt>$99.00</tt></strong></span> USD per year to enable application code signing. Consequently, you get to work your way around <a target="_blank" href="https://en.wikipedia.org/wiki/Gatekeeper_(macOS)">Gatekeeper</a>. There is some risk in this; it is theoretically possible for a bad actor to intercept your download, modify the application on its way to you, and so manage to insert malware into your system.</div>
 </td></tr>
 
 
 
-<tr bgcolor="#eeeeff">
-<td valign="top"><span style="font-weight: bold;"><a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) <span style="color: #ff0000;">crash</span> after agreeing to let <span style="font-weight: bold;">iToolBox</span> request a serial number</span></td>
-<td valign="top">At the time of this writing, I have <i>one</i> report of an <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) 10.13.6 system that crashes when network operations are instantiated, while at the same time, numerous 10.13.6 systems are not having problems. If this happens to you, restart <span style="font-weight: bold;">iToolBox</span>, say <span style="font-weight: bold;">NO</span> when asked if it's okay to request a serial number, and <span style="font-weight: bold;">iToolBox</span> will not undertake any network operations. This should work around the issue.
+<tr bgcolor="#eeffee">
+<td valign="top"><a name="ixref597"></a><strong>Crash after agreeing to let <strong>iToolBox</strong> request a serial number</strong></td>
+<td valign="top">At the time of this writing, I have <i>one</i> report of an <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) 10.13.6 system that crashes when network operations are instantiated, while at the same time, numerous 10.13.6 systems are not having problems. If this happens to you, restart <strong>iToolBox</strong>, say <strong>NO</strong> when asked if it's okay to request a serial number, and <strong>iToolBox</strong> will not undertake any network operations. This should work around the issue.
 
 <blockquote>If this does happen to you, I'd like to <a href="aboutmanual.html">hear about it</a>, please.</blockquote></td></tr>
 
 
 
-<tr bgcolor="#eeffee">
-<td valign="top"><span style="font-weight: bold;"><a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) message:<br><span style="color: #ff0000;"><span style="font-weight: bold;">iToolBox</span> can't be opened because of a problem</span></span></td>
-<td valign="top">This message is encountered when an attempt is made to open <span style="font-weight: bold;">iToolBox</span> on a version of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) that is too old to run the application. The only solutions to this are to either install a newer <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) in a <a target="_blank" href="glosspage.html#766d"><span style="color: #884422;">VM</span></a>, upgrade your primary version of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) to a more recent version, or, if your hardware/<a target="_blank" href="glosspage.html#766d"><span style="color: #884422;">VM</span></a> does not support a more recent version of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>), to move to a newer Mac or more capable <a target="_blank" href="glosspage.html#766d"><span style="color: #884422;">VM</span></a>. <span style="font-weight: bold;">iToolBox</span> requires at least <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>)&nbsp;10.11.</td></tr>
-
-
-
 <tr bgcolor="#eeeeff">
-<td valign="top"><span style="font-weight: bold;"><a target="_blank" href="https://apple.com">Apple</a>'s Magic Mouse doesn't work with right-mouse button re-positioning</span></td>
+<td valign="top"><a name="ixref598"></a><strong>iToolBox can't be opened because of a problem</strong></td>
+<td valign="top">This message is encountered when an attempt is made to open <strong>iToolBox</strong> on a version of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) that is too old to run the application. The only solutions to this are to either install a newer <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) in a <a target="_blank" href="glosspage.html#766d"><span style="color: #884422;">VM</span></a>, upgrade your primary version of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) to a more recent version, or, if your hardware/<a target="_blank" href="glosspage.html#766d"><span style="color: #884422;">VM</span></a> does not support a more recent version of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>), to move to a newer Mac or more capable <a target="_blank" href="glosspage.html#766d"><span style="color: #884422;">VM</span></a>. <strong>iToolBox</strong> requires at least <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>)&nbsp;10.11.</td></tr>
+
+
+
+<tr bgcolor="#eeffee">
+<td valign="top"><a name="ixref599"></a><strong>Magic Mouse doesn't work with right-mouse button re-positioning</strong></td>
 <td valign="top">The specific problem is that the Magic Mouse doesn't handle both left and right mouse button clicks independently the way a standard mouse with mechanical buttons does.<br><br>
 This is a known fault in <a target="_blank" href="https://apple.com">Apple</a>'s drivers for the Magic Mouse. It is strongly suggested that you get a standard mouse until / unless <a target="_blank" href="https://apple.com">Apple</a> actually does the right thing and fixes the Magic Mouse drivers.</td></tr>
 
 
 
-<tr bgcolor="#eeffee">
-<td valign="top"><span style="font-weight: bold;">Can't open an image file</span></td>
-<td valign="top">The list of image file types <span style="font-weight: bold;">iToolBox</span> can open is found <a target="_blank" href="appendixa.html">here</a>.</td></tr>
-
-
-
 <tr bgcolor="#eeeeff">
-<td valign="top"><span style="font-weight: bold;">Can't find (something) in the documentation</span></td>
+<td valign="top"><a name="ixref600"></a><strong>Can't open a particular type of image file</strong></td>
+<td valign="top">The list of image file types <strong>iToolBox</strong> can open is found <a target="_blank" href="appendixa.html">here</a>.</td></tr>
+
+
+
+<tr bgcolor="#eeffee">
+<td valign="top"><a name="ixref601"></a><strong>Can't find (something) in the documentation</strong></td>
 <td valign="top">There are two ways to look things up; one is using the <a href="tocpage.html">table of contents</a>, which is organized by subject and (hopefully) in an intuitive way.
 <p style="margin-left: 0;">The other is using the <a target="_blank" href="indexpage.html">index</a>, which is organized alphabetically.</p>
 <p style="margin-left: 0;">If neither of those approaches results in locating the information you are looking for, perhaps I need to add either an index entry or a new section of the manual.</p>
@@ -280,14 +304,14 @@ This is a known fault in <a target="_blank" href="https://apple.com">Apple</a>'s
 
 
 
-<tr bgcolor="#eeffee">
-<td valign="top"><span style="font-weight: bold;">Magic Wand fills without regard for Alpha Transparency</span></td>
-<td valign="top">Doing this, or not, is controlled by the this setting in the <a href="preferences.html">Preferences&nbsp;dialog</a>:<br><br><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Mask With Target Alpha</span></span></span></td></tr>
-
-
-
 <tr bgcolor="#eeeeff">
-<td valign="top"><span style="font-weight: bold;">Bugs found</span></td>
+<td valign="top"><a name="ixref602"></a><strong>Magic Wand fills without regard for Alpha Transparency</strong></td>
+<td valign="top">Doing this, or not, is controlled by the this setting in the <a href="preferences.html">Preferences&nbsp;dialog</a>:<br><br><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Mask With Target Alpha</strong></span></span></td></tr>
+
+
+
+<tr bgcolor="#eeffee">
+<td valign="top"><a name="ixref603"></a><strong>Bugs found</strong></td>
 <td valign="top">Please report any bugs you find on via the email links on <a href="aboutmanual.html">this page</a>, and I will do my best to address them quickly.</td></tr>
 
 
@@ -302,7 +326,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -312,24 +336,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="changes.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="credits.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 179</center>
         </div>
 
     </BODY>

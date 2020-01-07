@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "opforcedynamic.html"; }
 function onRight_keyDown() { window.location.href = "opfractals.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,13 +211,11 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opforcedynamic.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opfractals.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br>
-<a name="ixref275"></a><h3>11.4.33 &#32;-&#32;Frame</h3>
+               <a href="operators.html"><em><strong>Operators Dialog</strong></em></a> / <a href="opalphamodify.html"><em><strong>Operator Details</strong></em></a><br>
+<a name="ixref291"></a><h3>11.10.33 &#32;-&#32;Frame</h3>
 
- <p style="margin-left: 0;">Scripting command: <span style="color:#006600;"><span style="font-weight: bold;"><tt>frame <span style="color: #ff0000;">[Outer=</span>0<span style="color: #ff0000;">...</span>50<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[2nd=</span>0<span style="color: #ff0000;">...</span>50<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[3rd=</span>0<span style="color: #ff0000;">...</span>50<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Inner=</span>0<span style="color: #ff0000;">...</span>50<span style="color: #ff0000;">]</span></tt></span></span></p>
+ <p style="margin-left: 0;"><a href="opscript.html">Scripting command</a>: <span style="color:#006600;"><strong><tt>frame <span style="color: #ff0000;">[Outer=</span>0<span style="color: #ff0000;">...</span>50<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[2nd=</span>0<span style="color: #ff0000;">...</span>50<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[3rd=</span>0<span style="color: #ff0000;">...</span>50<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Inner=</span>0<span style="color: #ff0000;">...</span>50<span style="color: #ff0000;">]</span></tt></strong></span></p>
 
 <div style="
         width: 75%;
@@ -227,18 +227,18 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
+"><strong>Note:</strong> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
 
 
-<div style="clear: both; text-align: center;"><a name="fgfg98"></a><center><img src="pics/frameexample.png" alt="" title=""></center><br><span style="color: #880088;">Example Frame operator effect</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg102"></a><center><img src="pics/frameexample.png" alt="" title=""></center><br><span style="color: #880088;">Example Frame operator effect</span></div>
 
-<p style="margin-left: 0;">This operator allows you to create a rectangular frame beginning at the edges of your image. The sliders individually set the width of one of four frame elements in percentages of the narrower dimension of the image. So if the image is 200x400, then a slider set to <span style="color:#006600;"><span style="font-weight: bold;"><tt>1</tt></span></span> will produce an element which is <span style="color:#006600;"><span style="font-weight: bold;"><tt>1%</tt></span></span> of <span style="color:#006600;"><span style="font-weight: bold;"><tt>200</tt></span></span> pixels thick &mdash; <span style="color:#006600;"><span style="font-weight: bold;"><tt>2</tt></span></span> pixels.</p>
+<p style="margin-left: 0;">This operator allows you to create a rectangular frame beginning at the edges of your image. The sliders individually set the width of one of four frame elements in percentages of the narrower dimension of the image. So if the image is 200x400, then a slider set to <span style="color:#006600;"><strong><tt>1</tt></strong></span> will produce an element which is <span style="color:#006600;"><strong><tt>1%</tt></strong></span> of <span style="color:#006600;"><strong><tt>200</tt></strong></span> pixels thick &mdash; <span style="color:#006600;"><strong><tt>2</tt></strong></span> pixels.</p>
 
 <p style="margin-left: 0;">The <span style="white-space:nowrap;"><span class="cbut">Outer</span></span> <span style="white-space:nowrap;"><span class="cbut">2nd</span></span> <span style="white-space:nowrap;"><span class="cbut">3rd</span></span> and <span style="white-space:nowrap;"><span class="cbut">Inner</span></span> buttons open the color selection dialog for the four frame elements; the colors are displayed at the top of the operator dialog, with Outer at the left, then 2nd, 3rd, and Inner.</p>
 
 <p style="margin-left: 0;">Since any frame element can be as wide as 50% of the narrower dimension of the image, it is possible for any element to completely take up the image. So some sets of settings can't actually work. In order to make the operator somewhat (hopefully) intuitive, the outer elements have priority over the inner elements. If there isn't enough room for an inner element, it will either be trimmed to fit, or it won't show at all if there is no room left.</p>
 
-<p style="margin-left: 0;">Frame elements that are set to <span style="color:#006600;"><span style="font-weight: bold;"><tt>0</tt></span></span> will not generate any content.</p>
+<p style="margin-left: 0;">Frame elements that are set to <span style="color:#006600;"><strong><tt>0</tt></strong></span> will not generate any content.</p>
 
 
 
@@ -252,7 +252,7 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> This operator will obey any area selection tool if you'd like to generate a partial frame (as long as the area selection covers a portion of the image edge where the frame will be generated), however, in order to obtain a complete frame, the <a href="areatools.html#entire">Entire</a> tool is recommended.</div>
+"><strong>Tip:</strong> This operator will obey any area selection tool if you'd like to generate a partial frame (as long as the area selection covers a portion of the image edge where the frame will be generated), however, in order to obtain a complete frame, the <a href="areatools.html#entire">Entire</a> tool is recommended.</div>
 
 
 
@@ -267,12 +267,12 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> For this operator, the preview is best viewed in 1x, particularly for non-square images. In this mode, the preview is <span style="color:#006600;"><span style="font-weight: bold;"><tt>100</tt></span></span> by <span style="color:#006600;"><span style="font-weight: bold;"><tt>100</tt></span></span> and even a setting of <span style="color:#006600;"><span style="font-weight: bold;"><tt>1</tt></span></span> on a frame element will show up as a 1-pixel line.</div>
+"><strong>Tip:</strong> For this operator, the preview is best viewed in 1x, particularly for non-square images. In this mode, the preview is <span style="color:#006600;"><strong><tt>100</tt></strong></span> by <span style="color:#006600;"><strong><tt>100</tt></strong></span> and even a setting of <span style="color:#006600;"><strong><tt>1</tt></strong></span> on a frame element will show up as a 1-pixel line.</div>
 
 
 <p style="margin-left: 0;">You can use <span style="white-space:nowrap;"><span class="cbut">Save</span></span> and <span style="white-space:nowrap;"><span class="cbut">Load</span></span> to archive and restore frame settings.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg99"></a><center><img src="pics/frameop.png" alt="" title=""></center><br><span style="color: #880088;">The frame operator</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg103"></a><center><img src="pics/frameop.png" alt="" title=""></center><br><span style="color: #880088;">The frame operator</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -283,7 +283,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -293,24 +293,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opforcedynamic.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opfractals.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 44</center>
         </div>
 
     </BODY>

@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "tocpage.html"; }
 function onRight_keyDown() { window.location.href = "features.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -597,24 +599,22 @@ var path = 'gallery/';
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="tocpage.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="features.html">Next</a>&nbsp;</td></tr></table></div>
-               <div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg5"></a><center><a target="_blank" href="pics/screenshot.png"><img src="pics/screenshot400.png" alt="" title=""></a></center><br><span style="color: #880088;"><span style="font-weight: bold;">iToolBox</span> running under <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) 10.12.6 Sierra<br>
-(<span style="font-style: italic;">Click to enlarge.</span>)</span></div>
+               <div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg5"></a><center><a target="_blank" href="pics/screenshot.png"><img src="pics/screenshot400.png" alt="" title=""></a></center><br><span style="color: #880088;"><strong>iToolBox</strong> running under <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) 10.12.6 Sierra<br>
+(<em>Click to enlarge.</em>)</span></div>
 <a name="ixref1"></a><h1>1 &#32;-&#32;Introduction</h1>
 <a name="ixref2"></a><a name="tocref1.1"></a><h2>1.1 &#32;-&#32;What Is This?</h2>
 
-<p style="margin-left: 0;">This is the user's manual for <span style="white-space:nowrap;"><span style="font-weight: bold;"><span style="font-weight: bold;">iToolBox</span> 2.40</span></span>, a <a target="_blank" href="LICENSE">free</a>, privacy-respecting application targeted to <span style="font-style: italic;"><a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>)&nbsp;10.11 or later</span>. <span style="font-weight: bold;">iToolBox</span> provides tools for creation, alteration, adjustment, and enhancement of image files.</p>
+<p style="margin-left: 0;">This is the user's manual for <span style="white-space:nowrap;"><strong><strong>iToolBox</strong> 2.60</strong></span>, a <a target="_blank" href="LICENSE">free</a>, privacy-respecting application targeted to <em><a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>)&nbsp;10.11 or later</em> and soon, <a target="_blank" href="https://www.microsoft.com/en-us/windows/get-windows-10">Windows&nbsp;10</a>.<a style="text-decoration: none;" href="#zfootn1"><sup><em>(f/n&nbsp;#1) </em></sup></a> <strong>iToolBox</strong> provides tools for creation, alteration, adjustment, and enhancement of image files.</p>
 
-<p style="margin-left: 0;">Image types that can be loaded include <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> deep-color files produced by a wide variety of <a target="_blank" href="glosspage.html#64736c72"><span style="color: #884422;">DSLR</span></a>s as well as standard filetypes like <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> and <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span> produced by other image editing software.</p>
+<p style="margin-left: 0;">Image types that can be loaded include <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> deep-color files produced by a wide variety of <a target="_blank" href="glosspage.html#64736c72"><span style="color: #884422;">DSLR</span></a>s as well as standard filetypes like <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> and <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong> produced by other image editing software.</p>
 
 <br clear="all">
 
 
-<a name="ixref3"></a><a name="tocref1.2"></a><h2>1.2 &#32;-&#32;Where Can I Get It?</h2>
+<a name="ixref3"></a>
+<a name="ixref4"></a><a name="tocref1.2"></a><h2>1.2 &#32;-&#32;Where Can I Get It?</h2>
 
-<p style="margin-left: 0;">Click <a target="_blank" href="https://fyngyrz.com/itoolbox.zip">here</a> for the <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) <span style="font-weight: bold;">iToolBox</span> download. Note that I may produce a <span style="font-weight: bold;">Windows</span> port at some point, but that point has not yet been reached.</p>
 <br clear="all">
 
 
@@ -628,21 +628,27 @@ var path = 'gallery/';
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> If you have any issues opening <span style="font-weight: bold;">iToolBox</span> for the first time, please refer to the <a href="incaseof.html">In&nbsp;Case&nbsp;of&nbsp;Problems</a> page.</div>
+"><strong>Tip:</strong> If you have any issues opening <strong>iToolBox</strong> for the first time, please refer to the <a href="incaseof.html">In&nbsp;Case&nbsp;of&nbsp;Problems</a> page.</div>
 
+
+<a name="tocref1.2.1"></a><h3>1.2.1 &#32;-&#32;OSX</h3>
+<p style="margin-left: 0;">Click <a target="_blank" href="https://fyngyrz.com/itoolbox.zip">here</a> for the <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) <strong>iToolBox</strong> download.</p>
+
+<a name="tocref1.2.2"></a><h3>1.2.2 &#32;-&#32;Windows 10</h3>
+<p style="margin-left: 0;"><a target="_blank" href="https://www.microsoft.com/en-us/windows/get-windows-10">Windows&nbsp;10</a> user? Note that I am working on producing a <a target="_blank" href="https://www.microsoft.com/en-us/windows/get-windows-10">Windows&nbsp;10</a> port, which I am hoping to release in the first half of 2020.</p>
 
 <br clear="all">
 <div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg6"></a><center><a target="_blank" href="pics/blendwarp.png"><img src="pics/blendwarpsm.png" alt="" title=""></a></center><br><span style="color: #880088;">Warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a><br>
-(<span style="font-style: italic;">Click to enlarge.</span>)</span></div>
-<a name="ixref4"></a><a name="tocref1.3"></a><h2>1.3 &#32;-&#32;How Does This Application Benefit Its Users?</h2>
+(<em>Click to enlarge.</em>)</span></div>
+<a name="ixref5"></a><a name="tocref1.3"></a><h2>1.3 &#32;-&#32;How Does This Application Benefit Its Users?</h2>
 
-<p style="margin-left: 0;"><span style="font-weight: bold;">iToolBox</span> provides:</p>
+<p style="margin-left: 0;"><strong>iToolBox</strong> provides:</p>
 
 <ul>
 <li style="padding-bottom:.5em;">
 Adjustment and enhancement of images loaded from <a href="appendixa.html">many image filetypes</a> such as:
 <ul>
-<li>Standard images such as <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> and <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span></li>
+<li>Standard images such as <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> and <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong></li>
 <li>
 <a target="_blank" href="glosspage.html#64736c72"><span style="color: #884422;">DSLR</span></a> <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> images including those from many Canon and Nikon cameras</li>
 </ul>
@@ -682,7 +688,7 @@ You'll never be forced to update.
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> There is a more extensive <a href="features.html">feature list</a> on the next page.</div>
+"><strong>Tip:</strong> There is a more extensive <a href="features.html">feature list</a> on the next page.</div>
 
 
 <div id="picdiv" style="text-align: center; float: right;">
@@ -691,7 +697,7 @@ margin-bottom: 1em;
 <p style="margin-left: 0;"><span id="mypictext"></span><br>
 <button id="forTouchDevices" onclick="doManual()">Touchscreen? Touch here for notes.</button></p>
 </div>
-<a name="ixref5"></a><a name="tocref1.4"></a><h2>1.4 &#32;-&#32;System Requirements</h2>
+<a name="ixref6"></a><a name="tocref1.4"></a><h2>1.4 &#32;-&#32;System Requirements</h2>
 
 <ul>
 <li style="padding-bottom:.5em;">
@@ -707,7 +713,7 @@ Resources:
 <ul>
 <li>RAM:
 <ul>
-<li>You'll want at <span style="font-style: italic;">least</span> a couple gigabytes of free memory to edit images.</li>
+<li>You'll want at <em>least</em> a couple gigabytes of free memory to edit images.</li>
 <li>
 Every image you load takes more <a target="_blank" href="glosspage.html#72616d"><span style="color: #884422;">RAM</span></a>. Lots of it.</li>
 </ul>
@@ -716,9 +722,9 @@ Every image you load takes more <a target="_blank" href="glosspage.html#72616d">
 
 Disk space:
 <ul>
-<li><span style="font-weight: bold;">iToolBox</span> takes about 25 megabytes</li>
+<li><strong>iToolBox</strong> takes about 30 megabytes</li>
 <li>
-Your images will demand more. <span style="font-style: italic;">Lots</span> more.</li>
+Your images will demand more. <em>Lots</em> more.</li>
 </ul>
 </li>
 <li>
@@ -736,15 +742,16 @@ Monitors
 <li>
 Two is good.</li>
 <li>
-More is <span style="font-style: italic;">great</span></li>
+More is <em>great</em></li>
 </ul>
 </li>
 <li>
 
 Mouse
 <ul>
-<li>A mouse with two mechanical buttons is <span style="font-style: italic;">highly</span> recommended.<br>
-<a target="_blank" href="https://apple.com">Apple</a>'s Magic Mouse is <span style="font-style: italic;">not</span> recommended, as <a target="_blank" href="https://apple.com">Apple</a>'s Magic Mouse driver has some serious bugs with its mouse button emulation that can make using <span style="font-weight: bold;">iToolBox</span> considerably less convenient.</li>
+<li>A mouse with two mechanical buttons is <em>highly</em> recommended.<br>
+<a target="_blank" href="https://apple.com">Apple</a>'s Magic Mouse is <span style="color: #ff0000;"><em>not</em></span> recommended. <a style="text-decoration: none;" href="#zfootn2"><sup><em>(f/n&nbsp;#2) </em></sup></a></li>
+<li>Trackpads, tablets, and trackball are <span style="color: #ff0000;"><em>not</em></span> recommended. At all. Mouse!</li>
 </ul>
 </li>
 <li>
@@ -752,13 +759,13 @@ Mouse
 Networking
 <ul>
 <li>
-<span style="font-weight: bold;">iToolBox</span> <span style="font-style: italic;">asks</span> you for permission to contact <a target="_blank" href="https://fyngyrz.com/">fyngyrz.com</a> to get a serial number. It's <span style="font-style: italic;">not</span> required.</li>
+<strong>iToolBox</strong> <em>asks</em> you for permission to contact <a target="_blank" href="https://fyngyrz.com/">fyngyrz.com</a> to get a serial number. It's <em>not</em> required.</li>
 <li>
 The documentation is kept online<br>
-(and since <span style="font-weight: bold;">iToolBox</span> has context sensitive help, you might like that)</li>
+(and since <strong>iToolBox</strong> has context sensitive help, you might like that)</li>
 <li>
 Updates to the software are made available online<br>
-(and <span style="font-weight: bold;">iToolBox</span> can let you know about available updates in the <a href="themenus.html#aboutdialog">About dialog</a>)</li>
+(and <strong>iToolBox</strong> can let you know about available updates in the <a href="themenus.html#aboutdialog">About dialog</a>)</li>
 <li>
 Other than taking advantage of these things, no, you don't need a <a target="_blank" href="glosspage.html#6c616e"><span style="color: #884422;">LAN</span></a> or <a target="_blank" href="glosspage.html#77616e"><span style="color: #884422;">WAN</span></a> connection.
 </li>
@@ -771,7 +778,21 @@ Other than taking advantage of these things, no, you don't need a <a target="_bl
 </li>
 </ul>
 
-                          <div style="
+             <a name="zfootn1"></a>
+<table style="margin-top: 1em;" align="center" border="1" width="75%" bgcolor="#ffffff">
+<tr bgcolor="#ddffdd"><td><em>Footnote 1</em> - <strong><a target="_blank" href="https://www.microsoft.com/en-us/windows">Windows</a> version coming...</strong></td></tr>
+<tr><td>Good news for <a target="_blank" href="https://www.microsoft.com/en-us/windows">Windows</a> users; I have a port of <strong>iToolBox</strong> up and running under <a target="_blank" href="https://www.microsoft.com/en-us/windows/get-windows-10">Windows&nbsp;10</a>. I'm working on some details now, but I expect to make it available in the first half of 2020. Hang in there!</td></tr>
+</table><br><br>
+
+
+<a name="zfootn2"></a>
+<table style="margin-top: 1em;" align="center" border="1" width="75%" bgcolor="#ffffff">
+<tr bgcolor="#ddffdd"><td><em>Footnote 2</em> - <strong>Don't try to use <a target="_blank" href="https://apple.com">Apple</a>'s Magic Mouse</strong></td></tr>
+<tr><td><a target="_blank" href="https://apple.com">Apple</a>'s Magic Mouse driver has some serious limitations with its mouse button emulation that can make using <strong>iToolBox</strong> considerably less convenient.  Specifically, the Magic Mouse does not support using both (virtual) left and right mouse buttons simultaneously, which is a technique <strong>iToolBox</strong> heavily relies upon.</td></tr>
+</table><br><br>
+
+
+             <div style="
        clear: both;
        width: 75%;
 border-style: solid;
@@ -781,7 +802,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -791,20 +812,18 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="tocpage.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="features.html">Next</a>&nbsp;</td></tr></table></div>
-                            <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+                            <center>Page 1</center>
         </div>
 
     </BODY>

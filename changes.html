@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "privacy.html"; }
 function onRight_keyDown() { window.location.href = "incaseof.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,43 +211,488 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="privacy.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="incaseof.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref568"></a><h1>40 &#32;-&#32;Changes List</h1>
+               <a name="ixref593"></a><h1>41 &#32;-&#32;Changes List</h1>
 
 <ul>
+<li style="padding-bottom:.5em;">
+Version 2.60
+<ul>
+<li>
+<span class="ckey">&#8997;</span>+<span class="ckey">r</span> <a href="keyboard.html#keyoptr">Rotate PShape</a> added</li>
+<li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/P-Shape Controller&nbsp;</strong></span></span> added</li>
+<li>
+The <a href="opcolorfill.html">Color&nbsp;Fill</a>  operator now has a one-shot <span style="white-space:nowrap;"><span class="cbut">Pick Up</span></span> button to sample and set in one operation</li>
+<li>
+The <a href="opcolorize.html">Colorize</a>  operator now has a one-shot <span style="white-space:nowrap;"><span class="cbut">Pick Up</span></span> button to sample and set in one operation</li>
+<li>
+The <a href="textgeneration.html">Text&nbsp;dialog</a> now provides for selectable background color</li>
+<li>
+The <a href="textgeneration.html">Text&nbsp;dialog</a> can automatically match text and background colors</li>
+<li>
+Adjusted size and position of <a href="areatools.html#xyrect">Numeric rectangle</a> controls
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.59
+<ul>
+<li>
+<strong><span style="color:#006600;"><strong><tt>Milestone:</tt></strong></span></strong> First Windows 10 <em>Beta</em> version up and running</li>
+<li>
+<a href="keyboard.html#keye">Enlarge/Reduce</a> gains vertical priority mode</li>
+<li>
+<a href="areatools.html#xyrect">Numeric rectangle</a> tool selection adjusted by 1 pixel on each axis</li>
+<li>
+<a href="areatools.html#xyrect">Numeric rectangle</a> dialog now attempts to open next to the <a href="imagetypes.html#action">action</a> image</li>
+<li>
+<a href="areatools.html#xyrect">Numeric rectangle</a> controls changed to incremental integers</li>
+<li>
+Minimum <a href="imagetypes.html#action">action</a> window width is now 80 pixels instead of 200</li>
+<li>
+All operators now update their displayed settings upon <a href="opscript.html">Script</a>  operator execution
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.58
+<ul>
+<li>
+Added color wells to <a href="opsample.html">Sample</a>  operator</li>
+<li>
+Added color well to <a href="opcolorfill.html">Color&nbsp;Fill</a>  operator
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.57
+<ul>
+<li>
+Added <a href="areatools.html#outline">outline modifier</a> to <a href="areatools.html">areatools</a>
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.56
+<ul>
+<li>
+Improved downscaling of images via <span class="ckey">e</span> and <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Commands/Enlarge / Reduce&nbsp;</strong></span></span>
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.55
+<ul>
+<li>
+Added new script command, <a href="opscript.html#vload"><strong>vload</strong></a>, to load an image if not already loaded</li>
+<li>
+Added <em>Under Alpha</em> operating mode to the <a href="opplace.html">Place</a>  operator</li>
+<li>
+Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Drops become origin image</strong></span></span> to <a href="preferences.html">Preferences&nbsp;dialog</a></li>
+<li>
+Executing a macro from the macro edit dialog now refreshes the image window</li>
+<li>
+Added <span style="white-space:nowrap;"><span class="cbut">Drag</span></span> to <a href="areatools.html#xyrect">numeric rectangle</a></li>
+<li>
+Menu 5x through 10x view resizing now enables/disables with presence of <a href="imagetypes.html#action">action</a> image
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.54
+<ul>
+<li>
+Added ten script macros<br>
+<span class="ckey">shift</span>+<span class="ckey">&#8997;</span>+<span class="ckey">m</span> in image context or <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Commands/Edit Macros&nbsp;</strong></span></span> to edit<br>
+<span class="ckey"> &#8984;</span>+<span class="ckey">&#8997;</span>+(top row # key) or <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Operators/Macros&nbsp;&#9654;</strong></span></span> to execute</li>
+<li>
+Added 5x to 10x view zoom sizes; in image context, keys <span class="ckey">5</span> through <span class="ckey">0</span><br>
+or via the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Views/View Size&nbsp;&#9654;</strong></span></span> submenu</li>
+<li>
+Added <a href="appendixh.html">.rgba</a> 64-bit image format support
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.53
+<ul>
+<li>
+Added thumbnail preview to custom <a href="filedialog.html">File&nbsp;dialog</a></li>
+<li>
+Added <a href="appendixh.html">.rgba</a> 32-bit image format support</li>
+<li>
+<span style="color: #ff0000;">REGRESSION-FIX:</span> restored <span class="ckey"> &#8984;</span>+<span class="ckey">o</span> for <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load&nbsp;</strong></span></span></li>
+<li>
+<span style="color: #ff0000;">BUG-FIX:</span> crops sometimes resulted in image windows that would not close
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.52
+<ul>
+<li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Command/Clone to View Size&nbsp;</strong></span></span> menu item</li>
+<li>
+Added <em>image favorites</em> capability:
+<ul>
+<li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Favorite&nbsp;&#9654;</strong></span></span> to load any of ten pre-assigned favorites</li>
+<li>
+<span class="ckey">shift</span>-<span class="ckey">f</span> assigns a loaded image as a favorite (image <em>must</em> have been loaded)</li>
+<li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Command/Assign as Favorite&nbsp;</strong></span></span> &mdash; same as <span class="ckey">shift</span>+<span class="ckey">f</span></li>
+<li>
+<span class="ckey">&#8997;</span>-<span class="ckey">1</span> through <span class="ckey">&#8997;</span>-<span class="ckey">0</span> load any of ten pre-assigned favorites one through ten</li>
+<li>
+New prefs item provides choice of if loading a favorite ends up on the recent images menu
+</li>
+</ul>
+</li>
+<li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Retrieve Ray Trace&nbsp;</strong></span></span> menu item</li>
+<li>
+Altered <a href="opspherize.html">Spherize</a>  operator...
+<ul>
+<li>
+...so the rectangle with the <a href="imagetypes.html#origin">origin</a> image map would use the ambient term</li>
+<li>
+...to shadow better by moving the rectangle and the light source
+</li>
+</ul>
+
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.51
+<ul>
+<li>
+Added <a href="opspherize.html">Spherize</a>  operator</li>
+<li>
+Disabled access to the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Operator&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> drop-down; it is now just an indicator. Use the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Operators&nbsp;</strong></span></span> menu to select your operator; the list of all operators has become far too long for a single drop-down to be even remotely practical.</li>
+<li>
+<span class="ckey">&#8997;</span>+<span class="ckey">shift</span>+<span class="ckey">c</span> = create clone at view size (image is not scaled, pixels are duplicated.)</li>
+<li>
+Added additional window scalings for small images:<br>
+5:1, 6:1, 7:1, 8:1, 9:1, 10:1 on <span class="ckey">5</span>, <span class="ckey">6</span>, <span class="ckey">7</span>, <span class="ckey">8</span>, <span class="ckey">9</span>, <span class="ckey">0</span>
+
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.50
+<ul>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="white-space:nowrap;"><span class="cbut">Save</span></span> and <span style="white-space:nowrap;"><span class="cbut">Load</span></span> to the <a href="scriptsettings.html">script presets dialog</a></li>
+<li>
+<a href="opscript.html">Script</a>  operator: <span style="color:#006600;"><strong><tt>assign()</tt></strong></span> can now optionally take 2-D indices: <span style="color:#006600;"><strong><tt>assign(name,x,row[,column])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: <span style="color:#006600;"><strong><tt>value()</tt></strong></span> can now optionally take 2-D indices: <span style="color:#006600;"><strong><tt>value(name,row[,column])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: errors and warnings incorporate some color cueing</li>
+<li>
+<a href="opscript.html">Script</a>  operator: string assignment highlighting improved</li>
+<li>
+<a href="opscript.html">Script</a>  operator: <span style="color:#006600;"><strong><tt>matadd()</tt></strong></span> and <span style="color:#006600;"><strong><tt>matsub()</tt></strong></span> now maintain dimensionality on output</li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>void=matand(a,b,c)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>void=matnot(a,b)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>void=matnegate(a,b)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>void-mator(a,b,c)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>void=matxor(a,b,c)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>void=push(thing)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>void=pushs(thing)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>value=pull()</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>value=pop()</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>string=pulls()</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>string=pops()</tt></strong></span>
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.49
+<ul>
+<li>
+<a href="opscript.html">Script</a>  operator: Eliminated requirement that non image commands must be assignments
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.48
+<ul>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>count=declare(variable[,...])</tt></strong></span>
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.47
+<ul>
+<li>
+<a href="opscript.html">Script</a>  operator: <span style="color:#006600;"><strong><tt>void=func(name[,p0[,p...]])</tt></strong></span> can now pass text or numeric parameters</li>
+<li>
+<a href="opscript.html">Script</a>  operator: Added <span style="color:#006600;"><strong><tt>index=indexof(name,value[,startIndex])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: Added <span style="color:#006600;"><strong><tt>text=tvar(index)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: Added <span style="color:#006600;"><strong><tt>x=dvar(index)</tt></strong></span>
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.46
+<ul>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>debug</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: Added constant comprehensions from base two to ten, as well as 16</li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>x=slider(title,prompt,minimum,maximum,preset)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: Added numeric arrays:
+<ul>
+<li>
+<span style="color:#006600;"><strong><tt>columns=acols(name)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>sum=add(name)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>size=append(name,value[,...])</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>rows=arows(name)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>size=array(name[,x[,...]])</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=assign(name,index,d)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>size=bits(name,x,size)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=convolve(name,dimension[,mode])</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=dim(name,rows,columns)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=divide(name,divisor)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=dividend(name,dividend)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>size=duplicate(name,newName)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>size=insert(name,index,d)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=limit(name,v1,v2)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>digitcount=maxdigits(name)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=matadd(matA,matB,matC)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>rowsC=matmul(matA,matB,matC,colsArowsB)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=matsub(matA,matB,matC)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=maximize(name,maxValue)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=minimize(name,maxValue)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=minuend(name,minuend)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=minus(name,subtrahend)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=multiply(name,multiplier)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=normalize(name[,minValue])</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=plus(name,addend)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>size=prepend(name,value[,...])</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>size=remove(name,index)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>void=reverse(name)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>size=size(name)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>out=shiftleft(name[,in])</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>out=shiftright(name[,in])</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>size=swap(name,indexA,indexB)</tt></strong></span></li>
+<li>
+<span style="color:#006600;"><strong><tt>x=value(name,index)</tt></strong></span>
+</li>
+</ul>
+
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.45
+<ul>
+<li>
+<a href="opcamera.html">Camera</a>  operator: Added script command</li>
+<li>
+<a href="optime.html">Time</a>  operator: Added script command</li>
+<li>
+<a href="optime.html">Time</a>  operator: now gives visual indication of format correctness</li>
+<li>
+<a href="opauthor.html">Author</a>  operator: Added script command</li>
+<li>
+<a href="opannotation.html">Annotation</a>  operator: Added script command</li>
+<li>
+<a href="opsoftware.html">Software</a>  operator: Added script command</li>
+<li>
+<a href="opmeasure.html">Measure</a>  operator: Added script command</li>
+<li>
+<a href="opgps.html">GPS</a>  operator: Added script command</li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_leading</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_ascent</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_descent</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_lineheight</tt></strong></span></li>
+<li>
+<span style="color: #ff0000;">BUG-FIX:</span> <span style="white-space:nowrap;"><span class="cbut">Apply</span></span> button in <a href="optime.html">Time</a>  operator wasn't working
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.44
+<ul>
+<li>
+Added <a href="preferences.html">Preferences&nbsp;dialog</a> option to jump to <a href="opscript.html">Script</a>  operator when <span style="white-space:nowrap;"><span class="cbut">&rarr;Script</span></span> is clicked in any operator</li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_aperture</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_focallength</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_iso</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_shutter</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator:  added text function <span style="color:#006600;"><strong><tt>t=truth(variablename[,prepend][,postpend])</tt></strong></span></li>
+<li> 
+<a href="opcrop.html">Crop</a>  operator: Added script command</li>
+<li>
+<a href="opdpi.html">DPI</a>  operator: Added script command
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.43
+<ul>
+<li>
+<a href="opscript.html">Script</a>  operator: new fixed variables <span style="color:#006600;"><strong><tt>true</tt></strong></span> (<span style="color:#006600;"><strong><tt>1</tt></strong></span>) and <span style="color:#006600;"><strong><tt>false</tt></strong></span> (<span style="color:#006600;"><strong><tt>0</tt></strong></span>)</li>
+<li>
+<a href="opscript.html">Script</a>  operator: rework of the scripting engine highlighter and text variable parser</li>
+<li>
+<a href="opscript.html">Script</a>  operator: enhanced comprehension of <span style="color:#006600;"><strong><tt>if()</tt></strong></span> expressions now includes text variables
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.42
+<ul>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_altitude</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_latitude</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_longitude</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_date</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_time</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_xdpi</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_ydpi</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=imagename([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=mastername([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=layername([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=altitude([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=latitude([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=longitude([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=createtime([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=modtime([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=annotation([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=author([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=copyright([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=software([prepend][,postpend])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=verbatim([text])</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added text function <span style="color:#006600;"><strong><tt>t=ask([title[,prompt[,preset]]])</tt></strong></span>
+</li>
+</ul>
+</li>
+<li style="padding-bottom:.5em;">
+Version 2.41
+<ul>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>x=alog(y)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>pr=prat(dB)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>vr=vrat(dB)</tt></strong></span></li>
+<li>
+<a href="opscript.html">Script</a>  operator: <span style="color:#006600;"><strong><tt>x=round(y)</tt></strong></span> is now <span style="color:#006600;"><strong><tt>x=round(y[,places])</tt></strong></span>
+</li>
+</ul>
+</li>
 <li style="padding-bottom:.5em;">
 Version 2.40
 <ul>
 <li>
-<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><span style="font-weight: bold;"><tt>m_pc</tt></span></span> &mdash; Planck's constant</li>
+<a href="opscript.html">Script</a>  operator: added preset variable <span style="color:#006600;"><strong><tt>m_pc</tt></strong></span> &mdash; Planck's constant</li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>frequency=wtof(wavelength)</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>frequency=wtof(wavelength)</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>wavelength=ftow(frequency)</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>wavelength=ftow(frequency)</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>watts=dtow(dbm)</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>watts=dtow(dbm)</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>dbm=wtod(watts)</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>dbm=wtod(watts)</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>enob=stoe(sinad)</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>enob=stoe(sinad)</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>Ls=lser(L1,[L2,...,Ln])</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>Ls=lser(L1,[L2,...,Ln])</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>Lp=lpar(L1,[L2,...,Ln])</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>Lp=lpar(L1,[L2,...,Ln])</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>Rs=rser(R1,[R2,...,Rn])</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>Rs=rser(R1,[R2,...,Rn])</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>Rp=rpar(R1,[R2,...,Rn])</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>Rp=rpar(R1,[R2,...,Rn])</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>Cs=cserC1,[C2,...,Cn])</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>Cs=cserC1,[C2,...,Cn])</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><span style="font-weight: bold;"><tt>Cp=cpar(C1,[C2,...,Cn])</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: added <span style="color:#006600;"><strong><tt>Cp=cpar(C1,[C2,...,Cn])</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: changed <span style="color:#006600;"><span style="font-weight: bold;"><tt>dbmtos()</tt></span></span> to <span style="color:#006600;"><span style="font-weight: bold;"><tt>dtos()</tt></span></span></li>
+<a href="opscript.html">Script</a>  operator: changed <span style="color:#006600;"><strong><tt>dbmtos()</tt></strong></span> to <span style="color:#006600;"><strong><tt>dtos()</tt></strong></span></li>
 <li>
-<a href="opscript.html">Script</a>  operator: changed <span style="color:#006600;"><span style="font-weight: bold;"><tt>dbmtov()</tt></span></span> to <span style="color:#006600;"><span style="font-weight: bold;"><tt>dtov()</tt></span></span>
+<a href="opscript.html">Script</a>  operator: changed <span style="color:#006600;"><strong><tt>dbmtov()</tt></strong></span> to <span style="color:#006600;"><strong><tt>dtov()</tt></strong></span>
 </li>
 </ul>
 </li>
@@ -253,7 +700,7 @@ Version 2.40
 Version 2.39
 <ul>
 <li>
-<span style="color:#006600;"><span style="font-weight: bold;"><tt>fyngyrz.com</tt></span></span> URLS changed from <span style="color:#006600;"><span style="font-weight: bold;"><tt>http:</tt></span></span> to <span style="color:#006600;"><span style="font-weight: bold;"><tt>https:</tt></span></span></li>
+<span style="color:#006600;"><strong><tt>fyngyrz.com</tt></strong></span> URLS changed from <span style="color:#006600;"><strong><tt>http:</tt></strong></span> to <span style="color:#006600;"><strong><tt>https:</tt></strong></span></li>
 <li>
 <a href="opscript.html">Script</a>  operator: Major enhancements to the scripting language</li>
 <li>
@@ -274,7 +721,7 @@ Open, unfilled figure aliasing improved
 Version 2.38
 <ul>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Operators&nbsp;</span></span></span> menu added to <a href="themenus.html#opmenu">menu system</a></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Operators&nbsp;</strong></span></span> menu added to <a href="themenus.html#opmenu">menu system</a></li>
 <li>
 <a href="opalphamodify.html">Alpha&nbsp;Modify</a> operator now has modes
 </li>
@@ -294,7 +741,7 @@ Backtick (left quote): <span class="ckey">`</span> now resets zoom to 1:1 with <
 Version 2.36
 <ul>
 <li>
-<span style="font-weight: bold;">iToolBox</span> can now optionally actively notify a user of upgrades; new <a href="preferences.html">Preferences&nbsp;dialog</a> setting.</li>
+<strong>iToolBox</strong> can now optionally actively notify a user of upgrades; new <a href="preferences.html">Preferences&nbsp;dialog</a> setting.</li>
 <li>
 <a href="opcurves.html">Curves</a>  operator now does a better job at changing the numbers of control points
 </li>
@@ -306,9 +753,9 @@ Version 2.35
 <li>
 The <a href="areatools.html#magnify">magnify</a> tool can now drag out a rect to select an area to zoom to</li>
 <li>
-<span style="font-weight: bold;">iToolBox</span> will now scroll images with the scrollwheel or similar input</li>
+<strong>iToolBox</strong> will now scroll images with the scrollwheel or similar input</li>
 <li>
-The <a href="preferences.html">Preferences&nbsp;dialog</a> contains a new <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Invert Y Axis Scrolling</span></span></span> option
+The <a href="preferences.html">Preferences&nbsp;dialog</a> contains a new <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Invert Y Axis Scrolling</strong></span></span> option
 </li>
 </ul>
 </li>
@@ -318,7 +765,7 @@ Version 2.34
 <li>
 Added <a href="opmeasure.html">Measure</a>  operator</li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Views/Set Zoom Step Size&nbsp;</span></span></span> to <a href="themenus.html#zoomsteps">menu system</a>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Views/Set Zoom Step Size&nbsp;</strong></span></span> to <a href="themenus.html#zoomsteps">menu system</a>
 Added object size and count to detailed memory report</li>
 <li>
 Holding <span class="ckey"> &#8984;</span> holds <a href="areatools.html#ellipse">ellipse</a> and <a href="areatools.html#rectangle">rectangle</a> selections square</li>
@@ -331,7 +778,7 @@ Some speed improvements
 Version 2.33
 <ul>
 <li>
-<span class="ckey">Return</span> now operates on the current selection in <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> (non-modal) mode</li>
+<span class="ckey">Return</span> now operates on the current selection in <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Modal Selections</strong></span></span> (non-modal) mode</li>
 <li>
 <a href="opbrushstroke.html">Brushstroke</a>  operator preview now obeys target alpha
 </li>
@@ -341,7 +788,7 @@ Version 2.33
 Version 2.32
 <ul>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Burning Ship&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> to <a href="opfractals.html">Fractals</a> operator</li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Burning Ship&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> to <a href="opfractals.html">Fractals</a> operator</li>
 <li>
 Resetting rotation on a <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> now requires <span class="ckey">control</span>+<span class="ckey">shift</span>+<span class="ckey">&#8997;</span>
 &mdash; this allows addition and subtraction of <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>s using <span class="ckey">shift</span> and <span class="ckey">&#8997;</span> in non-modal selection mode</li>
@@ -358,7 +805,7 @@ Addressed some issues with selection marqee multiple-selections in non-modal mod
 Version 2.31
 <ul>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Lambda&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> to <a href="opfractals.html">Fractals</a>  operator
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Lambda&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> to <a href="opfractals.html">Fractals</a>  operator
 </li>
 </ul>
 </li>
@@ -376,36 +823,36 @@ Version 2.29
 <li>
 <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-shape</a></span> candidates now include ellipses, rectangles, splines, xyrects, and entire image (which is just a rect.)</li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Convert [type region] to P-Shape&nbsp;</span></span></span> to the <a href="themenus.html#convertpshape">menu system</a></li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Convert [type region] to P-Shape&nbsp;</strong></span></span> to the <a href="themenus.html#convertpshape">menu system</a></li>
 <li>
 <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> selections now have lines in all four quadrants to aid in aspect correct placement</li>
 <li>
-Added <a href="opfractals.html">Fractals</a>  operator with <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Julia&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> and <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Mandelbrot&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span></li>
+Added <a href="opfractals.html">Fractals</a>  operator with <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Julia&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> and <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Mandelbrot&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span></li>
 <li>
-Added pixel <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Blend Modes&nbsp;&#9654;</span></span></span> to the <a href="themenus.html#blendmodes">menu system</a>
+Added pixel <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Blend Modes&nbsp;&#9654;</strong></span></span> to the <a href="themenus.html#blendmodes">menu system</a>
 <ul>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Matte&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Matte&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Add&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Add&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Add Grey&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Add Grey&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Subtract&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Subtract&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Subtract Grey&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Subtract Grey&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Multiply&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Multiply&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Divide&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Divide&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Dissolve&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Dissolve&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Soft Dissolve&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Soft Dissolve&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Foreground Color&nbsp;</span></span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Foreground Color&nbsp;</strong></span></span></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Background Color&nbsp;</span></span></span>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Background Color&nbsp;</strong></span></span>
 </li>
 </ul>
 </li>
@@ -442,7 +889,7 @@ Added detail to the <a href="helpdialog.html">Help&nbsp;dialog</a></li>
 <li>
 <a href="helpdialog.html">Help&nbsp;dialog</a> text display follows window size</li>
 <li>
-<a href="operators.html">Operators&nbsp;dialog</a> now has <span style="white-space:nowrap;"><span class="cbut">Script</span></span> button to generate a script line</li>
+<a href="operators.html">Operators&nbsp;dialog</a> now has <span style="white-space:nowrap;"><span class="cbut">&rarr;Script</span></span> button to generate a script line</li>
 <li>
 <a href="operators.html">Operators&nbsp;dialog</a> now has <span style="white-space:nowrap;"><span class="cbut">CS</span></span> button to clear the entire script</li>
 <li>
@@ -462,7 +909,7 @@ Some changes to how the <a href="oprangefill.html">Range&nbsp;Fill</a>  operator
 <li>
 Hot key set dialog now only accepts a-z and A-Z</li>
 <li>
-<span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Clear Script</span></span></span> added to Confirmation section of <a href="preferences.html">Preferences&nbsp;dialog</a></li>
+<span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Clear Script</strong></span></span> added to Confirmation section of <a href="preferences.html">Preferences&nbsp;dialog</a></li>
 <li>
 <a href="preferences.html">Preferences&nbsp;dialog</a> rearranged to make room for additional options</li>
 <li>
@@ -470,7 +917,7 @@ Added <span style="white-space:nowrap;"><span class="cbut">Set Help URL</span></
 <li>
 <a href="opscript.html">Script</a>  operator <span style="white-space:nowrap;"><span class="cbut">Save Script</span></span> button only available when there is script content</li>
 <li>
-Fixed <span style="color: #ff0000;">crashing</span> bug in <a href="oprotate90.html">Rotate&nbsp;90&deg;</a>  operator
+<span style="color: #ff0000;">BUG-FIX</span> bug in <a href="oprotate90.html">Rotate&nbsp;90&deg;</a>  operator
 </li>
 </ul>
 </li>
@@ -480,7 +927,7 @@ Version 2.26
 <li>
 Re-organized the <a href="areatools.html">areatools</a></li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/New Image &#8984;N&nbsp;</span></span></span> can now generate grids/graph "paper"</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/New Image &#8984;N&nbsp;</strong></span></span> can now generate grids/graph "paper"</li>
 <li>
 <span class="ckey">F7</span> now selects the <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> <a href="areatools.html">areatool</a>, other F-Keys have been adjusted to compensate</li>
 <li>
@@ -502,9 +949,9 @@ Version 2.25
 <li>
 Added <a href="opnotchf.html">Notch Filter</a> operator</li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Save P-Shape&nbsp;</span></span></span> tool to the <a href="themenus.html#savepshape">menu system</a></li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Save P-Shape&nbsp;</strong></span></span> tool to the <a href="themenus.html#savepshape">menu system</a></li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Load P-Shape&nbsp;</span></span></span> tool to the <a href="themenus.html#loadpshape">menu system</a></li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load P-Shape&nbsp;</strong></span></span> tool to the <a href="themenus.html#loadpshape">menu system</a></li>
 <li>
 Added <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> tool to the <a href="areatools.html">areatools</a>, which involved adjusting the dialog geometry</li>
 <li>
@@ -518,7 +965,7 @@ Version 2.24
 <li>
 Added <a href="opcreduce.html">Color Reduction</a> operator</li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Memory Report&nbsp;</span></span></span> tool in the <a href="themenus.html#memreport">menu system</a> is now has <span style="white-space:nowrap;"><span class="cbut">Pack</span></span></li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Memory Report&nbsp;</strong></span></span> tool in the <a href="themenus.html#memreport">menu system</a> is now has <span style="white-space:nowrap;"><span class="cbut">Pack</span></span></li>
 <li>
 Improved parsing of CMD number keys for image loading in image windows</li>
 <li>
@@ -542,15 +989,15 @@ Version 2.22
 <li>
 Some internal memory management improved: segment naming, detail reporting</li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Memory Report&nbsp;</span></span></span> tool dialog accessed via the <a href="themenus.html#memreport">menu system</a> is now wider
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Memory Report&nbsp;</strong></span></span> tool dialog accessed via the <a href="themenus.html#memreport">menu system</a> is now wider
 </li>
 </ul>
 </li>
 <li style="padding-bottom:.5em;">
-Version 2.21 (<big><span style="color: #ff0000;"><span style="font-weight: bold;"><big>&rarr;</big> This version not yet uploaded for distribution</span></span>)</big>
+Version 2.21
 <ul>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Export A:B GIF Animation&nbsp;</span></span></span> to the <a href="themenus.html#gifanim">menu system</a>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Export A:B GIF Animation&nbsp;</strong></span></span> to the <a href="themenus.html#gifanim">menu system</a>
 </li>
 </ul>
 </li>
@@ -558,7 +1005,7 @@ Added <span style="white-space:nowrap;"><span style="color: #000000; background-
 Version 2.20
 <ul>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Memory Report&nbsp;</span></span></span> tool to the <a href="themenus.html#memreport">menu system</a></li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Memory Report&nbsp;</strong></span></span> tool to the <a href="themenus.html#memreport">menu system</a></li>
 <li>
 Added <a target="_blank" href="glosspage.html#797262"><span style="color: #884422;">YRB</span></a> colorspace model</li>
 <li>
@@ -574,7 +1021,7 @@ Version 2.19
 <li>
 Added <a target="_blank" href="glosspage.html#726762"><span style="color: #884422;">RGB</span></a> channel separation to the <a href="layersdialog.html">Layers&nbsp;dialog</a></li>
 <li>
-Changed the way <span style="white-space:nowrap;"> <span style="font-weight: bold;">Threshold</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> works in the <a href="opchromanoise.html">Chroma Noise Reduction</a> operator
+Changed the way <span style="white-space:nowrap;"> <strong>Threshold</strong> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> works in the <a href="opchromanoise.html">Chroma Noise Reduction</a> operator
 </li>
 </ul>
 </li>
@@ -582,7 +1029,7 @@ Changed the way <span style="white-space:nowrap;"> <span style="font-weight: bol
 Version 2.18
 <ul>
 <li>
-The <a href="opchromanoise.html">Chroma Noise Reduction</a> operator gets <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Hue</span></span></span> and <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Saturation</span></span></span> controls</li>
+The <a href="opchromanoise.html">Chroma Noise Reduction</a> operator gets <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Hue</strong></span></span> and <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Saturation</strong></span></span> controls</li>
 <li>
 The <a href="layersdialog.html">Layers&nbsp;dialog</a> gets <span class="ckey">n</span>ext layer mode and <span style="white-space:nowrap;"><span class="ckey">N</span> (<span class="ckey">shift</span>+<span class="ckey">n</span>)</span>-previous layer mode keystrokes
 </li>
@@ -594,9 +1041,9 @@ Version 2.17
 <li>
 <a href="opsample.html">Sample</a> now does colorspace sampling</li>
 <li>
-Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Add to colorspace</span></span></span> to the  <a href="opsample.html">Sample</a> operator</li>
+Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Add to colorspace</strong></span></span> to the  <a href="opsample.html">Sample</a> operator</li>
 <li>
-Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Subtract from colorspace</span></span></span> to the  <a href="opsample.html">Sample</a> operator</li>
+Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Subtract from colorspace</strong></span></span> to the  <a href="opsample.html">Sample</a> operator</li>
 <li>
 Added <a href="opkeyop.html">Key to Colorspace</a> operator</li>
 <li>
@@ -622,9 +1069,9 @@ Added <a href="ophisteq.html">Histogram Equalize</a> operator</li>
 <li>
 Fixed a bug in color space conversions</li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Load Recent Path&nbsp;&#9654;</span></span></span></li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Recent Path&nbsp;&#9654;</strong></span></span></li>
 <li>
-Changed <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Load Recent&nbsp;&#9654;</span></span></span> to <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Load Recent Image&nbsp;&#9654;</span></span></span>
+Changed <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Recent&nbsp;&#9654;</strong></span></span> to <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Recent Image&nbsp;&#9654;</strong></span></span>
 </li>
 </ul>
 </li>
@@ -662,7 +1109,7 @@ Added <a href="areatools.html#spline">spline</a> tool to the <a href="areatools.
 <li>
 Because there is an additional areatool, the function keys to access some of them have changed</li>
 <li>
-<span style="font-weight: bold;">iToolBox</span> can now restore the original <a href="areatools.html">areatools</a> icons without quitting and restarting
+<strong>iToolBox</strong> can now restore the original <a href="areatools.html">areatools</a> icons without quitting and restarting
 </li>
 </ul>
 </li>
@@ -721,7 +1168,7 @@ Version 1.100
 <li>
 <a href="opbrushstroke.html">Brush operator</a> now works with image <a target="_blank" href="glosspage.html#62617272656c"><span style="color: #884422;">barrel</span></a>s</li>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Load Recent&nbsp;&#9654;</span></span></span> now has accelerators for the 1st ten items</li>
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Recent&nbsp;&#9654;</strong></span></span> now has accelerators for the 1st ten items</li>
 <li>
 Mix <a href="opscript.html">Script</a> operator function now takes real numbers as input: 0.0 to 100.0</li>
 <li>
@@ -735,7 +1182,7 @@ Version 1.99
 <li>
 Syntax highlighting for the <a href="opscript.html">Script</a> operator is now configurable in the <a href="preferences.html#metadefaults">Meta Defaults&nbsp;dialog</a></li>
 <li>
-Added <span style="font-weight: bold;">mix</span> command to the <a href="opscript.html">Script</a> operator
+Added <strong>mix</strong> command to the <a href="opscript.html">Script</a> operator
 </li>
 </ul>
 </li>
@@ -769,7 +1216,7 @@ Completely reworked the <a href="opchromanoise.html">Chroma Noise Reduction</a> 
 Version 1.95
 <ul>
 <li>
-<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Images/Close All &#8984;W&nbsp;</span></span></span> now obeys the <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Confirm Image Close</span></span></span> setting
+<span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Images/Close All &#8984;W&nbsp;</strong></span></span> now obeys the <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Confirm Image Close</strong></span></span> setting
 </li>
 </ul>
 </li>
@@ -777,9 +1224,9 @@ Version 1.95
 Version 1.94
 <ul>
 <li>
-Added <span class="ckey"> &#8984;</span>-<span class="ckey">W</span> accelerator for <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Images/Close All &#8984;W&nbsp;</span></span></span></li>
+Added <span class="ckey"> &#8984;</span>-<span class="ckey">W</span> accelerator for <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Images/Close All &#8984;W&nbsp;</strong></span></span></li>
 <li>
-<a href="opbrushstroke.html">Brushstroke</a> operator now obeys the <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Mask With Target Alpha</span></span></span> setting
+<a href="opbrushstroke.html">Brushstroke</a> operator now obeys the <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Mask With Target Alpha</strong></span></span> setting
 </li>
 </ul>
 </li>
@@ -803,7 +1250,7 @@ More work on making keystroke commands uniform across the various dialogs and wi
 Version 1.91
 <ul>
 <li>
-Added <span style="white-space:nowrap;"> <span style="font-weight: bold;">Intensity</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> to <a href="opgaussianblur.html">Gaussian Blur</a> operator
+Added <span style="white-space:nowrap;"> <strong>Intensity</strong> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> to <a href="opgaussianblur.html">Gaussian Blur</a> operator
 </li>
 </ul>
 </li>
@@ -811,7 +1258,7 @@ Added <span style="white-space:nowrap;"> <span style="font-weight: bold;">Intens
 Version 1.90
 <ul>
 <li>
-Fixed unlikely to encounter, but definitely possible, <span style="color: #ff0000;">crashing bug</span> in <a href="areatools.html#wand">wand</a> area selection tool.
+<span style="color: #ff0000;">BUG-FIX</span> Fixed unlikely to encounter, but definitely possible, crashing bug in <a href="areatools.html#wand">wand</a> area selection tool.
 </li>
 </ul>
 </li>
@@ -831,15 +1278,15 @@ Stopped <a href="areatools.html">areatools</a> from expanding slightly when imag
 <li>
 Added tooltips to <a href="imagetypes.html#brush">brush</a>, <a href="imagetypes.html#action">action</a> and <a href="imagetypes.html#origin">origin</a> image names in <a href="areatools.html">areatools</a></li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Load Recent&nbsp;&#9654;</span></span></span></li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Recent&nbsp;&#9654;</strong></span></span></li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Save Image &#8984;S&nbsp;</span></span></span></li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Save Image &#8984;S&nbsp;</strong></span></span></li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Save Image (Atomic) &#8679;&#8984;S&nbsp;</span></span></span></li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Save Image (Atomic) &#8679;&#8984;S&nbsp;</strong></span></span></li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Edit/Undo &#8984;Z&nbsp;</span></span></span></li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Edit/Undo &#8984;Z&nbsp;</strong></span></span></li>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Edit/Redo &#8679;&#8984;Z&nbsp;</span></span></span>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Edit/Redo &#8679;&#8984;Z&nbsp;</strong></span></span>
 </li>
 </ul>
 </li>
@@ -855,7 +1302,7 @@ Added ability to set custom icons in the <a href="areatools.html#custicons">Area
 Version 1.86
 <ul>
 <li>
-Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">transparent</span></span></span> button to the <a href="newimage.html">New Image dialog</a></li>
+Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>transparent</strong></span></span> button to the <a href="newimage.html">New Image dialog</a></li>
 <li>
 Added black border around the new image color in the <a href="newimage.html">New Image dialog</a>
 </li>
@@ -983,9 +1430,9 @@ Corrected an error in the <a href="oprandom.html">Random</a> operator's script h
 Version 1.73
 <ul>
 <li>
-Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Additive</span></span></span> to the <a href="oprandom.html">Random</a> operator</li>
+Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Additive</strong></span></span> to the <a href="oprandom.html">Random</a> operator</li>
 <li>
-Added <span style="white-space:nowrap;"> <span style="font-weight: bold;">Amount</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> to the <a href="oprandom.html">Random</a> operator</li>
+Added <span style="white-space:nowrap;"> <strong>Amount</strong> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> to the <a href="oprandom.html">Random</a> operator</li>
 <li>
 <a href="oprandom.html">Random</a> operator now saves the checkbox states
 </li>
@@ -1007,9 +1454,9 @@ Added <a href="opmaximum.html">Maximum</a> operator</li>
 <li>
 Added <a href="opminimum.html">Minimum</a> operator</li>
 <li>
-Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Exclude Soft Edges</span></span></span> to the <a href="opforcedynamic.html">Force Dynamic</a> operator</li>
+Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Exclude Soft Edges</strong></span></span> to the <a href="opforcedynamic.html">Force Dynamic</a> operator</li>
 <li>
-Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">ShapeMask</span></span></span> to the <a href="oprandom.html">Random</a> operator</li>
+Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>ShapeMask</strong></span></span> to the <a href="oprandom.html">Random</a> operator</li>
 <li>
 Fixed bug in <a href="opedgedetection.html">Edge Detection</a> operator</li>
 <li>
@@ -1021,7 +1468,7 @@ Fixed bug in <a href="opemboss.html">Emboss</a> operator
 Version 1.70
 <ul>
 <li>
-Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Apply Saturation</span></span></span> to the <a href="opcolorize.html">Colorize</a> operator
+Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Apply Saturation</strong></span></span> to the <a href="opcolorize.html">Colorize</a> operator
 </li>
 </ul>
 </li>
@@ -1053,7 +1500,7 @@ Added scripting using a <a href="opscript.html">Script</a> operator</li>
 <li>
 Fixed a bug in the <a href="opflip.html">Flip</a> operator</li>
 <li>
-Fixed a bug in <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/New Image &#8984;N&nbsp;</span></span></span> creation
+Fixed a bug in <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/New Image &#8984;N&nbsp;</strong></span></span> creation
 </li>
 </ul>
 </li>
@@ -1068,7 +1515,7 @@ Added <span style="white-space:nowrap;"><span class="cbut">/2</span></span> to <
 Version 1.65
 <ul>
 <li>
-Fixed bug where a <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/New Image &#8984;N&nbsp;</span></span></span> creation would leave its name in the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Images&nbsp;</span></span></span> menu when closed by close box</li>
+Fixed bug where a <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/New Image &#8984;N&nbsp;</strong></span></span> creation would leave its name in the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Images&nbsp;</strong></span></span> menu when closed by close box</li>
 </ul>
 </li>
 <li style="padding-bottom:.5em;">
@@ -1089,7 +1536,7 @@ Version 1.63
 <li>
 Added key indications to the area toolbox tooltips</li>
 <li>
-Added <span style="white-space:nowrap;"> <span style="font-weight: bold;">Mixture</span> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> to <a href="opcolorize.html">Colorize</a> operator
+Added <span style="white-space:nowrap;"> <strong>Mixture</strong> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> to <a href="opcolorize.html">Colorize</a> operator
 </li>
 </ul>
 </li>
@@ -1187,7 +1634,7 @@ Fixed some nomenclature in the <a href="command.html">Command&nbsp;dialog</a>
 Version 1.54
 <ul>
 <li>
-<a href="keyboard.html#keyy">Added the new <span class="ckey">y</span></a> functions from <span style="font-weight: bold;">iToolBox</span> v1.53, below, to the <a href="command.html">Command&nbsp;dialog</a>
+<a href="keyboard.html#keyy">Added the new <span class="ckey">y</span></a> functions from <strong>iToolBox</strong> v1.53, below, to the <a href="command.html">Command&nbsp;dialog</a>
 </li>
 </ul>
 </li>
@@ -1223,7 +1670,7 @@ Version 1.50
 <li>
 Fixed bug in <a href="opwindowandlevel.html">Window and Level</a> operator  causing premature clipping</li>
 <li>
-Fixed bug in saver engine that caused <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span> quality dialog to appear on <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> save
+Fixed bug in saver engine that caused <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong> quality dialog to appear on <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> save
 </li>
 </ul>
 </li>
@@ -1231,7 +1678,7 @@ Fixed bug in saver engine that caused <span style="font-weight: bold;"><tt>.<a t
 Version 1.49
 <ul>
 <li>
-Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Clip to Black</span></span></span> to <a href="opwindowandlevel.html">Window and Level</a> operator
+Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Clip to Black</strong></span></span> to <a href="opwindowandlevel.html">Window and Level</a> operator
 </li>
 </ul>
 </li>
@@ -1239,7 +1686,7 @@ Added <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" st
 Version 1.48
 <ul>
 <li>
-Changed <a href="opdarken.html">Darken</a> operator from an RGB to a Luma basis. <span style="font-style: italic;">Much</span> better.
+Changed <a href="opdarken.html">Darken</a> operator from an RGB to a Luma basis. <em>Much</em> better.
 </li>
 </ul>
 </li>
@@ -1351,7 +1798,7 @@ Version 1.36
 Version 1.35
 <ul>
 <li>
-If <span style="font-weight: bold;">iToolBox</span> is allowed to ask <a target="_blank" href="https://fyngyrz.com/">fyngyrz.com</a> for a serial number, it now reports the version of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) is is running on. I collect this data to let me know what versions of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) the program is able to run on, <span style="font-style: italic;">if</span> you allow it to ask for a serial number. If you don't, it won't do this (or get a serial number, or tell me what version of the program is asking for a serial number.)
+If <strong>iToolBox</strong> is allowed to ask <a target="_blank" href="https://fyngyrz.com/">fyngyrz.com</a> for a serial number, it now reports the version of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) is is running on. I collect this data to let me know what versions of <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) the program is able to run on, <em>if</em> you allow it to ask for a serial number. If you don't, it won't do this (or get a serial number, or tell me what version of the program is asking for a serial number.)
 </li>
 </ul>
 </li>
@@ -1359,7 +1806,7 @@ If <span style="font-weight: bold;">iToolBox</span> is allowed to ask <a target=
 Version 1.34
 <ul>
 <li>
-The <span class="ckey">e</span>nlarge / reduce command now remembers the <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">stretch</span></span></span> setting
+The <span class="ckey">e</span>nlarge / reduce command now remembers the <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>stretch</strong></span></span> setting
 </li>
 </ul>
 </li>
@@ -1385,7 +1832,7 @@ Author field read when <a target="_blank" href="https://www.libraw.org">LibRaw</
 <li>
 Description (annotation) field read when <a target="_blank" href="https://www.libraw.org">LibRaw</a> decodes image</li>
 <li>
-Now saves software signature in <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> and <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span>
+Now saves software signature in <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> and <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong>
 </li>
 </ul>
 </li>
@@ -1419,7 +1866,7 @@ Safety net wrapped around version checking, which is known to have problems on 1
 Version 1.28
 <ul>
 <li>
-<span style="font-weight: bold;">iToolBox</span> now offers you the opportunity to opt-in (default is opt-out) to obtaining a serial number and latest version information. You can change this at any time in <span style="font-weight: bold;">iToolBox</span>'s preferences.
+<strong>iToolBox</strong> now offers you the opportunity to opt-in (default is opt-out) to obtaining a serial number and latest version information. You can change this at any time in <strong>iToolBox</strong>'s preferences.
 </li>
 </ul>
 </li>
@@ -1435,7 +1882,7 @@ Version 1.27
 Version 1.26
 <ul>
 <li>
-<span style="font-weight: bold;">iToolBox</span> can now open files <a href="appendixf.html">directly from Finder.</a>
+<strong>iToolBox</strong> can now open files <a href="appendixf.html">directly from Finder.</a>
 </li>
 </ul>
 </li>
@@ -1445,7 +1892,7 @@ Version 1.25
 <li>
 <a href="opmonochrome.html">Monochrome</a> operator wasn't saving its settings properly</li>
 <li>
-<span style="font-weight: bold;">iToolBox</span> general <a target="_blank" href="glosspage.html#647069"><span style="color: #884422;">DPI</span></a> awareness improved</li>
+<strong>iToolBox</strong> general <a target="_blank" href="glosspage.html#647069"><span style="color: #884422;">DPI</span></a> awareness improved</li>
 <li>
 <a href="opdpi.html">DPI</a> operator gets <span style="white-space:nowrap;"><span class="cbut">Apply</span></span> button
 </li>
@@ -1507,7 +1954,7 @@ Incorporates serial numbering so I can get a sense of how many users there are. 
 Version 1.19
 <ul>
 <li>
-The <a href="themenus.html#aboutdialog">About dialog</a> now contains both a link to the <span style="font-weight: bold;">iToolBox</span> download and the version and revision of the latest <span style="font-weight: bold;">iToolBox</span> available. These are obtained from <a href="https://fyngyrz.com/">fyngyrz.com</a> at application startup.
+The <a href="themenus.html#aboutdialog">About dialog</a> now contains both a link to the <strong>iToolBox</strong> download and the version and revision of the latest <strong>iToolBox</strong> available. These are obtained from <a href="https://fyngyrz.com/">fyngyrz.com</a> at application startup.
 </li>
 </ul>
 </li>
@@ -1515,7 +1962,7 @@ The <a href="themenus.html#aboutdialog">About dialog</a> now contains both a lin
 Version 1.18
 <ul>
 <li>
-Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Maximum Axis&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> <a href="blending.html">blend mode</a>.</li>
+Added <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Maximum Axis&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> <a href="blending.html">blend mode</a>.</li>
 <li>
 Blending groupbox was named... &quot;Groupbox&quot;. Heh.
 </li>
@@ -1525,7 +1972,7 @@ Blending groupbox was named... &quot;Groupbox&quot;. Heh.
 Version 1.17
 <ul>
 <li>
-<span style="color: #ff0000;">Crashing bug</span> in custom <a href="filedialog.html">File&nbsp;dialog</a> assigns - fixed</li>
+<span style="color: #ff0000;">BUG-FIX:</span> in custom <a href="filedialog.html">File&nbsp;dialog</a> assigns</li>
 <li>
 <a href="opalphamodify.html">Alpha</a> operator gets <a target="_blank" href="glosspage.html#68657861646563696d616c"><span style="color: #884422;">hexadecimal</span></a> display</li>
 <li>
@@ -1553,7 +2000,7 @@ Version 1.15
 <li>
 Savers somewhat bulletproofed against bad extensions</li>
 <li>
-Warning when attempting to save image with transparency in <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span></li>
+Warning when attempting to save image with transparency in <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong></li>
 <li>
 Added a &quot;feet&quot; field to the <a href="opgps.html">GPS</a> operator for imperial users
 </li>
@@ -1565,7 +2012,7 @@ Version 1.14
 <li>
 Added <a href="opgps.html">GPS</a> operator </li>
 <li>
-Added <span style="font-weight: bold;">Home</span> <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information to the <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbut">Meta Defaults</span></span></li>
+Added <strong>Home</strong> <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> information to the <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbut">Meta Defaults</span></span></li>
 <li>
 <a href="opauthor.html">Author</a>, <a href="opannotation.html">Annotation</a> and <a href="opcopyright.html">Copyright</a> can now be set on a layered <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> &mdash; bugfix
 </li>
@@ -1680,7 +2127,7 @@ Version 1.3
 <li>
 When <a href="opcolorize.html">Colorize</a> operator is set to greyscale, you get a nice yellow</li>
 <li>
-<span class="ckey">e</span><a href="keyboard.html#enlargereduce">nlarge / reduce</a> gets <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Stretch</span></span></span> to allow nonlinear, result-filling scaling
+<span class="ckey">e</span><a href="keyboard.html#enlargereduce">nlarge / reduce</a> gets <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Stretch</strong></span></span> to allow nonlinear, result-filling scaling
 </li>
 </ul>
 </li>
@@ -1700,7 +2147,7 @@ Added <a href="opcolorize.html">Colorize</a> operator
 Version 1.1
 <ul>
 <li>
-<span style="color:#006600;"><span style="font-weight: bold;"><tt>B:</tt></span></span> brush indication in the <a href="areatools.html">areatools</a> now includes image number</li>
+<span style="color:#006600;"><strong><tt>B:</tt></strong></span> brush indication in the <a href="areatools.html">areatools</a> now includes image number</li>
 <li>
 Bug in <span class="ckey">e</span><a href="keyboard.html#enlargereduce">nlarge / reduce</a> auto-size fixed</li>
 <li>
@@ -1709,7 +2156,7 @@ Bug in <span class="ckey">e</span><a href="keyboard.html#enlargereduce">nlarge /
 </ul>
 </li>
 <li style="padding-bottom:.5em;">
-Version 1.0 - Initial non-<span style="font-style: italic;"><a target="_blank" href="glosspage.html#26626574613b"><span style="color: #884422;">&beta;</span></a></span> Release
+Version 1.0 - Initial non-<em><a target="_blank" href="glosspage.html#26626574613b"><span style="color: #884422;">&beta;</span></a></em> Release
 </li>
 </ul>
 
@@ -1723,7 +2170,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -1733,24 +2180,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="privacy.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="incaseof.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 178</center>
         </div>
 
     </BODY>

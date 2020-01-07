@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "helpdialog.html"; }
 function onRight_keyDown() { window.location.href = "startupsequence.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,12 +211,10 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="helpdialog.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="startupsequence.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref511"></a><h1>25 &#32;-&#32;Drag and Drop</h1>
+               <a name="ixref534"></a><h1>25 &#32;-&#32;Drag and Drop</h1>
 
-<p style="margin-left: 0;">You can drag filesystem images into the <a href="preferences.html">Preferences&nbsp;dialog</a>, <a href="helpdialog.html">Help&nbsp;dialog</a>, <a href="operators.html">Operators&nbsp;dialog</a>, <a href="areatools.html">areatools</a> and any open image <a href="views.html">view</a> and they will load if <span style="font-weight: bold;">iToolBox</span> understands them.</p>
+<p style="margin-left: 0;">You can drag filesystem images into the <a href="preferences.html">Preferences&nbsp;dialog</a>, <a href="helpdialog.html">Help&nbsp;dialog</a>, <a href="operators.html">Operators&nbsp;dialog</a>, <a href="areatools.html">areatools</a> and any open image <a href="views.html">view</a> and they will load if <strong>iToolBox</strong> understands them.</p>
 
 
 
@@ -228,14 +228,14 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Warning: </span> If you drop an image into a text editing field, such as the one in the <a href="opscript.html">Script</a> operator, then instead of the image, you'll get the <a target="_blank" href="glosspage.html#75726c"><span style="color: #884422;">URL</span></a> of the image. Whoops. So you probably don't want to do that. <img alt="smile" title="smile" src="pics/stock_smiley_2.png"></div>
+"><strong>Warning: </strong> If you drop an image into a text editing field, such as the one in the <a href="opscript.html">Script</a> operator, then instead of the image, you'll get the <a target="_blank" href="glosspage.html#75726c"><span style="color: #884422;">URL</span></a> of the image. Whoops. So you probably don't want to do that. <img alt="smile" title="smile" src="pics/stock_smiley_2.png"></div>
 
 
-<p style="margin-left: 0;">Some applications support dragging images out of them into other applications; this too will work if the image format, or the format of the <span style="font-weight: bold;">local</span> file a <a target="_blank" href="glosspage.html#75726c"><span style="color: #884422;">URL</span></a> points to, is understood by <span style="font-weight: bold;">iToolBox</span>.</p>
+<p style="margin-left: 0;">Some applications support dragging images out of them into other applications; this too will work if the image format, or the format of the <strong>local</strong> file a <a target="_blank" href="glosspage.html#75726c"><span style="color: #884422;">URL</span></a> points to, is understood by <strong>iToolBox</strong>.</p>
 
-<p style="margin-left: 0;">Drag-and-Drop will <span style="font-style: italic;">not</span> work if a <a target="_blank" href="glosspage.html#75726c"><span style="color: #884422;">URL</span></a> points to a non-local file, basically anything that begins with <span style="color:#006600;"><span style="font-weight: bold;"><tt>http:</tt></span></span> or <span style="color:#006600;"><span style="font-weight: bold;"><tt>https:</tt></span></span></p>
+<p style="margin-left: 0;">Drag-and-Drop will <em>not</em> work if a <a target="_blank" href="glosspage.html#75726c"><span style="color: #884422;">URL</span></a> points to a non-local file, basically anything that begins with <span style="color:#006600;"><strong><tt>http:</tt></strong></span> or <span style="color:#006600;"><strong><tt>https:</tt></strong></span></p>
 
-<p style="margin-left: 0;">When you drop an image into <span style="font-weight: bold;">iToolBox</span>, it becomes the active application, and the new <a href="views.html">view</a> opened for the dragged-in image becomes the active view, unless you drop the file into the <a href="areatools.html">areatools</a>, which activates itself.</p>
+<p style="margin-left: 0;">When you drop an image into <strong>iToolBox</strong>, it becomes the active application, and the new <a href="views.html">view</a> opened for the dragged-in image becomes the active view, unless you drop the file into the <a href="areatools.html">areatools</a>, which activates itself.</p>
 
                           <div style="
        clear: both;
@@ -247,7 +247,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -257,24 +257,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="helpdialog.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="startupsequence.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 162</center>
         </div>
 
     </BODY>

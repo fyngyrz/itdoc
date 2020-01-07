@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "newimage.html"; }
 function onRight_keyDown() { window.location.href = "blending.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,14 +211,12 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="newimage.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="blending.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref364"></a><h1>16 &#32;-&#32;Text Generation Dialog</h1>
+               <a name="ixref387"></a><h1>16 &#32;-&#32;Text Generation Dialog</h1>
 
-<p style="margin-left: 0;">Controls are provided for the font face, the font size, text alignment, color, and antialiasing. You can enter multiple lines of text, or just one. Text is <span style="font-style: italic;">not</span> automatically wrapped when it is generated.</p>
+<p style="margin-left: 0;">Controls are provided for the font face, the font size, text alignment, color, and antialiasing. You can enter multiple lines of text, or just one. Text is <em>not</em> automatically wrapped when it is generated.</p>
 
-<p style="margin-left: 0;">The text is generated into a <span style="font-weight: bold;">new image</span>. To compose it into another image, you ensure the new text image is set as the origin image, then use the <a href="opmerge.html">Merge operator</a> to do the composing.</p>
+<p style="margin-left: 0;">The text is generated into a <strong>new image</strong>. To compose it into another image, you ensure the new text image is set as the origin image, then use the <a href="opmerge.html">Merge operator</a> to do the composing.</p>
 
 
 
@@ -230,13 +230,13 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> The reason this approach is used is because it offers four worthy advantages over composing text directly on an image.
+"><strong>Tip:</strong> The reason this approach is used is because it offers four worthy advantages over composing text directly on an image.
 
 <p style="margin-left: 0;">First, you can place the text in more than one place, at more than one size, without having to constantly re-create it.</p>
 
 <p style="margin-left: 0;">Second, you can place the text in more than one image without having to re-create it.</p>
 
-<p style="margin-left: 0;">Third, you can do almost anything to the text <span style="font-style: italic;">in</span> its image that would be very difficult to do if the text had already been composed into the target image first.</p>
+<p style="margin-left: 0;">Third, you can do almost anything to the text <em>in</em> its image that would be very difficult to do if the text had already been composed into the target image first.</p>
 
 <p style="margin-left: 0;">Fourth, you can control the aspect ratio of the text, and its scaling, during the merge operation.</p></div>
 
@@ -251,26 +251,41 @@ margin-bottom: 1em;
         width: 75%;
         clear: both;
  border-style: solid;
+   background: #DDFFDD;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><strong>Tip:</strong> Typically, you will want the Text Color and the Back Color to be identical. If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Match Colors</strong></span></span> is checked, this is done for you automatically when you change either color.</div>
+
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
    background: #DDDDFF;
    text-align: left;
       padding: .5em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> When the text is generated, the entire text image is filled with the selected color, and then the text is generated as a <span style="font-style: italic;">transparency mask</span> over that color. This ensures that when composing, the text color is what blends into the target image, even when certain combinations of antialiasing and blending go beyond the strict boundaries of the text mask.</div>
+"><strong>Note:</strong> When the text is generated, the entire text image is filled with the selected Back Color, and then the text is generated as a <em>transparency mask</em> and in the Text Color over the Back Color. This ensures that when composing, the blend into the target image can be done optimally, even when certain combinations of color, antialiasing and blending go beyond the strict boundaries of the text mask.</div>
 
 
 <hr>
 
-<div style="clear: both; text-align: center;"><a name="fgfg178"></a><center><img src="pics/textgen.png" alt="" title=""></center><br><span style="color: #880088;">The Text Generation Dialog</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg182"></a><center><img src="pics/textgen.png" alt="" title=""></center><br><span style="color: #880088;">The Text Generation Dialog</span></div>
 
 <hr>
 
-<div style="clear: both; text-align: center;"><a name="fgfg179"></a><center><img src="pics/sometext.png" alt="" title=""></center><br><span style="color: #880088;">The image resulting from the above dialog settings</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg183"></a><center><img src="pics/sometext.png" alt="" title=""></center><br><span style="color: #880088;">The image resulting from the above dialog settings</span></div>
 
 <hr>
 
-<div style="clear: both; text-align: center;"><a name="fgfg180"></a><center><img src="pics/textplacement.png" alt="" title=""></center><br><span style="color: #880088;">The area selection</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg184"></a><center><img src="pics/textplacement.png" alt="" title=""></center><br><span style="color: #880088;">The area selection</span></div>
 
 <p style="margin-left: 0;">When making a rectangular area selection for merge, the <a href="areatools.html#rectangle">rectangle</a> area tool displays guides that match the aspect of the text origin image so you can place it accurately, in a non-distorted, aspect-correct manner.</p>
 
@@ -290,12 +305,14 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> Sometimes fonts generated in small point sizes aren't all that great quality, depending on the particular font. The best way to get around this is to generate at <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">100&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> point size, then use the <span class="ckey">e</span> command to reduce the generated text result to the size you actually wanted in the first place.</div>
+"><strong>Tip:</strong> Sometimes fonts generated in small point sizes aren't all that great quality, depending on the particular font and the operating system in use. The best way to get around this is to generate at <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>100&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> point size, then use the <span class="ckey">e</span> command to reduce the generated text result to the size you actually wanted in the first place.</div>
 
 
 <hr>
 
-<div style="clear: both; text-align: center;"><a name="fgfg181"></a><center><img src="pics/resulttext.png" alt="" title=""></center><br><span style="color: #880088;">The resulting text placement</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg185"></a><center><img src="pics/resulttext.png" alt="" title=""></center><br><span style="color: #880088;">The resulting text placement</span></div>
+
+<p style="margin-left: 0;">Another very useful thing for text placement is the <a href="opplace.html">Place</a>  operator.</p>
 
                           <div style="
        clear: both;
@@ -307,7 +324,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -317,24 +334,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="newimage.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="blending.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 98</center>
         </div>
 
     </BODY>

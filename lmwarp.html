@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "lmmedian.html"; }
 function onRight_keyDown() { window.location.href = "lmand.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,16 +211,14 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="lmmedian.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="lmand.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="layersdialog.html"><span style="font-style: italic;"><span style="font-weight: bold;">Layers Dialog</span></span></a> / <a href="layerblendmodes.html"><span style="font-style: italic;"><span style="font-weight: bold;">Layer Blending Modes</span></span></a><br> <a name="ixref470"></a>
-<a name="ixref471"></a><h3>18.3.9 &#32;-&#32;Geometric Blend Mode</h3>
-<a name="ixref472"></a><h4>18.3.9.1 &#32;-&#32;Warp</h4>
+               <a href="layersdialog.html"><em><strong>Layers Dialog</strong></em></a> / <a href="layerblendmodes.html"><em><strong>Layer Blending Modes</strong></em></a><br> <a name="ixref493"></a>
+<a name="ixref494"></a><h3>18.3.9 &#32;-&#32;Geometric Blend Mode</h3>
+<a name="ixref495"></a><h4>18.3.9.1 &#32;-&#32;Warp</h4>
 
 <p style="margin-left: 0;">This <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> mode allows you to emplace geometric manipulations (distortions and so on) in a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>. These distortions can then be moved up and down through the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> stack, re-positioned over the underlying <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, turned on and off and so forth. This is an extremely flexible, non-destructive, and useful way to implement geometric changes in layered images.</p>
 
-<p style="margin-left: 0;">You can only create a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> within the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> dialog. You cannot convert a normal <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> into a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>. If you detach a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>, it becomes a normal <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> image containing 100% white at 0% transparency. You can only attach normal, <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> images as normal <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, and having done that, you can't convert them back into warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s. So if you want to toss a warp out, be sure you want to do it. Otherwise, just turn off <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Visible</span></span></span>, and it'll be ignored with no performance penalty, but not lost. You can't merge a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> &mdash; it reads as fully transparent so there's no result &mdash; and cropping one results in a white, transparent image, so not much point in that either. <img alt="smile" title="smile" src="pics/stock_smiley_2.png"></p>
+<p style="margin-left: 0;">You can only create a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> within the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> dialog. You cannot convert a normal <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> into a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>. If you detach a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>, it becomes a normal <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> image containing 100% white at 0% transparency. You can only attach normal, <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> images as normal <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, and having done that, you can't convert them back into warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s. So if you want to toss a warp out, be sure you want to do it. Otherwise, just turn off <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Visible</strong></span></span>, and it'll be ignored with no performance penalty, but not lost. You can't merge a warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> &mdash; it reads as fully transparent so there's no result &mdash; and cropping one results in a white, transparent image, so not much point in that either. <img alt="smile" title="smile" src="pics/stock_smiley_2.png"></p>
 
 <p style="margin-left: 0;">You can stack warps, and you can even warp warps; but you'll probably not get the results you expect if you try to put more than one warp effect on top of another in a single warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>. Interacting geometric behavior that is directly modifying other geometric behavior is... not always intuitive. Instead, create an additional warp <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> and put the effect in that <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>. Then the effects will stack in an intuitive manner, because the geometric modifications occur in isolation from one another.</p>
 
@@ -256,7 +256,7 @@ a:visited {
 </ol>
 
 
-<div style="clear: both; text-align: center;"><a name="fgfg235"></a><center><img src="pics/blendwarp.png" alt="" title=""></center><br><span style="color: #880088;">Warp blend mode</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg239"></a><center><img src="pics/blendwarp.png" alt="" title=""></center><br><span style="color: #880088;">Warp blend mode</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -267,7 +267,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -277,24 +277,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="lmmedian.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="lmand.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 149</center>
         </div>
 
     </BODY>

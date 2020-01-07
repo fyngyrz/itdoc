@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
-function onLeft_keyDown()  { window.location.href = "appendixg.html"; }
+function onLeft_keyDown()  { window.location.href = "appendixh.html"; }
 function onRight_keyDown() { window.location.href = "SSTV.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,26 +211,24 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="appendixg.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="SSTV.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref560"></a><h1>37 &#32;-&#32;About EXIF</h1>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="appendixh.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="SSTV.html">Next</a>&nbsp;</td></tr></table></div>
+               <a name="ixref585"></a><h1>38 &#32;-&#32;About EXIF</h1>
 
-<p style="margin-left: 0;"><span style="font-weight: bold;">iToolBox</span> is notable for its complete lack of <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> saving. It does read EXIF camera information in order that it may properly interpret <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image files, and to retrieve camera-specific aperture, ISO, shutter speed and focal length. This information is <span style="font-style: italic;">not</span> written back out in <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> format.</p>
+<p style="margin-left: 0;"><strong>iToolBox</strong> is notable for its complete lack of <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> saving. It does read EXIF camera information in order that it may properly interpret <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image files, and to retrieve camera-specific aperture, ISO, shutter speed and focal length. This information is <em>not</em> written back out in <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> format.</p>
 
 <p style="margin-left: 0;">There's a very specific reason for this, and it is that <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> is severely flawed, putting both your images and your personal security at risk.</p>
 
 <p style="margin-left: 0;"><a target="_blank" href="https://en.wikipedia.org/wiki/Exif">Wikipedia's EXIF article</a> has a good discussion of the problems.</p> 
 
-<p style="margin-left: 0;">For those of a <span style="color:#006600;"><span style="font-weight: bold;"><tt>TL;DR;</tt></span></span> mindset, here's a quick list of <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a>'s troubles:</p>
+<p style="margin-left: 0;">For those of a <span style="color:#006600;"><strong><tt>TL;DR;</tt></strong></span> mindset, here's a quick list of <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a>'s troubles:</p>
 
 <ul>
 <li>
-<a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> provides for encryption <span style="font-style: italic;">and</span> hiding of information; sharing may implicate you in a crime</li>
+<a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> provides for encryption <em>and</em> hiding of information; sharing may implicate you in a crime</li>
 <li>
 <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> encodes hidden, unique source device identity, leading to security compromise</li>
 <li>
-<a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> <span style="font-style: italic;">silently</span> encodes device location (<a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a>), leading to security compromise</li>
+<a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> <em>silently</em> encodes device location (<a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a>), leading to security compromise</li>
 <li>
 <a target="_blank" href="glosspage.html#65786966"><span style="color: #884422;">EXIF</span></a> thumbnails can get out of sync with the image data, leading to security compromise</li>
 <li>
@@ -243,7 +243,7 @@ The 64k data limit in <a target="_blank" href="glosspage.html#6a7067"><span styl
 </ul>
 
 
-<p style="margin-left: 0;">Rather than contribute to this mess, I've designed <span style="font-weight: bold;">iToolBox</span> to write out <span style="font-style: italic;">only</span> image data you can see, edit, and otherwise manage safely. While you can certainly encrypt information contained in an output image with it, you <span style="font-style: italic;">can't</span> hide that you have done so, consequently anyone using the application can see it, evaluate their risk(s), and act accordingly. The new image formats I've designed are able to contain tags you can't see and the program won't know about, but they are not read into the software, and any files you generate <span style="font-style: italic;">from</span> such information will not contain that data.</p>
+<p style="margin-left: 0;">Rather than contribute to this mess, I've designed <strong>iToolBox</strong> to write out <em>only</em> image data you can see, edit, and otherwise manage safely. While you can certainly encrypt information contained in an output image with it, you <em>can't</em> hide that you have done so, consequently anyone using the application can see it, evaluate their risk(s), and act accordingly. The new image formats I've designed are able to contain tags you can't see and the program won't know about, but they are not read into the software, and any files you generate <em>from</em> such information will not contain that data.</p>
                           <div style="
        clear: both;
        width: 75%;
@@ -254,7 +254,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -263,25 +263,23 @@ border-style: solid;
 <span class="ckey">o</span> Operators
 <span class="ckey">g</span> Glossary
 </div>
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="appendixg.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="SSTV.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="appendixh.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="SSTV.html">Next</a>&nbsp;</td></tr></table></div>
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 175</center>
         </div>
 
     </BODY>

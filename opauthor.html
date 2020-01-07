@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "opannotation.html"; }
 function onRight_keyDown() { window.location.href = "opbend.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,15 +211,26 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opannotation.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opbend.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br>
-<a name="ixref223"></a><h3>11.4.3 &#32;-&#32;Author</h3>
+               <a href="operators.html"><em><strong>Operators Dialog</strong></em></a> / <a href="opalphamodify.html"><em><strong>Operator Details</strong></em></a><br>
+<a name="ixref239"></a><h3>11.10.3 &#32;-&#32;Author</h3>
 
-<tt><span style="color: #ff0000;">No Script Command</span></tt>
+ <p style="margin-left: 0;"><a href="opscript.html">Scripting command</a>: <span style="color:#006600;"><strong><tt>author <span style="color: #ff0000;">[content=</span>"text"<span style="color: #ff0000;">]</span></tt></strong></span></p>
 
-<p style="margin-left: 0;">This reads (using <span style="white-space:nowrap;"><span class="cbut">From Image</span></span>) the author information associated with the currently active image. It will apply the author information <span style="font-style: italic;">to</span> the image if you <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Apply</span></span> or if you apply any area selection to an image with this operator active. If the <a href="areatools.html">areatools</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> option is unchecked, you will also have to <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Operate</span></span> or press <span style="white-space:nowrap;"><span class="ckey">O</span> (<span class="ckey">shift</span>+<span class="ckey">o</span>)</span>.</p>
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDDDFF;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><strong>Note:</strong> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
+
+
+<p style="margin-left: 0;">This reads (using <span style="white-space:nowrap;"><span class="cbut">From Image</span></span>) the author information associated with the currently active image. It will apply the author information <em>to</em> the image if you <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Apply</span></span> or if you apply any area selection to an image with this operator active. If the <a href="areatools.html">areatools</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Modal Selections</strong></span></span> option is unchecked, you will also have to <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Operate</span></span> or press <span style="white-space:nowrap;"><span class="ckey">O</span> (<span class="ckey">shift</span>+<span class="ckey">o</span>)</span>.</p>
 
 <p style="margin-left: 0;">When a new image is created, this is initially set equal to the application preferences setting. When an image is cropped, this is set to that of the parent image.</p>
 
@@ -235,10 +248,10 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Caution: </span>Not all image formats support author chunks. Those that do include <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span>, <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span>, <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></span>, and <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></span> &mdash; if you save your image in a format that does not support author chunks, the author information will not be saved into, and subsequently recoverable from, that image file.</div>
+"><strong>Caution: </strong>Not all image formats support author chunks. Those that do include <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong>, <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong>, <strong><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></strong>, and <strong><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></strong> &mdash; if you save your image in a format that does not support author chunks, the author information will not be saved into, and subsequently recoverable from, that image file.</div>
 
 
-<div style="clear: both; text-align: center;"><a name="fgfg33"></a><center><img src="pics/authoroperator.png" alt="" title=""></center><br><span style="color: #880088;">The annotation operator</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg37"></a><center><img src="pics/authoroperator.png" alt="" title=""></center><br><span style="color: #880088;">The annotation operator</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -249,7 +262,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -259,24 +272,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opannotation.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opbend.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 14</center>
         </div>
 
     </BODY>

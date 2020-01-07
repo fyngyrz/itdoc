@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "views.html"; }
 function onRight_keyDown() { window.location.href = "operators.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,22 +211,20 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="views.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="operators.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref181"></a><h1>10 &#32;-&#32;Area Tools Dialog</h1>
+               <a name="ixref190"></a><h1>10 &#32;-&#32;Area Tools Dialog</h1>
 
-<div style="float: right; margin-left: 1em; text-align: center;"><center><img src="pics/toolbox.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref182"></a><a name="tocref10.1"></a><h2>10.1 &#32;-&#32;Modality</h2>
+<div style="float: right; margin-left: 1em; text-align: center;"><center><img src="pics/toolbox.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref191"></a><a name="tocref10.1"></a><h2>10.1 &#32;-&#32;Modality</h2>
 
-<p style="margin-left: 0;">The Area Tools can be used in two ways: Modal and non-Modal. You choose which at any time by checking or unchecking <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> at the bottom of the Area Toolbox.</p>
+<p style="margin-left: 0;">The Area Tools can be used in two ways: Modal and non-Modal. You choose which at any time by checking or unchecking <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Modal Selections</strong></span></span> at the bottom of the Area Toolbox.</p>
 
-<a name="ixref183"></a><a name="tocref10.1.1"></a><h3>10.1.1 &#32;-&#32;Modal Selections</h3>
+<a name="ixref192"></a><a name="tocref10.1.1"></a><h3>10.1.1 &#32;-&#32;Modal Selections</h3>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> is a considerably faster way to work with images; changes are applied immediately when you select an area on any image view, and there are some area selection features that make this method of working fast, easy and accurate. However, this efficiency comes at the cost of not being able to complex areas by combining multiple area selections. When you need to do that, non-modal selection, described next, is the mode to use.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Modal Selections</strong></span></span> is a considerably faster way to work with images; changes are applied immediately when you select an area on any image view, and there are some area selection features that make this method of working fast, easy and accurate. However, this efficiency comes at the cost of not being able to complex areas by combining multiple area selections. When you need to do that, non-modal selection, described next, is the mode to use.</p>
 
 <a name="tocref10.1.2"></a><h3>10.1.2 &#32;-&#32;Non-Modal Selections</h3>
 
-<p style="margin-left: 0;">With <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> unchecked, you  can create a selection, optionally modify it as you see necessary by adding or subtracting additional selections, then command the operation to take place with the <span style="white-space:nowrap;"><span class="ckey">O</span> (<span class="ckey">shift</span>+<span class="ckey">o</span>)</span> or by <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Operate</span></span> in the area toolbox.</p>
+<p style="margin-left: 0;">With <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Modal Selections</strong></span></span> unchecked, you  can create a selection, optionally modify it as you see necessary by adding or subtracting additional selections, then command the operation to take place with the <span style="white-space:nowrap;"><span class="ckey">O</span> (<span class="ckey">shift</span>+<span class="ckey">o</span>)</span> or by <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Operate</span></span> in the area toolbox.</p>
 
 <p style="margin-left: 0;">When operating in this manner, as an aid to visibility, you can use the <span class="ckey">w</span>hirl and <span style="white-space:nowrap;"><span class="ckey">W</span> (<span class="ckey">shift</span>+<span class="ckey">w</span>)</span>hirl keystroke commands to change the color of the area selection outline at any time, which can assist with selection visibility against the actual image background.</p>
 
@@ -232,10 +232,10 @@ a:visited {
 
 <p style="margin-left: 0;"><span class="ckey">u</span>ndo and <span class="ckey">r</span>edo will manage your changes to the area selection as well as changes to images.</p>
 
-<a name="ixref184"></a><a name="tocref10.2"></a><h2>10.2 &#32;-&#32;Area Selects</h2>
+<a name="ixref193"></a><a name="tocref10.2"></a><h2>10.2 &#32;-&#32;Area Selects</h2>
 
 <a name="entire"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/entireimage.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref185"></a><a name="tocref10.2.0.1"></a><h4>10.2.0.1 &#32;-&#32;Entire Image</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/entireimage.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref194"></a><a name="tocref10.2.0.1"></a><h4>10.2.0.1 &#32;-&#32;Entire Image</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F1</span></span></p>
 
@@ -245,25 +245,25 @@ This selection is always filled; it ignores the <a href="areatools.html#fill">fi
 open/close figure settings.</p>
 
 <a name="rectangle"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/rectangle.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref186"></a><a name="tocref10.2.0.2"></a><h4>10.2.0.2 &#32;-&#32;Rectangle</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/rectangle.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref195"></a><a name="tocref10.2.0.2"></a><h4>10.2.0.2 &#32;-&#32;Rectangle</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F2</span></span></p>
 
 <p style="margin-left: 0;">Click and drag to size, release, will fill if <a href="areatools.html#fill">fill</a> is on. The operation is applied to the selected area. Obeys the rectangular antialiasing option set in the <a href="preferences.html">Preferences&nbsp;dialog</a> or by <span class="ckey">a</span>. The area selection will move if you press and hold the right mouse button as well as the left one. Holding <span class="ckey"> &#8984;</span> while sizing the rectangle will maintain a square aspect ratio.</p>
 
 <a name="xyrect"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/xyrect.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref187"></a><a name="tocref10.2.0.3"></a><h4>10.2.0.3 &#32;-&#32;Numeric Rectangle</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/xyrect.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref196"></a><a name="tocref10.2.0.3"></a><h4>10.2.0.3 &#32;-&#32;Numeric Rectangle</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F3</span></span></p>
 
-<p style="margin-left: 0;">Click anywhere on image, enter values, select OK, will fill if <a href="areatools.html#fill">fill</a> is on. The operation is applied to the selected area.  Obeys the rectangular antialiasing option set in the <a href="preferences.html">Preferences&nbsp;dialog</a> or by the <span class="ckey">a</span> / antialias keystroke.</p>
+<p style="margin-left: 0;">Click anywhere on image, alter values and/or <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Drag</span></span> and then drag the mouse. When satisfied with the numeric rectangle's size and position, select <span style="white-space:nowrap;"><span class="cbut">OK</span></span>. This selection will fill if <a href="areatools.html#fill">fill</a> is on. The operation is applied to the selected area.  Obeys the rectangular antialiasing option set in the <a href="preferences.html">Preferences&nbsp;dialog</a> or by the <span class="ckey">a</span> / antialias keystroke.</p>
 
 <p style="margin-left: 0;">If you have previously made a normal rectangular selection, then <span style="white-space:nowrap;"><span class="cbut">Capture Rect</span></span> will set the Numeric Rectangle to the same area selection.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg27"></a><center><img src="pics/xyrectdialog.png" alt="" title=""></center><br><span style="color: #880088;">Numeric rectangle dialog</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg29"></a><center><img src="pics/xyrectdialog.png" alt="" title=""></center><br><span style="color: #880088;">Numeric rectangle dialog</span></div>
 
 <a name="ellipse"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/ellipse.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref188"></a><a name="tocref10.2.0.4"></a><h4>10.2.0.4 &#32;-&#32;Ellipse</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/ellipse.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref197"></a><a name="tocref10.2.0.4"></a><h4>10.2.0.4 &#32;-&#32;Ellipse</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F4</span></span></p>
 
@@ -271,7 +271,7 @@ open/close figure settings.</p>
 
 <a name="polygon"></a>
 <a name="polytool"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/polygon.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref189"></a><a name="tocref10.2.0.5"></a><h4>10.2.0.5 &#32;-&#32;Polygon</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/polygon.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref198"></a><a name="tocref10.2.0.5"></a><h4>10.2.0.5 &#32;-&#32;Polygon</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F5</span></span></p>
 
@@ -281,14 +281,14 @@ open/close figure settings.</p>
 
 <p style="margin-left: 0;">Pressing <span class="ckey">opt/alt</span> while placing points allows deleting already placed polygon points.</p>
 
-<p style="margin-left: 0;">Pressing <span class="ckey">shift</span> <span style="font-style: italic;">and</span> <span class="ckey">opt/alt</span> while placing points allows adding new polygon points after the nearest point.</p>
+<p style="margin-left: 0;">Pressing <span class="ckey">shift</span> <em>and</em> <span class="ckey">opt/alt</span> while placing points allows adding new polygon points after the nearest point.</p>
 
 <p style="margin-left: 0;">Will close if <a href="areatools.html#open">open figure</a> drawing is not on, otherwise will fill, if <a href="areatools.html#fill">fill</a> is on. Obeys the polygonal antialiasing option set in the <a href="preferences.html">Preferences&nbsp;dialog</a> or by the <span style="white-space:nowrap;"><span class="ckey">a</span> / antialias keystroke.</span></p>
 
 
 <a name="spline"></a>
 <a name="polytool"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/spline.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref190"></a><a name="tocref10.2.0.6"></a><h4>10.2.0.6 &#32;-&#32;Spline</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/spline.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref199"></a><a name="tocref10.2.0.6"></a><h4>10.2.0.6 &#32;-&#32;Spline</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F6</span></span></p>
 
@@ -298,22 +298,22 @@ open/close figure settings.</p>
 
 <p style="margin-left: 0;">Pressing <span class="ckey">opt/alt</span> while placing points allows deleting already placed spline points.</p>
 
-<p style="margin-left: 0;">Pressing <span class="ckey">shift</span> <span style="font-style: italic;">and</span> <span class="ckey">opt/alt</span> while placing points allows adding new spline points after the nearest point.</p>
+<p style="margin-left: 0;">Pressing <span class="ckey">shift</span> <em>and</em> <span class="ckey">opt/alt</span> while placing points allows adding new spline points after the nearest point.</p>
 
 <p style="margin-left: 0;">Will close if <a href="areatools.html#open">open figure</a> drawing is not on, otherwise will fill, if <a href="areatools.html#fill">fill</a> is on. Obeys the polygonal antialiasing option set in the <a href="preferences.html">Preferences&nbsp;dialog</a> or by the <span style="white-space:nowrap;"><span class="ckey">a</span> / antialias keystroke.</span></p>
 
 <a name="pshape"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/nftool.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref191"></a><a name="tocref10.2.0.7"></a><h4>10.2.0.7 &#32;-&#32;P-shape</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/nftool.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref200"></a><a name="tocref10.2.0.7"></a><h4>10.2.0.7 &#32;-&#32;P-shape</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F7</span></span></p>
 
 <p style="margin-left: 0;"><span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>s are vector objects that you can save to, and load from, mass storage such as your computer's hard drive(s.)</p>
 
-<p style="margin-left: 0;">You create <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>s by making a selection with any <a href="areatools.html">areatool</a> except the <a href="areatools.html#wand">wand</a> in any image, then selecting <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Save P-Shape&nbsp;</span></span></span>, which becomes available as soon as you have made such a selection.</p>
+<p style="margin-left: 0;">You create <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>s by making a selection with any <a href="areatools.html">areatool</a> except the <a href="areatools.html#wand">wand</a> in any image, then selecting <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Save P-Shape&nbsp;</strong></span></span>, which becomes available as soon as you have made such a selection.</p>
 
 <p style="margin-left: 0;">When you save a <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>, it is immediately set up in the <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> tool, ready for use.</p>
 
-<p style="margin-left: 0;">To select areas with a <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> any time after creating an area selection and using <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">Selections/Convert [type region] to P-Shape&nbsp;</span></span></span>, or loading one using <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Load P-Shape&nbsp;</span></span></span>, select the <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> tool and drag the shape out. You can change the size and aspect with left-mouse drag, and you can move it around at the current size with left <span style="font-style: italic;">and</span> right-mouse drag.</p>
+<p style="margin-left: 0;">To select areas with a <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> any time after creating an area selection and using <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Selections/Convert [type region] to P-Shape&nbsp;</strong></span></span>, or loading one using <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load P-Shape&nbsp;</strong></span></span>, select the <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> tool and drag the shape out. You can change the size and aspect with left-mouse drag, and you can move it around at the current size with left <em>and</em> right-mouse drag.</p>
 
 
 
@@ -327,13 +327,17 @@ open/close figure settings.</p>
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> <p style="margin-left: 0;">If you want the aspect ratio of the <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> to exactly match that of the original design, simply ensure that your mouse is on the diagonal aspect line in the direction you are pulling out the shape, or see to it that the aspect guides form an "X" as you size the shape.</p>
+"><strong>Tip:</strong> <p style="margin-left: 0;">If you want the aspect ratio of the <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> to exactly match that of the original design, simply ensure that your mouse is on the diagonal aspect line in the direction you are pulling out the shape, or see to it that the aspect guides form an "X" as you size the shape.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg28"></a><center><img src="pics/pshapeaspect.png" alt="" title=""></center><br><span style="color: #880088;">Matched aspect indications</span></div></div>
+<div style="clear: both; text-align: center;"><a name="fgfg30"></a><center><img src="pics/pshapeaspect.png" alt="" title=""></center><br><span style="color: #880088;">Matched aspect indications</span></div></div>
 
 
 <p style="margin-left: 0;">In addition, pressing <span style="white-space:nowrap;"><span class="ckey">control</span>+<span class="ckey">shift</span></span> while moving the mouse will rotate the <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> clockwise, pressing <span style="white-space:nowrap;"><span class="ckey">control</span>+<span class="ckey">&#8997;</span></span> while moving the mouse will rotate the <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span> counter-clockwise, and pressing <span style="white-space:nowrap;"><span class="ckey">control</span>+<span class="ckey">shift</span>+<span class="ckey">&#8997;</span></span> while moving the mouse will reset the <span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>'s rotation to its original orientation as loaded from storage.</p>
 
+<p style="margin-left: 0;">Or, you can use <span class="ckey">&#8997;</span>-<span class="ckey">r</span> from any image window, or <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/P-Shape Controller&nbsp;</strong></span></span> to rotate a P-Shape to an arbitrary angle:</p>
+
+<div style="clear: both; text-align: center;"><a name="fgfg31"></a><center><img src="pics/pshapecontroller.png" alt="" title=""></center><br><span style="color: #880088;">P-Shape Controller</span></div>
+
 
 
 <div style="
@@ -346,12 +350,12 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> <p style="margin-left: 0;"><span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>s work nicely with the <a href="opbrushstroke.html">Brush Stroke</a> operator. Try it!</p></div>
+"><strong>Tip:</strong> <p style="margin-left: 0;"><span style="white-space:nowrap;"><a href="areatools.html#pshape">P-Shape</a></span>s work nicely with the <a href="opbrushstroke.html">Brush Stroke</a> operator. Try it!</p></div>
 
 
 <a name="pencil"></a>
 <a name="freehand"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/pencil.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref192"></a><a name="tocref10.2.0.8"></a><h4>10.2.0.8 &#32;-&#32;Pencil</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/pencil.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref201"></a><a name="tocref10.2.0.8"></a><h4>10.2.0.8 &#32;-&#32;Pencil</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F8</span></span></p>
 
@@ -369,11 +373,11 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> * Yes, I know there's no such word as "penciliar." I don't care. <img alt="smile" title="smile" src="pics/stock_smiley_2.png"></div>
+"><strong>Note:</strong> * Yes, I know there's no such word as "penciliar." I don't care. <img alt="smile" title="smile" src="pics/stock_smiley_2.png"></div>
 
 
 <a name="text"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/text.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref193"></a><a name="tocref10.2.0.9"></a><h4>10.2.0.9 &#32;-&#32;Text</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/text.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref202"></a><a name="tocref10.2.0.9"></a><h4>10.2.0.9 &#32;-&#32;Text</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F9</span></span></p>
 
@@ -381,15 +385,15 @@ margin-bottom: 1em;
 
 <a name="wand"></a>
 <a name="magicwand"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/wand.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref194"></a><a name="tocref10.2.0.10"></a><h4>10.2.0.10 &#32;-&#32;Magic Wand</h4><div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg29"></a><center><img src="pics/wandopts.png" alt="" title=""></center><br><span style="color: #880088;">Wand options</span></div>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/wand.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref203"></a><a name="tocref10.2.0.10"></a><h4>10.2.0.10 &#32;-&#32;Magic Wand</h4><div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg32"></a><center><img src="pics/wandopts.png" alt="" title=""></center><br><span style="color: #880088;">Wand options</span></div>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F10</span></span></p>
 
 <p style="margin-left: 0;">Click on the location that has the color you want to use to control the fill.</p>
 
-<p style="margin-left: 0;">The wand's <span style="font-weight: bold;">tolerance</span> is set in the <a href="preferences.html">Preferences&nbsp;dialog</a>; this is what controls how "near" colors have to be to each other in order for the selection to extend itself.</p>
+<p style="margin-left: 0;">The wand's <strong>tolerance</strong> is set in the <a href="preferences.html">Preferences&nbsp;dialog</a>; this is what controls how "near" colors have to be to each other in order for the selection to extend itself.</p>
 
-<p style="margin-left: 0;">The wand obeys the wandular* antialiasing option set in the <a href="preferences.html">Preferences&nbsp;dialog</a> or by the <span class="ckey">a</span> / antialias keystroke. It also obeys the <a href="preferences.html#mwta">Mask With Target Alpha</a> setting in the <a href="preferences.html">Preferences&nbsp;dialog</a>; it will not extend the fill anywhere the target image's transparency is zero when <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Mask With Target Alpha</span></span></span> is checked.</p>
+<p style="margin-left: 0;">The wand obeys the wandular* antialiasing option set in the <a href="preferences.html">Preferences&nbsp;dialog</a> or by the <span class="ckey">a</span> / antialias keystroke. It also obeys the <a href="preferences.html#mwta">Mask With Target Alpha</a> setting in the <a href="preferences.html">Preferences&nbsp;dialog</a>; it will not extend the fill anywhere the target image's transparency is zero when <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Mask With Target Alpha</strong></span></span> is checked.</p>
 
 <p style="margin-left: 0;">The <a href="preferences.html">Preferences&nbsp;dialog</a> options that affect the wand are highlighted in the image to the right.</p>
 
@@ -408,11 +412,11 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> * still don't care...</div>
+"><strong>Note:</strong> * still don't care...</div>
 
 
 <a name="redo"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/redo.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref195"></a><a name="tocref10.2.0.11"></a><h4>10.2.0.11 &#32;-&#32;Redo</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/redo.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref204"></a><a name="tocref10.2.0.11"></a><h4>10.2.0.11 &#32;-&#32;Redo</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F11</span></span></p>
 
@@ -428,7 +432,7 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> There are actually two operations in <span style="font-weight: bold;">iToolBox</span> called "redo."
+"><strong>Tip:</strong> There are actually two operations in <strong>iToolBox</strong> called "redo."
 
 <p style="margin-left: 0;">The first is this area tool, which will re-select an area in an image.</p>
 
@@ -437,47 +441,90 @@ margin-bottom: 1em;
 <p style="margin-left: 0;">It can be a little confusing, but inasmuch as the context in which one would want one or the other is quite different, it'll quickly become second nature.</p></div>
 
 
-<p style="margin-left: 0;">If you have made an area selection previously, that area selection used again <span style="font-style: italic;">if</span> the image you are using it in is the same size as the image that it was originally made in.</p>
+<p style="margin-left: 0;">If you have made an area selection previously, that area selection used again <em>if</em> the image you are using it in is the same size as the image that it was originally made in.</p>
 
-<p style="margin-left: 0;">If the image you are applying redo to is not the same size in any dimension, the area selection from the previous selection in another image will be <span style="font-style: italic;">scaled</span> to the current image's size and then applied; if the images are of significantly different sizes, the selection will be less true to the original.</p>
+<p style="margin-left: 0;">If the image you are applying redo to is not the same size in any dimension, the area selection from the previous selection in another image will be <em>scaled</em> to the current image's size and then applied; if the images are of significantly different sizes, the selection will be less true to the original.</p>
 
 <p style="margin-left: 0;">If the images are not the same aspect ratio &mdash; for instance, one is square and one is tall &amp; narrow, the aspect of the area selection will change as well.</p>
 
 <a name="magnify"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/magnify.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref196"></a><a name="tocref10.2.0.12"></a><h4>10.2.0.12 &#32;-&#32;Magnify</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/magnify.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref205"></a><a name="tocref10.2.0.12"></a><h4>10.2.0.12 &#32;-&#32;Magnify</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F12</span></span></p>
 
 <p style="margin-left: 0;">Left-click without dragging will zoom. Right-click will unzoom, in both cases centering where you click the mouse. You can also zoom with <span class="ckey">z</span>oom-in, <span style="white-space:nowrap;"><span class="ckey">Z</span> (<span class="ckey">shift</span>+<span class="ckey">z</span>)</span> Zoom-out, and <span class="ckey">opt/alt</span>+<span class="ckey">z</span>oom to 1:1 relative to the window size. If you drag out a rectangle with the <a href="areatools.html#magnify">magnify</a> tool, that region will be zoomed to fit in the current <a href="views.html">view</a>.</p>
 
-<a name="ixref197"></a><a name="tocref10.3"></a><h2>10.3 &#32;-&#32;Selection Modifiers</h2>
+<a name="ixref206"></a><a name="tocref10.3"></a><h2>10.3 &#32;-&#32;Selection Modifiers</h2>
 
 <a name="complement"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/complement.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref198"></a><a name="tocref10.3.0.1"></a><h4>10.3.0.1 &#32;-&#32;Complement</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/complement.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref207"></a><a name="tocref10.3.0.1"></a><h4>10.3.0.1 &#32;-&#32;Complement</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey">shift</span>+<span class="ckey"><span style="color: #00ff00;">F3</span></span></p>
 
-<p style="margin-left: 0;">The area you <span style="font-style: italic;">did not</span> select is selected.</p>
-
-<a name="fill"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/fill.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref199"></a><a name="tocref10.3.0.2"></a><h4>10.3.0.2 &#32;-&#32;Filled Figure</h4>
-
-<p style="margin-left: 0;">Affects polygon, pencil, rectangle, and ellipse.</p>
-
-<p style="margin-left: 0;">You will generally want this on. Otherwise, the selection will only be the outline drawn with the area tool.</p>
+<p style="margin-left: 0;">The area you <em>did not</em> select is selected.</p>
 
 <a name="open"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/openfigure.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref200"></a><a name="tocref10.3.0.3"></a><h4>10.3.0.3 &#32;-&#32;Open Figure</h4>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/openfigure.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref208"></a><a name="tocref10.3.0.2"></a><h4>10.3.0.2 &#32;-&#32;Open Figure</h4>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey">shift</span>+<span class="ckey"><span style="color: #00ff00;">F4</span></span></p>
 
 <p style="margin-left: 0;">Affects polygon, pencil.</p>
 
-<p style="margin-left: 0;">If the figure is open, the polygon and pencil area selections will never be filled, regardless of the setting of the <a href="areatools.html#fill">fill</a> button. One circumstance where you might want open figure <span style="font-style: italic;">off</span> is when using the brushstroke operator.</p>
+<p style="margin-left: 0;">If the figure is open, the polygon and pencil area selections will never be filled, regardless of the setting of the <a href="areatools.html#fill">fill</a> button. One circumstance where you might want open figure <em>off</em> is when using the brushstroke operator.</p>
 
-<a name="ixref201"></a><a name="tocref10.4"></a><h2>10.4 &#32;-&#32;Non-selects</h2>
+<a name="fill"></a>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/fill.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref209"></a><a name="tocref10.3.0.3"></a><h4>10.3.0.3 &#32;-&#32;Filled Figure</h4>
 
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/text.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref202"></a><a name="tocref10.4.1"></a><h3>10.4.1 &#32;-&#32;Text Tool</h3>
+<p style="margin-left: 0;">Keyboard Command: <span class="ckey">shift</span>+<span class="ckey"><span style="color: #00ff00;">F5</span></span></p>
+
+<p style="margin-left: 0;">Affects polygon, pencil, rectangle, and ellipse.</p>
+
+<p style="margin-left: 0;">You will generally want this on. Otherwise, the selection will only be the outline drawn with the area tool.</p>
+
+<a name="outline"></a>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/outlinemodifier.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref210"></a><a name="tocref10.3.0.4"></a><h4>10.3.0.4 &#32;-&#32;Outline Modifier</h4>
+
+<p style="margin-left: 0;">Keyboard Command: <span class="ckey">shift</span>+<span class="ckey"><span style="color: #00ff00;">F6</span></span></p>
+
+<p style="margin-left: 0;">Affects all fill tools.</p>
+
+<p style="margin-left: 0;">When this is on, a selection only occurs at the transition between transparent and non-transparent within the selected region. The level of transparency used as a trigger, and either of <strong>4-way</strong> or <strong>8-way</strong> region selection can be set with an <span class="myMouse rightbutton"></span> on the Outline Modifier tool:</p>
+
+<div style="clear: both; text-align: center;"><a name="fgfg33"></a><center><img src="pics/outlinesettings.png" alt="" title=""></center><br><span style="color: #880088;">Outline settings dialog</span></div>
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDDDFF;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><strong>Note:</strong> If the <a href="preferences.html">Preferences&nbsp;dialog</a> <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Mask with Target Alpha</strong></span></span> setting is checked, the <strong>Outline</strong> area selection modifier will have no effect, as the placement of the selection beyond the regions with alpha transparency will be masked off; in order to use this area selection modifier, make sure <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Mask with Target Alpha</strong></span></span> is <strong>not</strong> checked.</div>
+
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #FFDDDD;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><strong>Warning: </strong> If your image <em>does not</em> have transparent alpha, area selection results with Outline Modified turned on can be unexpected, as it is possible that no area selection at all is created, or that the area selection will not be at all like what you were anticipating.</div>
+
+
+<a name="ixref211"></a><a name="tocref10.4"></a><h2>10.4 &#32;-&#32;Non-selects</h2>
+
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/text.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref212"></a><a name="tocref10.4.1"></a><h3>10.4.1 &#32;-&#32;Text Tool</h3>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey"><span style="color: #00ff00;">F7</span></span></p>
 
@@ -485,26 +532,26 @@ margin-bottom: 1em;
 
 <a name="eyedropper"></a>
 <a name="sample"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/eyedropper.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref203"></a><a name="tocref10.4.2"></a><h3>10.4.2 &#32;-&#32;Eyedropper</h3>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/eyedropper.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref213"></a><a name="tocref10.4.2"></a><h3>10.4.2 &#32;-&#32;Eyedropper</h3>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey">shift</span>+<span class="ckey"><span style="color: #00ff00;">F2</span></span></p>
 
-<p style="margin-left: 0;">One-shot activation of the Sample operator using the current area selection mode.</p>
+<p style="margin-left: 0;">One-shot activation of the <a href="opsample.html">Sample</a>  operator using the current area selection mode.</p>
 
 <a name="eye"></a>
 <a name="eyepoint"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/eyepoint.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref204"></a><a name="tocref10.4.3"></a><h3>10.4.3 &#32;-&#32;Preview Eyepoint</h3>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/eyepoint.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref214"></a><a name="tocref10.4.3"></a><h3>10.4.3 &#32;-&#32;Preview Eyepoint</h3>
 
 <p style="margin-left: 0;">Keyboard Command: <span class="ckey">shift</span>+<span class="ckey"><span style="color: #00ff00;">F1</span></span></p>
 
-<p style="margin-left: 0;">This is also changeable with <span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, and <span class="ckey">&darr;</span> in the operator window, and by clicking and dragging on the preview window. This changes where the operator window previews the operations when it is in <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">1x&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> or <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">2x&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> mode.</p>
+<p style="margin-left: 0;">This is also changeable with <span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, and <span class="ckey">&darr;</span> in the operator window, and by clicking and dragging on the preview window. This changes where the operator window previews the operations when it is in <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>1x&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> or <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>2x&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> mode.</p>
 
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/magnify.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref205"></a><a name="tocref10.4.4"></a><h3>10.4.4 &#32;-&#32;Magnify</h3>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/magnify.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref215"></a><a name="tocref10.4.4"></a><h3>10.4.4 &#32;-&#32;Magnify</h3>
 
 <p style="margin-left: 0;">Left-click to zoom in, right-click to zoom out.</p>
 
 <a name="status"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/status.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref206"></a><a name="tocref10.4.5"></a><h3>10.4.5 &#32;-&#32;Status Area</h3>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/status.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref216"></a><a name="tocref10.4.5"></a><h3>10.4.5 &#32;-&#32;Status Area</h3>
 
 <p style="margin-left: 0;">Lets you know at a glance if grid, antialias, etc. are in effect:</p>
 
@@ -526,22 +573,22 @@ margin-bottom: 1em;
 </ul>
 
 
-<a name="ixref207"></a><a name="ixref208"></a><a name="ixref209"></a><a name="ixref210"></a>
+<a name="ixref217"></a><a name="ixref218"></a><a name="ixref219"></a><a name="ixref220"></a>
 <a name="custicons"></a>
-<a name="ixref211"></a><a name="tocref10.5"></a><h2>10.5 &#32;-&#32;Customize the Tool Icons</h2>
+<a name="ixref221"></a><a name="tocref10.5"></a><h2>10.5 &#32;-&#32;Customize the Tool Icons</h2>
 
 <p style="margin-left: 0;">If you'd like to customize one or more of the area toolbox icons, you can do that from the <a href="preferences.html#customicons">Preferences</a> dialog.</p>
 
 <a name="colorwells"></a>
-<a name="ixref212"></a><a name="tocref10.6"></a><h2>10.6 &#32;-&#32;Color Wells</h2>
+<a name="ixref222"></a><a name="tocref10.6"></a><h2>10.6 &#32;-&#32;Color Wells</h2>
 
 <a name="foregroundwell"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/foregroundwell.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref213"></a><a name="tocref10.6.1"></a><h3>10.6.1 &#32;-&#32;Foreground Well</h3>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/foregroundwell.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref223"></a><a name="tocref10.6.1"></a><h3>10.6.1 &#32;-&#32;Foreground Well</h3>
 
 <p style="margin-left: 0;">The color painted when the blend mode is set to Foreground. Click it to set its color, or it can be set indirectly via the <a href="opcolorfill.html">Color Fill</a> operator using <span style="white-space:nowrap;"><span class="cbut">&rarr;Foreground</span></span></p>
 
 <a name="backgroundwell"></a>
-<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/backgroundwell.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref214"></a><a name="tocref10.6.2"></a><h3>10.6.2 &#32;-&#32;Background Well</h3>
+<div style="float: left; margin-right: 1em; text-align: center;"><center><img src="pics/backgroundwell.png" alt="" title=""></center><br><span style="color: #880088;"></span></div><a name="ixref224"></a><a name="tocref10.6.2"></a><h3>10.6.2 &#32;-&#32;Background Well</h3>
 
 <p style="margin-left: 0;">The color painted when the blend mode is set to Background. Click it to set its color, or it can be set indirectly via the <a href="opcolorfill.html">Color Fill</a> operator using <span style="white-space:nowrap;"><span class="cbut">&rarr;Background</span></span></p>
                           <div style="
@@ -554,7 +601,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -564,24 +611,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="views.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="operators.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 10</center>
         </div>
 
     </BODY>

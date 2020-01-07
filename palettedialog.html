@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "filedialog.html"; }
 function onRight_keyDown() { window.location.href = "infodialog.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,16 +211,14 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="filedialog.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="infodialog.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref506"></a><h1>20 &#32;-&#32;Palette Dialog</h1>
+               <a name="ixref529"></a><h1>20 &#32;-&#32;Palette Dialog</h1>
 
-<div style="clear: both; text-align: center;"><a name="fgfg245"></a><center><img src="pics/colorpalette.png" alt="" title=""></center><br><span style="color: #880088;">The Color Palette Dialog</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg249"></a><center><img src="pics/colorpalette.png" alt="" title=""></center><br><span style="color: #880088;">The Color Palette Dialog</span></div>
 
-<p style="margin-left: 0;">Color One is selected from the color wells with a <span style="font-style: italic;">left</span> click. It is indicated within the palette will collection with a red selection box.</p>
+<p style="margin-left: 0;">Color One is selected from the color wells with a <em>left</em> click. It is indicated within the palette will collection with a red selection box.</p>
 
-<p style="margin-left: 0;">Color Two is selected from the color wells with a <span style="font-style: italic;">right</span> click. It is indicated within the palette well collection with a blue selection box.</p>
+<p style="margin-left: 0;">Color Two is selected from the color wells with a <em>right</em> click. It is indicated within the palette well collection with a blue selection box.</p>
 
 <p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Spread</span></span> creates a color spread between Color One and Two.</p>
 
@@ -230,7 +230,7 @@ a:visited {
 
 <p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Copy</span></span> copies Color One to Two.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Save</span></span> saves the entire palette. Suggest you use <span style="color:#006600;"><span style="font-weight: bold;"><tt>.pal</tt></span></span> for these.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Save</span></span> saves the entire palette. Suggest you use <span style="color:#006600;"><strong><tt>.pal</tt></strong></span> for these.</p>
 
 <p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Load</span></span> loads the entire palette.</p>
 
@@ -240,9 +240,9 @@ a:visited {
 
 <p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Undo</span></span> backs out of any changes you've made.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Redo</span></span> backs out of any undos <span style="font-style: italic;">until</span> you make another change.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Redo</span></span> backs out of any undos <em>until</em> you make another change.</p>
 
-<p style="margin-left: 0;">The text box is the palette name. <span style="font-style: italic;">Not</span> its filename.</p>
+<p style="margin-left: 0;">The text box is the palette name. <em>Not</em> its filename.</p>
 
 <p style="margin-left: 0;">The <span style="white-space:nowrap;"><span class="cbut">Set Color</span></span> buttons allow you to set Color One or Two. Until you have selected a color the <span style="white-space:nowrap;"><span class="cbut">Set Color</span></span> buttons do nothing.</p>
 
@@ -256,7 +256,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -266,24 +266,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="filedialog.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="infodialog.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 157</center>
         </div>
 
     </BODY>

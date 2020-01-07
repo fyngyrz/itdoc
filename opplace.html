@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "oppixelize.html"; }
 function onRight_keyDown() { window.location.href = "opradwave.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,13 +211,11 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="oppixelize.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opradwave.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br>
-<a name="ixref305"></a><h3>11.4.57 &#32;-&#32;Place</h3>
+               <a href="operators.html"><em><strong>Operators Dialog</strong></em></a> / <a href="opalphamodify.html"><em><strong>Operator Details</strong></em></a><br>
+<a name="ixref321"></a><h3>11.10.57 &#32;-&#32;Place</h3>
 
- <p style="margin-left: 0;">Scripting command: <span style="color:#006600;"><span style="font-weight: bold;"><tt>place <span style="color: #ff0000;">[mode=</span>0<span style="color: #ff0000;">...</span>9<span style="color: #ff0000;">]</span></tt></span></span></p>
+ <p style="margin-left: 0;"><a href="opscript.html">Scripting command</a>: <span style="color:#006600;"><strong><tt>place <span style="color: #ff0000;">[mode=</span>0<span style="color: #ff0000;">...</span>9<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[under=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[aspectcorrect=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[alphalevel=</span>0<span style="color: #ff0000;">...</span>255<span style="color: #ff0000;">]</span></tt></strong></span></p>
 
 <div style="
         width: 75%;
@@ -227,20 +227,24 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
+"><strong>Note:</strong> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
 
 
-<p style="margin-left: 0;">This operator places the <a href="imagetypes.html#origin">origin</a> image into the <a href="imagetypes.html#action">action</a> image using its native resolution at the location specified in the drop-down menu.</p>
+<p style="margin-left: 0;">If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Under Alpha</strong></span></span> is checked, then the <a href="imagetypes.html#action">action</a> image is examined for the extent of transparency of an intensity <em>less than</em> the <span style="white-space:nowrap;"> <strong>Alpha Level</strong> <img style="vertical-align: middle;" src="/itdoc/pics/dtankslider.png" alt="" width="101" height="16"></span> setting. The extent of that region determines the placement of the <a href="imagetypes.html#origin">origin</a> image; the origin image will be scaled to fit that region.</p>
 
-<p style="margin-left: 0;">If you choose <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Free&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>, then the <a href="imagetypes.html#origin">origin</a> image is placed centered over the center of your area selection in the <a href="imagetypes.html#action">action</a> image. One of the more common <a href="areatools.html">areatools</a> used for this type of placement is the <a href="areatools.html#freehand">pencil</a> tool, which can center the <a href="imagetypes.html#origin">origin</a> image over a single-click location. Another way this is commonly used is if you want to center some text in a region; often the <a href="areatools.html#rectangle">rectangle</a> tool is best for this. Just pull the rectangle around the region, and the placement will be about the center of the <a href="areatools.html#rectangle">rectangle</a>.</p>
+<p style="margin-left: 0;">If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Aspect Correct</strong></span></span> is checked, the <a href="imagetypes.html#origin">origin</a> image will be resized in proportion to its own dimensions, and if the detected low-alpha region is not the same aspect ratio, either there may remain transparent alpha regions where the <a href="imagetypes.html#origin">origin</a> image does not overlap, or part of the <a href="imagetypes.html#origin">origin</a> image may be clipped against the opaque content of the <a href="imagetypes.html#action">action</a> image.</p>
+
+<p style="margin-left: 0;">If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Under Alpha</strong></span></span> is not checked, then this operator places the <a href="imagetypes.html#origin">origin</a> image into the <a href="imagetypes.html#action">action</a> image using the <a href="imagetypes.html#origin">origin</a> image's native resolution at the location specified in the drop-down menu.</p>
+
+<p style="margin-left: 0;">If you choose <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Free&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span>, then the <a href="imagetypes.html#origin">origin</a> image is placed centered over the center of your area selection in the <a href="imagetypes.html#action">action</a> image. One of the more common <a href="areatools.html">areatools</a> used for this type of placement is the <a href="areatools.html#freehand">pencil</a> tool, which can center the <a href="imagetypes.html#origin">origin</a> image over a single-click location. Another way this is commonly used is if you want to center some text in a region; often the <a href="areatools.html#rectangle">rectangle</a> tool is best for this. Just pull the rectangle around the region, and the placement will be about the center of the <a href="areatools.html#rectangle">rectangle</a>.</p>
 
 <p style="margin-left: 0;">If you choose any other selection, the <a href="imagetypes.html#origin">origin</a> image is placed where the drop down menu indicates into the <a href="imagetypes.html#action">action</a> image.</p>
 
-<p style="margin-left: 0;">If the placed <a href="imagetypes.html#origin">origin</a> image is larger than the <a href="imagetypes.html#action">action</a> image, or if the center of the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Free&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> mode placement causes one or more sides of the placed <a href="imagetypes.html#origin">origin</a> image to land outside the <a href="imagetypes.html#action">action</a> image boundaries, the placed <a href="imagetypes.html#origin">origin</a> image will be clipped.</p>
+<p style="margin-left: 0;">If the placed <a href="imagetypes.html#origin">origin</a> image is larger than the <a href="imagetypes.html#action">action</a> image, or if the center of the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Free&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> mode placement causes one or more sides of the placed <a href="imagetypes.html#origin">origin</a> image to land outside the <a href="imagetypes.html#action">action</a> image boundaries, the placed <a href="imagetypes.html#origin">origin</a> image will be clipped.</p>
 
-<p style="margin-left: 0;">This operation obeys the <a href="preferences.html">Preferences&nbsp;dialog</a> <a href="preferences.html#mwta">Mask With Target Alpha</a> setting. If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Mask With Target Alpha</span></span></span> is checked, then the placed <a href="imagetypes.html#origin">origin</a> image will be modified by the <a href="imagetypes.html#action">action</a> image's alpha where that alpha channel is not fully opaque.</p>
+<p style="margin-left: 0;">This operation obeys the <a href="preferences.html">Preferences&nbsp;dialog</a> <a href="preferences.html#mwta">Mask With Target Alpha</a> setting. If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Mask With Target Alpha</strong></span></span> is checked, then the placed <a href="imagetypes.html#origin">origin</a> image will be modified by the <a href="imagetypes.html#action">action</a> image's alpha where that alpha channel is not fully opaque.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg132"></a><center><img src="pics/placeop.png" alt="" title=""></center><br><span style="color: #880088;">The place operator</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg136"></a><center><img src="pics/placeop.png" alt="" title=""></center><br><span style="color: #880088;">The place operator</span></div>
 
                           <div style="
        clear: both;
@@ -252,7 +256,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -262,24 +266,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="oppixelize.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opradwave.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 69</center>
         </div>
 
     </BODY>

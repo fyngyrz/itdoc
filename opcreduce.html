@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "opcolormap.html"; }
 function onRight_keyDown() { window.location.href = "opcontrastbrightness.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,15 +211,13 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opcolormap.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opcontrastbrightness.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br>
-<a name="ixref246"></a><h3>11.4.15 &#32;-&#32;Color Reduction</h3>
+               <a href="operators.html"><em><strong>Operators Dialog</strong></em></a> / <a href="opalphamodify.html"><em><strong>Operator Details</strong></em></a><br>
+<a name="ixref262"></a><h3>11.10.15 &#32;-&#32;Color Reduction</h3>
 
-<a name="ixref247"></a><a name="ixref248"></a><a name="ixref249"></a><a name="ixref250"></a><a name="ixref251"></a>
+<a name="ixref263"></a><a name="ixref264"></a><a name="ixref265"></a><a name="ixref266"></a><a name="ixref267"></a>
 
- <p style="margin-left: 0;">Scripting command: <span style="color:#006600;"><span style="font-weight: bold;"><tt>creduce <span style="color: #ff0000;">[Depth=</span>3<span style="color: #ff0000;">...</span>7<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Dither=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Dithtype=</span>0<span style="color: #ff0000;">...</span>2<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Save=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Fixed=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Force=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span></tt></span></span></p>
+ <p style="margin-left: 0;"><a href="opscript.html">Scripting command</a>: <span style="color:#006600;"><strong><tt>creduce <span style="color: #ff0000;">[Depth=</span>3<span style="color: #ff0000;">...</span>7<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Dither=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Dithtype=</span>0<span style="color: #ff0000;">...</span>2<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Save=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Fixed=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Force=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span></tt></strong></span></p>
 
 <div style="
         width: 75%;
@@ -229,14 +229,14 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
+"><strong>Note:</strong> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
 
 
 <p style="margin-left: 0;">This operator can reduce a full-color image to a 256 (or fewer) color image suitable for saving as <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image. It also creates palettes, and you can save those in <a target="_blank" href="glosspage.html#6a736f6e"><span style="color: #884422;">JSON</span></a> format.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg63"></a><center><img src="pics/crenderop.png" alt="" title=""></center><br><span style="color: #880088;">The color reduction operator</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg67"></a><center><img src="pics/crenderop.png" alt="" title=""></center><br><span style="color: #880088;">The color reduction operator</span></div>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Depth&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> tells the system how deeply the image is to be processed to generate a palette. The more bits involved, the more memory it takes, and the longer the reduction will take to generate.  <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">5:5:5&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> is the default setting, which works well for most images.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Depth&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> tells the system how deeply the image is to be processed to generate a palette. The more bits involved, the more memory it takes, and the longer the reduction will take to generate.  <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>5:5:5&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> is the default setting, which works well for most images.</p>
 
 
 
@@ -250,65 +250,65 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> <p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Depth&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> is <span style="font-style: italic;">not</span> the number of bits in the resulting render; all renders are 8 bits which may have up to 256 8-bit (for GIF saves) or 16-bit (for images still open) colors in the end result. It is only a setting that adjusts how the reduction technology in <span style="font-weight: bold;">iToolBox</span> works.</p></div>
+"><strong>Note:</strong> <p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Depth&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> is <em>not</em> the number of bits in the resulting render; all renders are 8 bits which may have up to 256 8-bit (for GIF saves) or 16-bit (for images still open) colors in the end result. It is only a setting that adjusts how the reduction technology in <strong>iToolBox</strong> works.</p></div>
 
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Dither&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> allows you to choose from several different dither methods. <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Ordered&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> is the default.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Dither&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> allows you to choose from several different dither methods. <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Ordered&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> is the default.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Use Dither</span></span></span> tells the operator whether to use dithering in the rendered result or not.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Use Dither</strong></span></span> tells the operator whether to use dithering in the rendered result or not.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Save GIF after Render</span></span></span> will open a file dialog and allow you to save a <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image after the reduction has been finished.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Save GIF after Render</strong></span></span> will open a file dialog and allow you to save a <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image after the reduction has been finished.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Fixed Palette</span></span></span> This selects a standard. preset palette of 256 colors to use for the render. This, combined with ordered dither, results in the least change in similar images; however, the preset colors are unlikely to be very good choices &mdash; choosing a fixed palette a compromise that for single, still images, should probably not be made.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Fixed Palette</strong></span></span> This selects a standard. preset palette of 256 colors to use for the render. This, combined with ordered dither, results in the least change in similar images; however, the preset colors are unlikely to be very good choices &mdash; choosing a fixed palette a compromise that for single, still images, should probably not be made.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Force B, G, W</span></span></span> tells the operator that when it is creating a custom palette, to make sure that there are palette entries for black, grey and white. Always having these colors available can be useful if the image will have text or other items rendered into it in use by another application.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Force B, G, W</strong></span></span> tells the operator that when it is creating a custom palette, to make sure that there are palette entries for black, grey and white. Always having these colors available can be useful if the image will have text or other items rendered into it in use by another application.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Save Image Palette</span></span> Once an image has been reduced, the resulting palette is attached to the image as long as it remains loaded, or until you reduce it again. Once an image <span style="font-style: italic;">has</span> a palette, you can save it in <a target="_blank" href="glosspage.html#6a736f6e"><span style="color: #884422;">JSON</span></a> format using this button.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">Save Image Palette</span></span> Once an image has been reduced, the resulting palette is attached to the image as long as it remains loaded, or until you reduce it again. Once an image <em>has</em> a palette, you can save it in <a target="_blank" href="glosspage.html#6a736f6e"><span style="color: #884422;">JSON</span></a> format using this button.</p>
 
-<p style="margin-left: 0;"><span style="font-weight: bold;">Colors:</span> This indicates how many colors are present in the action image.</p>
+<p style="margin-left: 0;"><strong>Colors:</strong> This indicates how many colors are present in the action image.</p>
 
-<p style="margin-left: 0;"><span style="font-weight: bold;">Compute Load:</span> This tells you how much memory will be consumed by custom palette generation. Changing <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<span style="font-weight: bold;">Depth&nbsp;</span><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> will change this metric.</p>
+<p style="margin-left: 0;"><strong>Compute Load:</strong> This tells you how much memory will be consumed by custom palette generation. Changing <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border-radius: 5px; border: .1em solid #000000;">&nbsp;<strong>Depth&nbsp;</strong><span style="font-weight: bolder; color: #FFFFFF; background-color: #0000FF;">&nbsp;<big>&#8691;</big>&nbsp;</span></span></span> will change this metric.</p>
 
-<p style="margin-left: 0;"><span style="font-weight: bold;">Palette:</span> This lets you know if the action image has a palette, and if so, if it is a fixed palette or one that was custom created for it.</p>
+<p style="margin-left: 0;"><strong>Palette:</strong> This lets you know if the action image has a palette, and if so, if it is a fixed palette or one that was custom created for it.</p>
 
-<a name="tocref11.4.15.1"></a><h4>11.4.15.1 &#32;-&#32;Examples</h4>
+<a name="tocref11.10.15.1"></a><h4>11.10.15.1 &#32;-&#32;Examples</h4>
 
 <p style="margin-left: 0;">Images with brilliant colors tend to do well with or without dither:</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg64"></a><center><img src="pics/ren-original.png" alt="" title=""></center><br><span style="color: #880088;">Original image<br>(24-bit <a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">PNG</span></a> image)</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg68"></a><center><img src="pics/ren-original.png" alt="" title=""></center><br><span style="color: #880088;">Original image<br>(24-bit <a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">PNG</span></a> image)</span></div>
 
 <p style="margin-left: 0;">&nbsp;</p>
 
 <center><table><tr>
-<td><div style="clear: both; text-align: center;"><a name="fgfg65"></a><center><img src="pics/ref-rendith.gif" alt="" title=""></center><br><span style="color: #880088;">Custom palette, ordered dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
-<td><div style="clear: both; text-align: center;"><a name="fgfg66"></a><center><img src="pics/ref-fixdith.gif" alt="" title=""></center><br><span style="color: #880088;">Fixed palette, ordered dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
+<td><div style="clear: both; text-align: center;"><a name="fgfg69"></a><center><img src="pics/ref-rendith.gif" alt="" title=""></center><br><span style="color: #880088;">Custom palette, ordered dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
+<td><div style="clear: both; text-align: center;"><a name="fgfg70"></a><center><img src="pics/ref-fixdith.gif" alt="" title=""></center><br><span style="color: #880088;">Fixed palette, ordered dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
 </tr></table></center>
 
 <p style="margin-left: 0;">&nbsp;</p>
 
 <center><table><tr>
-<td><div style="clear: both; text-align: center;"><a name="fgfg67"></a><center><img src="pics/ref-rennodith.gif" alt="" title=""></center><br><span style="color: #880088;">Custom palette, no dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
-<td><div style="clear: both; text-align: center;"><a name="fgfg68"></a><center><img src="pics/ref-fixnodith.gif" alt="" title=""></center><br><span style="color: #880088;">Fixed palette, no dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
+<td><div style="clear: both; text-align: center;"><a name="fgfg71"></a><center><img src="pics/ref-rennodith.gif" alt="" title=""></center><br><span style="color: #880088;">Custom palette, no dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
+<td><div style="clear: both; text-align: center;"><a name="fgfg72"></a><center><img src="pics/ref-fixnodith.gif" alt="" title=""></center><br><span style="color: #880088;">Fixed palette, no dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
 </tr></table></center>
 
 <p style="margin-left: 0;">&nbsp;</p>
 
 <p style="margin-left: 0;">Images with regions of slight tone changes such as skin tone almost have to be rendered with dither, unless you see the resulting bands of tone as a desirable artistic goal:</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg69"></a><center><img src="pics/sta-original.png" alt="" title=""></center><br><span style="color: #880088;">Original image<br>(24-bit <a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">PNG</span></a> image)</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg73"></a><center><img src="pics/sta-original.png" alt="" title=""></center><br><span style="color: #880088;">Original image<br>(24-bit <a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">PNG</span></a> image)</span></div>
 
 <p style="margin-left: 0;">&nbsp;</p>
 
 <center><table><tr>
-<td><div style="clear: both; text-align: center;"><a name="fgfg70"></a><center><img src="pics/sta-rendith.gif" alt="" title=""></center><br><span style="color: #880088;">Custom palette, ordered dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
-<td><div style="clear: both; text-align: center;"><a name="fgfg71"></a><center><img src="pics/sta-fixdith.gif" alt="" title=""></center><br><span style="color: #880088;">Fixed palette, ordered dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
+<td><div style="clear: both; text-align: center;"><a name="fgfg74"></a><center><img src="pics/sta-rendith.gif" alt="" title=""></center><br><span style="color: #880088;">Custom palette, ordered dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
+<td><div style="clear: both; text-align: center;"><a name="fgfg75"></a><center><img src="pics/sta-fixdith.gif" alt="" title=""></center><br><span style="color: #880088;">Fixed palette, ordered dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
 </tr></table></center>
 
 <p style="margin-left: 0;">&nbsp;</p>
 
 <center><table><tr>
-<td><div style="clear: both; text-align: center;"><a name="fgfg72"></a><center><img src="pics/sta-rennodith.gif" alt="" title=""></center><br><span style="color: #880088;">Custom palette, no dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
-<td><div style="clear: both; text-align: center;"><a name="fgfg73"></a><center><img src="pics/sta-fixnodith.gif" alt="" title=""></center><br><span style="color: #880088;">Fixed palette, no dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
+<td><div style="clear: both; text-align: center;"><a name="fgfg76"></a><center><img src="pics/sta-rennodith.gif" alt="" title=""></center><br><span style="color: #880088;">Custom palette, no dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
+<td><div style="clear: both; text-align: center;"><a name="fgfg77"></a><center><img src="pics/sta-fixnodith.gif" alt="" title=""></center><br><span style="color: #880088;">Fixed palette, no dither<br>(8-bit <a target="_blank" href="glosspage.html#676966"><span style="color: #884422;">GIF</span></a> image)</span></div></td>
 </tr></table></center>
 
 <hr>
@@ -322,7 +322,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -332,24 +332,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opcolormap.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opcontrastbrightness.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 26</center>
         </div>
 
     </BODY>

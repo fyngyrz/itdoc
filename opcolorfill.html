@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "opchromanoise.html"; }
 function onRight_keyDown() { window.location.href = "opcolorize.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,13 +211,11 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opchromanoise.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opcolorize.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br><a name="ixref242"></a>
-<a name="ixref243"></a><h3>11.4.12 &#32;-&#32;Color Fill</h3>
+               <a href="operators.html"><em><strong>Operators Dialog</strong></em></a> / <a href="opalphamodify.html"><em><strong>Operator Details</strong></em></a><br><a name="ixref258"></a>
+<a name="ixref259"></a><h3>11.10.12 &#32;-&#32;Color Fill</h3>
 
- <p style="margin-left: 0;">Scripting command: <span style="color:#006600;"><span style="font-weight: bold;"><tt>colorfill <span style="color: #ff0000;">[Red=</span>0<span style="color: #ff0000;">...</span>255<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Green=</span>0<span style="color: #ff0000;">...</span> 255<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Blue=</span>0<span style="color: #ff0000;">...</span> 255<span style="color: #ff0000;">]</span></tt></span></span></p>
+ <p style="margin-left: 0;"><a href="opscript.html">Scripting command</a>: <span style="color:#006600;"><strong><tt>colorfill <span style="color: #ff0000;">[Red=</span>0<span style="color: #ff0000;">...</span>255<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Green=</span>0<span style="color: #ff0000;">...</span> 255<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Blue=</span>0<span style="color: #ff0000;">...</span> 255<span style="color: #ff0000;">]</span></tt></strong></span></p>
 
 <div style="
         width: 75%;
@@ -227,10 +227,10 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
+"><strong>Note:</strong> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
 
 
-<p style="margin-left: 0;">This is a <a target="_blank" href="glosspage.html#636f6d706f7365"><span style="color: #884422;">compose</span></a> operation; obeys the <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Mask With Target Alpha</span></span></span> <a href="preferences.html">Preferences&nbsp;dialog</a> setting, and works with the <a href="blending.html">Blending&nbsp;dialog</a>. You can use the <a href="areatools.html#sample">eyedropper</a> tool to get the color from the image, or from a previous <a href="opsample.html">Sample</a> operation. When you <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Set Color Dialog</span></span> in this operator, the the main color tile is set from this fill value. If you want to save the color within the context of the <a href="opcolorfill.html#colord">set color dialog</a>, drag it from the main color tile to one of the palette tiles.</p>
+<p style="margin-left: 0;">This is a <a target="_blank" href="glosspage.html#636f6d706f7365"><span style="color: #884422;">compose</span></a> operation; obeys the <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Mask With Target Alpha</strong></span></span> <a href="preferences.html">Preferences&nbsp;dialog</a> setting, and works with the <a href="blending.html">Blending&nbsp;dialog</a>. You can use the <a href="areatools.html#sample">eyedropper</a> tool to get the color from the image, or from a previous <a href="opsample.html">Sample</a> operation. The <span style="white-space:nowrap;"><span class="cbut">Pick Up</span></span> button provides a means to sample and set the color in one operation. When you <span class="myMouse leftbutton"></span> <span style="white-space:nowrap;"><span class="cbut">Set Color Dialog</span></span> in this operator, the the main color tile is set from this fill value. If you want to save the color within the context of the <a href="opcolorfill.html#colord">set color dialog</a>, drag it from the main color tile to one of the palette tiles.</p>
 
 <p style="margin-left: 0;">You can set the Foreground color using the <span style="white-space:nowrap;"><span class="cbut">&rarr;Foreground</span></span> button.</p>
 
@@ -240,10 +240,10 @@ margin-bottom: 1em;
 
 <p style="margin-left: 0;">The <a target="_blank" href="glosspage.html#726762"><span style="color: #884422;">RGB</span></a> values are displayed in both base ten and <a target="_blank" href="glosspage.html#68657861646563696d616c"><span style="color: #884422;">hexadecimal</span></a> for convenience.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg58"></a><center><img src="pics/colorfillop.png" alt="" title=""></center><br><span style="color: #880088;">The color fill operator</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg62"></a><center><img src="pics/colorfillop.png" alt="" title=""></center><br><span style="color: #880088;">The color fill operator</span></div>
 <hr>
 <a name="colord"></a>
-<div style="clear: both; text-align: center;"><a name="fgfg59"></a><center><img src="pics/setcolordialog.png" alt="" title=""></center><br><span style="color: #880088;">The set color dialog</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg63"></a><center><img src="pics/setcolordialog.png" alt="" title=""></center><br><span style="color: #880088;">The set color dialog</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -254,7 +254,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -264,24 +264,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opchromanoise.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opcolorize.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 23</center>
         </div>
 
     </BODY>

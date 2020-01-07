@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "opfloor.html"; }
 function onRight_keyDown() { window.location.href = "opframe.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,13 +211,11 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opfloor.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opframe.html">Next</a>&nbsp;</td></tr></table></div>
-               <a href="operators.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operators Dialog</span></span></a> / <a href="opalphamodify.html"><span style="font-style: italic;"><span style="font-weight: bold;">Operator Details</span></span></a><br><a name="ixref273"></a>
-<a name="ixref274"></a><h3>11.4.32 &#32;-&#32;Force Dynamic</h3>
+               <a href="operators.html"><em><strong>Operators Dialog</strong></em></a> / <a href="opalphamodify.html"><em><strong>Operator Details</strong></em></a><br><a name="ixref289"></a>
+<a name="ixref290"></a><h3>11.10.32 &#32;-&#32;Force Dynamic</h3>
 
- <p style="margin-left: 0;">Scripting command: <span style="color:#006600;"><span style="font-weight: bold;"><tt>forcedynamic <span style="color: #ff0000;">[Sample=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Exclude=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span></tt></span></span></p>
+ <p style="margin-left: 0;"><a href="opscript.html">Scripting command</a>: <span style="color:#006600;"><strong><tt>forcedynamic <span style="color: #ff0000;">[Sample=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span> <span style="color: #ff0000;">[Exclude=</span>0<span style="color: #ff0000;">...</span>1<span style="color: #ff0000;">]</span></tt></strong></span></p>
 
 <div style="
         width: 75%;
@@ -227,26 +227,26 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
+"><strong>Note:</strong> All available scripting operations are listed on the <a href="opscript.html">Script</a> operator page.</div>
 
 
-<p style="margin-left: 0;">This will change the contrast of the selected area in such a way as to push the minimum and maximum measured levels to the minimum and maximum <span style="font-style: italic;">possible</span> levels. You can use the sample tool directly or with the eyedropper to sample the area first, and then adjust a different area with this tool, or you can have the operator do the sampling directly by checking <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Take Sample From Area</span></span></span></p>
+<p style="margin-left: 0;">This will change the contrast of the selected area in such a way as to push the minimum and maximum measured levels to the minimum and maximum <em>possible</em> levels. You can use the sample tool directly or with the eyedropper to sample the area first, and then adjust a different area with this tool, or you can have the operator do the sampling directly by checking <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Take Sample From Area</strong></span></span></p>
 
-<p style="margin-left: 0;">When <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Take Sample From Area</span></span></span> is checked, <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Exclude Soft Edges</span></span></span> tells the sample taken from the area selection to ignore pixel values underneath soft edges of the selection; otherwise, particularly when scripting or using <a href="areatools.html#redo">redo</a>, the sample would include information from pixels that were partly processed by previous operations, which can give you quite different results than what you were expecting.</p>
-<div style="clear: both; text-align: center;"><a name="fgfg95"></a><center><img src="pics/forcedynamicop.png" alt="" title=""></center><br><span style="color: #880088;">The force dynamic operator</span></div>
+<p style="margin-left: 0;">When <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Take Sample From Area</strong></span></span> is checked, <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Exclude Soft Edges</strong></span></span> tells the sample taken from the area selection to ignore pixel values underneath soft edges of the selection; otherwise, particularly when scripting or using <a href="areatools.html#redo">redo</a>, the sample would include information from pixels that were partly processed by previous operations, which can give you quite different results than what you were expecting.</p>
+<div style="clear: both; text-align: center;"><a name="fgfg99"></a><center><img src="pics/forcedynamicop.png" alt="" title=""></center><br><span style="color: #880088;">The force dynamic operator</span></div>
 
-<p style="margin-left: 0;">Force dynamic is a very interesting and useful operator. It is well worth the time it takes to get familiar with it. What it does is, based upon the contrast range in the sampled area (which can be the selected area, or an area you sampled previously), it adjusts the contrast so that the maximum possible dynamic range &mdash; that is, the brightest to the darkest possible values <span style="font-style: italic;">without</span> damaging the color balance of the sampled area &mdash; is used by the selected region.</p>
+<p style="margin-left: 0;">Force dynamic is a very interesting and useful operator. It is well worth the time it takes to get familiar with it. What it does is, based upon the contrast range in the sampled area (which can be the selected area, or an area you sampled previously), it adjusts the contrast so that the maximum possible dynamic range &mdash; that is, the brightest to the darkest possible values <em>without</em> damaging the color balance of the sampled area &mdash; is used by the selected region.</p>
 
 <p style="margin-left: 0;"><a href="opforcedynamic.html">Forced dynamic</a> can be used to bring up faint details in a controlled manner, to enhance astrophotos, radiological images, and increase clothing transparency in fashion and glamour shots.</p>
 
-<p style="margin-left: 0;"><span style="font-weight: bold;">See Also:</span> <a href="opfloor.html">Floor</a>, <a href="opceiling.html">Ceiling</a></p>
+<p style="margin-left: 0;"><strong>See Also:</strong> <a href="opfloor.html">Floor</a>, <a href="opceiling.html">Ceiling</a></p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg96"></a><center><img src="pics/fd-normal.png" alt="" title=""></center><br><span style="color: #880088;">One watt LED bulb, normal image</span></div>
-<p style="margin-left: 0;">I've taken this image, un-checked <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Take Sample From Area</span></span></span> in the <a href="opforcedynamic.html">Forced dynamic operator</a>, selected the <a href="areatools.html#rectangle">Rectangle tool</a>, clicked the <a href="areatools.html#eyedropper">Eyedropper tool</a>, and pulled the rectangle around the barely visible structure at the center of the bulb. Once the sample is taken, the <a href="operators.html">Operators&nbsp;dialog</a> returns to the <a href="opforcedynamic.html">Forced dynamic operator</a>. Then I selected the <a href="areatools.html#entire">Entire image</a> area tool, and clicked on the image; the result you can see below.</p>
+<div style="clear: both; text-align: center;"><a name="fgfg100"></a><center><img src="pics/fd-normal.png" alt="" title=""></center><br><span style="color: #880088;">One watt LED bulb, normal image</span></div>
+<p style="margin-left: 0;">I've taken this image, un-checked <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Take Sample From Area</strong></span></span> in the <a href="opforcedynamic.html">Forced dynamic operator</a>, selected the <a href="areatools.html#rectangle">Rectangle tool</a>, clicked the <a href="areatools.html#eyedropper">Eyedropper tool</a>, and pulled the rectangle around the barely visible structure at the center of the bulb. Once the sample is taken, the <a href="operators.html">Operators&nbsp;dialog</a> returns to the <a href="opforcedynamic.html">Forced dynamic operator</a>. Then I selected the <a href="areatools.html#entire">Entire image</a> area tool, and clicked on the image; the result you can see below.</p>
 
 <p style="margin-left: 0;">So what happened here is that the sample tool measured the maximum and minimum levels in the selected area (the rectangle) and then <a href="opforcedynamic.html">Force dynamic operator</a> pushed the entire image so that those levels reached the maximum dynamic range possible, and in so doing, the inner structure of the LED bulb, previously of such low contrast as to be almost invisible, is revealed.</p>
 <hr>
-<div style="clear: both; text-align: center;"><a name="fgfg97"></a><center><img src="pics/fd-forced.png" alt="" title=""></center><br><span style="color: #880088;">One watt LED bulb, <span style="font-style: italic;">forced</span> image</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg101"></a><center><img src="pics/fd-forced.png" alt="" title=""></center><br><span style="color: #880088;">One watt LED bulb, <em>forced</em> image</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -257,7 +257,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -267,24 +267,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="opfloor.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="opframe.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 43</center>
         </div>
 
     </BODY>

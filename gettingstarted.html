@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "imagetypes.html"; }
 function onRight_keyDown() { window.location.href = "keyboard.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,31 +211,29 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="imagetypes.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="keyboard.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref9"></a><h1>5 &#32;-&#32;Getting Started</h1>
+               <a name="ixref10"></a><h1>5 &#32;-&#32;Getting Started</h1>
 
-<a name="ixref10"></a><a name="tocref5.1"></a><h2>5.1 &#32;-&#32;First Steps</h2>
+<a name="ixref11"></a><a name="tocref5.1"></a><h2>5.1 &#32;-&#32;First Steps</h2>
 
-<p style="margin-left: 0;">The first thing you should do is start the application, and hopefully tell it that it is okay to ask <a target="_blank" href="https://fyngyrz.com/">fyngyrz.com</a> for a serial number and the latest version of <span style="font-weight: bold;">iToolBox</span>. <span style="font-style: italic;">You can change this setting in the <a href="preferences.html">Preferences&nbsp;dialog</a> at any time.</span></p>
+<p style="margin-left: 0;">The first thing you should do is start the application, and hopefully tell it that it is okay to ask <a target="_blank" href="https://fyngyrz.com/">fyngyrz.com</a> for a serial number and the latest version of <strong>iToolBox</strong>. <em>You can change this setting in the <a href="preferences.html">Preferences&nbsp;dialog</a> at any time.</em></p>
 
-<p style="margin-left: 0;">Then open the <a href="preferences.html">Preferences&nbsp;dialog</a> using either <span class="ckey"> &#8984;</span>+<span class="ckey">,</span> or the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">iToolBox/Preferences... &#8984;,&nbsp;</span></span></span> menu item, and click <span style="white-space:nowrap;"><span class="cbut">Meta Defaults</span></span>; then set the default <span style="font-weight: bold;">author</span>, <span style="font-weight: bold;">annotation</span>, and <span style="font-weight: bold;">copyright</span> strings. These will be automatically applied to all new images you create, and saved in file formats that support them such as the <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></span>, <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></span> and <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> formats &mdash; of course you can change them for any image using the <a href="opauthor.html">Author</a>, <a href="opannotation.html">annotation</a>, and <a href="opcopyright.html">copyright</a> operators, and you can change them globally in the <a href="preferences.html">Preferences&nbsp;dialog</a>.</p>
+<p style="margin-left: 0;">Then open the <a href="preferences.html">Preferences&nbsp;dialog</a> using either <span class="ckey"> &#8984;</span>+<span class="ckey">,</span> or the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>iToolBox/Preferences... &#8984;,&nbsp;</strong></span></span> menu item, and click <span style="white-space:nowrap;"><span class="cbut">Meta Defaults</span></span>; then set the default <strong>author</strong>, <strong>annotation</strong>, and <strong>copyright</strong> strings. These will be automatically applied to all new images you create, and saved in file formats that support them such as the <strong><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></strong>, <strong><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></strong> and <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> formats &mdash; of course you can change them for any image using the <a href="opauthor.html">Author</a>, <a href="opannotation.html">annotation</a>, and <a href="opcopyright.html">copyright</a> operators, and you can change them globally in the <a href="preferences.html">Preferences&nbsp;dialog</a>.</p>
 
-<p style="margin-left: 0;">If you like, you can set your <span style="font-weight: bold;">Home</span> GPS co-ordinates in the <span style="white-space:nowrap;"><span class="cbut">Meta Defaults</span></span> dialog as well. They will <span style="color: #ff0000;"><span style="font-style: italic;">not</span></span> be applied to any image unless you <span style="font-style: italic;">intentionally</span> do so using the <a href="opgps.html">GPS operator</a>.</p>
+<p style="margin-left: 0;">If you like, you can set your <strong>Home</strong> GPS co-ordinates in the <span style="white-space:nowrap;"><span class="cbut">Meta Defaults</span></span> dialog as well. They will <span style="color: #ff0000;"><em>not</em></span> be applied to any image unless you <em>intentionally</em> do so using the <a href="opgps.html">GPS operator</a>.</p>
 
-<a name="ixref11"></a><a name="tocref5.2"></a><h2>5.2 &#32;-&#32;Some Tips</h2>
+<a name="ixref12"></a><a name="tocref5.2"></a><h2>5.2 &#32;-&#32;Some Tips</h2>
 
-<a name="ixref12"></a><a name="tocref5.2.1"></a><h3>5.2.1 &#32;-&#32;The Basics Are Very Easy</h3>
+<a name="ixref13"></a><a name="tocref5.2.1"></a><h3>5.2.1 &#32;-&#32;The Basics Are Very Easy</h3>
 
-<p style="margin-left: 0;">Here's how you generally use <span style="font-weight: bold;">iToolBox</span>:</p>
+<p style="margin-left: 0;">Here's how you generally use <strong>iToolBox</strong>:</p>
 
 <ul>
 <li>
-Load an image with <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/Load Image &#8984;O&nbsp;</span></span></span> or <span class="ckey">control</span>+<span class="ckey">l</span>
+Load an image with <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Image &#8984;O&nbsp;</strong></span></span> or <span class="ckey">control</span>+<span class="ckey">l</span>
 <ul>
 <li>
-<span style="font-style: italic;">Repeat as desired</span>:
+<em>Repeat as desired</em>:
 <ul>
 <li>
 Choose a new <a href="operators.html">Operator</a>, or use the currently selected one</li>
@@ -255,38 +255,15 @@ Save the result with <span class="ckey">s</span></li>
 </ul>
 
 
-<a name="ixref13"></a><a name="tocref5.2.2"></a><h3>5.2.2 &#32;-&#32;Context Matters</h3>
+<a name="ixref14"></a><a name="tocref5.2.2"></a><h3>5.2.2 &#32;-&#32;Context Matters</h3>
 
-<p style="margin-left: 0;"><a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) directs your keyboard and mouse input to the window that is <span style="font-style: italic;"><span style="font-weight: bold;">in focus</span></span>. The window that is in focus indicates this by showing you a visibly active window title bar, where other windows present a more subdued title bar:</p>
+<p style="margin-left: 0;"><a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) directs your keyboard and mouse input to the window that is <em><strong>in focus</strong></em>. The window that is in focus indicates this by showing you a visibly active window title bar, where other windows present a more subdued title bar:</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg13"></a><center><img src="pics/activetitlebar.png" alt="" title=""></center><br><span style="color: #880088;">Active title bar under (osx) 10.12.6</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg13"></a><center><img src="pics/activetitlebar.png" alt="" title=""></center><br><span style="color: #880088;"><strong>Active</strong> title bar under <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) 10.12.6</span></div>
 <hr>
-<div style="clear: both; text-align: center;"><a name="fgfg14"></a><center><img src="pics/inactivetitlebar.png" alt="" title=""></center><br><span style="color: #880088;">Inactive title bar under <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) 10.12.6</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg14"></a><center><img src="pics/inactivetitlebar.png" alt="" title=""></center><br><span style="color: #880088;"><strong>Inactive</strong> title bar under <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) 10.12.6</span></div>
 
-<p style="margin-left: 0;"><span style="font-weight: bold;">You activate a particular window with a single <span class="myMouse leftbutton"></span> <span style="font-style: italic;">on</span> its title bar.</span></p>
-
-
-
-<div style="
-        width: 75%;
-        clear: both;
- border-style: solid;
-   background: #DDFFDD;
-   text-align: left;
-      padding: .5em;
-       margin: auto;
-   margin-top: 1em;
-margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> The terms "active window" and "window in focus" mean the same thing.</div>
-
-
-<p style="margin-left: 0;">Here's what &quot;context matters&quot; means: When an image <a href="views.html">view</a> is in focus, (that means that it is the active window, indicated by an active titlebar on the window) the cursor keys pan the image <a href="views.html">view</a>. But when the <a href="layersdialog.html">Layers&nbsp;dialog</a> is in focus, then the cursor keys adjust the position of the currently selected <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> with regard to the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image. And again when the <a href="operators.html">Operators&nbsp;dialog</a> is in focus, the cursor keys pan the eyepoint of the preview window around. And yet again, when the <a href="measure.html">Measure&nbsp;dialog</a> is in focus, the cursor keys move the rulers around on the most recently active <a href="views.html">view</a>. So make sure the window you mean to be in focus, <span style="font-style: italic;">is</span> the one in focus, before you go hammering out keystroke commands on the keyboard.</p>
-
-<a name="ixref14"></a><a name="ixref15"></a><a name="ixref16"></a><a name="ixref17"></a><a name="ixref18"></a><a name="ixref19"></a>
-
-<a name="ixref20"></a><a name="tocref5.2.3"></a><h3>5.2.3 &#32;-&#32;Resizing Image Views</h3>
-
-<p style="margin-left: 0;">When you resize an image <a href="views.html">view</a>, use a <span class="myMouse leftbutton"></span>-and-drag, and do it from the <span style="font-style: italic;">right</span> edge of the <a href="views.html">view</a>. <span style="font-weight: bold;">iToolBox</span> uses a one-edge strategy for aspect-correct <a href="views.html">view</a> sizing, and that's the right edge.</p>
+<p style="margin-left: 0;"><strong>You activate a particular window with a single <span class="myMouse leftbutton"></span> <em>on</em> its title bar.</strong></p>
 
 
 
@@ -300,12 +277,16 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> If you want to resize a <a href="views.html">view</a> in a <span style="font-style: italic;">non</span>-aspect correct manner, press <span class="ckey">y</span> and the <a href="views.html">view</a> will allow you to adjust it freely. It's also useful to know that you can create a resized image immediately, identical is size to the new <a href="views.html">view</a> frame with <span style="white-space:nowrap;"><span class="ckey">C</span> (<span class="ckey">shift</span>+<span class="ckey">c</span>)</span>. There are a number of useful things you can do with aspect, you'll find more details <a href="keyboard.html#aspectops">here</a>.</div>
+"><strong>Tip:</strong> The terms "active window" and "window in focus" mean the same thing.</div>
 
 
-<a name="ixref21"></a><a name="tocref5.2.4"></a><h3>5.2.4 &#32;-&#32;Key Commands Are Mnemonically Associated</h3>
+<p style="margin-left: 0;">Here's what &quot;context matters&quot; means: When an image <a href="views.html">view</a> is in focus, (that means that it is the active window, indicated by an active titlebar on the window) the cursor keys pan the image <a href="views.html">view</a>. But when the <a href="layersdialog.html">Layers&nbsp;dialog</a> is in focus, then the cursor keys adjust the position of the currently selected <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> with regard to the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image. And again when the <a href="operators.html">Operators&nbsp;dialog</a> is in focus, the cursor keys pan the eyepoint of the preview window around. And yet again, when the <a href="measure.html">Measure&nbsp;dialog</a> is in focus, the cursor keys move the rulers around on the most recently active <a href="views.html">view</a>. So make sure the window you mean to be in focus, <em>is</em> the one in focus, before you go hammering out keystroke commands on the keyboard.</p>
 
-<p style="margin-left: 0;">Almost all letter-based keystroke commands are mnemonically associated: <span class="ckey">p</span> for <span style="font-weight: bold;"><span style="text-decoration: underline;">p</span></span>rint, <span class="ckey">s</span> for <span style="font-weight: bold;"><span style="text-decoration: underline;">s</span></span>ave, etc. This makes them much easier to learn if keyboard commands are your thing.</p>
+<a name="ixref15"></a><a name="ixref16"></a><a name="ixref17"></a><a name="ixref18"></a><a name="ixref19"></a><a name="ixref20"></a>
+
+<a name="ixref21"></a><a name="tocref5.2.3"></a><h3>5.2.3 &#32;-&#32;Resizing Image Views</h3>
+
+<p style="margin-left: 0;">When you resize an image <a href="views.html">view</a>, use a <span class="myMouse leftbutton"></span>-and-drag, and do it from the <em>right</em> edge of the <a href="views.html">view</a>. <strong>iToolBox</strong> uses a one-edge strategy for aspect-correct <a href="views.html">view</a> sizing, and that's the right edge.</p>
 
 
 
@@ -319,15 +300,16 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> No, you don't generally have to limit yourself to keyboard commands... there is a command palette as well. But some people prefer keyboard commands, because they enable much faster workflows. Here's the command palette:
-</div>
+"><strong>Tip:</strong> If you want to resize a <a href="views.html">view</a> in a <em>non</em>-aspect correct manner, press <span class="ckey">y</span> and the <a href="views.html">view</a> will allow you to adjust it freely. It's also useful to know that you can create a resized image immediately, identical is size to the new <a href="views.html">view</a> frame with <span style="white-space:nowrap;"><span class="ckey">C</span> (<span class="ckey">shift</span>+<span class="ckey">c</span>)</span>. There are a number of useful things you can do with aspect, you'll find more details <a href="keyboard.html#aspectops">here</a>.</div>
 
 
-<div style="clear: both; text-align: center;"><a name="fgfg15"></a><center><img src="pics/cmdpalette.png" alt="" title=""></center><br><span style="color: #880088;">You can open this command palette with <span class="ckey">k</span> when the action image is in focus.</span></div>
+<a name="ixref22"></a><a name="tocref5.2.4"></a><h3>5.2.4 &#32;-&#32;Key Commands Are Mnemonically Associated</h3>
 
-<a name="ixref22"></a><a name="tocref5.2.5"></a><h3>5.2.5 &#32;-&#32;Hot Repositioning Is... Hot!</h3>
+<p style="margin-left: 0;">Almost all letter-based keystroke commands are mnemonically associated: <span class="ckey">p</span> for <strong><span style="text-decoration: underline;">p</span></strong>rint, <span class="ckey">s</span> for <strong><span style="text-decoration: underline;">s</span></strong>ave, etc. This makes them much easier to learn if keyboard commands are your thing.</p>
 
-<p style="margin-left: 0;">If you're making an elliptical or rectangular area selection: while you are pressing <span class="myMouse leftbutton"></span>, if you <span style="font-style: italic;">also</span> press <span class="myMouse rightbutton"></span> the selection will un-anchor and you can slide it around. When the ellipse or rectangle is exactly where you want it, release the <span class="myMouse rightbutton"></span>, and you're back to normal sizing. Release the <span class="myMouse leftbutton"></span>, and the selection is made.</p>
+<a name="ixref23"></a><a name="tocref5.2.5"></a><h3>5.2.5 &#32;-&#32;Hot Repositioning Is... Hot!</h3>
+
+<p style="margin-left: 0;">If you're making an elliptical or rectangular area selection: while you are pressing <span class="myMouse leftbutton"></span>, if you <em>also</em> press <span class="myMouse rightbutton"></span> the selection will un-anchor and you can slide it around. When the ellipse or rectangle is exactly where you want it, release the <span class="myMouse rightbutton"></span>, and you're back to normal sizing. Release the <span class="myMouse leftbutton"></span>, and the selection is made.</p>
 
 
 
@@ -341,33 +323,33 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Warning: </span> The <a target="_blank" href="https://apple.com">Apple</a> &quot;magic mouse&quot; does not work properly with hot repositioning, because one of its "magic" features is that it does not properly implement the right-mousebutton. Sorry. For you magic mouse users, you can press <span class="ckey">shift</span> while the left mouse button is down instead. This is treated as if you are holding down <span style="font-style: italic;">both</span> left and right mouse buttons.</div>
+"><strong>Warning: </strong> The <a target="_blank" href="https://apple.com">Apple</a> &quot;magic mouse&quot; does not work properly with hot repositioning, because one of its "magic" features is that it does not properly implement the right-mousebutton. Sorry. For you magic mouse users, you can press <span class="ckey">shift</span> while the left mouse button is down instead. This is treated as if you are holding down <em>both</em> left and right mouse buttons.</div>
 
 
-<a name="ixref23"></a><a name="tocref5.2.6"></a><h3>5.2.6 &#32;-&#32;The Polygon Tool Offers Hot Point Editing</h3>
+<a name="ixref24"></a><a name="tocref5.2.6"></a><h3>5.2.6 &#32;-&#32;The Polygon Tool Offers Hot Point Editing</h3>
 
 <p style="margin-left: 0;">The polygon area placement also offers move, delete and add capabilities anywhere  along the polygonal path. See the <a href="areatools.html#polytool">polygon tool explanation</a> for how that works.</p>
 
-<a name="ixref24"></a><a name="tocref5.2.7"></a><h3>5.2.7 &#32;-&#32;Custom or Standard File and Color Dialogs</h3>
+<a name="ixref25"></a><a name="tocref5.2.7"></a><h3>5.2.7 &#32;-&#32;Custom or Standard File and Color Dialogs</h3>
 
 <p style="margin-left: 0;">You can choose between native and custom file and color setting dialogs in the application preferences (<a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) users can use <span class="ckey"> &#8984;</span><span class="ckey">,</span> to access) The custom <a href="filedialog.html">File&nbsp;dialog</a> is much faster than the native one under <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>) and allows you to hand-enter a filename and/or path. The custom color dialog allows you to handle more colors than the native one under <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>). The tradeoff is generally one of familiarity for function.</p>
 
-<a name="ixref25"></a><a name="tocref5.2.8"></a><h3>5.2.8 &#32;-&#32;There Are Three Primary Image Types</h3>
+<a name="ixref26"></a><a name="tocref5.2.8"></a><h3>5.2.8 &#32;-&#32;There Are Three Primary Image Types</h3>
 
 <p style="margin-left: 0;">An <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> image is a single image with no <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> content or membership. Layered images have multiple image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s that make them up; they are combined to create a <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image:</p>
 
 <ul>
-<li><span style="font-weight: bold;"><a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">Atomic</span></a></span> - the usual standalone image you just loaded from a <span style="color:#006600;"><span style="font-weight: bold;"><tt>.jpg</tt></span></span>, etc.</li>
+<li><strong><a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">Atomic</span></a></strong> - the usual standalone image you just loaded from a <span style="color:#006600;"><strong><tt>.jpg</tt></strong></span>, etc.</li>
 <li>
-<span style="font-weight: bold;"><a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">Layer</span></a></span> -- the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>(s) making up a layered image.</li>
+<strong><a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">Layer</span></a></strong> -- the <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>(s) making up a layered image.</li>
 <li>
-<span style="font-weight: bold;"><a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">Master</span></a></span> - the result of all the combined <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s in a layered image.</li>
+<strong><a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">Master</span></a></strong> - the result of all the combined <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s in a layered image.</li>
 </ul>
 
 
 <p style="margin-left: 0;">Layering offers an extraordinarily powerful way to manipulate and adjust your images. You can learn more about layered images beginning with the discussion of the <a href="layersdialog.html">Layers&nbsp;dialog</a>.</p>
 
-<div style="clear: both; text-align: center;"><a name="fgfg16"></a><center><img src="pics/lena-dancer.png" alt="" title=""></center><br><span style="color: #880088;">A layered image with two image components</span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg15"></a><center><img src="pics/lena-dancer.png" alt="" title=""></center><br><span style="color: #880088;">A layered image with two image components</span></div>
                           <div style="
        clear: both;
        width: 75%;
@@ -378,7 +360,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -388,24 +370,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="imagetypes.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="keyboard.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 5</center>
         </div>
 
     </BODY>

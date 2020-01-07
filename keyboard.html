@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "gettingstarted.html"; }
 function onRight_keyDown() { window.location.href = "themenus.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,12 +211,10 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="gettingstarted.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <span style="font-style: italic;">Keyboard</span> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="themenus.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref26"></a><h1>6 &#32;-&#32;The Keyboard</h1>
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="gettingstarted.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <em>Keyboard</em> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="themenus.html">Next</a>&nbsp;</td></tr></table></div>
+               <a name="ixref27"></a><h1>6 &#32;-&#32;The Keyboard</h1>
 
-<a name="ixref27"></a><a name="tocref6.1"></a><h2>6.1 &#32;-&#32;Keystrokes in the Action Image Window</h2>
+<a name="ixref28"></a><a name="tocref6.1"></a><h2>6.1 &#32;-&#32;Keystrokes in the Action Image Window</h2>
 
 <p style="margin-left: 0;">The keyboard can often be used in this application instead of button presses to more quickly perform various functions. Observe the bold, underlined letters on the various buttons in the application and you'll know what key to press to perform the function specified on the button when that window is active. Capitalization matters!</p>
 
@@ -230,29 +230,29 @@ a:visited {
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> If you don't want to memorize keystrokes, then the most important one to know is <span class="ckey">k</span>, which opens a dialog with buttons for every keystroke operation except the cursor keys (panning), the function keys  <span class="ckey"><span style="color: #00FF00;">F1</span></span>-<span class="ckey"><span style="color: #00FF00;">F10</span></span> (keyboard-based area tool selection), and the <span class="ckey">esc</span> key.</div>
+"><strong>Tip:</strong> If you don't want to memorize keystrokes, then the most important one to know is <span class="ckey">k</span>, which opens a dialog with buttons for every keystroke operation except the cursor keys (panning), the function keys  <span class="ckey"><span style="color: #00FF00;">F1</span></span>-<span class="ckey"><span style="color: #00FF00;">F10</span></span> (keyboard-based area tool selection), and the <span class="ckey">esc</span> key.</div>
 
 
-<div style="clear: both; text-align: center;"><a name="fgfg17"></a><center><img src="pics/cmdpalette.png" alt="" title=""></center><br><span style="color: #880088;">Command palette, opens with <span class="ckey">k</span></span></div>
+<div style="clear: both; text-align: center;"><a name="fgfg16"></a><center><img src="pics/cmdpalette.png" alt="" title=""></center><br><span style="color: #880088;">Command palette, opens with <span class="ckey">k</span></span></div>
 
-<a name="ixref28"></a><a name="tocref6.1.1"></a><h3>6.1.1 &#32;-&#32;Help Window</h3>
+<a name="ixref29"></a><a name="tocref6.1.1"></a><h3>6.1.1 &#32;-&#32;Help Window</h3>
 
 <p style="margin-left: 0;"><span class="ckey">?</span> will open the help window.</p>
 
-<a name="ixref29"></a><a name="tocref6.1.2"></a><h3>6.1.2 &#32;-&#32;Cancel Area Selection in Progress</h3>
+<a name="ixref30"></a><a name="tocref6.1.2"></a><h3>6.1.2 &#32;-&#32;Cancel Area Selection in Progress</h3>
 
 <p style="margin-left: 0;">Use <span class="ckey">esc</span> to cancel an area selection in progress.</p>
 
-<a name="ixref30"></a><a name="tocref6.1.3"></a><h3>6.1.3 &#32;-&#32;Panning the Image Window</h3>
+<a name="ixref31"></a><a name="tocref6.1.3"></a><h3>6.1.3 &#32;-&#32;Panning the Image Window</h3>
 
 <p style="margin-left: 0;">Within the context of the action image window (the active image), pressing the cursor keys (<span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span> and <span class="ckey">&darr;</span>), optionally along with <span class="ckey">shift</span> or <span class="ckey">opt/alt</span> will alter the position of the image in the window.</p>
 
-<a name="ixref31"></a><a name="ixref32"></a>
-<p style="margin-left: 0;">If you have a scrollwheel on your mouse (or your trackpad can generate similar input), then you can pan the image with the scrollwheel. If you're using an <span style="font-style: italic;">actual</span> scrollwheel, pressing shift will change the axis being panned.</p>
+<a name="ixref32"></a><a name="ixref33"></a>
+<p style="margin-left: 0;">If you have a scrollwheel on your mouse (or your trackpad can generate similar input), then you can pan the image with the scrollwheel. If you're using an <em>actual</em> scrollwheel, pressing shift will change the axis being panned.</p>
 
-<p style="margin-left: 0;">Some people expect vertical panning to work in one direction related to the scrollwheel roll, others expect another. You can change the direction of scrolling by changing the state of the <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Invert Y axis Scrolling</span></span></span> checkbox in the <a href="preferences.html">Preferences&nbsp;dialog</a>.</p>
+<p style="margin-left: 0;">Some people expect vertical panning to work in one direction related to the scrollwheel roll, others expect another. You can change the direction of scrolling by changing the state of the <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Invert Y axis Scrolling</strong></span></span> checkbox in the <a href="preferences.html">Preferences&nbsp;dialog</a>.</p>
 
-<a name="ixref33"></a><a name="tocref6.1.4"></a><h3>6.1.4 &#32;-&#32;Area Tool Selection</h3>
+<a name="ixref34"></a><a name="tocref6.1.4"></a><h3>6.1.4 &#32;-&#32;Area Tool Selection</h3>
 
 
 
@@ -266,7 +266,7 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> The function keys <span class="ckey"><span style="color: #00FF00;">F1</span></span> through <span class="ckey"><span style="color: #00FF00;">F12</span></span> choose the area selection tools in the order they appear in the <a href="areatools.html">areatools</a>, so they're very easy to remember; <span class="ckey"><span style="color: #00FF00;">F1</span></span>-<span class="ckey"><span style="color: #00FF00;">F4</span></span> is the first row, <span class="ckey"><span style="color: #00FF00;">F5</span></span>-<span class="ckey"><span style="color: #00FF00;">F8</span></span> the second row, and <span class="ckey"><span style="color: #00FF00;">F9</span></span>-<span class="ckey"><span style="color: #00FF00;">F12</span></span> the third row. Remember this one fact, and you'll be able to quickly switch area tools from the keyboard in any image context. Also, if you forget, you can hover the mouse pointer over any area tool and the tooltip will let you know what the keystroke for it is.</div>
+"><strong>Tip:</strong> The function keys <span class="ckey"><span style="color: #00FF00;">F1</span></span> through <span class="ckey"><span style="color: #00FF00;">F12</span></span> choose the area selection tools in the order they appear in the <a href="areatools.html">areatools</a>, so they're very easy to remember; <span class="ckey"><span style="color: #00FF00;">F1</span></span>-<span class="ckey"><span style="color: #00FF00;">F4</span></span> is the first row, <span class="ckey"><span style="color: #00FF00;">F5</span></span>-<span class="ckey"><span style="color: #00FF00;">F8</span></span> the second row, and <span class="ckey"><span style="color: #00FF00;">F9</span></span>-<span class="ckey"><span style="color: #00FF00;">F12</span></span> the third row. Remember this one fact, and you'll be able to quickly switch area tools from the keyboard in any image context. Also, if you forget, you can hover the mouse pointer over any area tool and the tooltip will let you know what the keystroke for it is.</div>
 
 
 <ul>
@@ -308,7 +308,7 @@ margin-bottom: 1em;
 </ul>
 
 
-<a name="ixref34"></a><a name="tocref6.1.5"></a><h3>6.1.5 &#32;-&#32;View Window Sizes</h3>
+<a name="ixref35"></a><a name="tocref6.1.5"></a><h3>6.1.5 &#32;-&#32;View Window Sizes</h3>
 
 
 
@@ -322,7 +322,7 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> The following image <a href="views.html">view</a> sizing keystrokes only function if the resulting image <a href="views.html">view</a> won't be larger than your available monitor estate, specifically meaning the monitor the image is on when you execute the command; and if the image won't end up being pathologically small such that it won't have an adequate title bar for you to move the image <a href="views.html">view</a> window around with.
+"><strong>Note:</strong> The following image <a href="views.html">view</a> sizing keystrokes only function if the resulting image <a href="views.html">view</a> won't be larger than your available monitor estate, specifically meaning the monitor the image is on when you execute the command; and if the image won't end up being pathologically small such that it won't have an adequate title bar for you to move the image <a href="views.html">view</a> window around with.
 
 <p style="margin-left: 0;">In addition, keep in mind that the size of the <a href="views.html">view</a> is independent of the zoom setting for the <a href="views.html">view</a>. For example, if you are zoomed at 2x in a 2:1 <a href="views.html">view</a>, and you request a 1:1 <a href="views.html">view</a> size, you'll get a 1:1 <a href="views.html">view</a> that is still zoomed at 2x.</p></div>
 
@@ -348,21 +348,25 @@ margin-bottom: 1em;
 </ul>
 
 
+<a name="tocref6.1.6"></a><h3>6.1.6 &#32;-&#32;Load Favorite Image</h3>
+
+<p style="margin-left: 0;">Pressing and holding <span class="ckey">&#8997;</span> and then additionally pressing any numeric key (<span class="ckey">1</span>...<span class="ckey">0</span>) in the top row (not the keypad) will load the favorite image in the matching <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Favorite Image&nbsp;&#9654;</strong></span></span> slot, if there is one.</p>
+
 <a name="keyreturn"></a>
-<a name="ixref35"></a><a name="tocref6.1.6"></a><h3>6.1.6 &#32;-&#32;Select All and Operate (modal)</h3>
+<a name="ixref36"></a><a name="tocref6.1.7"></a><h3>6.1.7 &#32;-&#32;Select All and Operate (modal)</h3>
 
-<p style="margin-left: 0;">In <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> selection mode, <span class="ckey">Return</span> selects the entire <a href="imagetypes.html#action">action</a> image and runs the current <a href="operators.html">operator</a> on it. It does <span style="font-style: italic;">not</span> change the currently selected <a href="areatools.html">areatool</a>, it's just a quick keyboard-based way to perform operations on the entire image. It is often convenient to use in conjunction with <a href="#keyh">hotkeys</a>.</p>
+<p style="margin-left: 0;">In <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Modal Selections</strong></span></span> selection mode, <span class="ckey">Return</span> selects the entire <a href="imagetypes.html#action">action</a> image and runs the current <a href="operators.html">operator</a> on it. It does <em>not</em> change the currently selected <a href="areatools.html">areatool</a>, it's just a quick keyboard-based way to perform operations on the entire image. It is often convenient to use in conjunction with <a href="#keyh">hotkeys</a>.</p>
 
-<a name="ixref36"></a><a name="tocref6.1.7"></a><h3>6.1.7 &#32;-&#32;Operate on Current Selection (non-modal)</h3>
+<a name="ixref37"></a><a name="tocref6.1.8"></a><h3>6.1.8 &#32;-&#32;Operate on Current Selection (non-modal)</h3>
 
-<p style="margin-left: 0;">In <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> (non-modal) selection mode, <span class="ckey">Return</span> applies the current selection to the <a href="imagetypes.html#action">action</a> image and runs the current <a href="operators.html">operator</a> on it.</p>
+<p style="margin-left: 0;">In <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Modal Selections</strong></span></span> (non-modal) selection mode, <span class="ckey">Return</span> applies the current selection to the <a href="imagetypes.html#action">action</a> image and runs the current <a href="operators.html">operator</a> on it.</p>
 
-<a name="ixref37"></a><a name="tocref6.1.8"></a><h3>6.1.8 &#32;-&#32;Operate</h3>
+<a name="ixref38"></a><a name="tocref6.1.9"></a><h3>6.1.9 &#32;-&#32;Operate</h3>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="ckey">RETURN</span> (<span class="ckey">shift</span>+<span class="ckey">return</span>)</span> re-selects the most recent area tool selection that was made on the <a href="imagetypes.html#action">action</a> image and runs the current <a href="operators.html">operator</a> on it. It does <span style="font-style: italic;">not</span> change the currently selected <a href="areatools.html">areatool</a>, it's just a quick keyboard-based way to perform <a href="areatools.html#redo">redo</a> operations on the <a href="areatools.html#entire">entire image</a> image. It is often convenient to use in conjunction with <a href="#keyh">hotkeys</a>.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="ckey">RETURN</span> (<span class="ckey">shift</span>+<span class="ckey">return</span>)</span> re-selects the most recent area tool selection that was made on the <a href="imagetypes.html#action">action</a> image and runs the current <a href="operators.html">operator</a> on it. It does <em>not</em> change the currently selected <a href="areatools.html">areatool</a>, it's just a quick keyboard-based way to perform <a href="areatools.html#redo">redo</a> operations on the <a href="areatools.html#entire">entire image</a> image. It is often convenient to use in conjunction with <a href="#keyh">hotkeys</a>.</p>
 
 <a name="keya"></a>
-<a name="ixref38"></a><a name="tocref6.1.9"></a><h3>6.1.9 &#32;-&#32;Antialiasing Toggle for Current Area Tool</h3>
+<a name="ixref39"></a><a name="tocref6.1.10"></a><h3>6.1.10 &#32;-&#32;Antialiasing Toggle for Current Area Tool</h3>
 
 <p style="margin-left: 0;"><span class="ckey">a</span> turns anti-aliasing on and off. You can also do this from the <a href="preferences.html">Preferences&nbsp;dialog</a>, and you can also set the amount and radius of the antialiasing.</p>
 
@@ -378,21 +382,21 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> Antialiasing increases the size of the selection beyond the boundaries you specified with the area tool you are using. This is because blending into the surrounding content requires altering that content.</div>
+"><strong>Note:</strong> Antialiasing increases the size of the selection beyond the boundaries you specified with the area tool you are using. This is because blending into the surrounding content requires altering that content.</div>
 
 
 <a name="keyb"></a>
-<a name="ixref39"></a><a name="tocref6.1.10"></a><h3>6.1.10 &#32;-&#32;Area Blending</h3>
+<a name="ixref40"></a><a name="tocref6.1.11"></a><h3>6.1.11 &#32;-&#32;Area Blending</h3>
 
 <p style="margin-left: 0;"><span class="ckey">b</span> opens the <a href="blending.html">Blending&nbsp;dialog</a>. This provides a means for you to make soft area selections. There are
 choices for flat, sine and conical blending curves. Control of the blend floor is also available, as is a multiplier factor that makes the curves steeper.</p>
 
 <a name="keyshiftb"></a>
-<a name="ixref40"></a><a name="tocref6.1.11"></a><h3>6.1.11 &#32;-&#32;Assigning an Image as the Brush</h3>
+<a name="ixref41"></a><a name="tocref6.1.12"></a><h3>6.1.12 &#32;-&#32;Assigning an Image as the Brush</h3>
 
 <p style="margin-left: 0;"><span class="ckey">B</span> (<span class="ckey">shift</span>+<span class="ckey">b</span>) assigns the active image as the brush for <a href="opbrushstroke.html">Brush&nbsp;Stroke</a> operations.</p>
 
-<p style="margin-left: 0;">You can also create a new brush using the New Image operation, accessed from the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<span style="font-weight: bold;">File/New&nbsp;Image &#8984;N&nbsp;</span></span></span> menu or with <span class="ckey">control</span>+<span class="ckey">n</span>.</p>
+<p style="margin-left: 0;">You can also create a new brush using the New Image operation, accessed from the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/New&nbsp;Image &#8984;N&nbsp;</strong></span></span> menu or with <span class="ckey">control</span>+<span class="ckey">n</span>.</p>
 
 
 
@@ -406,57 +410,64 @@ choices for flat, sine and conical blending curves. Control of the blend floor i
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Warning: </span> Assigning large images as the brush can result in <span style="font-style: italic;">extremely</span> long computation times for the <a href="opbrushstroke.html">Brush&nbsp;Stroke</a> operator.</div>
+"><strong>Warning: </strong> Assigning large images as the brush can result in <em>extremely</em> long computation times for the <a href="opbrushstroke.html">Brush&nbsp;Stroke</a> operator.</div>
 
 
 <a name="keyc"></a>
-<a name="ixref41"></a><a name="tocref6.1.12"></a><h3>6.1.12 &#32;-&#32;Clone Image</h3>
+<a name="ixref42"></a><a name="tocref6.1.13"></a><h3>6.1.13 &#32;-&#32;Clone Image</h3>
 
 <p style="margin-left: 0;"><span class="ckey">c</span> creates a new copy (not just another <a href="views.html">view</a>) of the action image.</p>
 
+<a name="keyshiftoptc"></a>
+<a name="tocref6.1.14"></a><h3>6.1.14 &#32;-&#32;Clone Image at View Size (no scaling)</h3>
+
+<p style="margin-left: 0;">(<span class="ckey">shift</span>+<span class="ckey">&#8997;</span>+<span class="ckey">c</span>) creates a new copy (not just another <a href="views.html">view</a>) of the action image that is the same size as the <a href="views.html">view</a> &mdash; not the image &mdash; it was created from. This is a quick visual way to create a duplicate image at a new size that is not scaled (instead, pixels are simply duplicated as required.)</p>
+
 <a name="keyshiftc"></a>
-<a name="ixref42"></a><a name="tocref6.1.13"></a><h3>6.1.13 &#32;-&#32;Clone Image at View Size</h3>
+<a name="ixref43"></a><a name="tocref6.1.15"></a><h3>6.1.15 &#32;-&#32;Clone Image at View Size (scaled)</h3>
 
-<p style="margin-left: 0;"><span class="ckey">C</span> (<span class="ckey">shift</span>+<span class="ckey">c</span>) creates a new copy (not just another <a href="views.html">view</a>) of the action image that is the same size as the <a href="views.html">view</a> &mdash; not the image &mdash; it was created from. This is a quick visual way to create a scaled image. You can also create a precisely scaled copy of an image with the <span class="ckey">e</span> (enlarge / duplicate / reduce) command.</p>
+<p style="margin-left: 0;">(<span class="ckey">shift</span>+<span class="ckey">c</span>) creates a new copy (not just another <a href="views.html">view</a>) of the action image that is the same size as the <a href="views.html">view</a> &mdash; not the image &mdash; it was created from. This is a quick visual way to create a scaled image. You can also create a precisely scaled copy of an image with the <span class="ckey">e</span> (enlarge / duplicate / reduce) command.</p>
 
-<p style="margin-left: 0;">Normally, the <a href="views.html">view</a> aspect ratio is locked; so when you resize a <a href="views.html">view</a>, it's always the same shape as the image it represents. In most cases, this is what you want. But there may be times you want to resize an image in such a way that the new size is a different aspect than the original. For instance, a widescreen image may have been packed into a 4:3 (normal video) aspect, and so it looks distorted. In such a case, you can <span style="font-style: italic;">unlock</span> the aspect control mechanism using <span class="ckey">y</span> to allow free resizing of the image with the mouse, and then you can use <span style="white-space:nowrap;"><span class="ckey">C</span> (<span class="ckey">shift</span>+<span class="ckey">c</span>)</span> to clone the aspect-adjusted image. When you're done, pressing <span class="ckey">y</span> again will re-lock the <a href="views.html">view</a>'s aspect ratio control mechanism.</p>
+<p style="margin-left: 0;">Normally, the <a href="views.html">view</a> aspect ratio is locked; so when you resize a <a href="views.html">view</a>, it's always the same shape as the image it represents. In most cases, this is what you want. But there may be times you want to resize an image in such a way that the new size is a different aspect than the original. For instance, a widescreen image may have been packed into a 4:3 (normal video) aspect, and so it looks distorted. In such a case, you can <em>unlock</em> the aspect control mechanism using <span class="ckey">y</span> to allow free resizing of the image with the mouse, and then you can use <span style="white-space:nowrap;"><span class="ckey">C</span> (<span class="ckey">shift</span>+<span class="ckey">c</span>)</span> to clone the aspect-adjusted image. When you're done, pressing <span class="ckey">y</span> again will re-lock the <a href="views.html">view</a>'s aspect ratio control mechanism.</p>
 
 <a name="keycontrolc"></a>
 <a name="keycmdc"></a>
 <a name="copy"></a>
-<a name="ixref43"></a><a name="tocref6.1.14"></a><h3>6.1.14 &#32;-&#32;Copy Image to Clipboard</h3>
+<a name="ixref44"></a><a name="tocref6.1.16"></a><h3>6.1.16 &#32;-&#32;Copy Image to Clipboard</h3>
 
 <p style="margin-left: 0;">Under <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>), both <span class="ckey">control</span>+<span class="ckey">c</span> and <span class="ckey"> &#8984;</span>+<span class="ckey">c</span> will copy the action image to the clipboard.</p>
 
 <a name="keyd"></a>
-<a name="ixref44"></a><a name="tocref6.1.15"></a><h3>6.1.15 &#32;-&#32;Delete (clear) the Current Mask (for Non-modal Selections)</h3>
+<a name="ixref45"></a><a name="tocref6.1.17"></a><h3>6.1.17 &#32;-&#32;Delete (clear) the Current Mask (for Non-modal Selections)</h3>
 
-<p style="margin-left: 0;"><span class="ckey">d</span> deletes the current mask when <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Modal Selections</span></span></span> in the <a href="areatools.html">areatools</a> is not checked.</p>
+<p style="margin-left: 0;"><span class="ckey">d</span> deletes the current mask when <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Modal Selections</strong></span></span> in the <a href="areatools.html">areatools</a> is not checked.</p>
 
 <a name="keye"></a>
 <a name="enlargereduce"></a>
-<div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg18"></a><center><img src="pics/enlargereduce.png" alt="" title=""></center><br><span style="color: #880088;">Enlarge / Reduce dialog</span></div><a name="ixref45"></a><a name="tocref6.1.16"></a><h3>6.1.16 &#32;-&#32;Enlarge / Reduce Image to Duplicate</h3>
+<div style="float: right; margin-left: 1em; text-align: center;"><a name="fgfg17"></a><center><img src="pics/enlargereduce.png" alt="" title=""></center><br><span style="color: #880088;">Enlarge / Reduce dialog</span></div><a name="ixref46"></a><a name="tocref6.1.18"></a><h3>6.1.18 &#32;-&#32;Enlarge / Reduce Image to Duplicate</h3>
 
 <p style="margin-left: 0;"><span class="ckey">e</span> opens a dialog that provides a means to create a new image, scaled (or not) from the image you're working with. When you enter the width, the height is set proportionally to the original image's height.</p>
 
-<p style="margin-left: 0;">If you want to distort the aspect, then you just enter the width you want first, <span style="font-style: italic;">then</span> alter the height. You'll probably want to check <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<span style="font-weight: bold;">Stretch</span></span></span> as well. If you don't, the new image will be the new size you specified, but the source image's <span style="font-style: italic;">content</span> will be fitted inside it in an aspect-correct manner.</p>
+<p style="margin-left: 0;">If you want to distort the aspect, then you just enter the width you want first, <em>then</em> alter the height. You'll probably want to check <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Stretch</strong></span></span> as well. If you don't, the new image will be the new size you specified, but the source image's <em>content</em> will be fitted inside it in an aspect-correct manner.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">x2</span></span> doubles the <span style="font-style: italic;">new size</span>.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">x2</span></span> doubles the <em>new size</em>.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">+1</span></span> adds the <span style="font-style: italic;">current size</span> to the new size.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">+1</span></span> adds the <em>current size</em> to the new size.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">/2</span></span> halves the <span style="font-style: italic;">new size</span>. If the resulting size is exactly half of the original image along both the horizontal and vertical extents, a bilinear reduction is performed. If you're going to be reducing equal to, or more than 2:1, it is suggested that you use <span style="white-space:nowrap;"><span class="cbut">/2</span></span> on each resulting image until you're less than half way to your final target size, and then do the final reduction. This will result in an image that contains the best approximation of the original image content.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">/2</span></span> halves the <em>new size</em>. If the resulting size is exactly half of the original image along both the horizontal and vertical extents, a bilinear reduction is performed. If you're going to be reducing equal to, or more than 2:1, it is suggested that you use <span style="white-space:nowrap;"><span class="cbut">/2</span></span> on each resulting image until you're less than half way to your final target size, and then do the final reduction. This will result in an image that contains the best approximation of the original image content.</p>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">=</span></span> <span style="font-weight: bold;">resets</span> the new size to the current size.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbut">=</span></span> <strong>resets</strong> the new size to the current size.</p>
 
 <p style="margin-left: 0;">You can use these four buttons in various combinations to get magnification multiples.</p>
 
 <p style="margin-left: 0;">For instance, to get a 5x magnification, you could press <span style="white-space:nowrap;"><span class="cbut">=</span></span>, <span style="white-space:nowrap;"><span class="cbut">x2</span></span>, <span style="white-space:nowrap;"><span class="cbut">x2</span></span>, and finally <span style="white-space:nowrap;"><span class="cbut">+1</span></span>.</p>
 
-<p style="margin-left: 0;">That sequence gets you the original size (x1), double that (x2), double <span style="font-style: italic;">that</span> (x4), plus the original size (x4+x1, or x5)</p>
+<p style="margin-left: 0;">That sequence gets you the original size (x1), double that (x2), double <em>that</em> (x4), plus the original size (x4+x1, or x5)</p>
+
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>H-Priority</strong></span></span>, when checked, causes changes to the height to adjust the width. If <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>H-Priority</strong></span></span> is unchecked, then changes to the width adjust the height. In either case, the change occurs when you press the <span class="ckey">tab</span> key; and you may then adjust the other dimension as desired without affecting the setting you just changed.</p>
 
 <a name="keyf"></a>
-<a name="ixref46"></a><a name="tocref6.1.17"></a><h3>6.1.17 &#32;-&#32;Restoring an Image to Its Original Clipped-from Location</h3>
+<a name="ixref47"></a><a name="tocref6.1.19"></a><h3>6.1.19 &#32;-&#32;Restoring an Image to Its Original Clipped-from Location</h3>
 
 <p style="margin-left: 0;"><span class="ckey">f</span> (fudge it) restores a clipped image back into the image it was clipped from.
 You can use this two ways. First, you can clip out a region, edit the original, decide you don't like the results, then hit <span class="ckey">f</span> (with the clip as the active image, not the original) and the clip will go back over the changes you made.</p>
@@ -475,22 +486,29 @@ You can use this two ways. First, you can clip out a region, edit the original, 
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> If you close the last <a href="views.html">view</a> on the image the clip was taken from, <span class="ckey">f</span> does nothing, because there's no image remaining for the clip to be restored to.</div>
+"><strong>Note:</strong> If you close the last <a href="views.html">view</a> on the image the clip was taken from, <span class="ckey">f</span> does nothing, because there's no image remaining for the clip to be restored to.</div>
 
 
+<a name="tocref6.1.20"></a><h3>6.1.20 &#32;-&#32;Assign Image File as Favorite</h3>
+
+<p style="margin-left: 0;">Pressing <span class="ckey">shift</span>+<span class="ckey">f</span> will open the assign favorite image dialog if the current <a href="imagetypes.html#action">action</a> image was loaded from the filesystem:</p>
+
+<div style="clear: both; text-align: center;"><a name="fgfg18"></a><center><img src="pics/assignfav.png" alt="" title=""></center><br><span style="color: #880088;">The Assign Favorites dialog</span></div>
+
+<p style="margin-left: 0;">Once an image file has been assigned as a favorite, it will remain available in the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Favorite Image&nbsp;&#9654;</strong></span></span> submenu. This is true even if that image is removed from the filesystem. Of course, if the file is no longer present, trying to load it via <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>File/Load Favorite Image&nbsp;&#9654;</strong></span></span> will not work.</p>
 
 <a name="keyg"></a>
-<a name="ixref47"></a><a name="tocref6.1.18"></a><h3>6.1.18 &#32;-&#32;Placing a Viewable Grid Around Each Pixel</h3>
+<a name="ixref48"></a><a name="tocref6.1.21"></a><h3>6.1.21 &#32;-&#32;Placing a Viewable Grid Around Each Pixel</h3>
 
 <p style="margin-left: 0;"><span class="ckey">g</span> turns the pixel grid on and off. This type of grid is most useful when you are zoomed in, where colors don't visibly vary much from one another, and you need a precise selection among the individual pixels.</p>
 
 <a name="keyshiftg"></a>
-<a name="ixref48"></a><a name="tocref6.1.19"></a><h3>6.1.19 &#32;-&#32;Changing the Grid Color</h3>
+<a name="ixref49"></a><a name="tocref6.1.22"></a><h3>6.1.22 &#32;-&#32;Changing the Grid Color</h3>
 
 <p style="margin-left: 0;"><span class="ckey">G</span> (<span class="ckey">shift</span>+<span class="ckey">g</span>) alternates the pixel grid color between black and white.</p>
 
-<a name="keyh"></a><a name="ixref49"></a>
-<a name="ixref50"></a><a name="tocref6.1.20"></a><h3>6.1.20 &#32;-&#32;Operator Hotkeys</h3>
+<a name="keyh"></a><a name="ixref50"></a>
+<a name="ixref51"></a><a name="tocref6.1.23"></a><h3>6.1.23 &#32;-&#32;Operator Hotkeys</h3>
 
 <p style="margin-left: 0;"><span class="ckey">h</span> is a "prefix" key that, when entered and then followed within one second by a hotkey that is set in an operator's hotkey widget, will select that operator in the <a href="operators.html">Operators&nbsp;dialog</a>.</p>
 
@@ -501,18 +519,18 @@ margin-bottom: 1em;
 <p style="margin-left: 0;">You can remove an existing hotkey by clicking <span style="white-space:nowrap;"><span class="cbut">Set</span></span> and then leaving the hotkey entry widget blank when you click <span style="white-space:nowrap;"><span class="cbut">OK</span></span>.</p>
 
 <a name="keyi"></a>
-<a name="ixref51"></a><a name="ixref52"></a><a name="ixref53"></a><a name="ixref54"></a>
+<a name="ixref52"></a><a name="ixref53"></a><a name="ixref54"></a><a name="ixref55"></a>
 
-<a name="ixref55"></a><a name="tocref6.1.21"></a><h3>6.1.21 &#32;-&#32;Opening the Image Information Window</h3>
+<a name="ixref56"></a><a name="tocref6.1.24"></a><h3>6.1.24 &#32;-&#32;Opening the Image Information Window</h3>
 
-<p style="margin-left: 0;"><span class="ckey">i</span> will open the image information window. Among other things, this window collects all the meta information about the image in one place so you can examine it. This is a <span style="font-style: italic;">very</span> good thing to do before you save a file that is going anywhere but on your own computer (and even then...)</p>
+<p style="margin-left: 0;"><span class="ckey">i</span> will open the image information window. Among other things, this window collects all the meta information about the image in one place so you can examine it. This is a <em>very</em> good thing to do before you save a file that is going anywhere but on your own computer (and even then...)</p>
 
 <p style="margin-left: 0;">Keep in mind that timestamps, <a target="_blank" href="glosspage.html#677073"><span style="color: #884422;">GPS</span></a> data, and the image itself represent a lot of information that can be mined by others; others who may not be your friends. Those things in combination can add up to a very precise collection of information usable by others.</p>
 
-<p style="margin-left: 0;">It's easy to forget about your own security, to simply assume that information you put out will not come back to bite you. But sometimes it can. So <span style="font-style: italic;">be careful.</span></p>
+<p style="margin-left: 0;">It's easy to forget about your own security, to simply assume that information you put out will not come back to bite you. But sometimes it can. So <em>be careful.</em></p>
 
 <a name="keyj"></a>
-<a name="ixref56"></a><a name="tocref6.1.22"></a><h3>6.1.22 &#32;-&#32;Juxtaposing Images for Image-to-image Comparisons</h3>
+<a name="ixref57"></a><a name="tocref6.1.25"></a><h3>6.1.25 &#32;-&#32;Juxtaposing Images for Image-to-image Comparisons</h3>
 
 <p style="margin-left: 0;"><span class="ckey">j</span>, juxtapose, can be used with <span class="ckey">n</span> (next) and <span class="ckey">N</span> (previous) to compare images if you have them set to the same size and magnification.</p>
 
@@ -521,19 +539,19 @@ margin-bottom: 1em;
 <p style="margin-left: 0;"><span class="ckey">&#8997;</span>+<span class="ckey">j</span>, tile windows.</p>
 
 <a name="keyk"></a>
-<a name="ixref57"></a><a name="tocref6.1.23"></a><h3>6.1.23 &#32;-&#32;Opening the Keyboard Command Palette</h3>
+<a name="ixref58"></a><a name="tocref6.1.26"></a><h3>6.1.26 &#32;-&#32;Opening the Keyboard Command Palette</h3>
 
 <p style="margin-left: 0;"><span class="ckey">k</span> opens the keyboard command palette. This palette contains buttons for every keystroke operation except the sizing commands 1 though 4, the function key commands to select an area tool,  <span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, <span class="ckey">&darr;</span> and <span class="ckey">esc</span>.</p>
 
 <div style="clear: both; text-align: center;"><a name="fgfg19"></a><center><img src="pics/cmdpalette.png" alt="" title=""></center><br><span style="color: #880088;">The keyboard command palette</span></div>
 
 <a name="keyl"></a>
-<a name="tocref6.1.24"></a><h3>6.1.24 &#32;-&#32;Work with/as a Layered Image</h3>
+<a name="tocref6.1.27"></a><h3>6.1.27 &#32;-&#32;Work with/as a Layered Image</h3>
 
-<p style="margin-left: 0;"><span class="ckey">l</span> (that's a lower-case L, not a one) opens the <a href="layersdialog.html">Layers&nbsp;dialog</a>. If you press <span class="ckey">l</span> on an <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>, non-layered image, it will be <span style="font-style: italic;">converted</span> to a layered image. If you press <span class="ckey">l</span> with any <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image active, the <a href="layersdialog.html">Layers&nbsp;dialog</a> opens preset to that layered image.</p>
+<p style="margin-left: 0;"><span class="ckey">l</span> (that's a lower-case L, not a one) opens the <a href="layersdialog.html">Layers&nbsp;dialog</a>. If you press <span class="ckey">l</span> on an <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>, non-layered image, it will be <em>converted</em> to a layered image. If you press <span class="ckey">l</span> with any <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image active, the <a href="layersdialog.html">Layers&nbsp;dialog</a> opens preset to that layered image.</p>
 
 <a name="keym"></a>
-<a name="ixref58"></a><a name="tocref6.1.25"></a><h3>6.1.25 &#32;-&#32;Controlling the Rulers</h3>
+<a name="ixref59"></a><a name="tocref6.1.28"></a><h3>6.1.28 &#32;-&#32;Controlling the Rulers</h3>
 
 <p style="margin-left: 0;"><span class="ckey">m</span> opens the <a href="measure.html">Measure&nbsp;dialog</a> which provides control of the ruler display. You can choose between inches, centimeters, and pixels; control opacity and font size; which, if any, rulers are visible, and which image windows the rulers appear in (just the active window, or all of them.)</p>
 
@@ -542,33 +560,43 @@ margin-bottom: 1em;
 <p style="margin-left: 0;">When the <a href="measure.html">Measure&nbsp;dialog</a> is active, the <span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, <span class="ckey">&darr;</span> and <span class="ckey">home</span> keys control the ruler positions.</p>
 
 <a name="keyshiftm"></a>
-<a name="ixref59"></a><a name="ixref60"></a>
-<a name="ixref61"></a><a name="tocref6.1.26"></a><h3>6.1.26 &#32;-&#32;Toggle Mask With Target Alpha</h3>
+<a name="ixref60"></a><a name="ixref61"></a>
+<a name="ixref62"></a><a name="tocref6.1.29"></a><h3>6.1.29 &#32;-&#32;Toggle Mask With Target Alpha</h3>
 
 <p style="margin-left: 0;"><span class="ckey">M</span>  (<span class="ckey">shift</span>+<span class="ckey">m</span>) will toggle the state of the <a href="preferences.html">Preferences&nbsp;dialog</a> <a href="preferences.html#mwta">Mask With Target Alpha</a> setting. The state is indicated in the <a href="areatools.html#status">status area</a> of the <a href="areatools.html">areatools</a>.</p>
 
 <a name="keyoptm"></a>
-<a name="ixref62"></a><a name="tocref6.1.27"></a><h3>6.1.27 &#32;-&#32;Reset Blend Mode to Matte</h3>
+<a name="ixref63"></a><a name="tocref6.1.30"></a><h3>6.1.30 &#32;-&#32;Reset Blend Mode to Matte</h3>
 
 <p style="margin-left: 0;"><span class="ckey">&#8997;</span>+<span class="ckey">m</span> resets the <a href="themenus.html#blendmodes">Blend Mode</a> to Matte.</p>
 
+<a name="ixref64"></a><a name="ixref65"></a>
+<a name="ixref66"></a><a name="tocref6.1.31"></a><h3>6.1.31 &#32;-&#32;Opening the Macro Window</h3>
+
+<p style="margin-left: 0;"><span class="ckey">shift</span>+<span class="ckey">&#8997;</span>+<span class="ckey">m</span> will open the macro window. More information on the macros is found <a href="themenus.html#macrowindow">here</a>.</p>
+
+<a name="ixref67"></a>
+<a name="ixref68"></a><a name="tocref6.1.32"></a><h3>6.1.32 &#32;-&#32;Launching Macros</h3>
+
+<p style="margin-left: 0;">You can launch any one of the ten macros via the <span style="white-space:nowrap;"><span style="color: #000000; background-color: #FFFFFF; border: 1px solid;">&nbsp;<strong>Operators/Macros&nbsp;&#9654;</strong></span></span> submenu, or in image context, using <span class="ckey">&#8997;</span>+<span class="ckey"> &#8984;</span>+(<em>top row number key</em>)</p>
+
 <a name="keyn"></a>
 <a name="keyshiftn"></a>
-<a name="ixref63"></a>
-<a name="ixref64"></a><a name="tocref6.1.28"></a><h3>6.1.28 &#32;-&#32;Next and Previous Image</h3>
+<a name="ixref69"></a>
+<a name="ixref70"></a><a name="tocref6.1.33"></a><h3>6.1.33 &#32;-&#32;Next and Previous Image</h3>
 
 <p style="margin-left: 0;"><span class="ckey">n</span> and <span class="ckey">N</span> (<span class="ckey">shift</span>+<span class="ckey">n</span>) activate the next and previous window, respectively.</p>
 
 <a name="keyo"></a>
-<a name="ixref65"></a><a name="tocref6.1.29"></a><h3>6.1.29 &#32;-&#32;Set Origin Image</h3>
+<a name="ixref71"></a><a name="tocref6.1.34"></a><h3>6.1.34 &#32;-&#32;Set Origin Image</h3>
 
 <p style="margin-left: 0;"><span class="ckey">o</span> sets the currently active window as the origin image, which is the image that is used as the source for the Merge operator.</p>
 
 <a name="keyshifto"></a>
-<a name="ixref66"></a><a name="ixref67"></a><a name="ixref68"></a>
-<a name="ixref69"></a><a name="tocref6.1.30"></a><h3>6.1.30 &#32;-&#32;Operate (for Non-modal Selections)</h3>
+<a name="ixref72"></a><a name="ixref73"></a><a name="ixref74"></a>
+<a name="ixref75"></a><a name="tocref6.1.35"></a><h3>6.1.35 &#32;-&#32;Operate (for Non-modal Selections)</h3>
 
-<p style="margin-left: 0;">When <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<span style="font-weight: bold;">Modal selection</span></span></span> is turned off in the area toolbox, no operations on the image will occur until you press <span style="white-space:nowrap;"><span class="cbut">Operate</span></span> in the area toolbox or you press <span style="white-space:nowrap;"><span class="ckey">O</span> (<span class="ckey">shift</span>+<span class="ckey">o</span>)</span> with the action image active. Instead, making a selection only displays the selection on the image.</p>
+<p style="margin-left: 0;">When <span style="white-space:nowrap;"><span class="cbak"><span class="cchk"><span style="color: #FFFFFF;">&#10003;</span></span>&nbsp;<strong>Modal selection</strong></span></span> is turned off in the area toolbox, no operations on the image will occur until you press <span style="white-space:nowrap;"><span class="cbut">Operate</span></span> in the area toolbox or you press <span style="white-space:nowrap;"><span class="ckey">O</span> (<span class="ckey">shift</span>+<span class="ckey">o</span>)</span> with the action image active. Instead, making a selection only displays the selection on the image.</p>
 
 <p style="margin-left: 0;">Making another selection and having <span class="ckey">shift</span> pressed when you finish it adds to the current selection.</p>
 
@@ -583,18 +611,18 @@ margin-bottom: 1em;
 <p style="margin-left: 0;">In this way, you can create complex area selections before you commit to any particular operation.</p>
 
 <a name="keyp"></a>
-<a name="ixref70"></a><a name="tocref6.1.31"></a><h3>6.1.31 &#32;-&#32;Print the Action Image</h3>
+<a name="ixref76"></a><a name="tocref6.1.36"></a><h3>6.1.36 &#32;-&#32;Print the Action Image</h3>
 
 <p style="margin-left: 0;"><span class="ckey">p</span> prints the currently active, or action, image.</p>
 
 <a name="keyq"></a>
-<a name="ixref71"></a><a name="ixref72"></a><a name="ixref73"></a><a name="ixref74"></a>
-<a name="ixref75"></a><a name="tocref6.1.32"></a><h3>6.1.32 &#32;-&#32;Quarter Turn the Action Image</h3>
+<a name="ixref77"></a><a name="ixref78"></a><a name="ixref79"></a><a name="ixref80"></a>
+<a name="ixref81"></a><a name="tocref6.1.37"></a><h3>6.1.37 &#32;-&#32;Quarter Turn the Action Image</h3>
 
 <p style="margin-left: 0;"><span class="ckey">q</span> rotates the action image 90&deg; clockwise.</p>
 
 <a name="keyr"></a>
-<a name="ixref76"></a><a name="tocref6.1.33"></a><h3>6.1.33 &#32;-&#32;Redo (reverse an Undo)</h3>
+<a name="ixref82"></a><a name="tocref6.1.38"></a><h3>6.1.38 &#32;-&#32;Redo (reverse an Undo)</h3>
 
 <p style="margin-left: 0;"><span class="ckey">r</span> executes the redo function. After you undo an operation with <span class="ckey">u</span>, you can redo it with <span class="ckey">r</span>.</p>
 
@@ -610,11 +638,11 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> If you extend the image dimensions, both the undo and redo lists are cleared. If you perform a new operation on an image, the redo list is cleared and the undo list increases by one (up to the system limit, which is ten.)</div>
+"><strong>Note:</strong> If you extend the image dimensions, both the undo and redo lists are cleared. If you perform a new operation on an image, the redo list is cleared and the undo list increases by one (up to the system limit, which is ten.)</div>
 
 
 <a name="keyshiftr"></a>
-<a name="ixref77"></a><a name="tocref6.1.34"></a><h3>6.1.34 &#32;-&#32;Rename an Image</h3>
+<a name="ixref83"></a><a name="tocref6.1.39"></a><h3>6.1.39 &#32;-&#32;Rename an Image</h3>
 
 <p style="margin-left: 0;"><span class="ckey">R</span> (<span class="ckey">shift</span>+<span class="ckey">r</span>) opens the image rename dialog.</p>
 
@@ -630,60 +658,86 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> The image's name may not be the same as its name in your computer's filesystem. This gives you some extra flexibility in naming <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> images, <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, and <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a>s.</div>
+"><strong>Note:</strong> The image's name may not be the same as its name in your computer's filesystem. This gives you some extra flexibility in naming <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> images, <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s, and <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a>s.</div>
 
+
+<a name="keyoptr"></a>
+<a name="ixref84"></a><a name="tocref6.1.40"></a><h3>6.1.40 &#32;-&#32;Rotate a P-shape</h3>
+
+<p style="margin-left: 0;">If a <span style="white-space:nowrap;"><a href="areatools.html#pshape">p-shape</a></span> has been loaded, <span class="ckey">&#8997;</span>+<span class="ckey">r</span> opens a dialog that allows you to rotate it to any angle.</p>
+
+<div style="clear: both; text-align: center;"><a name="fgfg20"></a><center><img src="pics/pshapecontroller.png" alt="" title=""></center><br><span style="color: #880088;">P-Shape Rotation Dialog</span></div>
 
 <a name="keys"></a>
 <a name="keyshifts"></a>
-<a name="ixref78"></a><a name="tocref6.1.35"></a><h3>6.1.35 &#32;-&#32;Save an Image</h3>
+<a name="ixref85"></a><a name="tocref6.1.41"></a><h3>6.1.41 &#32;-&#32;Save an Image</h3>
 
 <p style="margin-left: 0;"><span class="ckey">s</span> and <span class="ckey">S</span> (<span class="ckey">shift</span>+<span class="ckey">s</span>) Saves the image.</p>
 
-<p style="margin-left: 0;">Using <span class="ckey">s</span>: If the image is a component of a layered image, or in other words a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or a <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> type image, the entire layered image will automatically be saved in <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> layered format.</p>
+<p style="margin-left: 0;">Using <span class="ckey">s</span>: If the image is a component of a layered image, or in other words a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or a <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> type image, the entire layered image will automatically be saved in <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> layered format.</p>
 
-<p style="margin-left: 0;">Use the <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> extension for extended <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> files. When working with layered images, if you want to save just the active image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> as a flat (<a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>) image in <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span>, <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> or <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></span> file format, use <span style="white-space:nowrap;"><span class="ckey">S</span> (<span class="ckey">shift</span>+<span class="ckey">s</span>)</span>  instead of <span class="ckey">s</span>.</p>
+<p style="margin-left: 0;">Use the <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> extension for extended <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> files. When working with layered images, if you want to save just the active image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> as a flat (<a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>) image in <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong>, <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> or <strong><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></strong> file format, use <span style="white-space:nowrap;"><span class="ckey">S</span> (<span class="ckey">shift</span>+<span class="ckey">s</span>)</span>  instead of <span class="ckey">s</span>.</p>
 
-<p style="margin-left: 0;">If the image is <span style="font-style: italic;">not</span> a layered image component, you use the filename extensions <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></span>, <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> and <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span> (or <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a706567"><span style="color: #884422;">jpeg</span></a></tt></span>) to choose how you want the image saved. Note that only <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> and <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></span> save transparency information for <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> images, and <span style="color:#006600;"><span style="font-weight: bold;"><tt>.ato</tt></span></span> saves 48-bit data. The <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> format saves 24-bit data with transparency, and <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span> saves less than than 24-bit and does not save transparency. <span style="font-style: italic;">Jst sy n t lssy cmprssn.</span></p>
+<p style="margin-left: 0;">If the image is <em>not</em> a layered image component, you use the filename extensions <strong><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></strong>, <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> and <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong> (or <strong><tt>.<a target="_blank" href="glosspage.html#6a706567"><span style="color: #884422;">jpeg</span></a></tt></strong>) to choose how you want the image saved. Note that only <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> and <strong><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></strong> save transparency information for <a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a> images, and <span style="color:#006600;"><strong><tt>.ato</tt></strong></span> saves 48-bit data. The <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> format saves 24-bit data with transparency, and <strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong> saves less than than 24-bit and does not save transparency. <em>Jst sy n t lssy cmprssn.</em></p>
 
-<p style="margin-left: 0;">The save format is selected by the extension you provide <span style="font-style: italic;">if</span> the image is <span style="font-style: italic;">not</span> a layered image:</p>
+<p style="margin-left: 0;">The save format is selected by the extension you provide <em>if</em> the image is <em>not</em> a layered image:</p>
 
 <center>
 <table width="60%" border=1 bgcolor="#ffffff">
-<tr><td><span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></span></td><td>48-bit RGB + 16-bit transparency + copyright + annotation + notations <span style="font-weight: bold;">iToolBox</span> custom format - it is suggested that you <span style="font-style: italic;">always</span> use this format for flat (<a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>) images that you intend to do more work on, ever.</td></tr>
+<tr><td><strong><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></strong></td><td>48-bit RGB + 16-bit transparency + copyright + annotation + notations <strong>iToolBox</strong> custom format - it is suggested that you <em>always</em> use this format for flat (<a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>) images that you intend to do more work on, ever.</td></tr>
 
-<tr><td> <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span></td><td>24-bit RGB + 8-bit transparency common image format</td></tr>
+<tr><td> <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong></td><td>24-bit RGB + 8-bit transparency common image format</td></tr>
 
-<tr><td><span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span></td><td>Less than 24-bit RGB format, lossy, common image format</td></tr>
+<tr><td> <strong><tt>.<a target="_blank" href="glosspage.html#72676261"><span style="color: #884422;">rgba</span></a></tt></strong></td><td>24-bit RGB + 8-bit transparency simple uncompressed open image format</td></tr>
 
-<tr><td><span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a706567"><span style="color: #884422;">jpeg</span></a></tt></span></td><td>Less than 24-bit RGB format, lossy, common image format</td></tr>
+<tr><td><strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong></td><td>Less than 24-bit RGB format, lossy, common image format</td></tr>
+
+<tr><td><strong><tt>.<a target="_blank" href="glosspage.html#6a706567"><span style="color: #884422;">jpeg</span></a></tt></strong></td><td>Less than 24-bit RGB format, lossy, common image format</td></tr>
 
 </table></center>
 
-<p style="margin-left: 0;">If the image <span style="font-style: italic;">is</span> a component of a layered image (a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or a <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a>) and you use <span class="ckey">s</span> to command a save, the entire layered image will be saved in the <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> format, and you must use the <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> extension on the file.</p>
+<p style="margin-left: 0;">If the image <em>is</em> a component of a layered image (a <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or a <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a>) and you use <span class="ckey">s</span> to command a save, the entire layered image will be saved in the <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> format, and you must use the <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> extension on the file.</p>
 
 <p style="margin-left: 0;">The full list of savable file types is located <a href="appendixa.html#savers">here</a>.</p>
 
 <a name="keyt"></a>
-<a name="ixref79"></a><a name="tocref6.1.36"></a><h3>6.1.36 &#32;-&#32;Text Generation</h3>
+<a name="ixref86"></a><a name="tocref6.1.42"></a><h3>6.1.42 &#32;-&#32;Text Generation</h3>
 
-<p style="margin-left: 0;"><span class="ckey">t</span> commands the <a href="textgeneration.html">Text&nbsp;dialog</a> to open. This generates text into a <span style="font-weight: bold;">new image</span>.</p>
+<p style="margin-left: 0;"><span class="ckey">t</span> commands the <a href="textgeneration.html">Text&nbsp;dialog</a> to open. This generates text into a <strong>new image</strong>.</p>
 
-<p style="margin-left: 0;">You then use the <a href="opmerge.html">merge operator</a> to compose the result. It is best to generate the text large if you are going to use it large; this produces the highest quality anti-aliasing. Experiment with smaller text placements. You can also use the Text tool in the area toolbox to do this. When typing in the text entry box, if you press <span class="ckey">tab</span>, this will immediately close the dialog and generate the text. If you press <span class="ckey">esc</span>, this will immediately close the dialog and <span style="font-style: italic;">cancel</span> text generation. The text generation dialog blocks; that is, you have to close it before you can do anything with the rest of the application.</p>
+<p style="margin-left: 0;">You would typically then use the <a href="opmerge.html">Merge</a>  operator or the <a href="opplace.html">Place</a>  operator to compose the result.</p>
+
+<p style="margin-left: 0;">It is best to generate the text large if you are going to use it large; this produces the highest quality anti-aliasing. Experiment with smaller text placements. You can also use the Text tool in the area toolbox to do this. When typing in the text entry box, if you press <span class="ckey">tab</span>, this will immediately close the dialog and generate the text. If you press <span class="ckey">esc</span>, this will immediately close the dialog and <em>cancel</em> text generation. The text generation dialog blocks; that is, you have to close it before you can do anything further with the rest of the application.</p>
+
+
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDFFDD;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><strong>Tip:</strong> For most text generation, you'll want the Text Color and the Back Color to match. This is done automatically for you when you change either the Text Color or the Back Color, if <span style="white-space:nowrap;"><span class="cbak"><span class="cchk" style="background: #4444cc; color: #ffffff;">&#10003;</span>&nbsp;<strong>Match Colors</strong></span></span> is checked.</div>
+
 
 <a name="keyu"></a>
-<a name="ixref80"></a><a name="tocref6.1.37"></a><h3>6.1.37 &#32;-&#32;Undo Changes</h3>
+<a name="ixref87"></a><a name="tocref6.1.43"></a><h3>6.1.43 &#32;-&#32;Undo Changes</h3>
 
-<p style="margin-left: 0;"><span class="ckey">u</span>, undo, will remove the previous operation and place it into the redo list. Note that if you then perform another operation, the redo list is cleared. Also, if you extend the image dimensions, the undo and redo lists are <span style="font-style: italic;">both</span> cleared. The system limit for undos is set to ten.</p>
+<p style="margin-left: 0;"><span class="ckey">u</span>, undo, will remove the previous operation and place it into the redo list. Note that if you then perform another operation, the redo list is cleared. Also, if you extend the image dimensions, the undo and redo lists are <em>both</em> cleared. The system limit for undos is set to ten.</p>
 
 <a name="keyv"></a>
-<a name="ixref81"></a><a name="tocref6.1.38"></a><h3>6.1.38 &#32;-&#32;Open Another View on an Image</h3>
+<a name="ixref88"></a><a name="tocref6.1.44"></a><h3>6.1.44 &#32;-&#32;Open Another View on an Image</h3>
 
 <p style="margin-left: 0;"><span class="ckey">v</span> allows you to open additional <a href="views.html">view</a>s on an image. You can work in any open <a href="views.html">view</a> on an image; and you can maintain the individual <a href="views.html">view</a>s at different pan and zoom levels.</p>
 
 <a name="keyv"></a>
 <a name="keycmdv"></a>
 <a name="paste"></a>
-<a name="ixref82"></a><a name="tocref6.1.39"></a><h3>6.1.39 &#32;-&#32;Paste the Clipboard Into a New Image</h3>
+<a name="ixref89"></a><a name="tocref6.1.45"></a><h3>6.1.45 &#32;-&#32;Paste the Clipboard Into a New Image</h3>
 
 <p style="margin-left: 0;">Under <a target="_blank" href="glosspage.html#6f73266e6273703b78"><span style="color: #884422;">OS&nbsp;X</span></a> (<a target="_blank" href="glosspage.html#6d61636f73"><span style="color: #884422;">MacOS</span></a>), both <span class="ckey">control</span>+<span class="ckey">v</span> and <span class="ckey"> &#8984;</span>+<span class="ckey">v</span> will paste the clipboard contents into a new image if:</p>
 
@@ -708,17 +762,17 @@ The clipboard contains a correctly encoded image.
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Caution: </span>If the clipboard contains a <a target="_blank" href="glosspage.html#75726c"><span style="color: #884422;">URL</span></a> that points to a file out on the network rather than on the local machine, <span style="font-weight: bold;">iToolBox</span> will <span style="font-weight: bold;">not</span> process it. If you're trying to grab a file from a web page, drag the image from the browser to your desktop, and then from your desktop into <span style="font-weight: bold;">iToolBox</span>.</div>
+"><strong>Caution: </strong>If the clipboard contains a <a target="_blank" href="glosspage.html#75726c"><span style="color: #884422;">URL</span></a> that points to a file out on the network rather than on the local machine, <strong>iToolBox</strong> will <strong>not</strong> process it. If you're trying to grab a file from a web page, drag the image from the browser to your desktop, and then from your desktop into <strong>iToolBox</strong>.</div>
 
 
 <a name="keyw"></a>
 <a name="keyshiftw"></a>
-<a name="ixref83"></a><a name="tocref6.1.40"></a><h3>6.1.40 &#32;-&#32;Change Color of Non-modal Selections</h3>
+<a name="ixref90"></a><a name="tocref6.1.46"></a><h3>6.1.46 &#32;-&#32;Change Color of Non-modal Selections</h3>
 
-<p style="margin-left: 0;"><span class="ckey">w</span> and <span class="ckey">W</span> (<span class="ckey">shift</span>+<span class="ckey">w</span>) allow you to choose which of eleven different color choices is to be used for the display of area selections when operating in in <span style="font-style: italic;">non</span>-modal area selection mode.</p>
+<p style="margin-left: 0;"><span class="ckey">w</span> and <span class="ckey">W</span> (<span class="ckey">shift</span>+<span class="ckey">w</span>) allow you to choose which of eleven different color choices is to be used for the display of area selections when operating in in <em>non</em>-modal area selection mode.</p>
 
 <a name="keyx"></a>
-<a name="ixref84"></a><a name="tocref6.1.41"></a><h3>6.1.41 &#32;-&#32;Extend Image Dimensions</h3>
+<a name="ixref91"></a><a name="tocref6.1.47"></a><h3>6.1.47 &#32;-&#32;Extend Image Dimensions</h3>
 
 <p style="margin-left: 0;"><span class="ckey">x</span> allows you to enlarge the dimensions of an existing image. If you need to reduce the dimensions, you can use the <a href="areatools.html#xyrect">numeric rectangle</a> areatool with the <a href="opcrop.html">Crop</a> operator to accomplish that.</p>
 
@@ -728,19 +782,19 @@ margin-bottom: 1em;
 <a name="keyoptshifty"></a>
 <a name="keyshiftopty"></a>
 <a name="aspectops"></a>
-<a name="ixref85"></a><a name="tocref6.1.42"></a><h3>6.1.42 &#32;-&#32;Lock / Unlock Y-axis</h3>
+<a name="ixref92"></a><a name="tocref6.1.48"></a><h3>6.1.48 &#32;-&#32;Lock / Unlock Y-axis</h3>
 
 <p style="margin-left: 0;"><span class="ckey">y</span> allows you to unlock  the y-axis of the image <a href="views.html">view</a> so you can size <a href="views.html">view</a> of the image with the mouse in a natural aspect-incorrect manner. This is handy for setting up visual resizing of images that are squeezed horizontally or vertically (have a distorted <a target="_blank" href="glosspage.html#61737065637420726174696f"><span style="color: #884422;">Aspect Ratio</span></a>.) Pressing <span class="ckey">y</span> a second time turns y-axis locking back on; the effect is immediately apparent as soon as you resize the <a href="views.html">view</a>. The state is indicated in the <a href="areatools.html#status">status area</a> of the <a href="areatools.html">areatools</a>.</p>
 
-<a name="ixref86"></a><a name="tocref6.1.42.1"></a><h4>6.1.42.1 &#32;-&#32;Addressing Common Aspect Ratio Problems</h4>
+<a name="ixref93"></a><a name="tocref6.1.48.1"></a><h4>6.1.48.1 &#32;-&#32;Addressing Common Aspect Ratio Problems</h4>
 
-<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="ckey">Y</span> (<span class="ckey">shift</span>+<span class="ckey">y</span>)</span> unlocks the y-axis, then resizes the <a href="views.html">view</a> to as near to 1:1 as it can get, and then resizes the <a href="views.html">view</a> <span style="font-weight: bold;">on the x-axis</span> to a series of preset common <a target="_blank" href="glosspage.html#61737065637420726174696f"><span style="color: #884422;">Aspect Ratio</span></a>s which are indicated in the <a href="areatools.html">areatools</a> status line.</p>
+<p style="margin-left: 0;"><span style="white-space:nowrap;"><span class="ckey">Y</span> (<span class="ckey">shift</span>+<span class="ckey">y</span>)</span> unlocks the y-axis, then resizes the <a href="views.html">view</a> to as near to 1:1 as it can get, and then resizes the <a href="views.html">view</a> <strong>on the x-axis</strong> to a series of preset common <a target="_blank" href="glosspage.html#61737065637420726174696f"><span style="color: #884422;">Aspect Ratio</span></a>s which are indicated in the <a href="areatools.html">areatools</a> status line.</p>
 
-<p style="margin-left: 0;"><span class="ckey">opt/alt</span>+<span class="ckey">y</span> unlocks the y-axis, then resizes the <a href="views.html">view</a> to as near to 1:1 as it can get, and then resizes the <a href="views.html">view</a> <span style="font-weight: bold;">on the y-axis</span> to a series of preset common <a target="_blank" href="glosspage.html#61737065637420726174696f"><span style="color: #884422;">Aspect Ratio</span></a>s which are indicated in the <a href="areatools.html">areatools</a> status line.</p>
+<p style="margin-left: 0;"><span class="ckey">opt/alt</span>+<span class="ckey">y</span> unlocks the y-axis, then resizes the <a href="views.html">view</a> to as near to 1:1 as it can get, and then resizes the <a href="views.html">view</a> <strong>on the y-axis</strong> to a series of preset common <a target="_blank" href="glosspage.html#61737065637420726174696f"><span style="color: #884422;">Aspect Ratio</span></a>s which are indicated in the <a href="areatools.html">areatools</a> status line.</p>
 
-<p style="margin-left: 0;"><span class="ckey">opt/alt</span>+<span style="white-space:nowrap;"><span class="ckey">Y</span> (<span class="ckey">shift</span>+<span class="ckey">y</span>)</span> unlocks the y-axis, then resizes the <a href="views.html">view</a> to as near to 2:1 as it can get, and then resizes the <a href="views.html">view</a> <span style="font-weight: bold;">on the x-axis</span> to a series of preset common <a target="_blank" href="glosspage.html#61737065637420726174696f"><span style="color: #884422;">Aspect Ratio</span></a>s which are indicated in the <a href="areatools.html">areatools</a> status line.</p>
+<p style="margin-left: 0;"><span class="ckey">opt/alt</span>+<span style="white-space:nowrap;"><span class="ckey">Y</span> (<span class="ckey">shift</span>+<span class="ckey">y</span>)</span> unlocks the y-axis, then resizes the <a href="views.html">view</a> to as near to 2:1 as it can get, and then resizes the <a href="views.html">view</a> <strong>on the x-axis</strong> to a series of preset common <a target="_blank" href="glosspage.html#61737065637420726174696f"><span style="color: #884422;">Aspect Ratio</span></a>s which are indicated in the <a href="areatools.html">areatools</a> status line.</p>
 
-<p style="margin-left: 0;"><span class="ckey">control</span>+<span class="ckey">opt/alt</span>+<span style="white-space:nowrap;"><span class="ckey">Y</span> (<span class="ckey">shift</span>+<span class="ckey">y</span>)</span> unlocks the y-axis, then resizes the <a href="views.html">view</a> to as near to 2:1 as it can get, and then resizes the <a href="views.html">view</a> <span style="font-weight: bold;">on the y-axis</span> to a series of preset common <a target="_blank" href="glosspage.html#61737065637420726174696f"><span style="color: #884422;">Aspect Ratio</span></a>s which are indicated in the <a href="areatools.html">areatools</a> status line.</p>
+<p style="margin-left: 0;"><span class="ckey">control</span>+<span class="ckey">opt/alt</span>+<span style="white-space:nowrap;"><span class="ckey">Y</span> (<span class="ckey">shift</span>+<span class="ckey">y</span>)</span> unlocks the y-axis, then resizes the <a href="views.html">view</a> to as near to 2:1 as it can get, and then resizes the <a href="views.html">view</a> <strong>on the y-axis</strong> to a series of preset common <a target="_blank" href="glosspage.html#61737065637420726174696f"><span style="color: #884422;">Aspect Ratio</span></a>s which are indicated in the <a href="areatools.html">areatools</a> status line.</p>
 
 
 
@@ -754,28 +808,28 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Tip:</span> For all five <span class="ckey">y</span> actions, keep in mind they resize the <a href="views.html">view</a>, <span style="font-style: italic;">not</span> the image itself. If you want the image itself to be rescaled to the view, use <span style="white-space:nowrap;"><span class="ckey">C</span> (<span class="ckey">shift</span>+<span class="ckey">c</span>)</span> after the <span class="ckey">y</span> action, which will produce an appropriately scaled new image.</div>
+"><strong>Tip:</strong> For all five <span class="ckey">y</span> actions, keep in mind they resize the <a href="views.html">view</a>, <em>not</em> the image itself. If you want the image itself to be rescaled to the view, use <span style="white-space:nowrap;"><span class="ckey">C</span> (<span class="ckey">shift</span>+<span class="ckey">c</span>)</span> after the <span class="ckey">y</span> action, which will produce an appropriately scaled new image.</div>
 
 
 <a name="keyz"></a>
 <a name="keyoptz"></a>
 <a name="keyshiftz"></a>
 
-<a name="ixref87"></a><a name="tocref6.1.43"></a><h3>6.1.43 &#32;-&#32;Zooming in and Out</h3>
+<a name="ixref94"></a><a name="tocref6.1.49"></a><h3>6.1.49 &#32;-&#32;Zooming in and Out</h3>
 
 <p style="margin-left: 0;"><span class="ckey">z</span>, <span class="ckey">Z</span> (<span class="ckey">shift</span>+<span class="ckey">z</span>), and <span class="ckey">opt-alt</span>+<span class="ckey">z</span> allow you to change the zoom level on an image <a href="views.html">view</a>.</p>
 
 <p style="margin-left: 0;">You can also use the <a href="areatools.html#magnify">magnify</a> (<span class="ckey"><span style="color: #00FF00;">F10</span></span>) tool in the <a href="areatools.html">areatools</a> to zoom in and out with left- and right-clicks.</p>
 
-<a name="ixref88"></a><a name="tocref6.2"></a><h2>6.2 &#32;-&#32;Keystrokes in the Operator Dialog</h2>
+<a name="ixref95"></a><a name="tocref6.2"></a><h2>6.2 &#32;-&#32;Keystrokes in the Operator Dialog</h2>
 
 <p style="margin-left: 0;">Details on this may be found on the <a href="operators.html">Operators&nbsp;dialog</a> page.</p>
 
-<a name="ixref89"></a><a name="tocref6.3"></a><h2>6.3 &#32;-&#32;Keystrokes in the Layer Dialog</h2>
+<a name="ixref96"></a><a name="tocref6.3"></a><h2>6.3 &#32;-&#32;Keystrokes in the Layer Dialog</h2>
 
 <p style="margin-left: 0;"><span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, <span class="ckey">&darr;</span> and <span class="ckey">home</span> move <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a>s relative to the <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> image. Other keystrokes are indicated with bold, underlined letters on the command buttons. See the <a href="layersdialog.html">Layers&nbsp;dialog</a> for more information.</p>
 
-<a name="ixref90"></a><a name="tocref6.4"></a><h2>6.4 &#32;-&#32;Keystrokes in the Measure Dialog</h2>
+<a name="ixref97"></a><a name="tocref6.4"></a><h2>6.4 &#32;-&#32;Keystrokes in the Measure Dialog</h2>
 
 <p style="margin-left: 0;"><span class="ckey">&larr;</span>, <span class="ckey">&rarr;</span>, <span class="ckey">&uarr;</span>, <span class="ckey">&darr;</span> and <span class="ckey">home</span> move the rulers. Other keystrokes are indicated with bold, underlined letters on the command buttons. See the <a href="measure.html">Measure&nbsp;dialog</a> for more information.</p>
                           <div style="
@@ -788,7 +842,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -797,25 +851,23 @@ border-style: solid;
 <span class="ckey">o</span> Operators
 <span class="ckey">g</span> Glossary
 </div>
-               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="gettingstarted.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <span style="font-style: italic;">Keyboard</span> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="themenus.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="gettingstarted.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <em>Keyboard</em> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="themenus.html">Next</a>&nbsp;</td></tr></table></div>
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 6</center>
         </div>
 
     </BODY>

@@ -7,12 +7,14 @@
 Mousetrap.bind(",", onLeft_keyDown,  "keydown");
 Mousetrap.bind(".", onRight_keyDown, "keydown");
 Mousetrap.bind("i", onIndex_keyDown, "keydown");
+Mousetrap.bind("c", onChanges_keyDown, "keydown");
 Mousetrap.bind("t", onToc_keyDown,   "keydown");
 Mousetrap.bind("o", onOi_keyDown,   "keydown");
 Mousetrap.bind("g", onGi_keyDown,   "keydown");
 function onLeft_keyDown()  { window.location.href = "startupsequence.html"; }
 function onRight_keyDown() { window.location.href = "appendixb.html"; }
 function onIndex_keyDown() { window.location.href = "indexpage.html"; }
+function onChanges_keyDown() { window.location.href = "changes.html"; }
 function onToc_keyDown()   { window.location.href = "tocpage.html"; }
 function onOi_keyDown()   { window.location.href = "operators.html"; }
 function onGi_keyDown()   { window.location.href = "glosspage.html"; }
@@ -209,78 +211,77 @@ a:visited {
             20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; background-color: #FFEEDD;">
 <br>
 
-          <div style="width: 100%; float: left; margin-right: -170px;">
-<div style="border:0; margin-right: 170px;">
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="startupsequence.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="appendixb.html">Next</a>&nbsp;</td></tr></table></div>
-               <a name="ixref513"></a><h1>27 &#32;-&#32;Image File Compatibility</h1>
+               <a name="ixref536"></a><h1>27 &#32;-&#32;Image File Compatibility</h1>
 
-<p style="margin-left: 0;"><span style="font-weight: bold;">See also:</span> <a href="appendixg.html">Supported Cameras and File Formats</a></p>
+<p style="margin-left: 0;"><strong>See also:</strong> <a href="appendixg.html">Supported Cameras and File Formats</a></p>
 
-<a name="tocref27.1"></a><h2>27.1 &#32;-&#32;Image Formats <span style="font-weight: bold;">iToolBox</span> Loads</h2>
+<a name="tocref27.1"></a><h2>27.1 &#32;-&#32;Image Formats <strong>iToolBox</strong> Loads</h2>
 
 
 <table border=1 bgcolor="#ffffff">
-<tr bgcolor="#ffffff"><td valign="top" align="right">1</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.3fr</tt></span></span></td><td><a name="ixref514"></a>Hasselblad digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">2</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.arw</tt></span></span></td><td><a name="ixref515"></a>Sony digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> Image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">3</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></span></tt></span></span></td><td><span style="font-weight: bold;">iToolBox</span> flat (<a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>) 64-bit image files</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">4</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.bay</tt></span></span></td><td><a name="ixref516"></a>Casio digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> file format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">5</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.bmq</tt></span></span></td><td><a name="ixref517"></a>NuCore <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">6</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.cine</tt></span></span></td><td><a name="ixref518"></a>Phantom software <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">7</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.cr2</tt></span></span></td><td><a name="ixref519"></a>Canon digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format version 2.0</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">8</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.crw</tt></span></span></td><td>Canon digital Camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format version 1.0</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">9</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.cs1</tt></span></span></td><td><a name="ixref520"></a>Capture shop</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">10</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.dc2</tt></span></span></td><td><a name="ixref521"></a>Kodak DC25 digital camera file</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">11</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.dcr</tt></span></span></td><td>Kodak digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format for Kodak DSC Pro SLR/c, Kodak DSC Pro SLR/n, Kodak DSC Pro 14N, Kodak DSC PRO 14nx</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">12</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.dng</tt></span></span></td><td><a name="ixref522"></a>Adobe DNG &mdash; digital negative</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">13</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></span></tt></span></span></td><td><span style="font-weight: bold;">iToolBox</span> 64-bit layered image files</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">14</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.erf</tt></span></span></td><td><a name="ixref523"></a>Epson digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">15</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.fff</tt></span></span></td><td><a name="ixref524"></a>Lmacon digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">16</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.gif</tt></span></span></td><td><a name="ixref525"></a>(still, not animated) image files</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">17</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.hdr</tt></span></span></td><td><a name="ixref526"></a>Leaf <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">18</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.ia</tt></span></span></td><td><a name="ixref527"></a>Sinar <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">19</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a706567"><span style="color: #884422;">jpeg</span></a></tt></span></tt></span></span></td><td><a name="ixref528"></a><a name="ixref529"></a>Image files: jst sy n t lssy cmprssn</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">20</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></span></tt></span></span></td><td>Image files: jst sy n t lssy cmprssn</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">21</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.k25</tt></span></span></td><td>Kodak DC25 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">22</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.kc2</tt></span></span></td><td>Kodak DCS200 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">23</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.kdc</tt></span></span></td><td>Kodak digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">24</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.mdc</tt></span></span></td><td><a name="ixref530"></a>Minolta RD175 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">25</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.mef</tt></span></span></td><td><a name="ixref531"></a>Mamiya digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">26</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.mos</tt></span></span></td><td>Mamiya digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">27</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.mrw</tt></span></span></td><td>Minolta Dimage digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">28</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.nef</tt></span></span></td><td><a name="ixref532"></a>Nikon digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">29</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.nrw</tt></span></span></td><td>Nikon digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">30</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.orf</tt></span></span></td><td><a name="ixref533"></a>Olympus digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">31</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.pal</tt></span></span></td><td><span style="font-weight: bold;">iToolBox</span> palette files</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">32</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.pbm</tt></span></span></td><td><a name="ixref534"></a>Image files</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">33</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.pef</tt></span></span></td><td><a name="ixref535"></a>Pentax digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">34</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.pgm</tt></span></span></td><td><a name="ixref536"></a>Image files</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">35</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span></tt></span></span></td><td><a name="ixref537"></a>Image files</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">36</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.ppm</tt></span></span></td><td><a name="ixref538"></a>Image files</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">37</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.pxn</tt></span></span></td><td><a name="ixref539"></a>Logitech digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">38</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.qtk</tt></span></span></td><td><a name="ixref540"></a><a name="ixref541"></a>Apple Quicktake 100/150 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">39</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.raf</tt></span></span></td><td><a name="ixref542"></a>Fuji digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">40</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.raw</tt></span></span></td><td><a name="ixref543"></a>Panasonic Digital Camera Image Format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">41</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.rdc</tt></span></span></td><td><a name="ixref544"></a>Digital Foto Maker <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">42</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.rw2</tt></span></span></td><td>Panasonic LX3 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">43</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.rwl</tt></span></span></td><td><a name="ixref545"></a>Leica digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">44</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.sr2</tt></span></span></td><td>Sony digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">45</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.srf</tt></span></span></td><td>Sony digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format for DSC-F828 8 megapixel
+<tr bgcolor="#ffffff"><td valign="top" align="right">1</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.3fr</tt></strong></span></td><td><a name="ixref537"></a>Hasselblad digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">2</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.arw</tt></strong></span></td><td><a name="ixref538"></a>Sony digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> Image format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">3</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt><strong><tt>.<a target="_blank" href="glosspage.html#61746f"><span style="color: #884422;">ato</span></a></tt></strong></tt></strong></span></td><td><strong>iToolBox</strong> flat (<a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>) 64-bit image files</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">4</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.bay</tt></strong></span></td><td><a name="ixref539"></a>Casio digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> file format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">5</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.bmq</tt></strong></span></td><td><a name="ixref540"></a>NuCore <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">6</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.cine</tt></strong></span></td><td><a name="ixref541"></a>Phantom software <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">7</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.cr2</tt></strong></span></td><td><a name="ixref542"></a>Canon digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format version 2.0</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">8</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.crw</tt></strong></span></td><td>Canon digital Camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format version 1.0</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">9</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.cs1</tt></strong></span></td><td><a name="ixref543"></a>Capture shop</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">10</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.dc2</tt></strong></span></td><td><a name="ixref544"></a>Kodak DC25 digital camera file</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">11</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.dcr</tt></strong></span></td><td>Kodak digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format for Kodak DSC Pro SLR/c, Kodak DSC Pro SLR/n, Kodak DSC Pro 14N, Kodak DSC PRO 14nx</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">12</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.dng</tt></strong></span></td><td><a name="ixref545"></a>Adobe DNG &mdash; digital negative</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">13</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt><strong><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></strong></tt></strong></span></td><td><strong>iToolBox</strong> 64-bit layered image files</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">14</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.erf</tt></strong></span></td><td><a name="ixref546"></a>Epson digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">15</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.fff</tt></strong></span></td><td><a name="ixref547"></a>Lmacon digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">16</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.gif</tt></strong></span></td><td><a name="ixref548"></a>(still, not animated) image files</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">17</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.hdr</tt></strong></span></td><td><a name="ixref549"></a>Leaf <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">18</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.ia</tt></strong></span></td><td><a name="ixref550"></a>Sinar <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">19</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt><strong><tt>.<a target="_blank" href="glosspage.html#6a706567"><span style="color: #884422;">jpeg</span></a></tt></strong></tt></strong></span></td><td><a name="ixref551"></a><a name="ixref552"></a>Image files: jst sy n t lssy cmprssn</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">20</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt><strong><tt>.<a target="_blank" href="glosspage.html#6a7067"><span style="color: #884422;">jpg</span></a></tt></strong></tt></strong></span></td><td>Image files: jst sy n t lssy cmprssn</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">21</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.k25</tt></strong></span></td><td>Kodak DC25 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">22</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.kc2</tt></strong></span></td><td>Kodak DCS200 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">23</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.kdc</tt></strong></span></td><td>Kodak digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">24</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.mdc</tt></strong></span></td><td><a name="ixref553"></a>Minolta RD175 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">25</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.mef</tt></strong></span></td><td><a name="ixref554"></a>Mamiya digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">26</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.mos</tt></strong></span></td><td>Mamiya digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">27</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.mrw</tt></strong></span></td><td>Minolta Dimage digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">28</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.nef</tt></strong></span></td><td><a name="ixref555"></a>Nikon digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">29</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.nrw</tt></strong></span></td><td>Nikon digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">30</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.orf</tt></strong></span></td><td><a name="ixref556"></a>Olympus digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">31</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.pal</tt></strong></span></td><td><strong>iToolBox</strong> palette files</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">32</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.pbm</tt></strong></span></td><td><a name="ixref557"></a>Image files</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">33</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.pef</tt></strong></span></td><td><a name="ixref558"></a>Pentax digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">34</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.pgm</tt></strong></span></td><td><a name="ixref559"></a>Image files</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">35</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt><strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong></tt></strong></span></td><td><a name="ixref560"></a>Image files</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">36</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.ppm</tt></strong></span></td><td><a name="ixref561"></a>Image files</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">37</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.pxn</tt></strong></span></td><td><a name="ixref562"></a>Logitech digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">38</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.qtk</tt></strong></span></td><td><a name="ixref563"></a><a name="ixref564"></a>Apple Quicktake 100/150 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">39</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.raf</tt></strong></span></td><td><a name="ixref565"></a>Fuji digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">40</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.raw</tt></strong></span></td><td><a name="ixref566"></a>Panasonic Digital Camera Image Format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">41</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.rdc</tt></strong></span></td><td><a name="ixref567"></a>Digital Foto Maker <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">42</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.rgba</tt></strong></span></td><td><a name="ixref568"></a><strong>iToolBox</strong> uncompressed 32-bit or 64-bit image file</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">43</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.rw2</tt></strong></span></td><td>Panasonic LX3 digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">44</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.rwl</tt></strong></span></td><td><a name="ixref569"></a>Leica digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">45</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.sr2</tt></strong></span></td><td>Sony digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">46</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.srf</tt></strong></span></td><td>Sony digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format for DSC-F828 8 megapixel
 digital camera and DSC-R1</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">46</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.srw</tt></span></span></td><td><a name="ixref546"></a>Samsung <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">47</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.sti</tt></span></span></td><td><a name="ixref547"></a>Sinar Capture Shop <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">48</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.x3f</tt></span></span></td><td><a name="ixref548"></a>Sigma digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format for devices based on Foveon X3
+<tr bgcolor="#ffffff"><td valign="top" align="right">47</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.srw</tt></strong></span></td><td><a name="ixref570"></a>Samsung <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">48</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.sti</tt></strong></span></td><td><a name="ixref571"></a>Sinar Capture Shop <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image file</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">49</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.x3f</tt></strong></span></td><td><a name="ixref572"></a>Sigma digital camera <a target="_blank" href="glosspage.html#726177"><span style="color: #884422;">RAW</span></a> image format for devices based on Foveon X3
 direct image sensor</td></tr>
-<tr bgcolor="#ffffff"><td valign="top" align="right">49</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.xbm</tt></span></span></td><td><a name="ixref549"></a>Image files</td></tr>
-<tr bgcolor="#dddddd"><td valign="top" align="right">50</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.xpm</tt></span></span></td><td><a name="ixref550"></a>Image files</td></tr>
+<tr bgcolor="#dddddd"><td valign="top" align="right">50</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.xbm</tt></strong></span></td><td><a name="ixref573"></a>Image files</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="right">51</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.xpm</tt></strong></span></td><td><a name="ixref574"></a>Image files</td></tr>
 </table>
 
-<a name="tocref27.2"></a><h2>27.2 &#32;-&#32;File Formats <span style="font-weight: bold;">iToolBox</span> Saves</h2>
+<a name="tocref27.2"></a><h2>27.2 &#32;-&#32;File Formats <strong>iToolBox</strong> Saves</h2>
 
 
 <a name="savers"></a>
 
 <table border=1 bgcolor="#ffffff">
-<tr bgcolor="#ffffff"><td valign="top" align="right">1</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.ato</tt></span></span></td><td>48-bit + alpha (64-bit) <span style="font-weight: bold;">iToolBox</span> flat (<a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>) image files<br>Saved using <span class="ckey">s</span> or <span class="ckey">S</span> from any active, non-layered image <a href="views.html">view</a>. 
+<tr bgcolor="#ffffff"><td valign="top" align="right">1</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.ato</tt></strong></span></td><td>48-bit + alpha (64-bit) <strong>iToolBox</strong> flat (<a target="_blank" href="glosspage.html#61746f6d6963"><span style="color: #884422;">atomic</span></a>) image files<br>Saved using <span class="ckey">s</span> or <span class="ckey">S</span> from any active, non-layered image <a href="views.html">view</a>. 
 
 <div style="
         width: 75%;
@@ -292,7 +293,7 @@ direct image sensor</td></tr>
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> <span style="color:#006600;"><span style="font-weight: bold;"><tt>.ato</tt></span></span> files must be saved from an image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;"><a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a></span></a> with <span style="white-space:nowrap;"><span class="ckey">S</span> (<span class="ckey">shift</span>+<span class="ckey">s</span>)</span>, as <span class="ckey">s</span> will automatically save the full layered image as an <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> file.</div>
+"><strong>Note:</strong> <span style="color:#006600;"><strong><tt>.ato</tt></strong></span> files must be saved from an image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;"><a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a></span></a> with <span style="white-space:nowrap;"><span class="ckey">S</span> (<span class="ckey">shift</span>+<span class="ckey">s</span>)</span>, as <span class="ckey">s</span> will automatically save the full layered image as an <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> file.</div>
 
 
 <center><table border=1 bgcolor="#ffffff">
@@ -313,12 +314,12 @@ margin-bottom: 1em;
 <tr bgcolor="#eeffee"><td>Notations</td><td align="center"><span style="color: #008800;">Yes</span> </td></tr>
 <tr bgcolor="#eeffff"><td>Layers</td><td align="center"><span style="color: #ff0000;">No</span> </td></tr>
 <tr bgcolor="#eeffee"><td>Palette</td><td align="center"><span style="color: #ff0000;">No</span> </td></tr>
-<tr bgcolor="#eeffff"><td>100% data fidelity</td><td align="center"><span style="color: #008800;"><span style="font-weight: bold;">64-bit</span></span> </td></tr>
+<tr bgcolor="#eeffff"><td>100% data fidelity</td><td align="center"><span style="color: #008800;"><strong>64-bit</strong></span> </td></tr>
 <tr bgcolor="#eeffee"><td>Open file format</td><td align="center"><span style="color: #008800;">Yes</span> </td></tr>
 </table><br>&nbsp;</center>
 </td></tr>
 
-<tr bgcolor="#dddddd"><td valign="top" align="right">2</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span></td><td>48-bit + alpha (64-bit) <span style="font-weight: bold;">iToolBox</span> layered image files<br>Saved using <span class="ckey">s</span> from any active <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> <a href="views.html">view</a>, or with <span style="white-space:nowrap;"><span class="cbut">Save Image</span></span> in the <a href="layersdialog.html">Layers&nbsp;dialog</a>.
+<tr bgcolor="#dddddd"><td valign="top" align="right">2</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.elx</tt></strong></span></td><td>48-bit + alpha (64-bit) <strong>iToolBox</strong> layered image files<br>Saved using <span class="ckey">s</span> from any active <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> <a href="views.html">view</a>, or with <span style="white-space:nowrap;"><span class="cbut">Save Image</span></span> in the <a href="layersdialog.html">Layers&nbsp;dialog</a>.
 <br><br>
 <center><table border=1 bgcolor="#ffffff">
 <tr bgcolor="#eeffee"><td>Name separate from filename</td><td align="center"><span style="color: #008800;">Yes</span> </td></tr>
@@ -338,12 +339,12 @@ margin-bottom: 1em;
 <tr bgcolor="#eeffee"><td>Notations</td><td align="center"><span style="color: #008800;">Yes</span> </td></tr>
 <tr bgcolor="#eeffff"><td><a href="layersdialog.html">Layers</a></td><td align="center"><span style="color: #008800;">Yes</span> </td></tr>
 <tr bgcolor="#eeffee"><td>Palette</td><td align="center"><span style="color: #ff0000;">No</span> </td></tr>
-<tr bgcolor="#eeffff"><td>100% data fidelity</td><td align="center"><span style="color: #008800;"><span style="font-weight: bold;">64-bit</span></span> </td></tr>
+<tr bgcolor="#eeffff"><td>100% data fidelity</td><td align="center"><span style="color: #008800;"><strong>64-bit</strong></span> </td></tr>
 <tr bgcolor="#eeffee"><td>Open file format</td><td align="center"><span style="color: #008800;">Yes</span> </td></tr>
 </table><br>&nbsp;</center>
 </td></tr>
 
-<tr bgcolor="#ffffff"><td valign="top" align="right">3</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.json</tt></span></span></td><td>Data file containing image notations<br>Saved from the <a href="operators.html">Operators&nbsp;dialog</a> when the <a href="opnotations.html">Notations</a> operator is selected.
+<tr bgcolor="#ffffff"><td valign="top" align="right">3</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.json</tt></strong></span></td><td>Data file containing image notations<br>Saved from the <a href="operators.html">Operators&nbsp;dialog</a> when the <a href="opnotations.html">Notations</a> operator is selected.
 <br><br>
 <center><table border=1 bgcolor="#ffffff">
 <tr bgcolor="#eeffee"><td>Name separate from filename</td><td align="center"><span style="color: #008800;">Yes</span> </td></tr>
@@ -368,7 +369,7 @@ margin-bottom: 1em;
 </table><br>&nbsp;</center>
 </td></tr>
 
-<tr bgcolor="#dddddd"><td valign="top" align="right">4</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.pal</tt></span></span></td><td><span style="font-weight: bold;">iToolBox</span> 64-entry, 24-bit palette data<br>Saved from the <a href="palettedialog.html">Palette&nbsp;dialog</a>, which in turn is available from the <a href="operators.html">Operators&nbsp;dialog</a> when the <a href="oprangefill.html">Range&nbsp;Fill</a> operator is selected.
+<tr bgcolor="#dddddd"><td valign="top" align="right">4</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.pal</tt></strong></span></td><td><strong>iToolBox</strong> 64-entry, 24-bit palette data<br>Saved from the <a href="palettedialog.html">Palette&nbsp;dialog</a>, which in turn is available from the <a href="operators.html">Operators&nbsp;dialog</a> when the <a href="oprangefill.html">Range&nbsp;Fill</a> operator is selected.
 <br><br>
 <center><table border=1 bgcolor="#ffffff">
 <tr bgcolor="#eeffee"><td>Name separate from filename</td><td align="center"><span style="color: #ff0000;">No</span> </td></tr>
@@ -393,7 +394,7 @@ margin-bottom: 1em;
 </table><br>&nbsp;</center>
 </td></tr>
 
-<tr bgcolor="#ffffff"><td valign="top" align="right">5</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt><span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span></tt></span></span></td><td>24-bit + alpha (32-bit) Image files<br>Saved using <span class="ckey">s</span> or <span class="ckey">S</span> from any active image <a href="views.html">view</a>. 
+<tr bgcolor="#ffffff"><td valign="top" align="right">5</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt><strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong></tt></strong></span></td><td>24-bit + alpha (32-bit) Image files<br>Saved using <span class="ckey">s</span> or <span class="ckey">S</span> from any active image <a href="views.html">view</a>. 
 
 <div style="
         width: 75%;
@@ -405,7 +406,7 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></span> files can only be saved from an image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> with <span class="ckey">S</span> as <span class="ckey">s</span> will automatically save the full layered image as an <span style="font-weight: bold;"><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></span> file.</div>
+"><strong>Note:</strong> <strong><tt>.<a target="_blank" href="glosspage.html#706e67"><span style="color: #884422;">png</span></a></tt></strong> files can only be saved from an image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> with <span class="ckey">S</span> as <span class="ckey">s</span> will automatically save the full layered image as an <strong><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></strong> file.</div>
 <center><table border=1 bgcolor="#ffffff">
 <tr bgcolor="#eeffee"><td>Name separate from filename</td><td align="center"><span style="color: #ff0000;">No</span> </td></tr>
 <tr bgcolor="#eeffff"><td>Annotation</td><td align="center"><span style="color: #008800;">Yes</span> </td></tr>
@@ -429,7 +430,7 @@ margin-bottom: 1em;
 </table><br>&nbsp;</center>
 </td></tr>
 
-<tr bgcolor="#dddddd"><td valign="top" align="right">6</td><td valign="top" align="right"><span style="color:#006600;"><span style="font-weight: bold;"><tt>.jpg</tt></span></span> or <span style="color:#006600;"><span style="font-weight: bold;"><tt>.jpeg</tt></span></span></td><td>Lossy 24-bit Image files, no alpha: jst sy n t lssy cmprssn<br>Saved using <span class="ckey">s</span> or <span class="ckey">S</span> from any active image <a href="views.html">view</a>. 
+<tr bgcolor="#dddddd"><td valign="top" align="right">6</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt><strong><tt>.<a target="_blank" href="glosspage.html#72676261"><span style="color: #884422;">rgba</span></a></tt></strong></tt></strong></span></td><td>24-bit + alpha (32-bit) or 48-bit + alpha (64-bit) Image files<br>Saved using <span class="ckey">s</span> or <span class="ckey">S</span> from any active image <a href="views.html">view</a>. 
 
 <div style="
         width: 75%;
@@ -441,7 +442,27 @@ margin-bottom: 1em;
        margin: auto;
    margin-top: 1em;
 margin-bottom: 1em;
-"><span style="font-weight: bold;">Note:</span> <span style="color:#006600;"><span style="font-weight: bold;"><tt>.jpg</tt></span></span> or <span style="color:#006600;"><span style="font-weight: bold;"><tt>.jpeg</tt></span></span> files can only be saved from an image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> with <span class="ckey">S</span> as <span class="ckey">s</span> will automatically save the full layered image as an <span style="color:#006600;"><span style="font-weight: bold;"><tt>.elx</tt></span></span> file.</div>
+"><strong>Note:</strong> <strong><tt>.<a target="_blank" href="glosspage.html#72676261"><span style="color: #884422;">rgba</span></a></tt></strong> files can only be saved from an image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> with <span class="ckey">S</span> as <span class="ckey">s</span> will automatically save the full layered image as an <strong><tt>.<a target="_blank" href="glosspage.html#656c78"><span style="color: #884422;">elx</span></a></tt></strong> file.</div>
+<center><table border=1 bgcolor="#ffffff">
+<tr bgcolor="#eeffee"><td>100% data fidelity</td><td align="center"><span style="color: #008800;">32-bit</span> </td></tr>
+<tr bgcolor="#eeffff"><td>100% data fidelity</td><td align="center"><span style="color: #008800;">64-bit</span> </td></tr>
+<tr bgcolor="#eeffee"><td>Open file format</td><td align="center"><span style="color: #008800;">Yes</span> &mdash; details <a href="appendixh.html">here</a> </td></tr>
+</table><br>&nbsp;</center>
+</td></tr>
+
+<tr bgcolor="#ffffff"><td valign="top" align="right">7</td><td valign="top" align="right"><span style="color:#006600;"><strong><tt>.jpg</tt></strong></span> or <span style="color:#006600;"><strong><tt>.jpeg</tt></strong></span></td><td>Lossy 24-bit Image files, no alpha: jst sy n t lssy cmprssn<br>Saved using <span class="ckey">s</span> or <span class="ckey">S</span> from any active image <a href="views.html">view</a>. 
+
+<div style="
+        width: 75%;
+        clear: both;
+ border-style: solid;
+   background: #DDDDFF;
+   text-align: left;
+      padding: .5em;
+       margin: auto;
+   margin-top: 1em;
+margin-bottom: 1em;
+"><strong>Note:</strong> <span style="color:#006600;"><strong><tt>.jpg</tt></strong></span> or <span style="color:#006600;"><strong><tt>.jpeg</tt></strong></span> files can only be saved from an image <a target="_blank" href="glosspage.html#6c61796572"><span style="color: #884422;">layer</span></a> or <a target="_blank" href="glosspage.html#6d6173746572"><span style="color: #884422;">master</span></a> with <span class="ckey">S</span> as <span class="ckey">s</span> will automatically save the full layered image as an <span style="color:#006600;"><strong><tt>.elx</tt></strong></span> file.</div>
 
 <center><table border=1 bgcolor="#ffffff">
 <tr bgcolor="#eeffee"><td>Name separate from filename</td><td align="center"><span style="color: #ff0000;">No</span> </td></tr>
@@ -476,7 +497,7 @@ border-style: solid;
       margin: auto;
   margin-top: 1em;
 ">
-<span style="font-style: italic;">Keyboard Navigation</span>
+<em>Keyboard Navigation</em>
 <hr width="75%">
 <span class="ckey">,</span> Previous Page
 <span class="ckey">.</span> Next Page
@@ -486,24 +507,22 @@ border-style: solid;
 <span class="ckey">g</span> Glossary
 </div>
                <div class="backtrail backtrail--full"><table width="100%"><tr><td style="width: 4em;" align="left">&nbsp;<a style="color: #ffffff" href="startupsequence.html">Prev</a></td><td align="center"><a style="color: #ffffff;" href="tocpage.html"><span style="white-space:nowrap;">Table of Contents</span></a> <a style="color: #ffffff;" href="indexpage.html">Index</a>  <a style="color: #ffffff;" href="glosspage.html">Glossary</a>   <a style="color: #ffffff;" href="keyboard.html">Keyboard</a> <a style="color: #ffffff;" href="operators.html">Operators</a> <a style="color: #ffffff;" href="stepbystepdialogs.html">Dialogs</a> <a style="color: #ffffff;" href="layersdialog.html">Layers</a> </td><td style="width: 4em;" align="right"><a style="color:  #ffffff;" href="appendixb.html">Next</a>&nbsp;</td></tr></table></div>
-               <p style="text-align: center;">
-<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
-<br>&nbsp;
-</p>
-               <center><tt>This manual was generated with <span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span></tt></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> uses <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> and <a target="_blank" href="https://sqlite.org/"><span style="font-weight: bold;">SqLite</span></a></center>
-               <center><span style="font-weight: bold;"><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></span> and <span style="font-weight: bold;"><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></span> are coded in <a target="_blank" href="http://python.org"><span style="font-weight: bold;">python 2.7</span></a></center>
-               <center><span style="font-weight: bold;">iToolBox</span> 2.40</center>
-               <center>This Documentation and Associated Software Application is <span style="font-weight: bold;">Public Domain</span></center>
-           </div>
-</div>
-<div style="float: right;  margin:0; border:0; position: fixed; right: 1%; top:55px; width: 190px;"><table><tr><td width=150><small>Please consider supporting my <span style="font-weight: bold;">iToolBox</span> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <center><table><tr><td width=150><small>Please consider supporting my <strong>iToolBox</strong> development efforts with a small PayPal donation.</small></td></tr></table><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RAXEUNNSF5WKJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form><br><br><div style="padding:2px; width: 150px; height: 600px; border: solid; border-color: #000000; text-align: center;"> Hey, look:<br>A box!</div></div>
-
+</form><br><br></center>
+               <center><tt>This manual was generated with <strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong></tt></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> uses <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> and <a target="_blank" href="https://sqlite.org/"><strong>SqLite</strong></a></center>
+               <center><strong><a target="_blank" href="http://ourtimelines.com/wtfm/tocpage.html">wtfm</a></strong> and <strong><a target="_blank" href="https://github.com/fyngyrz/aa_macro">aa_macro</a></strong> are coded in <a target="_blank" href="http://python.org"><strong>python 2.7</strong></a></center>
+               <center><strong>iToolBox</strong> 2.60</center>
+               <center>This Documentation and Associated Application Executables are <strong>Public Domain</strong></center>
+               <p style="text-align: center;">
+<a href="http://validator.w3.org/check?uri=referer"><img src="pics/valid-html401.png" alt="Valid HTML 4.01 Loose" height="31" width="88"></a>
+<br>&nbsp;
+</p>
+               <center>Page 164</center>
         </div>
 
     </BODY>
